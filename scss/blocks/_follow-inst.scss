@@ -1,0 +1,105 @@
+.follow-inst {
+    padding: 35px 0 112px 0;
+
+    h2 {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 44px;
+        color: $black-color;
+    }
+
+    .follow-inst_posts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        row-gap: 33px;
+        padding-top: 25px;
+
+        .follow-inst_post {
+            width: calc(25% - 19px);
+            
+            position: relative;
+            cursor: pointer;
+
+            .follow-inst_post_img {
+                position: relative;
+                width: 100%;
+                transition: 0.3s;
+
+                &:hover {
+                    transition: 0.3s;
+
+                    .follow-inst_post_descr {
+                        opacity: 1;
+                    }
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    left: 0px;
+                    opacity: 0;
+                    transition: all 0.3s ease 0s;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    max-height: 311px;
+                    object-fit: cover;
+                }
+            }
+
+            .follow-inst_post_descr {
+                position: absolute;
+                top: 20%;
+                transform: translateY(-50%);
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                text-align: center;
+                transition: 0.3s;
+                opacity: 0;
+                z-index: 3;
+
+                .follow-inst_post_descr_icons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 33px;
+
+                    .follow-inst_post_descr_icon {
+                        display: flex;
+                        gap: 6px;
+                        align-items: center;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        color: #FFFFFF;
+                    }
+                }
+                
+                .follow-inst_post_title, .follow-inst_post_sutitle {
+                    padding-top: 34px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+@import "settings.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "buttons.scss";
+@import "inputs.scss";
+@import "blocks/_header.scss";
+@import "blocks/_burger-menu.scss";
+@import "blocks/_shopping-cart-menu.scss";
+@import "blocks/_product_card-in-cart.scss";
+@import "blocks/_promo.scss";
+@import "blocks/_categories.scss";
+@import "blocks/_sub-to-news.scss";
+@import "blocks/_promotion-products.scss";
+@import "blocks/_product_card.scss";
+@import "blocks/_popular-products.scss";
+@import "blocks/_follow-inst.scss";
+@import "blocks/_footer.scss";
+@import "media.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0;
+}

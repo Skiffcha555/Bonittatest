@@ -1,0 +1,28 @@
+.btn-main {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: 0.3s;
+
+    &:hover {
+        transition: 0.3s;
+        background-color: #fff;
+        color: $brown-color;
+
+        .btn-arrow {
+            path {
+                transition: 0.3s;
+                fill: $brown-color;
+            }
+        }
+    }
+}

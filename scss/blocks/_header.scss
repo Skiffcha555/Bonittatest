@@ -1,0 +1,73 @@
+header {
+    position: fixed;
+    width: 100%;
+    padding: 25px 0;
+    transition: 0.3s;
+    z-index: 20;
+
+    &._white {
+        background-color: $brown-color;
+    }
+
+    .container {
+        max-width: 98%;
+        margin: 0 auto;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+            .header_left {
+                display: flex;
+                gap: 35px;
+                align-items: center;
+
+                svg {
+                    cursor: pointer;
+                }
+
+                select {
+                    background: transparent;
+                    border: none;
+                    color: white;
+
+                    option {
+                        background: transparent;
+                        border: none;
+                        color: black;
+                    }
+                }
+            }
+
+            .header_right {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                svg {
+                    &:first-child {
+                        margin-right: 30px;
+                    }
+                }
+
+                .icon_cart,
+                .icon_heart {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: #fff;
+
+                    svg {
+                        &:first-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                .icon_cart {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
