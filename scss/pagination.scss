@@ -1,0 +1,18 @@
+.pagination {
+    justify-content: center;
+    gap: 18px;
+    padding-bottom: 10px;
+
+    a {
+        text-decoration: none;
+        color: $black-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.main {
+    padding-top: 81px;
+}
+
+.product-category {
+    padding-top: 29px;
+
+    h2 {
+        padding-top: 5px;
+        text-align: center;
+        font-family: Cormorant Garamond;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        color: $black-color;
+    }
+
+    .close-icon_filter {
+        cursor: pointer;
+    }
+
+    .filters-and-quantity-prod {
+        display: flex;
+        justify-content: space-between;
+
+        .quantity-prod {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 12px;
+            color: $black-color;
+        }
+    }
+
+    .filters {
+        display: flex;
+        gap: 47px;
+    }
+
+    .selected-filters {
+        display: flex;
+        gap: 23px;
+        padding-top: 26px;
+
+        .selected-filters_title {
+            display: flex;
+            align-items: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            color: $black-color;
+        }
+
+        .selected-filter {
+            display: flex;
+            gap: 42px;
+            border: 0.5px solid $black-color;
+            padding: 5px 11px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            color: $black-color;
+        }
+    }
+
+    .product-catalog {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 54px;
+        padding-bottom: 130px;
+        gap: 36px;
+
+        .product_card {
+            width: calc(25% - 27px);
+        }
+    }
+}

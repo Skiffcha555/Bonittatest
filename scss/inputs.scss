@@ -10,3 +10,27 @@ input {
     font-size: 14px;
     color: #FFFFFF;
 }
+
+.brown-input {
+    width: 100%;
+    border: 1px solid #957D6D;
+    min-width: auto;
+    color: #333;
+}
+
+.form-error {
+    display: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: $red-color;
+}
+
+input.validity {
+    border-color: red;
+
+    &:invalid + .form-error {
+        display: inline-block;
+    }
+}

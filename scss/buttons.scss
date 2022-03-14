@@ -5,6 +5,8 @@
     gap: 10px;
     border: 1px solid #FFFFFF;
     background: transparent;
+    text-decoration: none;
+    cursor: pointer;
 
     font-family: Roboto;
     font-style: normal;
@@ -23,6 +25,29 @@
                 transition: 0.3s;
                 fill: $brown-color;
             }
+        }
+    }
+
+    &.brown-btn {
+        border: 1px solid $brown-color;
+        background-color: $brown-color;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: $brown-color;
+        }
+    }
+
+    &.black-btn {
+        border: 1px solid $black-color;
+        background-color: #fff;
+        color: $black-color;
+
+        &:hover {
+            border: 1px solid $brown-color;
+            background-color: #fff;
+            color: $brown-color;
         }
     }
 }

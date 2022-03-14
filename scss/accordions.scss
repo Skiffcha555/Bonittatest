@@ -1,0 +1,56 @@
+.accordion {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: $black-color;
+    text-align: start;
+    transition: 0.4s;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    padding-bottom: 11px;
+    border: none;
+    border-bottom: 0.5px solid #BDBDBD;
+
+    &:after {
+        content: '';
+        background: url(/icons/arrow-down.svg) 50% 50% no-repeat;
+        background-size: cover;
+        width: 14px;
+        height: 8px;
+        font-weight: bold;
+        float: right;
+        margin-right: 5px;
+        transition: transform .2s ease-in-out;
+    }
+}
+
+.active{
+    &::after {
+        transition: transform .2s ease-in-out;
+        transform: rotate(-180deg);
+    }
+}
+
+.accordion-content {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 16px;
+    color: $black-color;
+    transition: cubic-bezier(0, 0, 0, 0.99) 0.3s !important;
+
+    padding: 0px 16px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}

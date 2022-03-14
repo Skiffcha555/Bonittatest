@@ -1,12 +1,15 @@
-
-@import "settings.scss";
 @import "variables.scss";
+@import "settings.scss";
 @import "fonts.scss";
 @import "buttons.scss";
 @import "inputs.scss";
+@import "accordions.scss";
+@import "filters.scss";
+@import "pagination.scss";
 @import "blocks/_header.scss";
 @import "blocks/_burger-menu.scss";
 @import "blocks/_shopping-cart-menu.scss";
+@import "blocks/_search-bar.scss";
 @import "blocks/_product_card-in-cart.scss";
 @import "blocks/_promo.scss";
 @import "blocks/_categories.scss";
@@ -14,7 +17,18 @@
 @import "blocks/_promotion-products.scss";
 @import "blocks/_product_card.scss";
 @import "blocks/_popular-products.scss";
+@import "blocks/_similiar-products.scss";
 @import "blocks/_follow-inst.scss";
+@import "blocks/_recently-viewed.scss";
+@import "blocks/_product-category-bodysuit.scss";
+@import "blocks/_product-page-content.scss";
+@import "blocks/_notify-me.scss";
+@import "blocks/_size-guide-block.scss";
+@import "blocks/_reviews.scss";
+@import "blocks/_favorite-products.scss";
+@import "blocks/_search-results.scss";
+@import "blocks/_shopping-cart-section.scss";
+@import "blocks/_information-section.scss";
 @import "blocks/_footer.scss";
 @import "media.scss";
 

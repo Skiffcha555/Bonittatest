@@ -2,7 +2,7 @@
     padding: 28px 0;
     border-top: 1px solid rgba($brown-color, 0.3);
     display: flex;
-    justify-content: space-between;
+    gap: 17px;
     font-family: Roboto;
     font-style: normal;
     font-size: 14px;
@@ -21,6 +21,7 @@
     .product_card-in-cart_descr {
         display: flex;
         flex-direction: column;
+        width: 45%;
 
         .product_card-in-cart_price {
             font-weight: 300;

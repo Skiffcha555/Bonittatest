@@ -1,0 +1,39 @@
+.main {
+    padding-top: 81px;
+}
+
+.favorites {
+    padding-top: 19px;
+
+    h2 {
+        padding-top: 5px;
+        text-align: center;
+        font-family: Cormorant Garamond;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        color: $black-color;
+    }
+
+    .quantity-prod {
+        display: flex;
+        justify-content: flex-end;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 12px;
+        color: $black-color;
+    }
+
+    .favorite-products {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 54px;
+        padding-bottom: 130px;
+        gap: 36px;
+
+        .product_card {
+            width: calc(25% - 27px);
+        }
+    }
+}

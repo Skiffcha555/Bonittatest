@@ -1,0 +1,125 @@
+.reviews {
+    padding-top: 75px;
+
+    .container {
+        max-width: 80%;
+
+        .reviews-wrapper {
+            width: 59%;
+
+            .reviews-title {
+                display: flex;
+                font-family: Cormorant Garamond;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 36px;
+                color: $black-color;
+            }
+
+            .reviews-content {
+                padding: 0;
+                transition: cubic-bezier(0, 0, 0, 0.99) 0.75s !important;
+            }
+
+            .review {
+                display: flex;
+                gap: 70px;
+                margin-bottom: 36px;
+                border-top: 0.5px solid #E0E0E0;
+
+                &:first-child {
+                    border: none;
+                }
+
+                .review-info {
+                    width: 20%;
+                    margin-top: 26px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    .review-username {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: $black-color;
+                    }
+
+                    .review-data {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 100;
+                        font-size: 14px;
+                        color: $black-color;
+                    }
+
+                    .stars {
+                        margin-left: 0;
+                        margin-top: 5px;
+                        justify-content: start;
+                    }
+                }
+
+                .review-descr {
+                    width: 80%;
+                    margin-top: 26px;
+
+                    .review-imgs {
+                        padding-top: 50px;
+                        display: flex;
+                        gap: 18px;
+
+                        .review-img {
+                            cursor: pointer;
+
+                            img {
+                                width: 60px;
+                                height: 60px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.stars {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    svg {
+        path {
+            fill: transparent;
+            stroke: #000;
+            stroke-width: 0.5px;
+
+
+        }
+        .active {
+            fill: #000;
+            stroke: none;
+        }
+    }
+}
+
+.review-img-open {
+    position: relative;
+    display: none;
+    border-top: 0.5px solid #E0E0E0;
+    margin-top: 26px;
+    padding-top: 25px;
+    width: 297px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 8px;
+    right: 7px;
+    cursor: pointer;
+}
