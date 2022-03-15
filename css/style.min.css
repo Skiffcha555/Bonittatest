@@ -69,6 +69,20 @@ h1, h2, h3, h4 {
   font-weight: 300;
 }
 
+.return-to-cart {
+  margin-top: 114px;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #828282;
+  text-decoration: none;
+}
+.return-to-cart:hover {
+  text-decoration: underline;
+}
+
 .btn-main {
   display: flex;
   align-items: center;
@@ -143,11 +157,18 @@ input {
   color: #EB5757;
 }
 
-input.validity {
-  border-color: red;
-}
 input.validity:invalid + .form-error {
   display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .accordion {
@@ -2624,11 +2645,12 @@ header.white .container nav .header_right .icon_heart {
   padding-top: 85px;
   padding-bottom: 62px;
   display: flex;
-  gap: 60px;
+  gap: 77px;
 }
 .information-section .contact-information-and-list .contact-information {
   width: 55%;
-  padding-right: 60px;
+  padding-right: 62px;
+  border-right: 0.5px solid #E0E0E0;
 }
 .information-section .contact-information-and-list .contact-information h2 {
   font-family: "Cormorant Garamond";
@@ -2915,19 +2937,6 @@ header.white .container nav .header_right .icon_heart {
 .information-section .contact-information-and-list .contact-information .payment-methods .payment-method .prepayment-sum-text {
   font-weight: 300;
 }
-.information-section .contact-information-and-list .contact-information .return-to-cart {
-  margin-top: 114px;
-  display: block;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  color: #828282;
-  text-decoration: none;
-}
-.information-section .contact-information-and-list .contact-information .return-to-cart:hover {
-  text-decoration: underline;
-}
 .information-section .contact-information-and-list .ordered-items h2 {
   font-family: "Cormorant Garamond";
   font-style: normal;
@@ -3010,6 +3019,158 @@ header.white .container nav .header_right .icon_heart {
 .information-section .contact-information-and-list .ordered-items .btn-main {
   margin-top: 29px;
   justify-content: center;
+}
+
+.payment-section {
+  padding-top: 29px;
+}
+.payment-section .card-info-and-order-summary {
+  padding-top: 81px;
+  padding-bottom: 73px;
+  display: flex;
+  gap: 78px;
+}
+.payment-section .card-info-and-order-summary h2 {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333;
+}
+.payment-section .card-info-and-order-summary .card-information-title {
+  padding-bottom: 19px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  color: #333;
+}
+.payment-section .card-info-and-order-summary .card-information-title h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
+.payment-section .card-info-and-order-summary .card-information {
+  width: 50%;
+  padding-right: 60px;
+  border-right: 0.5px solid #E0E0E0;
+}
+.payment-section .card-info-and-order-summary .card-information .mustValidate {
+  padding: 31px 23px 37px 23px;
+  border: 0.5px solid #E0E0E0;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating.full-name {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating.full-name input {
+  min-width: auto;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating.valid-until-month-and-year {
+  padding-top: 26px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating.valid-until-month-and-year input {
+  min-width: auto;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating.valid-until-month-and-year {
+  padding-top: 0;
+  margin-top: 16px;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating.first-name,
+.payment-section .card-info-and-order-summary .card-information .form-floating .last-name,
+.payment-section .card-info-and-order-summary .card-information .form-floating .valid-until-month,
+.payment-section .card-info-and-order-summary .card-information .form-floating .valid-until-year {
+  width: 50%;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating.card-number, .payment-section .card-info-and-order-summary .card-information .form-floating.apartment-suit, .payment-section .card-info-and-order-summary .card-information .form-floating.country, .payment-section .card-info-and-order-summary .card-information .form-floating.phone {
+  margin-top: 16px;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating input {
+  border-radius: 0;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating input:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating select {
+  position: relative;
+  border-radius: 0;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating select:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating label {
+  opacity: 0;
+  height: auto;
+  padding: 0 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  color: #957D6D;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating .filter-sizes {
+  padding: 0;
+  opacity: 1;
+  min-width: auto;
+  transform: none;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating > .form-control:focus ~ label,
+.payment-section .card-info-and-order-summary .card-information .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.payment-section .card-info-and-order-summary .card-information .form-floating > .form-select ~ label {
+  opacity: 1;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.payment-section .card-info-and-order-summary .card-information .remember-card-next-time {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  color: #828282;
+}
+.payment-section .card-info-and-order-summary .card-information .remember-card-next-time .filter-sizes {
+  padding: 0;
+  opacity: 1;
+  min-width: auto;
+  transform: none;
 }
 
 footer {
