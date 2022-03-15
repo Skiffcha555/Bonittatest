@@ -42,7 +42,7 @@ window.onclick = function (event) {
 document.getElementById("DropdownSizes").onclick = e => e.stopPropagation()
 const filtersSizes = document.querySelectorAll(".filter-sizes")
 
-function filterSizesActiveCheckBox($el, event) {
+function checkboxesActive($el, event) {
     event.preventDefault()
     $el.classList.toggle('filter-sizes_active')
     $el.querySelector('input').checked = !$el.querySelector('input').checked

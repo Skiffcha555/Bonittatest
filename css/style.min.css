@@ -70,8 +70,10 @@ h1, h2, h3, h4 {
 }
 
 .return-to-cart {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   margin-top: 114px;
-  display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -81,6 +83,7 @@ h1, h2, h3, h4 {
 }
 .return-to-cart:hover {
   text-decoration: underline;
+  color: #828282;
 }
 
 .btn-main {
@@ -490,6 +493,67 @@ input[type=radio] + .radio-label:empty:before {
 }
 .pagination a.active {
   text-decoration: underline;
+}
+
+.checkboxes {
+  display: flex;
+  position: relative;
+  user-select: none;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 17px;
+  padding: 18px 14px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 300ms linear;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  color: #828282;
+}
+.checkboxes input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkboxes .checkmark {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border: 0.5px solid #828282;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.checkboxes .checkmark:after {
+  content: "";
+  background: url(/icons/checked.svg) 50% 50% no-repeat;
+  background-size: cover;
+  width: 8px;
+  height: 6px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  display: none;
+}
+
+.checkboxes:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+.checkboxes input:checked ~ .checkmark {
+  border: 0.5px solid transparent;
+  background-color: #957D6D;
+}
+
+.checkboxes input:checked ~ .checkmark:after {
+  display: block;
 }
 
 header {
@@ -2816,7 +2880,7 @@ header.white .container nav .header_right .icon_heart {
   transform: scale(1) translateY(-8px) translateX(17px);
   transition: 0.3s;
 }
-.information-section .contact-information-and-list .contact-information .form-floating .filter-sizes {
+.information-section .contact-information-and-list .contact-information .form-floating .checkboxes {
   padding: 0;
   opacity: 1;
   min-width: auto;
@@ -2841,7 +2905,7 @@ header.white .container nav .header_right .icon_heart {
   font-size: 12px;
   color: #828282;
 }
-.information-section .contact-information-and-list .contact-information .save-info-next-time .filter-sizes {
+.information-section .contact-information-and-list .contact-information .save-info-next-time .checkboxes {
   padding: 0;
   opacity: 1;
   min-width: auto;
@@ -3051,6 +3115,9 @@ header.white .container nav .header_right .icon_heart {
   font-size: 18px;
   font-weight: 300;
 }
+.payment-section .card-info-and-order-summary .return-to-cart {
+  margin-top: 34px;
+}
 .payment-section .card-info-and-order-summary .card-information {
   width: 50%;
   padding-right: 60px;
@@ -3138,21 +3205,15 @@ header.white .container nav .header_right .icon_heart {
   font-size: 10px;
   color: #957D6D;
   background: #fff;
-  transform: scale(1) translateY(-8px) translateX(17px);
+  transform: scale(1) translateY(-12px) translateX(17px);
   transition: 0.3s;
-}
-.payment-section .card-info-and-order-summary .card-information .form-floating .filter-sizes {
-  padding: 0;
-  opacity: 1;
-  min-width: auto;
-  transform: none;
 }
 .payment-section .card-info-and-order-summary .card-information .form-floating > .form-control:focus ~ label,
 .payment-section .card-info-and-order-summary .card-information .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .payment-section .card-info-and-order-summary .card-information .form-floating > .form-select ~ label {
   opacity: 1;
   background: #fff;
-  transform: scale(1) translateY(-8px) translateX(17px);
+  transform: scale(1) translateY(-12px) translateX(17px);
   transition: 0.3s;
 }
 .payment-section .card-info-and-order-summary .card-information .remember-card-next-time {
@@ -3166,11 +3227,8 @@ header.white .container nav .header_right .icon_heart {
   font-size: 12px;
   color: #828282;
 }
-.payment-section .card-info-and-order-summary .card-information .remember-card-next-time .filter-sizes {
+.payment-section .card-info-and-order-summary .card-information .remember-card-next-time .checkboxes {
   padding: 0;
-  opacity: 1;
-  min-width: auto;
-  transform: none;
 }
 
 footer {

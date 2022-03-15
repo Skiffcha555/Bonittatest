@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/css/bootstrap-rebote.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.min.css">
+    <!-- <link href="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet"> -->
+
 </head>
 
 <body>
@@ -399,7 +402,7 @@
                                     <label for="floatingInput">Valid until</label>
                                 </div>
                                 <div class="form-floating valid-until-year">
-                                    <input type="text" class="form-control" id="date">
+                                    <input type="text" class="form-control" name="datepicker" id="datepicker" />
                                     <div class="form-error">
                                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -437,11 +440,11 @@
                             </div>
     
                             <div class="remember-card-next-time">
-                                <label class="filter-sizes">
+                                <label class="checkboxes" onclick="checkboxesActive(this, event)">
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
+                                    <span>Remember card for next use</span>
                                 </label>
-                                <span>Remember card for next use</span>
                             </div>
                         </form>
 
@@ -538,14 +541,6 @@
         <span class="footer_author">RomarkCode 2022</span>
     </footer>
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js">
-    </script>
-    <script type="text/javascript">
-       $(function() {
-          $( "#date" ).datepicker({dateFormat: 'yy'});
-       });
-    </script>
-
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/burger-menu.js"></script>
@@ -555,7 +550,30 @@
     <script src="/js/dropdown.js"></script>
     <script src="/js/scroll.js"></script>
     <script src="/js/validity.js"></script>
+    <script src="/js/checkbox.js"></script>
     <script src="/js/script.js"></script>
+
+    <!-- <style>
+        .datepicker table tr td span.active.active {
+            background-color: #957D6D !important;
+            background-image: linear-gradient(top,#957D6D,#957D6D);
+            background-image: -webkit-gradient(linear,0 0,0 100%,from(#957D6D),to(#957D6D));
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#datepicker").datepicker({
+            format: "yyyy",
+            viewMode: "years", 
+            minViewMode: "years",
+            autoclose:true
+        });   
+        })
+    </script> -->
 
 </body>
 
