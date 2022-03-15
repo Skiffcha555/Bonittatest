@@ -16,19 +16,14 @@
         }
 
         .card-information-title {
-            padding-bottom: 19px;
+            padding-bottom: 20px;
             display: flex;
             justify-content: space-between;
             font-family: 'Cormorant Garamond';
             font-style: normal;
             font-weight: 100;
-            font-size: 14px;
+            font-size: 18px;
             color: $black-color;
-
-            h2 {
-                font-size: 18px;
-                font-weight: 300;
-            }
         }
 
         .return-to-cart {
@@ -171,6 +166,28 @@
                     padding: 0;
                 }
             }
+        }
+    }
+
+    .order-summary {
+        width: 50%;
+        padding-top: 0;
+
+        .products-price-field,
+        .discount-field,
+        .delivery-field,
+        .payment-total-sum-field {
+            width: 65%;
+        }
+
+        .order-summary-title {
+            display: flex;
+        }
+
+        .btn-main {
+            margin-top: 25px;
+            width: 65%;
+            justify-content: center;
         }
     }
 }

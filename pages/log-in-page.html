@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="/css/bootstrap-rebote.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.min.css">
-    <!-- <link href="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet"> -->
-
 </head>
 
 <body>
@@ -307,174 +304,9 @@
     </div>
 
     <main class="main">
-        <section class="payment-section">
+        <section class="log-in-section">
             <div class="container">
-
-                <div class="bread-crumbs third">
-                    <a href="shopping-cart-page.html">Shopping Cart ></a>
-                    <a href="information.html">Information ></a>
-                    <a href="payment.html">Payment ></a>
-                    <a href="order-completed-page.html">Order completed</a>
-                </div>
-
-                <div class="card-info-and-order-summary">
-                    <div class="card-information">
-                        <h2 class="card-information-title">Card info</h2>
-                        <form class="mustValidate">
-                            <div class="form-floating full-name">
-                                <div class="form-floating first-name">
-                                    <input type="text" class="form-control" placeholder="First name">
-                                    <div class="form-error">
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M7 13C7.78808 13.001 8.56859 12.8463 9.29668 12.5447C10.0248 12.2431 10.6861 11.8006 11.2426 11.2426C11.8006 10.6861 12.2431 10.0248 12.5447 9.29668C12.8463 8.56859 13.001 7.78808 13 7C13.001 6.21192 12.8463 5.43142 12.5447 4.70333C12.2431 3.97524 11.8006 3.31393 11.2426 2.7574C10.6861 2.19941 10.0248 1.7569 9.29668 1.45531C8.56859 1.15372 7.78808 0.998984 7 1.00001C6.21192 0.999 5.43142 1.15374 4.70333 1.45533C3.97524 1.75693 3.31393 2.19943 2.7574 2.7574C2.19943 3.31393 1.75693 3.97524 1.45533 4.70333C1.15374 5.43142 0.999 6.21192 1.00001 7C0.998984 7.78808 1.15372 8.56859 1.45531 9.29668C1.7569 10.0248 2.19941 10.6861 2.7574 11.2426C3.31393 11.8006 3.97524 12.2431 4.70333 12.5447C5.43142 12.8463 6.21192 13.001 7 13V13Z"
-                                                stroke="#EB5757" stroke-width="0.8" stroke-linejoin="round" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M7 10.8999C7.19891 10.8999 7.38968 10.8209 7.53033 10.6802C7.67098 10.5396 7.75 10.3488 7.75 10.1499C7.75 9.95099 7.67098 9.76022 7.53033 9.61957C7.38968 9.47892 7.19891 9.3999 7 9.3999C6.80109 9.3999 6.61032 9.47892 6.46967 9.61957C6.32902 9.76022 6.25 9.95099 6.25 10.1499C6.25 10.3488 6.32902 10.5396 6.46967 10.6802C6.61032 10.8209 6.80109 10.8999 7 10.8999V10.8999Z"
-                                                fill="#EB5757" />
-                                            <path d="M6.99902 3.3999V8.1999" stroke="#EB5757" stroke-width="0.8"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <span>This field can not be empty</span>
-                                    </div>
-                                    <label for="floatingInput">First name</label>
-                                </div>
-                                <div class="form-floating last-name">
-                                    <input type="text" class="form-control" placeholder="Last name">
-                                    <div class="form-error">
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M7 13C7.78808 13.001 8.56859 12.8463 9.29668 12.5447C10.0248 12.2431 10.6861 11.8006 11.2426 11.2426C11.8006 10.6861 12.2431 10.0248 12.5447 9.29668C12.8463 8.56859 13.001 7.78808 13 7C13.001 6.21192 12.8463 5.43142 12.5447 4.70333C12.2431 3.97524 11.8006 3.31393 11.2426 2.7574C10.6861 2.19941 10.0248 1.7569 9.29668 1.45531C8.56859 1.15372 7.78808 0.998984 7 1.00001C6.21192 0.999 5.43142 1.15374 4.70333 1.45533C3.97524 1.75693 3.31393 2.19943 2.7574 2.7574C2.19943 3.31393 1.75693 3.97524 1.45533 4.70333C1.15374 5.43142 0.999 6.21192 1.00001 7C0.998984 7.78808 1.15372 8.56859 1.45531 9.29668C1.7569 10.0248 2.19941 10.6861 2.7574 11.2426C3.31393 11.8006 3.97524 12.2431 4.70333 12.5447C5.43142 12.8463 6.21192 13.001 7 13V13Z"
-                                                stroke="#EB5757" stroke-width="0.8" stroke-linejoin="round" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M7 10.8999C7.19891 10.8999 7.38968 10.8209 7.53033 10.6802C7.67098 10.5396 7.75 10.3488 7.75 10.1499C7.75 9.95099 7.67098 9.76022 7.53033 9.61957C7.38968 9.47892 7.19891 9.3999 7 9.3999C6.80109 9.3999 6.61032 9.47892 6.46967 9.61957C6.32902 9.76022 6.25 9.95099 6.25 10.1499C6.25 10.3488 6.32902 10.5396 6.46967 10.6802C6.61032 10.8209 6.80109 10.8999 7 10.8999V10.8999Z"
-                                                fill="#EB5757" />
-                                            <path d="M6.99902 3.3999V8.1999" stroke="#EB5757" stroke-width="0.8"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <span>This field can not be empty</span>
-                                    </div>
-                                    <label for="floatingInput">Last name</label>
-                                </div>
-                            </div>
-    
-                            <div class="form-floating card-number">
-                                <input type="number" class="form-control" placeholder="Card Number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "16">
-                                <div class="form-error">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M7 13C7.78808 13.001 8.56859 12.8463 9.29668 12.5447C10.0248 12.2431 10.6861 11.8006 11.2426 11.2426C11.8006 10.6861 12.2431 10.0248 12.5447 9.29668C12.8463 8.56859 13.001 7.78808 13 7C13.001 6.21192 12.8463 5.43142 12.5447 4.70333C12.2431 3.97524 11.8006 3.31393 11.2426 2.7574C10.6861 2.19941 10.0248 1.7569 9.29668 1.45531C8.56859 1.15372 7.78808 0.998984 7 1.00001C6.21192 0.999 5.43142 1.15374 4.70333 1.45533C3.97524 1.75693 3.31393 2.19943 2.7574 2.7574C2.19943 3.31393 1.75693 3.97524 1.45533 4.70333C1.15374 5.43142 0.999 6.21192 1.00001 7C0.998984 7.78808 1.15372 8.56859 1.45531 9.29668C1.7569 10.0248 2.19941 10.6861 2.7574 11.2426C3.31393 11.8006 3.97524 12.2431 4.70333 12.5447C5.43142 12.8463 6.21192 13.001 7 13V13Z"
-                                            stroke="#EB5757" stroke-width="0.8" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M7 10.8999C7.19891 10.8999 7.38968 10.8209 7.53033 10.6802C7.67098 10.5396 7.75 10.3488 7.75 10.1499C7.75 9.95099 7.67098 9.76022 7.53033 9.61957C7.38968 9.47892 7.19891 9.3999 7 9.3999C6.80109 9.3999 6.61032 9.47892 6.46967 9.61957C6.32902 9.76022 6.25 9.95099 6.25 10.1499C6.25 10.3488 6.32902 10.5396 6.46967 10.6802C6.61032 10.8209 6.80109 10.8999 7 10.8999V10.8999Z"
-                                            fill="#EB5757" />
-                                        <path d="M6.99902 3.3999V8.1999" stroke="#EB5757" stroke-width="0.8"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>This field can not be empty</span>
-                                </div>
-                                <label for="floatingInput">Card Number</label>
-                            </div>
-    
-                            <div class="form-floating valid-until-month-and-year">
-                                <div class="form-floating valid-until-month">
-                                    <input type="month" class="form-control">
-                                    <div class="form-error">
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M7 13C7.78808 13.001 8.56859 12.8463 9.29668 12.5447C10.0248 12.2431 10.6861 11.8006 11.2426 11.2426C11.8006 10.6861 12.2431 10.0248 12.5447 9.29668C12.8463 8.56859 13.001 7.78808 13 7C13.001 6.21192 12.8463 5.43142 12.5447 4.70333C12.2431 3.97524 11.8006 3.31393 11.2426 2.7574C10.6861 2.19941 10.0248 1.7569 9.29668 1.45531C8.56859 1.15372 7.78808 0.998984 7 1.00001C6.21192 0.999 5.43142 1.15374 4.70333 1.45533C3.97524 1.75693 3.31393 2.19943 2.7574 2.7574C2.19943 3.31393 1.75693 3.97524 1.45533 4.70333C1.15374 5.43142 0.999 6.21192 1.00001 7C0.998984 7.78808 1.15372 8.56859 1.45531 9.29668C1.7569 10.0248 2.19941 10.6861 2.7574 11.2426C3.31393 11.8006 3.97524 12.2431 4.70333 12.5447C5.43142 12.8463 6.21192 13.001 7 13V13Z"
-                                                stroke="#EB5757" stroke-width="0.8" stroke-linejoin="round" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M7 10.8999C7.19891 10.8999 7.38968 10.8209 7.53033 10.6802C7.67098 10.5396 7.75 10.3488 7.75 10.1499C7.75 9.95099 7.67098 9.76022 7.53033 9.61957C7.38968 9.47892 7.19891 9.3999 7 9.3999C6.80109 9.3999 6.61032 9.47892 6.46967 9.61957C6.32902 9.76022 6.25 9.95099 6.25 10.1499C6.25 10.3488 6.32902 10.5396 6.46967 10.6802C6.61032 10.8209 6.80109 10.8999 7 10.8999V10.8999Z"
-                                                fill="#EB5757" />
-                                            <path d="M6.99902 3.3999V8.1999" stroke="#EB5757" stroke-width="0.8"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <span>This field can not be empty</span>
-                                    </div>
-                                    <label for="floatingInput">Valid until</label>
-                                </div>
-                                <div class="form-floating valid-until-year">
-                                    <input type="text" class="form-control" name="datepicker" id="datepicker" />
-                                    <div class="form-error">
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M7 13C7.78808 13.001 8.56859 12.8463 9.29668 12.5447C10.0248 12.2431 10.6861 11.8006 11.2426 11.2426C11.8006 10.6861 12.2431 10.0248 12.5447 9.29668C12.8463 8.56859 13.001 7.78808 13 7C13.001 6.21192 12.8463 5.43142 12.5447 4.70333C12.2431 3.97524 11.8006 3.31393 11.2426 2.7574C10.6861 2.19941 10.0248 1.7569 9.29668 1.45531C8.56859 1.15372 7.78808 0.998984 7 1.00001C6.21192 0.999 5.43142 1.15374 4.70333 1.45533C3.97524 1.75693 3.31393 2.19943 2.7574 2.7574C2.19943 3.31393 1.75693 3.97524 1.45533 4.70333C1.15374 5.43142 0.999 6.21192 1.00001 7C0.998984 7.78808 1.15372 8.56859 1.45531 9.29668C1.7569 10.0248 2.19941 10.6861 2.7574 11.2426C3.31393 11.8006 3.97524 12.2431 4.70333 12.5447C5.43142 12.8463 6.21192 13.001 7 13V13Z"
-                                                stroke="#EB5757" stroke-width="0.8" stroke-linejoin="round" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M7 10.8999C7.19891 10.8999 7.38968 10.8209 7.53033 10.6802C7.67098 10.5396 7.75 10.3488 7.75 10.1499C7.75 9.95099 7.67098 9.76022 7.53033 9.61957C7.38968 9.47892 7.19891 9.3999 7 9.3999C6.80109 9.3999 6.61032 9.47892 6.46967 9.61957C6.32902 9.76022 6.25 9.95099 6.25 10.1499C6.25 10.3488 6.32902 10.5396 6.46967 10.6802C6.61032 10.8209 6.80109 10.8999 7 10.8999V10.8999Z"
-                                                fill="#EB5757" />
-                                            <path d="M6.99902 3.3999V8.1999" stroke="#EB5757" stroke-width="0.8"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <span>This field can not be empty</span>
-                                    </div>
-                                    <label for="floatingInput">Valid until</label>
-                                </div>
-                            </div>
-
-                            <div class="form-floating card-number">
-                                <input type="number" class="form-control" placeholder="CVV/CVC/CID" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3">
-                                <div class="form-error">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M7 13C7.78808 13.001 8.56859 12.8463 9.29668 12.5447C10.0248 12.2431 10.6861 11.8006 11.2426 11.2426C11.8006 10.6861 12.2431 10.0248 12.5447 9.29668C12.8463 8.56859 13.001 7.78808 13 7C13.001 6.21192 12.8463 5.43142 12.5447 4.70333C12.2431 3.97524 11.8006 3.31393 11.2426 2.7574C10.6861 2.19941 10.0248 1.7569 9.29668 1.45531C8.56859 1.15372 7.78808 0.998984 7 1.00001C6.21192 0.999 5.43142 1.15374 4.70333 1.45533C3.97524 1.75693 3.31393 2.19943 2.7574 2.7574C2.19943 3.31393 1.75693 3.97524 1.45533 4.70333C1.15374 5.43142 0.999 6.21192 1.00001 7C0.998984 7.78808 1.15372 8.56859 1.45531 9.29668C1.7569 10.0248 2.19941 10.6861 2.7574 11.2426C3.31393 11.8006 3.97524 12.2431 4.70333 12.5447C5.43142 12.8463 6.21192 13.001 7 13V13Z"
-                                            stroke="#EB5757" stroke-width="0.8" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M7 10.8999C7.19891 10.8999 7.38968 10.8209 7.53033 10.6802C7.67098 10.5396 7.75 10.3488 7.75 10.1499C7.75 9.95099 7.67098 9.76022 7.53033 9.61957C7.38968 9.47892 7.19891 9.3999 7 9.3999C6.80109 9.3999 6.61032 9.47892 6.46967 9.61957C6.32902 9.76022 6.25 9.95099 6.25 10.1499C6.25 10.3488 6.32902 10.5396 6.46967 10.6802C6.61032 10.8209 6.80109 10.8999 7 10.8999V10.8999Z"
-                                            fill="#EB5757" />
-                                        <path d="M6.99902 3.3999V8.1999" stroke="#EB5757" stroke-width="0.8"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>This field can not be empty</span>
-                                </div>
-                            </div>
-    
-                            <div class="remember-card-next-time">
-                                <label class="checkboxes" onclick="checkboxesActive(this, event)">
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                    <span>Remember card for next use</span>
-                                </label>
-                            </div>
-                        </form>
-
-                        <a class="return-to-cart" href="information.html">
-                            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 0.715152L4.23736 0L0 4L4.24164 8L5 7.28485L1.51671 4L5 0.715152Z"
-                                    fill="#828282" />
-                            </svg>
-                            <span>Return to Cart</span>
-                        </a>
-                    </div>
-
-                    <div class="order-summary">
-                        <h2 class="order-summary-title">Order Summary</h2>
-                        <div class="products-price-field">
-                            <span>Products:</span>
-                            <div class="products-total-price"><span class="price">1100</span> Lei</div>
-                        </div>
-                        <div class="discount-field">
-                            <span>Discount:</span>
-                            <div class="total-discount">- <span class="discount">100</span> Lei</div>
-                        </div>
-                        <div class="delivery-field">
-                            <span>Delivery:</span>
-                            <div class="total-delivery"><span class="delivery">50</span> Lei</div>
-                        </div>
-                        <div class="payment-total-sum-field">
-                            <span>Total:</span>
-                            <div class="payment-total-sum"><span class="payment-sum">1050</span> Lei</div>
-                        </div>
-                        <a class="btn-main black-btn" href="order-completed-page.html">Pay</a>
-                    </div>
-                </div>
+                
             </div>
         </section>
     </main>
@@ -570,28 +402,6 @@
     <script src="/js/validity.js"></script>
     <script src="/js/checkbox.js"></script>
     <script src="/js/script.js"></script>
-
-    <!-- <style>
-        .datepicker table tr td span.active.active {
-            background-color: #957D6D !important;
-            background-image: linear-gradient(top,#957D6D,#957D6D);
-            background-image: -webkit-gradient(linear,0 0,0 100%,from(#957D6D),to(#957D6D));
-        }
-    </style>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $("#datepicker").datepicker({
-            format: "yyyy",
-            viewMode: "years", 
-            minViewMode: "years",
-            autoclose:true
-        });   
-        })
-    </script> -->
 
 </body>
 

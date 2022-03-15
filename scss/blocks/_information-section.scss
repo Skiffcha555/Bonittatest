@@ -361,106 +361,110 @@
             }
         }
 
-
         .ordered-items {
-            h2 {
-                font-family: 'Cormorant Garamond';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 18px;
-                color: $black-color;
+            width: 40%;
+        }
+    }
+}
+
+.ordered-items {
+    h2 {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        color: $black-color;
+    }
+
+    .products-in-cart {
+        padding-bottom: 34px;
+        border-bottom: 0.5px solid #BDBDBD;
+
+        .product {
+            width: 100%;
+            padding-top: 18px;
+            display: flex;
+
+            &:first-child {
+                border: none;
             }
+        }
 
-            .products-in-cart {
-                padding-bottom: 34px;
-                border-bottom: 0.5px solid #BDBDBD;
+        .product-name {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
 
-                .product {
+            .product-img {
+                width: 25%;
+                max-width: 79px;
+                height: 104px;
+
+                img {
                     width: 100%;
-                    padding-top: 18px;
-                    display: flex;
-    
-                    &:first-child {
-                        border: none;
-                    }
-                }
-    
-                .product-name {
-                    display: flex;
-                    gap: 16px;
-                    width: 100%;
-    
-                    .product-img {
-                        width: 79px;
-                        height: 104px;
-    
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-                    }
-    
-                    .product-descr {
-                        font-family: Roboto;
-                        font-style: normal;
-                        font-weight: 100;
-                        font-size: 16px;
-                        color: $black-color;
-    
-                        .product-title-and-price {
-                            display: flex;
-                            gap: 104px;
-    
-                            .product-price {
-                                font-weight: 300;
-                            }
-                        }
-    
-                        .product-options {
-                            padding-top: 15px;
-                            display: flex;
-                            gap: 8px;
-    
-                            .product-color {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                gap: 6px;
-                                padding-left: 12px;
-                                border-left: 0.5px solid #E0E0E0;
-                            }
-                        }
-                    }
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
 
-            .order-summary {
-                padding-top: 9px;
-                font-family: 'Roboto';
+            .product-descr {
+                width: 75%;
+                font-family: Roboto;
                 font-style: normal;
                 font-weight: 100;
                 font-size: 16px;
                 color: $black-color;
 
-                .products-price-field,
-                .discount-field,
-                .delivery-field,
-                .payment-total-sum-field {
+                .product-title-and-price {
                     display: flex;
                     justify-content: space-between;
-                    padding-top: 20px;
+
+                    .product-price {
+                        font-weight: 300;
+                    }
                 }
 
-                .payment-total-sum-field {
-                    font-weight: 300;
-                }
-            }
+                .product-options {
+                    padding-top: 15px;
+                    display: flex;
+                    gap: 8px;
 
-            .btn-main {
-                margin-top: 29px;
-                justify-content: center;
+                    .product-color {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 6px;
+                        padding-left: 12px;
+                        border-left: 0.5px solid #E0E0E0;
+                    }
+                }
             }
         }
+    }
+    .btn-main {
+        margin-top: 29px;
+        justify-content: center;
+    }
+}
+
+.order-summary {
+    padding-top: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    color: $black-color;
+
+    .products-price-field,
+    .discount-field,
+    .delivery-field,
+    .payment-total-sum-field {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .payment-total-sum-field {
+        font-weight: 300;
     }
 }
