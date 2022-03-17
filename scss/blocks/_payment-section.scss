@@ -72,6 +72,20 @@
                     margin-top: 16px;
                 }
 
+                .valid-until-year {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        background-color: #E0E0E0;
+                        top: 50%;
+                        right: 15%;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 21px;
+                        position: absolute;
+                    }
+                }
+
                 &.first-name,
                 .last-name,
                 .valid-until-month,
