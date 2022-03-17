@@ -1,8 +1,8 @@
-.log-in-section {
+.sign-up-section {
     padding-top: 50px;
     padding-bottom: 200px;
 
-    .log-in-wrapper {
+    .sign-up-wrapper {
         width: 25%;
         margin: 0 auto;
         display: flex;
@@ -30,8 +30,8 @@
         justify-content: flex-end;
     }
 
-    .sign-up {
-        margin-top: 19px;
+    .sign-in {
+        margin-top: 24px;
         display: flex;
         justify-content: center;
 
@@ -42,9 +42,7 @@
             font-size: 12px;        
             color: $black-color;
         }
-    }
 
-    .forgot-password, .sign-up {
         a {
             font-family: 'Roboto';
             font-style: normal;
@@ -55,8 +53,43 @@
     }
 
     .form-floating {
-        &.password {
+        &.last-name,
+        &.email,
+        &.phone,
+        &.password,
+        &.password-repeat,
+        &.subscribe-for-newsletter {
             margin-top: 24px;
+        }
+
+        &.phone {
+            display: flex;
+            align-items: center;
+            border: 1px solid #828282;
+
+            select {
+                padding-left: 8px;
+                border: none;
+                border-right: 0.5px solid #E0E0E0;
+                width: 20%;
+                height: auto;
+
+                &:focus {
+                    border: none;
+                    border-right: 0.5px solid #E0E0E0;
+                }
+            }
+
+            input {
+                width: 80%;
+                min-width: auto;
+                border: none;
+
+                &:focus {
+                    border: none;
+                }
+            }
+
         }
 
         input {
@@ -66,7 +99,7 @@
             padding: 0px;
             padding-left: 12px;
             height: 36px;
-            font-family: Roboto;
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 300;
             font-size: 12px;
@@ -84,6 +117,24 @@
             &::placeholder {
                 font-weight: 100;
                 color: #828282;
+            }
+        }
+
+        select {
+            position: relative;
+            border-radius: 0;
+            padding: 0px;
+            padding-left: 12px;
+            height: 36px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            color: $black-color;
+
+            &:focus {
+                border: 1px solid $brown-color;
+                box-shadow: none;
             }
         }
 
@@ -112,6 +163,22 @@
             }
         }
     }
+
+    .subscribe-for-newsletter {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 12px;
+        color: #828282;
+
+        .checkboxes {
+            padding: 0;
+            gap: 6px;
+        }
+    }
     
     .btn-main {
         margin-top: 22px;
@@ -119,9 +186,4 @@
         width: 100%;
         justify-content: center;
     }
-}
-
-.form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
-    padding-top: 0;
-    padding-bottom: 0;
 }

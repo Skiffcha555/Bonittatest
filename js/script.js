@@ -84,3 +84,30 @@ paymentMethod.forEach($paymentMethod => {
         $paymentMethod.classList.add('payment-method_selected');
     });
 });
+
+function CreditCard(elem){
+    var m = elem.value.length+1;
+    
+    if (m > 19 || event.keyCode < 48 || event.keyCode > 57)
+    event.returnValue= false;
+    
+    else if (m == 5 || m == 10 || m == 15)
+    elem.value += ' ';
+}
+
+function Phone(elem){
+    var m = elem.value.length+1;
+    
+    if (m > 11 || event.keyCode < 48 || event.keyCode > 57)
+    event.returnValue= false;
+    
+    else if (m == 3 || m == 6 || m == 9)
+    elem.value += ' ';
+}
+
+function YearNum(elem){
+    var m = elem.value.length+1;
+    
+    if (m > 19 || event.keyCode < 48 || event.keyCode > 57)
+    event.returnValue= false;
+}

@@ -86,6 +86,16 @@ h1, h2, h3, h4 {
   color: #828282;
 }
 
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #957D6D;
+  color: #fff;
+  font-weight: 600;
+}
+
+.datepicker {
+  font-family: "Roboto";
+}
+
 .btn-main {
   display: flex;
   align-items: center;
@@ -176,6 +186,11 @@ input[type=number] {
 
 .validity-error {
   border-color: #EB5757;
+}
+
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .accordion {
@@ -2789,31 +2804,25 @@ header.white .container nav .header_right .icon_heart {
 }
 .information-section .contact-information-and-list .contact-information .form-floating.phone {
   display: flex;
+  align-items: center;
   border: 1px solid #ced4da;
 }
 .information-section .contact-information-and-list .contact-information .form-floating.phone select {
   padding-left: 8px;
   width: 10%;
+  height: auto;
   border: none;
+  border-right: 0.5px solid #E0E0E0;
 }
 .information-section .contact-information-and-list .contact-information .form-floating.phone select:focus {
   border: none;
+  border-right: 0.5px solid #E0E0E0;
 }
 .information-section .contact-information-and-list .contact-information .form-floating.phone input {
   border: none;
 }
 .information-section .contact-information-and-list .contact-information .form-floating.phone input:focus {
   border: none;
-}
-.information-section .contact-information-and-list .contact-information .form-floating.phone::after {
-  content: "";
-  background-color: #E0E0E0;
-  top: 50%;
-  left: 8%;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 21px;
-  position: absolute;
 }
 .information-section .contact-information-and-list .contact-information .form-floating input {
   border-radius: 0;
@@ -3174,7 +3183,7 @@ header.white .container nav .header_right .icon_heart {
 .payment-section .card-info-and-order-summary .card-information .form-floating .valid-until-year {
   width: 50%;
 }
-.payment-section .card-info-and-order-summary .card-information .form-floating.card-number, .payment-section .card-info-and-order-summary .card-information .form-floating.apartment-suit, .payment-section .card-info-and-order-summary .card-information .form-floating.country, .payment-section .card-info-and-order-summary .card-information .form-floating.phone {
+.payment-section .card-info-and-order-summary .card-information .form-floating.card-number {
   margin-top: 16px;
 }
 .payment-section .card-info-and-order-summary .card-information .form-floating input {
@@ -3338,6 +3347,431 @@ header.white .container nav .header_right .icon_heart {
 
 .log-in-section {
   padding-top: 50px;
+  padding-bottom: 200px;
+}
+.log-in-section .log-in-wrapper {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.log-in-section .log-in-wrapper .mustValidate {
+  width: 100%;
+}
+.log-in-section h2 {
+  padding-bottom: 55px;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+.log-in-section .forgot-password {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.log-in-section .sign-up {
+  margin-top: 19px;
+  display: flex;
+  justify-content: center;
+}
+.log-in-section .sign-up span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.log-in-section .forgot-password a, .log-in-section .sign-up a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.log-in-section .form-floating.password {
+  margin-top: 24px;
+}
+.log-in-section .form-floating input {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1px solid #828282;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.log-in-section .form-floating input:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.log-in-section .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.log-in-section .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.log-in-section .form-floating label {
+  opacity: 0;
+  height: auto;
+  padding: 0 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  color: #957D6D;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.log-in-section .form-floating > .form-control:focus ~ label,
+.log-in-section .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.log-in-section .form-floating > .form-select ~ label {
+  opacity: 1;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.log-in-section .btn-main {
+  margin-top: 22px;
+  padding: 14px 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sign-up-section {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+.sign-up-section .sign-up-wrapper {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sign-up-section .sign-up-wrapper .mustValidate {
+  width: 100%;
+}
+.sign-up-section h2 {
+  padding-bottom: 55px;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+.sign-up-section .forgot-password {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.sign-up-section .sign-in {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+.sign-up-section .sign-in span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.sign-up-section .sign-in a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.sign-up-section .form-floating.last-name, .sign-up-section .form-floating.email, .sign-up-section .form-floating.phone, .sign-up-section .form-floating.password, .sign-up-section .form-floating.password-repeat, .sign-up-section .form-floating.subscribe-for-newsletter {
+  margin-top: 24px;
+}
+.sign-up-section .form-floating.phone {
+  display: flex;
+  align-items: center;
+  border: 1px solid #828282;
+}
+.sign-up-section .form-floating.phone select {
+  padding-left: 8px;
+  border: none;
+  border-right: 0.5px solid #E0E0E0;
+  width: 20%;
+  height: auto;
+}
+.sign-up-section .form-floating.phone select:focus {
+  border: none;
+  border-right: 0.5px solid #E0E0E0;
+}
+.sign-up-section .form-floating.phone input {
+  width: 80%;
+  min-width: auto;
+  border: none;
+}
+.sign-up-section .form-floating.phone input:focus {
+  border: none;
+}
+.sign-up-section .form-floating input {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1px solid #828282;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.sign-up-section .form-floating input:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.sign-up-section .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.sign-up-section .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.sign-up-section .form-floating select {
+  position: relative;
+  border-radius: 0;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.sign-up-section .form-floating select:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.sign-up-section .form-floating label {
+  opacity: 0;
+  height: auto;
+  padding: 0 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  color: #957D6D;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.sign-up-section .form-floating > .form-control:focus ~ label,
+.sign-up-section .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.sign-up-section .form-floating > .form-select ~ label {
+  opacity: 1;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.sign-up-section .subscribe-for-newsletter {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  color: #828282;
+}
+.sign-up-section .subscribe-for-newsletter .checkboxes {
+  padding: 0;
+  gap: 6px;
+}
+.sign-up-section .btn-main {
+  margin-top: 22px;
+  padding: 14px 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.confirmation-of-registration-section {
+  padding-top: 70px;
+  padding-bottom: 210px;
+}
+.confirmation-of-registration-section .confirmation-of-registration-wrapper {
+  width: 45%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.confirmation-of-registration-section .confirmation-of-registration-wrapper .mustValidate {
+  width: 180px;
+  margin: 0 auto;
+}
+.confirmation-of-registration-section h2 {
+  padding-bottom: 30px;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+.confirmation-of-registration-section .confirm {
+  padding-bottom: 37px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+.confirmation-of-registration-section .confirm span {
+  font-weight: 300;
+}
+.confirmation-of-registration-section .resend-code {
+  margin-top: 21px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration-line: underline;
+  text-align: center;
+  color: #333;
+}
+.confirmation-of-registration-section .resend-code span:hover {
+  cursor: pointer;
+}
+.confirmation-of-registration-section .form-floating input {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1px solid #828282;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.confirmation-of-registration-section .form-floating input:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.confirmation-of-registration-section .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.confirmation-of-registration-section .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.confirmation-of-registration-section .btn-main {
+  margin-top: 26px;
+  padding: 14px 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.forgot-password-section {
+  padding-top: 70px;
+  padding-bottom: 210px;
+}
+.forgot-password-section .forgot-password-wrapper {
+  width: 45%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.forgot-password-section .forgot-password-wrapper .mustValidate {
+  width: 434px;
+  margin: 0 auto;
+}
+.forgot-password-section h2 {
+  padding-bottom: 30px;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+.forgot-password-section .recover-text {
+  padding-bottom: 37px;
+}
+.forgot-password-section .hide {
+  display: none;
+}
+.forgot-password-section .recover-text, .forgot-password-section .letter-sented {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+.forgot-password-section .recover-text span, .forgot-password-section .letter-sented span {
+  font-weight: 300;
+}
+.forgot-password-section .resend-code {
+  margin-top: 21px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration-line: underline;
+  text-align: center;
+  color: #333;
+}
+.forgot-password-section .resend-code span:hover {
+  cursor: pointer;
+}
+.forgot-password-section .form-floating input {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1px solid #828282;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.forgot-password-section .form-floating input:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.forgot-password-section .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.forgot-password-section .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.forgot-password-section .btn-main {
+  margin: 0 auto;
+  margin-top: 26px;
+  padding: 14px 0;
+  width: 180px;
+  justify-content: center;
 }
 
 footer {

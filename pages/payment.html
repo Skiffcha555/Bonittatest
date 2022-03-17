@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/datepicker.min.css">
     <link rel="stylesheet" href="/css/style.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet"> -->
 
 </head>
 
@@ -311,7 +309,7 @@
         <section class="payment-section">
             <div class="container">
 
-                <div class="bread-crumbs fourth">
+                <div class="bread-crumbs third">
                     <a href="shopping-cart-page.html">Shopping Cart ></a>
                     <a href="information.html">Information ></a>
                     <a href="payment.html">Payment ></a>
@@ -401,7 +399,7 @@
                                     <label for="floatingInput">Valid until</label>
                                 </div>
                                 <div class="form-floating valid-until-year">
-                                    <input type='text' data-date="Years" class='form-control datepicker-year'  />
+                                    <input type='text' data-date="Years" class='form-control datepicker-year'  onKeyPress="YearNum(this)" maxlength="4"/>
 
                                     <div class="form-error">
                                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -570,73 +568,10 @@
     <script src="/js/shopping-cart-menu.js"></script>
     <script src="/js/search-bar.js"></script>
     <script src="/js/accordion.js"></script>
-    <script src="/js/dropdown.js"></script>
     <script src="/js/scroll.js"></script>
     <script src="/js/validity.js"></script>
-    <script src="/js/checkbox.js"></script>
+    <script src="/js/datepicker.js"></script>
     <script src="/js/script.js"></script>
-
-    <!-- <style>
-        .datepicker table tr td span.active.active {
-            background-color: #957D6D !important;
-            background-image: linear-gradient(top,#957D6D,#957D6D);
-            background-image: -webkit-gradient(linear,0 0,0 100%,from(#957D6D),to(#957D6D));
-        }
-    </style>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $("#datepicker").datepicker({
-            format: "yyyy",
-            viewMode: "years", 
-            minViewMode: "years",
-            autoclose:true
-        });   
-        })
-    </script> -->
-
-    <style>
-        .datepicker-cell.selected, .datepicker-cell.selected:hover {
-            background-color: #957D6D;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        .datepicker {
-            font-family: 'Roboto';
-        }
-    </style>
-    
-    <script>
-        window.addEventListener('load', () => {
-            const elem = document.querySelector('.datepicker-here');
-            const elemYear = document.querySelector('.datepicker-year');
-
-            const datepicker = new Datepicker(elem, {
-                format: 'dd MM',
-                weekStart: 1
-            }); 
-
-            const datepickerYear = new Datepicker(elemYear, {
-                format: 'yyyy',
-                startView: 2,
-                pickLevel: 2
-            }); 
-        })
-
-        function CreditCard(elem){
-            var m = elem.value.length+1;
-            
-            if (m > 19 || event.keyCode < 48 || event.keyCode > 57)
-            event.returnValue= false;
-            
-            else if (m == 5 || m == 10 || m == 15)
-            elem.value += ' ';
-        }
-    </script>
 
 </body>
 

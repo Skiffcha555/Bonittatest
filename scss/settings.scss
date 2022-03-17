@@ -111,3 +111,13 @@ h1, h2, h3, h4 {
         color: #828282;
     }
 }
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+    background-color: #957D6D;
+    color: #fff;
+    font-weight: 600;
+}
+
+.datepicker {
+    font-family: 'Roboto';
+}
