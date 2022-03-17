@@ -3005,59 +3005,65 @@ header.white .container nav .header_right .icon_heart {
 .information-section .contact-information-and-list .contact-information .payment-methods .payment-method .prepayment-sum-text {
   font-weight: 300;
 }
-.information-section .contact-information-and-list .ordered-items h2 {
+.information-section .contact-information-and-list .ordered-items {
+  width: 40%;
+}
+
+.ordered-items h2 {
   font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   color: #333;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart {
+.ordered-items .products-in-cart {
   padding-bottom: 34px;
   border-bottom: 0.5px solid #BDBDBD;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product {
+.ordered-items .products-in-cart .product {
   width: 100%;
   padding-top: 18px;
   display: flex;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product:first-child {
+.ordered-items .products-in-cart .product:first-child {
   border: none;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product-name {
+.ordered-items .products-in-cart .product-name {
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
   width: 100%;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product-name .product-img {
-  width: 79px;
+.ordered-items .products-in-cart .product-name .product-img {
+  width: 25%;
+  max-width: 79px;
   height: 104px;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product-name .product-img img {
+.ordered-items .products-in-cart .product-name .product-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product-name .product-descr {
+.ordered-items .products-in-cart .product-name .product-descr {
+  width: 75%;
   font-family: Roboto;
   font-style: normal;
   font-weight: 100;
   font-size: 16px;
   color: #333;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product-name .product-descr .product-title-and-price {
+.ordered-items .products-in-cart .product-name .product-descr .product-title-and-price {
   display: flex;
-  gap: 104px;
+  justify-content: space-between;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product-name .product-descr .product-title-and-price .product-price {
+.ordered-items .products-in-cart .product-name .product-descr .product-title-and-price .product-price {
   font-weight: 300;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product-name .product-descr .product-options {
+.ordered-items .products-in-cart .product-name .product-descr .product-options {
   padding-top: 15px;
   display: flex;
   gap: 8px;
 }
-.information-section .contact-information-and-list .ordered-items .products-in-cart .product-name .product-descr .product-options .product-color {
+.ordered-items .products-in-cart .product-name .product-descr .product-options .product-color {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3065,7 +3071,12 @@ header.white .container nav .header_right .icon_heart {
   padding-left: 12px;
   border-left: 0.5px solid #E0E0E0;
 }
-.information-section .contact-information-and-list .ordered-items .order-summary {
+.ordered-items .btn-main {
+  margin-top: 29px;
+  justify-content: center;
+}
+
+.order-summary {
   padding-top: 9px;
   font-family: "Roboto";
   font-style: normal;
@@ -3073,20 +3084,16 @@ header.white .container nav .header_right .icon_heart {
   font-size: 16px;
   color: #333;
 }
-.information-section .contact-information-and-list .ordered-items .order-summary .products-price-field,
-.information-section .contact-information-and-list .ordered-items .order-summary .discount-field,
-.information-section .contact-information-and-list .ordered-items .order-summary .delivery-field,
-.information-section .contact-information-and-list .ordered-items .order-summary .payment-total-sum-field {
+.order-summary .products-price-field,
+.order-summary .discount-field,
+.order-summary .delivery-field,
+.order-summary .payment-total-sum-field {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
 }
-.information-section .contact-information-and-list .ordered-items .order-summary .payment-total-sum-field {
+.order-summary .payment-total-sum-field {
   font-weight: 300;
-}
-.information-section .contact-information-and-list .ordered-items .btn-main {
-  margin-top: 29px;
-  justify-content: center;
 }
 
 .payment-section {
@@ -3106,18 +3113,14 @@ header.white .container nav .header_right .icon_heart {
   color: #333;
 }
 .payment-section .card-info-and-order-summary .card-information-title {
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 100;
-  font-size: 14px;
-  color: #333;
-}
-.payment-section .card-info-and-order-summary .card-information-title h2 {
   font-size: 18px;
-  font-weight: 300;
+  color: #333;
 }
 .payment-section .card-info-and-order-summary .return-to-cart {
   margin-top: 34px;
@@ -3246,6 +3249,95 @@ header.white .container nav .header_right .icon_heart {
 }
 .payment-section .card-info-and-order-summary .card-information .remember-card-next-time .checkboxes {
   padding: 0;
+}
+.payment-section .order-summary {
+  width: 50%;
+  padding-top: 0;
+}
+.payment-section .order-summary .products-price-field,
+.payment-section .order-summary .discount-field,
+.payment-section .order-summary .delivery-field,
+.payment-section .order-summary .payment-total-sum-field {
+  width: 65%;
+}
+.payment-section .order-summary .order-summary-title {
+  display: flex;
+}
+.payment-section .order-summary .btn-main {
+  margin-top: 25px;
+  width: 65%;
+  justify-content: center;
+}
+
+.order-completed-section {
+  padding-top: 66px;
+  padding-bottom: 76px;
+}
+.order-completed-section .order-completed-wrapper {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.order-completed-section .order-completed-wrapper .order-number {
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #333;
+}
+.order-completed-section h2 {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+.order-completed-section .accordion-content {
+  padding: 0;
+}
+.order-completed-section .accordion {
+  border-top: 0.5px solid #BDBDBD;
+  padding-top: 11px;
+}
+.order-completed-section .accordion:after {
+  content: "";
+  background: url(/icons/plus.svg) 50% 50% no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 8px;
+  font-weight: bold;
+  float: right;
+  margin-right: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+.order-completed-section .accordion.active {
+  border-bottom: none;
+}
+.order-completed-section .accordion.active::after {
+  content: "";
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(0);
+  background: url(/icons/minus.svg) 50% 50% no-repeat;
+}
+.order-completed-section .order-summary {
+  padding-bottom: 23px;
+}
+.order-completed-section .order-summary .btn-main {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 22px;
+  justify-content: center;
+}
+
+.log-in-section {
+  padding-top: 50px;
 }
 
 footer {
