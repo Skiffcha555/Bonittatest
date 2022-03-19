@@ -3774,6 +3774,217 @@ header.white .container nav .header_right .icon_heart {
   justify-content: center;
 }
 
+.delivery-section {
+  padding-bottom: 80px;
+}
+.delivery-section .bread-crumbs {
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-left: 24px;
+  justify-content: flex-start;
+}
+.delivery-section .bread-crumbs a:nth-child(2) {
+  font-weight: 300;
+}
+.delivery-section .bread-crumbs a:last-child {
+  font-weight: 300;
+}
+.delivery-section h2 {
+  padding-bottom: 40px;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+.delivery-section .delivery-methods {
+  display: flex;
+  gap: 45px;
+}
+.delivery-section .delivery-methods .delivery-method {
+  padding: 40px 25px 60px 25px;
+  min-width: 290px;
+  max-width: 290px;
+  border: 1px solid #E0E0E0;
+}
+.delivery-section .delivery-methods .delivery-method .delivery-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delivery-section .delivery-methods .delivery-method h3 {
+  padding-top: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+.delivery-section .delivery-methods .delivery-method .delivery-descr {
+  padding-top: 21px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  color: #333;
+}
+.delivery-section .delivery-methods .delivery-method .delivery-descr .delivery-to-where {
+  font-weight: 300;
+}
+
+.about-us-section .bread-crumbs {
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-left: 24px;
+  justify-content: flex-start;
+}
+.about-us-section .bread-crumbs a:nth-child(2) {
+  font-weight: 300;
+}
+.about-us-section .bread-crumbs a:last-child {
+  font-weight: 300;
+}
+.about-us-section h2 {
+  padding-bottom: 50px;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+.about-us-section .about-us-descr {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  color: #333;
+}
+
+.follow-inst-padding {
+  padding: 0;
+  padding-top: 65px;
+  padding-bottom: 56px;
+}
+
+.terms-of-service-section {
+  padding-bottom: 60px;
+}
+.terms-of-service-section .bread-crumbs {
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-left: 24px;
+  justify-content: flex-start;
+}
+.terms-of-service-section .bread-crumbs a:nth-child(2) {
+  font-weight: 300;
+}
+.terms-of-service-section .bread-crumbs a:last-child {
+  font-weight: 300;
+}
+.terms-of-service-section h2 {
+  padding-bottom: 50px;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+.terms-of-service-section .terms-of-service-descr {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  color: #333;
+}
+.terms-of-service-section .terms-of-service-descr ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.terms-of-service-section .terms-of-service-descr li {
+  padding-top: 20px;
+}
+
+.faq-section {
+  padding-bottom: 100px;
+}
+.faq-section .bread-crumbs {
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-left: 24px;
+  justify-content: flex-start;
+}
+.faq-section .bread-crumbs a:nth-child(2) {
+  font-weight: 300;
+}
+.faq-section .bread-crumbs a:last-child {
+  font-weight: 300;
+}
+.faq-section h2 {
+  padding-bottom: 50px;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+.faq-section .faq-descr {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  color: #333;
+}
+.faq-section .faq-descr .accordion-content {
+  padding: 0;
+}
+.faq-section .faq-descr .accordion-box {
+  border: 1px solid #E0E0E0;
+  margin-top: 27px;
+  padding: 15px 24px 0 24px;
+}
+.faq-section .faq-descr .accordion-box.brown-border-and-padding {
+  padding-bottom: 28px;
+  border: 1px solid #957D6D;
+}
+.faq-section .faq-descr .accordion-box:first-child {
+  margin-top: 0;
+}
+.faq-section .faq-descr .accordion {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  border: none;
+}
+.faq-section .faq-descr .accordion:after {
+  content: "";
+  background: url(/icons/plus.svg) 50% 50% no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 8px;
+  font-weight: bold;
+  float: right;
+  margin-right: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+.faq-section .faq-descr .accordion.active {
+  margin-bottom: 15px;
+  padding-bottom: 11px;
+  border-bottom: 0.5px solid #BDBDBD;
+}
+.faq-section .faq-descr .accordion.active::after {
+  content: "";
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(0);
+  background: url(/icons/minus.svg) 50% 50% no-repeat;
+}
+
 footer {
   padding-top: 76px;
   border-top: 1px solid rgba(149, 125, 109, 0.3);
