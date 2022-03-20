@@ -2783,7 +2783,7 @@ header.white .container nav .header_right .icon_heart {
 .information-section .contact-information-and-list .contact-information .form-floating.first-name,
 .information-section .contact-information-and-list .contact-information .form-floating .last-name,
 .information-section .contact-information-and-list .contact-information .form-floating .post,
-.information-section .contact-information-and-list .contact-information .form-floating .city {
+.information-section .contact-information-and-list .contact-information .form-floating .city-village {
   width: 50%;
 }
 .information-section .contact-information-and-list .contact-information .form-floating.address, .information-section .contact-information-and-list .contact-information .form-floating.apartment-suit, .information-section .contact-information-and-list .contact-information .form-floating.country, .information-section .contact-information-and-list .contact-information .form-floating.phone {
@@ -3985,28 +3985,29 @@ header.white .container nav .header_right .icon_heart {
   background: url(/icons/minus.svg) 50% 50% no-repeat;
 }
 
-.my-account-section {
+.my-orders-section {
   padding-top: 71px;
+  padding-bottom: 100px;
 }
-.my-account-section .container {
+.my-orders-section .container {
   display: flex;
   justify-content: space-between;
 }
-.my-account-section .my-account-pages {
+.my-orders-section .my-order-pages {
   display: flex;
   flex-direction: column;
   width: 217px;
 }
-.my-account-section .my-account-pages .my-order-page,
-.my-account-section .my-account-pages .delivery-address-page,
-.my-account-section .my-account-pages .personal-data-page {
+.my-orders-section .my-order-pages .my-order-page,
+.my-orders-section .my-order-pages .delivery-address-page,
+.my-orders-section .my-order-pages .personal-data-page {
   padding-top: 16px;
   padding-bottom: 10px;
   border-bottom: 1px solid #E0E0E0;
 }
-.my-account-section .my-account-pages .my-order-page a,
-.my-account-section .my-account-pages .delivery-address-page a,
-.my-account-section .my-account-pages .personal-data-page a {
+.my-orders-section .my-order-pages .my-order-page a,
+.my-orders-section .my-order-pages .delivery-address-page a,
+.my-orders-section .my-order-pages .personal-data-page a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
@@ -4014,18 +4015,18 @@ header.white .container nav .header_right .icon_heart {
   color: #333;
   text-decoration: none;
 }
-.my-account-section .my-account-pages .my-order-page a:hover,
-.my-account-section .my-account-pages .delivery-address-page a:hover,
-.my-account-section .my-account-pages .personal-data-page a:hover {
+.my-orders-section .my-order-pages .my-order-page a:hover,
+.my-orders-section .my-order-pages .delivery-address-page a:hover,
+.my-orders-section .my-order-pages .personal-data-page a:hover {
   text-decoration: underline;
 }
-.my-account-section .my-account-pages .my-order-page {
+.my-orders-section .my-order-pages .my-order-page {
   padding-top: 0px;
 }
-.my-account-section .my-account-pages .my-order-page a {
+.my-orders-section .my-order-pages .my-order-page a {
   font-weight: 300;
 }
-.my-account-section .my-account-pages .log-off {
+.my-orders-section .my-order-pages .log-off {
   margin-top: 45px;
   font-family: "Roboto";
   font-style: normal;
@@ -4034,11 +4035,126 @@ header.white .container nav .header_right .icon_heart {
   color: #333;
   text-decoration: none;
 }
-.my-account-section .my-account-pages .log-off:hover {
+.my-orders-section .my-order-pages .log-off:hover {
   text-decoration: underline;
 }
-.my-account-section .my-account-orders {
+.my-orders-section .my-orders {
   width: 70%;
+}
+.my-orders-section .my-orders .my-order {
+  padding-top: 28px;
+  padding-bottom: 26px;
+  border-top: 0.5px solid #BDBDBD;
+}
+.my-orders-section .my-orders .my-order:first-child {
+  border: none;
+}
+.my-orders-section .my-orders .my-order:first-child {
+  padding-top: 0;
+}
+.my-orders-section .my-orders .my-order .my-order-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #333;
+}
+.my-orders-section .my-orders .my-order .my-order-title .my-order-num-and-datetime {
+  display: flex;
+  gap: 30px;
+}
+.my-orders-section .my-orders .my-order .my-order-title .my-order-num-and-datetime .my-order-datetime {
+  display: flex;
+}
+.my-orders-section .my-orders .my-order .my-order-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product {
+  width: 100%;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name {
+  display: flex;
+  gap: 17px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-img {
+  width: 25%;
+  max-width: 79px;
+  height: 104px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr {
+  width: calc(100% - 96px);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  color: #333;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation {
+  display: flex;
+  justify-content: space-between;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation .product-evaluation .feedback:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation .product-evaluation .stars {
+  margin-left: 0;
+  justify-content: flex-end;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation .product-evaluation .hide {
+  display: none;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options {
+  padding-top: 13px;
+  display: flex;
+  align-items: center;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .vl {
+  width: 0.5px;
+  height: 18px;
+  background-color: #E0E0E0;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-size {
+  padding-right: 8px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-color {
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-price {
+  padding: 0 8px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-quantity {
+  padding-left: 8px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-code {
+  padding-top: 13px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .full-address-and-phone {
+  padding-top: 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  color: #333;
+}
+.my-orders-section .my-orders .my-order .my-order-body .full-address-and-phone .full-phone {
+  padding-top: 13px;
 }
 
 footer {

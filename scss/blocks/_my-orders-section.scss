@@ -1,0 +1,205 @@
+.my-orders-section {
+    padding-top: 71px;
+    padding-bottom: 100px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .my-order-pages {
+        display: flex;
+        flex-direction: column;
+        width: 217px;
+
+        .my-order-page,
+        .delivery-address-page,
+        .personal-data-page {
+            padding-top: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #E0E0E0;
+
+            a {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 100;
+                font-size: 16px;
+                color: $black-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .my-order-page {
+            padding-top: 0px;
+            a {
+                font-weight: 300;
+            }
+        }
+
+        .log-off {
+            margin-top: 45px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 16px;
+            color: $black-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .my-orders {
+        width: 70%;
+
+        .my-order {
+            padding-top: 28px;
+            padding-bottom: 26px;
+            border-top: 0.5px solid #BDBDBD;
+        
+            &:first-child {
+                border: none;
+            }
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            .my-order-title {
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                color: $black-color;
+    
+                .my-order-num-and-datetime {
+                    display: flex;
+                    gap: 30px;
+    
+                    .my-order-datetime {
+                        display: flex;
+                    }
+                }
+            }
+    
+            .my-order-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                .product {
+                    width: 100%;
+                    padding-top: 28px;
+                    display: flex;
+                    flex-direction: column;
+    
+                    .product-name {
+                        display: flex;
+                        gap: 17px;
+            
+                        .product-img {
+                            width: 25%;
+                            max-width: 79px;
+                            height: 104px;
+            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+            
+                        .product-descr {
+                            width: calc(100% - 96px);
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 100;
+                            font-size: 16px;
+                            color: $black-color;
+    
+                            .product-title-and-evaluation {
+                                display: flex;
+                                justify-content: space-between;
+    
+                                .product-evaluation {
+                                    .feedback {
+                                        &:hover {
+                                            text-decoration: underline;
+                                            cursor: pointer;
+                                        }
+                                    }
+    
+                                    .stars {
+                                        margin-left: 0;
+                                        justify-content: flex-end;
+                                    }
+    
+                                    .hide {
+                                        display: none;
+                                    }
+                                }
+                            }
+            
+                            .product-options {
+                                padding-top: 13px;
+                                display: flex;
+                                align-items: center;
+    
+                                .vl {
+                                    width: 0.5px;
+                                    height: 18px;
+                                    background-color: #E0E0E0;
+                                }
+    
+                                .product-size {
+                                    padding-right: 8px;
+                                }
+            
+                                .product-color {
+                                    padding: 0 12px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 6px;
+                                }
+    
+                                .product-price {
+                                    padding: 0 8px;
+                                }
+    
+                                .product-quantity {
+                                    padding-left: 8px;
+                                }
+                            }
+    
+                            .product-code {
+                                padding-top: 13px;
+                            }
+                        }
+                    }
+                }
+
+                .full-address-and-phone {
+                    padding-top: 28px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 100;
+                    font-size: 14px;
+                    color: $black-color;
+
+                    .full-phone {
+                        padding-top: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
