@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/css/bootstrap-rebote.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/datepicker.min.css">
+    <link rel="stylesheet" href="/css/style.min.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -304,440 +306,26 @@
     </div>
 
     <main class="main">
-        <section class="product-category bodysuit">
+        <section class="my-account-section">
             <div class="container">
-                <div class="bread-crumbs">
-                    <a href="index.html">Home ></a>
-                    <a href="#">Products ></a>
-                    <a href="#">Bodysuit</a>
+                <div class="my-account-pages">
+                    <div class="my-order-page"><a href="">My orders</a></div>
+                    <div class="delivery-address-page"><a href="">Delivery address</a></div>
+                    <div class="personal-data-page"><a href="">Personal data</a></div>
+                    <a class="log-off" href="">Log off</a>
                 </div>
-
-                <h2>Bodysuit</h2>
-
-                <div class="filters-and-quantity-prod">
-                    <div class="filters">
-                        <div class="dropdown sort-by">
-                            <span onclick="dropDownSortBy()" class="dropbtn">Sort by</span>
-                            <div id="DropdownSortBy" class="dropdown-content">
-                                <div class="filter-sort-by recomended filter-sort-by_active">
-                                    <input id="radioRecomended" name="radio" type="radio" checked>
-                                    <label for="radioRecomended" class="radio-label">Recomended</label>
-                                </div>
-                                <div class="filter-sort-by low-price">
-                                    <input id="radioLowPrice" name="radio" type="radio">
-                                    <label for="radioLowPrice" class="radio-label">The lowest price</label>
-                                </div>
-                                <div class="filter-sort-by high-price">
-                                    <input id="radioHighPrice" name="radio" type="radio">
-                                    <label for="radioHighPrice" class="radio-label">The highest price</label>
-                                </div>
-                                <div class="filter-sort-by novelties">
-                                    <input id="radioNovelties" name="radio" type="radio">
-                                    <label for="radioNovelties" class="radio-label">Novelties</label>
-                                </div>
+                <div class="my-account-orders">
+                    <div class="my-account-order">
+                        <div class="my-account-order-title">
+                            <div class="order-number-text">Order number: <span class="order-number-num">123</span></div>
+                            <div class="order-date-time">
+                                <div class="order-date">01.02.2021,</div>
+                                <div class="order-time">16:20</div>
                             </div>
+                            <div class="delivery-status">Transferred for delivery</div>
                         </div>
-                        <div class="dropdown sizes">
-                            <span onclick="dropDownSizes()" class="dropbtn">Sizes</span>
-                            <div id="DropdownSizes" class="dropdown-content">
-                                <label class="filter-sizes" onclick="filterSizesActiveCheckBox(this, event)" >
-                                    <input type="checkbox">
-                                    <span class="size-quantity">1</span>
-                                    <span class="size-name">XS</span>
-                                    <span class="checkmark"></span>                                    
-                                </label>
-                                <label class="filter-sizes" onclick="filterSizesActiveCheckBox(this, event)">
-                                    <input type="checkbox">
-                                    <span class="size-quantity">1</span>
-                                    <span class="size-name">S</span>
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="filter-sizes" onclick="filterSizesActiveCheckBox(this, event)">
-                                    <input type="checkbox">
-                                    <span class="size-quantity">1</span>
-                                    <span class="size-name">M</span>
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="filter-sizes" onclick="filterSizesActiveCheckBox(this, event)">
-                                    <input type="checkbox">
-                                    <span class="size-quantity">1</span>
-                                    <span class="size-name">L</span>
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="filter-sizes" onclick="filterSizesActiveCheckBox(this, event)">
-                                    <input type="checkbox">
-                                    <span class="size-quantity">1</span>
-                                    <span class="size-name">XL</span>
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="dropdown colors">
-                            <span onclick="dropDownColors()" class="dropbtn">Colors</span>
-                            <div id="DropdownColors" class="dropdown-content">
-                                <label class="filter-colors" onclick="filterColorsActiveCheckBox(this, event)" >
-                                    <span class="color-quantity">1</span>
-                                    <span class="color-name">White</span> 
-                                    <span class="color-type white-color"></span>                                    
-                                </label>
-                                <label class="filter-colors" onclick="filterColorsActiveCheckBox(this, event)">
-                                    <span class="color-quantity">1</span>
-                                    <span class="color-name">Black</span>
-                                    <span class="color-type black-color"></span>
-                                </label>
-                                <label class="filter-colors" onclick="filterColorsActiveCheckBox(this, event)">
-                                    <span class="color-quantity">1</span>
-                                    <span class="color-name">Red</span>
-                                    <span class="color-type red-color"></span>
-                                </label>
-                                <label class="filter-colors" onclick="filterColorsActiveCheckBox(this, event)">
-                                    <span class="color-quantity">1</span>
-                                    <span class="color-name">Pink</span>
-                                    <span class="color-type pink-color"></span>
-                                </label>
-                                <label class="filter-colors" onclick="filterColorsActiveCheckBox(this, event)">
-                                    <span class="color-quantity">1</span>
-                                    <span class="color-name">Violet</span>
-                                    <span class="color-type violet-color"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="quantity-prod">8 products</span>
-                </div>
-
-                <div class="selected-filters">
-                    <span class="selected-filters_title">Selected filters:</span>
-                    <div class="selected-filter">
-                        <span>S</span>
-                        <div class="close-icon_filter">
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.48462 0L10 0.5154L0.515381 9.99964L0 9.4846L9.48462 0Z" fill="#333333" />
-                                <path d="M0.515381 0L10 9.48423L9.48462 10L0 0.515765L0.515381 0Z" fill="#333333" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="selected-filter">
-                        <span>Black</span>
-                        <div class="close-icon_filter">
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.48462 0L10 0.5154L0.515381 9.99964L0 9.4846L9.48462 0Z" fill="#333333" />
-                                <path d="M0.515381 0L10 9.48423L9.48462 10L0 0.515765L0.515381 0Z" fill="#333333" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-catalog">
-                    <div class="product_card">
-                        <div class="product_img">
-                            <img src="/img/bodysuit-products/bodysuit1.jpg" alt="">
-
-                            <svg class="cart-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="33.0083" cy="33.0309" r="32.2017" fill="white"/>
-                                <path d="M33.0953 23.0059C34.0819 23.0059 35.0281 23.406 35.7257 24.1181C36.4233 24.8303 36.8152 25.7961 36.8152 26.8032V27.5627H29.3754V26.8032C29.3754 25.7961 29.7674 24.8303 30.465 24.1181C31.1626 23.406 32.1087 23.0059 33.0953 23.0059ZM38.3031 27.5627V26.8032C38.3031 25.3933 37.7545 24.0411 36.7778 23.044C35.8011 22.047 34.4765 21.4869 33.0953 21.4869C31.7141 21.4869 30.3895 22.047 29.4128 23.044C28.4362 24.0411 27.8875 25.3933 27.8875 26.8032V27.5627H22.6797V42.7522C22.6797 43.5579 22.9932 44.3306 23.5513 44.9003C24.1094 45.47 24.8663 45.7901 25.6556 45.7901H40.5351C41.3243 45.7901 42.0812 45.47 42.6393 44.9003C43.1974 44.3306 43.5109 43.5579 43.5109 42.7522V27.5627H38.3031ZM24.1676 29.0817H42.023V42.7522C42.023 43.155 41.8662 43.5414 41.5872 43.8262C41.3081 44.1111 40.9297 44.2711 40.5351 44.2711H25.6556C25.261 44.2711 24.8825 44.1111 24.6034 43.8262C24.3244 43.5414 24.1676 43.155 24.1676 42.7522V29.0817Z" fill="#333333"/>
-                            </svg>
-
-                            <div class="product-sizes">
-                                <div class="product-size">S</div>
-                                <div class="product-size">M</div>
-                                <div class="product-size">L</div>
-                            </div>
-                                
-                            <svg class="heart-icon_svg" width="22" height="19" viewBox="0 0 22 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="heart-icon_path"
-                                    d="M20.8683 2.90803L20.8685 2.90841C22.0421 5.20926 21.6054 7.85096 19.3273 10.8504L19.3264 10.8516C17.5246 13.2394 14.9267 15.6354 11.1279 18.4595L11.127 18.4602C11.0941 18.4847 11.0506 18.5 11.0033 18.5C10.956 18.5 10.9125 18.4847 10.8795 18.4602L10.8788 18.4596C7.07495 15.6303 4.48209 13.2137 2.67881 10.8498C0.39419 7.85057 -0.0423161 5.20907 1.13123 2.90841L1.13143 2.90803C1.93755 1.32431 4.33423 -0.056249 7.21592 0.734355C8.58647 1.11345 9.7778 1.92504 10.5982 3.03165L10.9998 3.57344L11.4015 3.03165C12.222 1.9249 13.4135 1.11326 14.7843 0.73422L14.7855 0.733872C17.6573 -0.0682189 20.0613 1.32261 20.8683 2.90803Z"
-                                    fill="#FCFCFC" stroke="#333333" />
-                            </svg>
-                            
-                        </div>
-                        <div class="product_descr">
-                            <div class="product_title"><a href="">Bodysuit Push UP</a></div>
-                            <div class="product_price">550 Lei</div>
-                            <div class="product_color">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="7.5" fill="#333333" stroke="#333333" />
-                                </svg>
-
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#B59D77" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <div class="product_img">
-                            <img src="/img/bodysuit-products/bodysuit2.jpg" alt="">
-
-                            <svg class="cart-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="33.0083" cy="33.0309" r="32.2017" fill="white"/>
-                                <path d="M33.0953 23.0059C34.0819 23.0059 35.0281 23.406 35.7257 24.1181C36.4233 24.8303 36.8152 25.7961 36.8152 26.8032V27.5627H29.3754V26.8032C29.3754 25.7961 29.7674 24.8303 30.465 24.1181C31.1626 23.406 32.1087 23.0059 33.0953 23.0059ZM38.3031 27.5627V26.8032C38.3031 25.3933 37.7545 24.0411 36.7778 23.044C35.8011 22.047 34.4765 21.4869 33.0953 21.4869C31.7141 21.4869 30.3895 22.047 29.4128 23.044C28.4362 24.0411 27.8875 25.3933 27.8875 26.8032V27.5627H22.6797V42.7522C22.6797 43.5579 22.9932 44.3306 23.5513 44.9003C24.1094 45.47 24.8663 45.7901 25.6556 45.7901H40.5351C41.3243 45.7901 42.0812 45.47 42.6393 44.9003C43.1974 44.3306 43.5109 43.5579 43.5109 42.7522V27.5627H38.3031ZM24.1676 29.0817H42.023V42.7522C42.023 43.155 41.8662 43.5414 41.5872 43.8262C41.3081 44.1111 40.9297 44.2711 40.5351 44.2711H25.6556C25.261 44.2711 24.8825 44.1111 24.6034 43.8262C24.3244 43.5414 24.1676 43.155 24.1676 42.7522V29.0817Z" fill="#333333"/>
-                            </svg>
-                            
-                            <div class="product-sizes">
-                                <div class="product-size">S</div>
-                                <div class="product-size">M</div>
-                                <div class="product-size">L</div>
-                            </div>
-
-                            <svg class="heart-icon_svg" width="22" height="19" viewBox="0 0 22 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="heart-icon_path"
-                                    d="M20.8683 2.90803L20.8685 2.90841C22.0421 5.20926 21.6054 7.85096 19.3273 10.8504L19.3264 10.8516C17.5246 13.2394 14.9267 15.6354 11.1279 18.4595L11.127 18.4602C11.0941 18.4847 11.0506 18.5 11.0033 18.5C10.956 18.5 10.9125 18.4847 10.8795 18.4602L10.8788 18.4596C7.07495 15.6303 4.48209 13.2137 2.67881 10.8498C0.39419 7.85057 -0.0423161 5.20907 1.13123 2.90841L1.13143 2.90803C1.93755 1.32431 4.33423 -0.056249 7.21592 0.734355C8.58647 1.11345 9.7778 1.92504 10.5982 3.03165L10.9998 3.57344L11.4015 3.03165C12.222 1.9249 13.4135 1.11326 14.7843 0.73422L14.7855 0.733872C17.6573 -0.0682189 20.0613 1.32261 20.8683 2.90803Z"
-                                    fill="#FCFCFC" stroke="#333333" />
-                            </svg>
-
-                        </div>
-                        <div class="product_descr">
-                            <div class="product_title"><a href="product-page.html">Bodysuit Push UP</a></div>
-                            <div class="product_price">550 Lei</div>
-                            <div class="product_color">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="7.5" fill="#333333" stroke="#333333" />
-                                </svg>
-
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#B59D77" />
-                                </svg>
-
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="7.5" fill="white" stroke="#BDBDBD" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <div class="product_img">
-                            <img src="/img/bodysuit-products/bodysuit3.jpg" alt="">
-
-                            <svg class="cart-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="33.0083" cy="33.0309" r="32.2017" fill="white"/>
-                                <path d="M33.0953 23.0059C34.0819 23.0059 35.0281 23.406 35.7257 24.1181C36.4233 24.8303 36.8152 25.7961 36.8152 26.8032V27.5627H29.3754V26.8032C29.3754 25.7961 29.7674 24.8303 30.465 24.1181C31.1626 23.406 32.1087 23.0059 33.0953 23.0059ZM38.3031 27.5627V26.8032C38.3031 25.3933 37.7545 24.0411 36.7778 23.044C35.8011 22.047 34.4765 21.4869 33.0953 21.4869C31.7141 21.4869 30.3895 22.047 29.4128 23.044C28.4362 24.0411 27.8875 25.3933 27.8875 26.8032V27.5627H22.6797V42.7522C22.6797 43.5579 22.9932 44.3306 23.5513 44.9003C24.1094 45.47 24.8663 45.7901 25.6556 45.7901H40.5351C41.3243 45.7901 42.0812 45.47 42.6393 44.9003C43.1974 44.3306 43.5109 43.5579 43.5109 42.7522V27.5627H38.3031ZM24.1676 29.0817H42.023V42.7522C42.023 43.155 41.8662 43.5414 41.5872 43.8262C41.3081 44.1111 40.9297 44.2711 40.5351 44.2711H25.6556C25.261 44.2711 24.8825 44.1111 24.6034 43.8262C24.3244 43.5414 24.1676 43.155 24.1676 42.7522V29.0817Z" fill="#333333"/>
-                            </svg>
-                            
-                            <div class="product-sizes">
-                                <div class="product-size">S</div>
-                                <div class="product-size">M</div>
-                                <div class="product-size">L</div>
-                            </div>
-
-                            <svg class="heart-icon_svg" width="22" height="19" viewBox="0 0 22 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="heart-icon_path"
-                                    d="M20.8683 2.90803L20.8685 2.90841C22.0421 5.20926 21.6054 7.85096 19.3273 10.8504L19.3264 10.8516C17.5246 13.2394 14.9267 15.6354 11.1279 18.4595L11.127 18.4602C11.0941 18.4847 11.0506 18.5 11.0033 18.5C10.956 18.5 10.9125 18.4847 10.8795 18.4602L10.8788 18.4596C7.07495 15.6303 4.48209 13.2137 2.67881 10.8498C0.39419 7.85057 -0.0423161 5.20907 1.13123 2.90841L1.13143 2.90803C1.93755 1.32431 4.33423 -0.056249 7.21592 0.734355C8.58647 1.11345 9.7778 1.92504 10.5982 3.03165L10.9998 3.57344L11.4015 3.03165C12.222 1.9249 13.4135 1.11326 14.7843 0.73422L14.7855 0.733872C17.6573 -0.0682189 20.0613 1.32261 20.8683 2.90803Z"
-                                    fill="#FCFCFC" stroke="#333333" />
-                            </svg>
-
-                        </div>
-                        <div class="product_descr">
-                            <div class="product_title"><a href="">Bodysuit Push UP</a></div>
-                            <div class="product_price">550 Lei</div>
-                            <div class="product_color">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="7.5" fill="#333333" stroke="#333333" />
-                                </svg>
-
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#EB5757" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <div class="product_img">
-                            <img src="/img/bodysuit-products/bodysuit4.jpg" alt="">
-
-                            <svg class="cart-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="33.0083" cy="33.0309" r="32.2017" fill="white"/>
-                                <path d="M33.0953 23.0059C34.0819 23.0059 35.0281 23.406 35.7257 24.1181C36.4233 24.8303 36.8152 25.7961 36.8152 26.8032V27.5627H29.3754V26.8032C29.3754 25.7961 29.7674 24.8303 30.465 24.1181C31.1626 23.406 32.1087 23.0059 33.0953 23.0059ZM38.3031 27.5627V26.8032C38.3031 25.3933 37.7545 24.0411 36.7778 23.044C35.8011 22.047 34.4765 21.4869 33.0953 21.4869C31.7141 21.4869 30.3895 22.047 29.4128 23.044C28.4362 24.0411 27.8875 25.3933 27.8875 26.8032V27.5627H22.6797V42.7522C22.6797 43.5579 22.9932 44.3306 23.5513 44.9003C24.1094 45.47 24.8663 45.7901 25.6556 45.7901H40.5351C41.3243 45.7901 42.0812 45.47 42.6393 44.9003C43.1974 44.3306 43.5109 43.5579 43.5109 42.7522V27.5627H38.3031ZM24.1676 29.0817H42.023V42.7522C42.023 43.155 41.8662 43.5414 41.5872 43.8262C41.3081 44.1111 40.9297 44.2711 40.5351 44.2711H25.6556C25.261 44.2711 24.8825 44.1111 24.6034 43.8262C24.3244 43.5414 24.1676 43.155 24.1676 42.7522V29.0817Z" fill="#333333"/>
-                            </svg>
-                            
-                            <div class="product-sizes">
-                                <div class="product-size">S</div>
-                                <div class="product-size">M</div>
-                                <div class="product-size">L</div>
-                            </div>
-
-                            <svg class="heart-icon_svg" width="22" height="19" viewBox="0 0 22 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="heart-icon_path"
-                                    d="M20.8683 2.90803L20.8685 2.90841C22.0421 5.20926 21.6054 7.85096 19.3273 10.8504L19.3264 10.8516C17.5246 13.2394 14.9267 15.6354 11.1279 18.4595L11.127 18.4602C11.0941 18.4847 11.0506 18.5 11.0033 18.5C10.956 18.5 10.9125 18.4847 10.8795 18.4602L10.8788 18.4596C7.07495 15.6303 4.48209 13.2137 2.67881 10.8498C0.39419 7.85057 -0.0423161 5.20907 1.13123 2.90841L1.13143 2.90803C1.93755 1.32431 4.33423 -0.056249 7.21592 0.734355C8.58647 1.11345 9.7778 1.92504 10.5982 3.03165L10.9998 3.57344L11.4015 3.03165C12.222 1.9249 13.4135 1.11326 14.7843 0.73422L14.7855 0.733872C17.6573 -0.0682189 20.0613 1.32261 20.8683 2.90803Z"
-                                    fill="#FCFCFC" stroke="#333333" />
-                            </svg>
-
-                        </div>
-                        <div class="product_descr">
-                            <div class="product_title"><a href="">Bodysuit Push UP</a></div>
-                            <div class="product_price">550 Lei</div>
-                            <div class="product_color">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="7.5" fill="#333333" stroke="#333333" />
-                                </svg>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#EB5757" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <div class="product_img">
-                            <img src="/img/bodysuit-products/bodysuit5.jpg" alt="">
-
-                            <svg class="cart-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="33.0083" cy="33.0309" r="32.2017" fill="white"/>
-                                <path d="M33.0953 23.0059C34.0819 23.0059 35.0281 23.406 35.7257 24.1181C36.4233 24.8303 36.8152 25.7961 36.8152 26.8032V27.5627H29.3754V26.8032C29.3754 25.7961 29.7674 24.8303 30.465 24.1181C31.1626 23.406 32.1087 23.0059 33.0953 23.0059ZM38.3031 27.5627V26.8032C38.3031 25.3933 37.7545 24.0411 36.7778 23.044C35.8011 22.047 34.4765 21.4869 33.0953 21.4869C31.7141 21.4869 30.3895 22.047 29.4128 23.044C28.4362 24.0411 27.8875 25.3933 27.8875 26.8032V27.5627H22.6797V42.7522C22.6797 43.5579 22.9932 44.3306 23.5513 44.9003C24.1094 45.47 24.8663 45.7901 25.6556 45.7901H40.5351C41.3243 45.7901 42.0812 45.47 42.6393 44.9003C43.1974 44.3306 43.5109 43.5579 43.5109 42.7522V27.5627H38.3031ZM24.1676 29.0817H42.023V42.7522C42.023 43.155 41.8662 43.5414 41.5872 43.8262C41.3081 44.1111 40.9297 44.2711 40.5351 44.2711H25.6556C25.261 44.2711 24.8825 44.1111 24.6034 43.8262C24.3244 43.5414 24.1676 43.155 24.1676 42.7522V29.0817Z" fill="#333333"/>
-                            </svg>
-                            
-                            <div class="product-sizes">
-                                <div class="product-size">S</div>
-                                <div class="product-size">M</div>
-                                <div class="product-size">L</div>
-                            </div>
-
-                            <svg class="heart-icon_svg" width="22" height="19" viewBox="0 0 22 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="heart-icon_path"
-                                    d="M20.8683 2.90803L20.8685 2.90841C22.0421 5.20926 21.6054 7.85096 19.3273 10.8504L19.3264 10.8516C17.5246 13.2394 14.9267 15.6354 11.1279 18.4595L11.127 18.4602C11.0941 18.4847 11.0506 18.5 11.0033 18.5C10.956 18.5 10.9125 18.4847 10.8795 18.4602L10.8788 18.4596C7.07495 15.6303 4.48209 13.2137 2.67881 10.8498C0.39419 7.85057 -0.0423161 5.20907 1.13123 2.90841L1.13143 2.90803C1.93755 1.32431 4.33423 -0.056249 7.21592 0.734355C8.58647 1.11345 9.7778 1.92504 10.5982 3.03165L10.9998 3.57344L11.4015 3.03165C12.222 1.9249 13.4135 1.11326 14.7843 0.73422L14.7855 0.733872C17.6573 -0.0682189 20.0613 1.32261 20.8683 2.90803Z"
-                                    fill="#FCFCFC" stroke="#333333" />
-                            </svg>
-                            
-                        </div>
-                        <div class="product_descr">
-                            <div class="product_title"><a href="">Bodysuit Push UP</a></div>
-                            <div class="product_price">550 Lei</div>
-                            <div class="product_color">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="7.5" fill="#333333" stroke="#333333" />
-                                </svg>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#EB5757" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <div class="product_img">
-                            <img src="/img/bodysuit-products/bodysuit6.jpg" alt="">
-
-                            <svg class="cart-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="33.0083" cy="33.0309" r="32.2017" fill="white"/>
-                                <path d="M33.0953 23.0059C34.0819 23.0059 35.0281 23.406 35.7257 24.1181C36.4233 24.8303 36.8152 25.7961 36.8152 26.8032V27.5627H29.3754V26.8032C29.3754 25.7961 29.7674 24.8303 30.465 24.1181C31.1626 23.406 32.1087 23.0059 33.0953 23.0059ZM38.3031 27.5627V26.8032C38.3031 25.3933 37.7545 24.0411 36.7778 23.044C35.8011 22.047 34.4765 21.4869 33.0953 21.4869C31.7141 21.4869 30.3895 22.047 29.4128 23.044C28.4362 24.0411 27.8875 25.3933 27.8875 26.8032V27.5627H22.6797V42.7522C22.6797 43.5579 22.9932 44.3306 23.5513 44.9003C24.1094 45.47 24.8663 45.7901 25.6556 45.7901H40.5351C41.3243 45.7901 42.0812 45.47 42.6393 44.9003C43.1974 44.3306 43.5109 43.5579 43.5109 42.7522V27.5627H38.3031ZM24.1676 29.0817H42.023V42.7522C42.023 43.155 41.8662 43.5414 41.5872 43.8262C41.3081 44.1111 40.9297 44.2711 40.5351 44.2711H25.6556C25.261 44.2711 24.8825 44.1111 24.6034 43.8262C24.3244 43.5414 24.1676 43.155 24.1676 42.7522V29.0817Z" fill="#333333"/>
-                            </svg>
-                            
-                            <div class="product-sizes">
-                                <div class="product-size">S</div>
-                                <div class="product-size">M</div>
-                                <div class="product-size">L</div>
-                            </div>
-
-                            <svg class="heart-icon_svg" width="22" height="19" viewBox="0 0 22 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="heart-icon_path"
-                                    d="M20.8683 2.90803L20.8685 2.90841C22.0421 5.20926 21.6054 7.85096 19.3273 10.8504L19.3264 10.8516C17.5246 13.2394 14.9267 15.6354 11.1279 18.4595L11.127 18.4602C11.0941 18.4847 11.0506 18.5 11.0033 18.5C10.956 18.5 10.9125 18.4847 10.8795 18.4602L10.8788 18.4596C7.07495 15.6303 4.48209 13.2137 2.67881 10.8498C0.39419 7.85057 -0.0423161 5.20907 1.13123 2.90841L1.13143 2.90803C1.93755 1.32431 4.33423 -0.056249 7.21592 0.734355C8.58647 1.11345 9.7778 1.92504 10.5982 3.03165L10.9998 3.57344L11.4015 3.03165C12.222 1.9249 13.4135 1.11326 14.7843 0.73422L14.7855 0.733872C17.6573 -0.0682189 20.0613 1.32261 20.8683 2.90803Z"
-                                    fill="#FCFCFC" stroke="#333333" />
-                            </svg>
-                            
-                        </div>
-                        <div class="product_descr">
-                            <div class="product_title"><a href="">Bodysuit Push UP</a></div>
-                            <div class="product_price">550 Lei</div>
-                            <div class="product_color">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="7.5" fill="#78313E" stroke="#333333" />
-                                </svg>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#B59D77" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <div class="product_img">
-                            <img src="/img/bodysuit-products/bodysuit7.jpg" alt="">
-
-                            <svg class="cart-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="33.0083" cy="33.0309" r="32.2017" fill="white"/>
-                                <path d="M33.0953 23.0059C34.0819 23.0059 35.0281 23.406 35.7257 24.1181C36.4233 24.8303 36.8152 25.7961 36.8152 26.8032V27.5627H29.3754V26.8032C29.3754 25.7961 29.7674 24.8303 30.465 24.1181C31.1626 23.406 32.1087 23.0059 33.0953 23.0059ZM38.3031 27.5627V26.8032C38.3031 25.3933 37.7545 24.0411 36.7778 23.044C35.8011 22.047 34.4765 21.4869 33.0953 21.4869C31.7141 21.4869 30.3895 22.047 29.4128 23.044C28.4362 24.0411 27.8875 25.3933 27.8875 26.8032V27.5627H22.6797V42.7522C22.6797 43.5579 22.9932 44.3306 23.5513 44.9003C24.1094 45.47 24.8663 45.7901 25.6556 45.7901H40.5351C41.3243 45.7901 42.0812 45.47 42.6393 44.9003C43.1974 44.3306 43.5109 43.5579 43.5109 42.7522V27.5627H38.3031ZM24.1676 29.0817H42.023V42.7522C42.023 43.155 41.8662 43.5414 41.5872 43.8262C41.3081 44.1111 40.9297 44.2711 40.5351 44.2711H25.6556C25.261 44.2711 24.8825 44.1111 24.6034 43.8262C24.3244 43.5414 24.1676 43.155 24.1676 42.7522V29.0817Z" fill="#333333"/>
-                            </svg>
-                            
-                            <div class="product-sizes">
-                                <div class="product-size">S</div>
-                                <div class="product-size">M</div>
-                                <div class="product-size">L</div>
-                            </div>
-
-                            <svg class="heart-icon_svg" width="22" height="19" viewBox="0 0 22 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="heart-icon_path"
-                                    d="M20.8683 2.90803L20.8685 2.90841C22.0421 5.20926 21.6054 7.85096 19.3273 10.8504L19.3264 10.8516C17.5246 13.2394 14.9267 15.6354 11.1279 18.4595L11.127 18.4602C11.0941 18.4847 11.0506 18.5 11.0033 18.5C10.956 18.5 10.9125 18.4847 10.8795 18.4602L10.8788 18.4596C7.07495 15.6303 4.48209 13.2137 2.67881 10.8498C0.39419 7.85057 -0.0423161 5.20907 1.13123 2.90841L1.13143 2.90803C1.93755 1.32431 4.33423 -0.056249 7.21592 0.734355C8.58647 1.11345 9.7778 1.92504 10.5982 3.03165L10.9998 3.57344L11.4015 3.03165C12.222 1.9249 13.4135 1.11326 14.7843 0.73422L14.7855 0.733872C17.6573 -0.0682189 20.0613 1.32261 20.8683 2.90803Z"
-                                    fill="#FCFCFC" stroke="#333333" />
-                            </svg>
-                            
-                        </div>
-                        <div class="product_descr">
-                            <div class="product_title"><a href="">Bodysuit Push UP</a></div>
-                            <div class="product_price">550 Lei</div>
-                            <div class="product_color">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="7.5" fill="#333333" stroke="#333333" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product_card">
-                        <div class="product_img">
-                            <img src="/img/bodysuit-products/bodysuit8.jpg" alt="">
-
-                            <svg class="cart-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="33.0083" cy="33.0309" r="32.2017" fill="white"/>
-                                <path d="M33.0953 23.0059C34.0819 23.0059 35.0281 23.406 35.7257 24.1181C36.4233 24.8303 36.8152 25.7961 36.8152 26.8032V27.5627H29.3754V26.8032C29.3754 25.7961 29.7674 24.8303 30.465 24.1181C31.1626 23.406 32.1087 23.0059 33.0953 23.0059ZM38.3031 27.5627V26.8032C38.3031 25.3933 37.7545 24.0411 36.7778 23.044C35.8011 22.047 34.4765 21.4869 33.0953 21.4869C31.7141 21.4869 30.3895 22.047 29.4128 23.044C28.4362 24.0411 27.8875 25.3933 27.8875 26.8032V27.5627H22.6797V42.7522C22.6797 43.5579 22.9932 44.3306 23.5513 44.9003C24.1094 45.47 24.8663 45.7901 25.6556 45.7901H40.5351C41.3243 45.7901 42.0812 45.47 42.6393 44.9003C43.1974 44.3306 43.5109 43.5579 43.5109 42.7522V27.5627H38.3031ZM24.1676 29.0817H42.023V42.7522C42.023 43.155 41.8662 43.5414 41.5872 43.8262C41.3081 44.1111 40.9297 44.2711 40.5351 44.2711H25.6556C25.261 44.2711 24.8825 44.1111 24.6034 43.8262C24.3244 43.5414 24.1676 43.155 24.1676 42.7522V29.0817Z" fill="#333333"/>
-                            </svg>
-                            
-                            <div class="product-sizes">
-                                <div class="product-size">S</div>
-                                <div class="product-size">M</div>
-                                <div class="product-size">L</div>
-                            </div>
-
-                            <svg class="heart-icon_svg" width="22" height="19" viewBox="0 0 22 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="heart-icon_path"
-                                    d="M20.8683 2.90803L20.8685 2.90841C22.0421 5.20926 21.6054 7.85096 19.3273 10.8504L19.3264 10.8516C17.5246 13.2394 14.9267 15.6354 11.1279 18.4595L11.127 18.4602C11.0941 18.4847 11.0506 18.5 11.0033 18.5C10.956 18.5 10.9125 18.4847 10.8795 18.4602L10.8788 18.4596C7.07495 15.6303 4.48209 13.2137 2.67881 10.8498C0.39419 7.85057 -0.0423161 5.20907 1.13123 2.90841L1.13143 2.90803C1.93755 1.32431 4.33423 -0.056249 7.21592 0.734355C8.58647 1.11345 9.7778 1.92504 10.5982 3.03165L10.9998 3.57344L11.4015 3.03165C12.222 1.9249 13.4135 1.11326 14.7843 0.73422L14.7855 0.733872C17.6573 -0.0682189 20.0613 1.32261 20.8683 2.90803Z"
-                                    fill="#FCFCFC" stroke="#333333" />
-                            </svg>
-                            
-                        </div>
-                        <div class="product_descr">
-                            <div class="product_title"><a href="">Bodysuit Push UP</a></div>
-                            <div class="product_price">550 Lei</div>
-                            <div class="product_color">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#EB5757" />
-                                </svg>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="7.75" fill="#333333" stroke="#333333" stroke-width="0.5" />
-                                </svg>
-                                </svg>
-                            </div>
+                        <div class="my-account-order-products-and-total-price">
+                            <div class="my-account-order-product"></div>
                         </div>
                     </div>
                 </div>
@@ -815,7 +403,7 @@
                     Get the latest news on trends, specials and more before anyone else!
                 </div>
                 <div class="sub-to-news-email_block_form">
-                    <input type="email" placeholder="Enter your email">
+                    <input type="email" placeholder="Enter your email" minlength="5">
                     <button class="btn-main">
                         Send
                     </button>
@@ -827,12 +415,14 @@
 
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/datepicker.min.js"></script>
     <script src="/js/burger-menu.js"></script>
     <script src="/js/shopping-cart-menu.js"></script>
     <script src="/js/search-bar.js"></script>
     <script src="/js/accordion.js"></script>
-    <script src="/js/dropdown.js"></script>
     <script src="/js/scroll.js"></script>
+    <script src="/js/validity.js"></script>
+    <script src="/js/datepicker.js"></script>
     <script src="/js/script.js"></script>
 
 </body>

@@ -3985,6 +3985,62 @@ header.white .container nav .header_right .icon_heart {
   background: url(/icons/minus.svg) 50% 50% no-repeat;
 }
 
+.my-account-section {
+  padding-top: 71px;
+}
+.my-account-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+.my-account-section .my-account-pages {
+  display: flex;
+  flex-direction: column;
+  width: 217px;
+}
+.my-account-section .my-account-pages .my-order-page,
+.my-account-section .my-account-pages .delivery-address-page,
+.my-account-section .my-account-pages .personal-data-page {
+  padding-top: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.my-account-section .my-account-pages .my-order-page a,
+.my-account-section .my-account-pages .delivery-address-page a,
+.my-account-section .my-account-pages .personal-data-page a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+.my-account-section .my-account-pages .my-order-page a:hover,
+.my-account-section .my-account-pages .delivery-address-page a:hover,
+.my-account-section .my-account-pages .personal-data-page a:hover {
+  text-decoration: underline;
+}
+.my-account-section .my-account-pages .my-order-page {
+  padding-top: 0px;
+}
+.my-account-section .my-account-pages .my-order-page a {
+  font-weight: 300;
+}
+.my-account-section .my-account-pages .log-off {
+  margin-top: 45px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+.my-account-section .my-account-pages .log-off:hover {
+  text-decoration: underline;
+}
+.my-account-section .my-account-orders {
+  width: 70%;
+}
+
 footer {
   padding-top: 76px;
   border-top: 1px solid rgba(149, 125, 109, 0.3);

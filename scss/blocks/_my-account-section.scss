@@ -1,0 +1,60 @@
+.my-account-section {
+    padding-top: 71px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .my-account-pages {
+        display: flex;
+        flex-direction: column;
+        width: 217px;
+
+        .my-order-page,
+        .delivery-address-page,
+        .personal-data-page {
+            padding-top: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #E0E0E0;
+
+            a {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 100;
+                font-size: 16px;
+                color: $black-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .my-order-page {
+            padding-top: 0px;
+            a {
+                font-weight: 300;
+            }
+        }
+
+        .log-off {
+            margin-top: 45px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 16px;
+            color: $black-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .my-account-orders {
+        width: 70%;
+    }
+}
