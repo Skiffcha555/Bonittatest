@@ -19,6 +19,14 @@
             padding-bottom: 10px;
             border-bottom: 1px solid #E0E0E0;
 
+            &.selected {
+                border-bottom: 1px solid #828282;
+    
+                a {
+                    font-weight: 300;
+                }
+            }
+
             a {
                 font-family: 'Roboto';
                 font-style: normal;
@@ -92,11 +100,11 @@
     
             .my-order-body {
                 display: flex;
-                flex-direction: column;
                 justify-content: space-between;
-    
+                
                 .product {
                     width: 100%;
+                    height: 150px;
                     padding-top: 28px;
                     display: flex;
                     flex-direction: column;
@@ -128,24 +136,7 @@
                             .product-title-and-evaluation {
                                 display: flex;
                                 justify-content: space-between;
-    
-                                .product-evaluation {
-                                    .feedback {
-                                        &:hover {
-                                            text-decoration: underline;
-                                            cursor: pointer;
-                                        }
-                                    }
-    
-                                    .stars {
-                                        margin-left: 0;
-                                        justify-content: flex-end;
-                                    }
-    
-                                    .hide {
-                                        display: none;
-                                    }
-                                }
+
                             }
             
                             .product-options {
@@ -197,6 +188,43 @@
 
                     .full-phone {
                         padding-top: 13px;
+                    }
+                }
+
+                .products-and-contact-info {
+                    width: 80%;
+                }
+
+                .product-evaluation-and-summary {
+                    width: 20%;
+
+                    .product-evaluation {
+                        height: 150px;
+                        padding-top: 28px;
+                        display: flex;
+                        flex-direction: column;
+
+                        &:last-child {
+                            height: 80px;
+                        }
+
+                        .feedback {
+                            text-align: end;
+
+                            &:hover {
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .stars {
+                            margin-left: 0;
+                            justify-content: flex-end;
+                        }
+
+                        .hide {
+                            display: none;
+                        }
                     }
                 }
             }

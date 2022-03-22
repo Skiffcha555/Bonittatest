@@ -4005,6 +4005,16 @@ header.white .container nav .header_right .icon_heart {
   padding-bottom: 10px;
   border-bottom: 1px solid #E0E0E0;
 }
+.my-orders-section .my-order-pages .my-order-page.selected,
+.my-orders-section .my-order-pages .delivery-address-page.selected,
+.my-orders-section .my-order-pages .personal-data-page.selected {
+  border-bottom: 1px solid #828282;
+}
+.my-orders-section .my-order-pages .my-order-page.selected a,
+.my-orders-section .my-order-pages .delivery-address-page.selected a,
+.my-orders-section .my-order-pages .personal-data-page.selected a {
+  font-weight: 300;
+}
 .my-orders-section .my-order-pages .my-order-page a,
 .my-orders-section .my-order-pages .delivery-address-page a,
 .my-orders-section .my-order-pages .personal-data-page a {
@@ -4070,11 +4080,11 @@ header.white .container nav .header_right .icon_heart {
 }
 .my-orders-section .my-orders .my-order .my-order-body {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 .my-orders-section .my-orders .my-order .my-order-body .product {
   width: 100%;
+  height: 150px;
   padding-top: 28px;
   display: flex;
   flex-direction: column;
@@ -4104,17 +4114,6 @@ header.white .container nav .header_right .icon_heart {
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation {
   display: flex;
   justify-content: space-between;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation .product-evaluation .feedback:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation .product-evaluation .stars {
-  margin-left: 0;
-  justify-content: flex-end;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation .product-evaluation .hide {
-  display: none;
 }
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options {
   padding-top: 13px;
@@ -4155,6 +4154,35 @@ header.white .container nav .header_right .icon_heart {
 }
 .my-orders-section .my-orders .my-order .my-order-body .full-address-and-phone .full-phone {
   padding-top: 13px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .products-and-contact-info {
+  width: 80%;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary {
+  width: 20%;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation {
+  height: 150px;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation:last-child {
+  height: 80px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .feedback {
+  text-align: end;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .feedback:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .stars {
+  margin-left: 0;
+  justify-content: flex-end;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .hide {
+  display: none;
 }
 
 footer {
