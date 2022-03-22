@@ -369,7 +369,8 @@
                             <div class="product-evaluation-and-summary">
                                 <div class="products-evaluation">
                                     <div class="product-evaluation">
-                                        <div class="feedback">Leave feedback</div>
+                                        <div id="showModal" class="feedback">Leave feedback</div>
+
                                         <div class="stars hide">
                                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -503,7 +504,7 @@
                             <div class="product-evaluation-and-summary">
                                 <div class="products-evaluation">
                                     <div class="product-evaluation">
-                                        <div class="feedback hide">Leave feedback</div>
+                                        <div id="showModal" class="feedback hide">Leave feedback</div>
                                         <div class="stars">
                                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -538,7 +539,7 @@
                                         </div>
                                     </div>
                                     <div class="product-evaluation">
-                                        <div class="feedback hide">Leave feedback</div>
+                                        <div id="showModal" class="feedback hide">Leave feedback</div>
                                         <div class="stars">
                                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -596,6 +597,54 @@
                     </div>
                 </div>
             </div>
+
+
+            <div id="modalFeedback" class="modal-feedback">
+                <div class="modal-content feedback">
+                    <div class="modal-title">
+                        <h4>Leave feedback</h4>
+                        <svg class="close-modal" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.1759 0L16.0006 0.82464L0.82464 15.9994L0 15.1754L15.1759 0Z"
+                                fill="#333333" />
+                            <path d="M0.82464 0L16.0006 15.1748L15.1759 16L0 0.825223L0.82464 0Z"
+                                fill="#333333" />
+                        </svg>
+                    </div>
+    
+                    <div class="modal-descr">
+                        <form  class="mustValidate">
+                            <div class="form-floating first-name">
+                                <input type="text" class="form-control" placeholder="First name">
+                                <div class="form-error">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 13C7.78808 13.001 8.56859 12.8463 9.29668 12.5447C10.0248 12.2431 10.6861 11.8006 11.2426 11.2426C11.8006 10.6861 12.2431 10.0248 12.5447 9.29668C12.8463 8.56859 13.001 7.78808 13 7C13.001 6.21192 12.8463 5.43142 12.5447 4.70333C12.2431 3.97524 11.8006 3.31393 11.2426 2.7574C10.6861 2.19941 10.0248 1.7569 9.29668 1.45531C8.56859 1.15372 7.78808 0.998984 7 1.00001C6.21192 0.999 5.43142 1.15374 4.70333 1.45533C3.97524 1.75693 3.31393 2.19943 2.7574 2.7574C2.19943 3.31393 1.75693 3.97524 1.45533 4.70333C1.15374 5.43142 0.999 6.21192 1.00001 7C0.998984 7.78808 1.15372 8.56859 1.45531 9.29668C1.7569 10.0248 2.19941 10.6861 2.7574 11.2426C3.31393 11.8006 3.97524 12.2431 4.70333 12.5447C5.43142 12.8463 6.21192 13.001 7 13V13Z"
+                                            stroke="#EB5757" stroke-width="0.8" stroke-linejoin="round" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7 10.8999C7.19891 10.8999 7.38968 10.8209 7.53033 10.6802C7.67098 10.5396 7.75 10.3488 7.75 10.1499C7.75 9.95099 7.67098 9.76022 7.53033 9.61957C7.38968 9.47892 7.19891 9.3999 7 9.3999C6.80109 9.3999 6.61032 9.47892 6.46967 9.61957C6.32902 9.76022 6.25 9.95099 6.25 10.1499C6.25 10.3488 6.32902 10.5396 6.46967 10.6802C6.61032 10.8209 6.80109 10.8999 7 10.8999V10.8999Z"
+                                            fill="#EB5757" />
+                                        <path d="M6.99902 3.3999V8.1999" stroke="#EB5757" stroke-width="0.8"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>This field can not be empty</span>
+                                </div>
+                                <label for="floatingInput">First name</label>
+                            </div>
+                            <div class="form-group form-floating">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Enter your review text"></textarea>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="exampleFormControlFile1">Example file input</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -681,14 +730,13 @@
 
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/datepicker.min.js"></script>
     <script src="/js/burger-menu.js"></script>
     <script src="/js/shopping-cart-menu.js"></script>
     <script src="/js/search-bar.js"></script>
     <script src="/js/accordion.js"></script>
     <script src="/js/scroll.js"></script>
     <script src="/js/validity.js"></script>
-    <script src="/js/datepicker.js"></script>
+    <script src="/js/modal.js"></script>
     <script src="/js/script.js"></script>
 
 </body>
