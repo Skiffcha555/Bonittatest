@@ -19,6 +19,14 @@
             padding-bottom: 10px;
             border-bottom: 1px solid #E0E0E0;
 
+            &.selected {
+                border-bottom: 1px solid #828282;
+    
+                a {
+                    font-weight: 300;
+                }
+            }
+
             a {
                 font-family: 'Roboto';
                 font-style: normal;
@@ -92,11 +100,11 @@
     
             .my-order-body {
                 display: flex;
-                flex-direction: column;
                 justify-content: space-between;
-    
+                
                 .product {
                     width: 100%;
+                    height: 150px;
                     padding-top: 28px;
                     display: flex;
                     flex-direction: column;
@@ -128,24 +136,7 @@
                             .product-title-and-evaluation {
                                 display: flex;
                                 justify-content: space-between;
-    
-                                .product-evaluation {
-                                    .feedback {
-                                        &:hover {
-                                            text-decoration: underline;
-                                            cursor: pointer;
-                                        }
-                                    }
-    
-                                    .stars {
-                                        margin-left: 0;
-                                        justify-content: flex-end;
-                                    }
-    
-                                    .hide {
-                                        display: none;
-                                    }
-                                }
+
                             }
             
                             .product-options {
@@ -199,7 +190,163 @@
                         padding-top: 13px;
                     }
                 }
+
+                .products-and-contact-info {
+                    width: 80%;
+                }
+
+                .product-evaluation-and-summary {
+                    width: 20%;
+
+                    .product-evaluation {
+                        height: 150px;
+                        padding-top: 28px;
+                        display: flex;
+                        flex-direction: column;
+
+                        &:last-child {
+                            height: 80px;
+                        }
+
+                        .feedback {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 100;
+                            font-size: 14px;
+                            text-align: end;
+
+                            &:hover {
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .stars {
+                            margin-left: 0;
+                            justify-content: flex-end;
+                        }
+
+                        .hide {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
+    }
+    .form-floating {
+        &.last-name,
+        &.email,
+        &.phone,
+        &.password,
+        &.password-repeat,
+        &.subscribe-for-newsletter {
+            margin-top: 24px;
+        }
+    
+        &.phone {
+            display: flex;
+            align-items: center;
+            border: 1px solid #828282;
+    
+            select {
+                padding-left: 8px;
+                border: none;
+                border-right: 0.5px solid #E0E0E0;
+                width: 20%;
+                height: auto;
+    
+                &:focus {
+                    border: none;
+                    border-right: 0.5px solid #E0E0E0;
+                }
+            }
+    
+            input {
+                width: 80%;
+                min-width: auto;
+                border: none;
+    
+                &:focus {
+                    border: none;
+                }
+            }
+    
+        }
+    
+        input {
+            min-width: 100%;
+            border-radius: 0;
+            border: 1px solid #828282;
+            padding: 0px;
+            padding-left: 12px;
+            height: 36px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            color: $black-color;
+    
+            &:focus {
+                border: 1px solid $brown-color;
+                box-shadow: none;
+    
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+    
+            &::placeholder {
+                font-weight: 100;
+                color: #828282;
+            }
+        }
+    
+        select {
+            position: relative;
+            border-radius: 0;
+            padding: 0px;
+            padding-left: 12px;
+            height: 36px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            color: $black-color;
+    
+            &:focus {
+                border: 1px solid $brown-color;
+                box-shadow: none;
+            }
+        }
+    
+        label {
+            opacity: 0;
+            height: auto;
+            padding: 0 5px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            color: $brown-color;
+            background: #fff;
+            transform: scale(1) translateY(-8px) translateX(17px);
+            transition: 0.3s;
+        }
+    
+        >.form-control:focus,
+        >.form-control:not(:placeholder-shown),
+        >.form-select {
+            ~label {
+                opacity: 1;
+                background: #fff;
+                transform: scale(1) translateY(-8px) translateX(17px);
+                transition: 0.3s;
+            }
+        }
+    }
+    
+    .form-floating>.form-control {
+        height: 36px; 
     }
 }

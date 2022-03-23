@@ -575,6 +575,141 @@ input[type=radio] + .radio-label:empty:before {
   display: block;
 }
 
+.modal-notify-me {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  padding-top: 85px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-feedback {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  padding-top: 85px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-feedback .modal-content .modal-descr {
+  padding: 32px 30px 35px 30px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  width: 364px;
+  border: none;
+  border-radius: 0;
+}
+.modal-content.feedback {
+  width: 550px;
+  border-radius: 5px;
+}
+.modal-content .modal-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  border-bottom: 1px solid #BDBDBD;
+}
+.modal-content .modal-title h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #333;
+}
+.modal-content .modal-descr {
+  padding: 32px;
+  padding-top: 36px;
+}
+.modal-content .modal-descr .notify-product {
+  display: flex;
+  gap: 17px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+}
+.modal-content .modal-descr .notify-product .notify-product_img img {
+  width: 100%;
+  max-height: 136px;
+}
+.modal-content .modal-descr .notify-product .notify-product_descr {
+  display: flex;
+  flex-direction: column;
+}
+.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_price {
+  font-weight: 300;
+  color: #333;
+}
+.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_title {
+  padding-top: 9px;
+  font-weight: 100;
+  color: #333;
+}
+.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_options {
+  padding-top: 9px;
+  font-weight: 100;
+  color: #333;
+  display: flex;
+}
+.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_options .notify-product_size {
+  padding-right: 7px;
+  border-right: 1px solid rgba(149, 125, 109, 0.3);
+}
+.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_options .notify-product_color {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding-left: 7px;
+}
+.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_options .notify-product_color svg {
+  width: 9px;
+  height: 9px;
+}
+.modal-content .modal-descr .notify-product_text {
+  padding-top: 29px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  color: #333;
+}
+.modal-content .modal-descr .btn-notify-me {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-content .modal-descr .btn-notify-me .notify-me {
+  margin-top: 47px;
+  padding: 12px 46px;
+  border: 1px solid #333;
+  color: #333;
+  transition: 0.3s;
+}
+.modal-content .modal-descr .btn-notify-me .notify-me:hover {
+  color: #fff;
+  background-color: #957D6D;
+  border: 1px solid #957D6D;
+  transition: 0.3s;
+}
+
+.close-modal:hover {
+  cursor: pointer;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -1939,120 +2074,6 @@ header.white .container nav .header_right .icon_heart {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
-}
-
-.modal-notify-me {
-  display: none;
-  position: fixed;
-  z-index: 30;
-  padding-top: 85px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  width: 364px;
-  border: none;
-  border-radius: 0;
-}
-.modal-content .modal-title {
-  display: flex;
-  justify-content: space-between;
-  padding: 32px;
-  border-bottom: 1px solid #BDBDBD;
-}
-.modal-content .modal-title h4 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #333;
-}
-.modal-content .modal-descr {
-  padding: 32px;
-  padding-top: 36px;
-}
-.modal-content .modal-descr .notify-product {
-  display: flex;
-  gap: 17px;
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 14px;
-}
-.modal-content .modal-descr .notify-product .notify-product_img img {
-  width: 100%;
-  max-height: 136px;
-}
-.modal-content .modal-descr .notify-product .notify-product_descr {
-  display: flex;
-  flex-direction: column;
-}
-.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_price {
-  font-weight: 300;
-  color: #333;
-}
-.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_title {
-  padding-top: 9px;
-  font-weight: 100;
-  color: #333;
-}
-.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_options {
-  padding-top: 9px;
-  font-weight: 100;
-  color: #333;
-  display: flex;
-}
-.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_options .notify-product_size {
-  padding-right: 7px;
-  border-right: 1px solid rgba(149, 125, 109, 0.3);
-}
-.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_options .notify-product_color {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  padding-left: 7px;
-}
-.modal-content .modal-descr .notify-product .notify-product_descr .notify-product_options .notify-product_color svg {
-  width: 9px;
-  height: 9px;
-}
-.modal-content .modal-descr .notify-product_text {
-  padding-top: 29px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 12px;
-  color: #333;
-}
-.modal-content .modal-descr .btn-notify-me {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-.modal-content .modal-descr .btn-notify-me .notify-me {
-  margin-top: 47px;
-  padding: 12px 46px;
-  border: 1px solid #333;
-  color: #333;
-  transition: 0.3s;
-}
-.modal-content .modal-descr .btn-notify-me .notify-me:hover {
-  color: #fff;
-  background-color: #957D6D;
-  border: 1px solid #957D6D;
-  transition: 0.3s;
-}
-
-.close-modal:hover {
-  cursor: pointer;
 }
 
 .size-guide-block {
@@ -4005,6 +4026,16 @@ header.white .container nav .header_right .icon_heart {
   padding-bottom: 10px;
   border-bottom: 1px solid #E0E0E0;
 }
+.my-orders-section .my-order-pages .my-order-page.selected,
+.my-orders-section .my-order-pages .delivery-address-page.selected,
+.my-orders-section .my-order-pages .personal-data-page.selected {
+  border-bottom: 1px solid #828282;
+}
+.my-orders-section .my-order-pages .my-order-page.selected a,
+.my-orders-section .my-order-pages .delivery-address-page.selected a,
+.my-orders-section .my-order-pages .personal-data-page.selected a {
+  font-weight: 300;
+}
 .my-orders-section .my-order-pages .my-order-page a,
 .my-orders-section .my-order-pages .delivery-address-page a,
 .my-orders-section .my-order-pages .personal-data-page a {
@@ -4070,11 +4101,11 @@ header.white .container nav .header_right .icon_heart {
 }
 .my-orders-section .my-orders .my-order .my-order-body {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 .my-orders-section .my-orders .my-order .my-order-body .product {
   width: 100%;
+  height: 150px;
   padding-top: 28px;
   display: flex;
   flex-direction: column;
@@ -4104,17 +4135,6 @@ header.white .container nav .header_right .icon_heart {
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation {
   display: flex;
   justify-content: space-between;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation .product-evaluation .feedback:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation .product-evaluation .stars {
-  margin-left: 0;
-  justify-content: flex-end;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation .product-evaluation .hide {
-  display: none;
 }
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options {
   padding-top: 13px;
@@ -4155,6 +4175,130 @@ header.white .container nav .header_right .icon_heart {
 }
 .my-orders-section .my-orders .my-order .my-order-body .full-address-and-phone .full-phone {
   padding-top: 13px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .products-and-contact-info {
+  width: 80%;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary {
+  width: 20%;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation {
+  height: 150px;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation:last-child {
+  height: 80px;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .feedback {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: end;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .feedback:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .stars {
+  margin-left: 0;
+  justify-content: flex-end;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .hide {
+  display: none;
+}
+.my-orders-section .form-floating.last-name, .my-orders-section .form-floating.email, .my-orders-section .form-floating.phone, .my-orders-section .form-floating.password, .my-orders-section .form-floating.password-repeat, .my-orders-section .form-floating.subscribe-for-newsletter {
+  margin-top: 24px;
+}
+.my-orders-section .form-floating.phone {
+  display: flex;
+  align-items: center;
+  border: 1px solid #828282;
+}
+.my-orders-section .form-floating.phone select {
+  padding-left: 8px;
+  border: none;
+  border-right: 0.5px solid #E0E0E0;
+  width: 20%;
+  height: auto;
+}
+.my-orders-section .form-floating.phone select:focus {
+  border: none;
+  border-right: 0.5px solid #E0E0E0;
+}
+.my-orders-section .form-floating.phone input {
+  width: 80%;
+  min-width: auto;
+  border: none;
+}
+.my-orders-section .form-floating.phone input:focus {
+  border: none;
+}
+.my-orders-section .form-floating input {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1px solid #828282;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.my-orders-section .form-floating input:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.my-orders-section .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.my-orders-section .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.my-orders-section .form-floating select {
+  position: relative;
+  border-radius: 0;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.my-orders-section .form-floating select:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.my-orders-section .form-floating label {
+  opacity: 0;
+  height: auto;
+  padding: 0 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  color: #957D6D;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.my-orders-section .form-floating > .form-control:focus ~ label,
+.my-orders-section .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section .form-floating > .form-select ~ label {
+  opacity: 1;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.my-orders-section .form-floating > .form-control {
+  height: 36px;
 }
 
 footer {

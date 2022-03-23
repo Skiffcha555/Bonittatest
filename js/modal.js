@@ -1,17 +1,32 @@
-var modal = document.getElementById("notifyMeModal");
+var modalNotifyMe = document.getElementById("notifyMeModal");
+var modalFeedback = document.getElementById("modalFeedback");
 var btn = document.getElementById("showModal");
 var close = document.getElementsByClassName("close-modal")[0];
 
 btn.onclick = function () {
-    modal.style.display = "block";
+    modalNotifyMe.style.display = "block";
 }
 
 close.onclick = function () {
-    modal.style.display = "none";
+    modalNotifyMe.style.display = "none";
 }
 
 window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modalNotifyMe) {
+        modalNotifyMe.style.display = "none";
+    }
+}
+
+btn.onclick = function () {
+    modalFeedback.style.display = "block";
+}
+
+close.onclick = function () {
+    modalFeedback.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modalFeedback) {
+        modalFeedback.style.display = "none";
     }
 }
