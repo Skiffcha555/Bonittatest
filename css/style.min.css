@@ -4411,12 +4411,6 @@ header.white .container nav .header_right .icon_heart {
 .delivery-address-section .my-order-pages .personal-data-page a:hover {
   text-decoration: underline;
 }
-.delivery-address-section .my-order-pages .my-order-page {
-  padding-top: 0px;
-}
-.delivery-address-section .my-order-pages .my-order-page a {
-  font-weight: 300;
-}
 .delivery-address-section .my-order-pages .log-off {
   margin-top: 45px;
   font-family: "Roboto";
@@ -4433,9 +4427,15 @@ header.white .container nav .header_right .icon_heart {
   width: 70%;
 }
 .delivery-address-section .delivery-addresses .delivery-address {
+  padding-top: 25px;
+}
+.delivery-address-section .delivery-addresses .delivery-address:first-child {
+  padding-top: 0;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main {
   border: 1px solid #E0E0E0;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-head {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head {
   border-bottom: 1px solid #E0E0E0;
   padding: 15px 20px 15px 31px;
   display: flex;
@@ -4446,58 +4446,129 @@ header.white .container nav .header_right .icon_heart {
   font-size: 16px;
   color: #333;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-head .hide {
-  display: none;
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .default-address.hide {
+  opacity: 0;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-head .make-default-and-edit {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit {
   display: flex;
   gap: 23px;
   justify-content: center;
   align-items: center;
   font-size: 14px;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-head .make-default-and-edit .make-default-address:hover {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit .hide {
+  display: none;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit .make-default-address:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-head .make-default-and-edit .edit-address {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit .edit-address {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-head .make-default-and-edit .edit-address:hover {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit .edit-address:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.delivery-address-section .form-floating.phone {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-body {
+  padding: 25px 31px 30px 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  color: #333;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-body .full-address {
+  padding-top: 2px;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form {
+  margin-top: 30px;
+  border: 1px solid #E0E0E0;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form.hide {
+  display: none;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-head {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 15px 20px 15px 31px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  color: #333;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body {
+  padding: 41px 31px 30px 31px;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name input, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit input, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city input, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone input {
+  min-width: auto;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+  padding-top: 0;
+  margin-top: 16px;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .address,
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .post,
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .country,
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .phone,
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .city-village {
+  width: 50%;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country {
+  position: relative;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country::after {
+  content: "";
+  background-color: #E0E0E0;
+  top: 50%;
+  right: 11%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 21px;
+  position: absolute;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone {
   display: flex;
   align-items: center;
-  border: 1px solid #828282;
+  border: 1px solid #ced4da;
 }
-.delivery-address-section .form-floating.phone select {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select {
   padding-left: 8px;
-  border: none;
-  border-right: 0.5px solid #E0E0E0;
   width: 20%;
   height: auto;
-}
-.delivery-address-section .form-floating.phone select:focus {
   border: none;
   border-right: 0.5px solid #E0E0E0;
 }
-.delivery-address-section .form-floating.phone input {
-  width: 80%;
-  min-width: auto;
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select:focus {
+  border: none;
+  border-right: 0.5px solid #E0E0E0;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input {
   border: none;
 }
-.delivery-address-section .form-floating.phone input:focus {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input:focus {
   border: none;
 }
-.delivery-address-section .form-floating input {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input {
   min-width: 100%;
   border-radius: 0;
-  border: 1px solid #828282;
+  border: 1px solid #E0E0E0;
   padding: 0px;
   padding-left: 12px;
   height: 36px;
@@ -4507,18 +4578,18 @@ header.white .container nav .header_right .icon_heart {
   font-size: 12px;
   color: #333;
 }
-.delivery-address-section .form-floating input:focus {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus {
   border: 1px solid #957D6D;
   box-shadow: none;
 }
-.delivery-address-section .form-floating input:focus::placeholder {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus::placeholder {
   color: transparent;
 }
-.delivery-address-section .form-floating input::placeholder {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input::placeholder {
   font-weight: 100;
   color: #828282;
 }
-.delivery-address-section .form-floating select {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select {
   position: relative;
   border-radius: 0;
   padding: 0px;
@@ -4530,11 +4601,11 @@ header.white .container nav .header_right .icon_heart {
   font-size: 12px;
   color: #333;
 }
-.delivery-address-section .form-floating select:focus {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select:focus {
   border: 1px solid #957D6D;
   box-shadow: none;
 }
-.delivery-address-section .form-floating label {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating label {
   opacity: 0;
   height: auto;
   padding: 0 5px;
@@ -4547,16 +4618,634 @@ header.white .container nav .header_right .icon_heart {
   transform: scale(1) translateY(-8px) translateX(17px);
   transition: 0.3s;
 }
-.delivery-address-section .form-floating > .form-control:focus ~ label,
-.delivery-address-section .form-floating > .form-control:not(:placeholder-shown) ~ label,
-.delivery-address-section .form-floating > .form-select ~ label {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .checkboxes {
+  padding: 0;
+  opacity: 1;
+  min-width: auto;
+  transform: none;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-control:focus ~ label,
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-select ~ label {
   opacity: 1;
   background: #fff;
   transform: scale(1) translateY(-8px) translateX(17px);
   transition: 0.3s;
 }
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address {
+  margin-top: 23px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  color: #828282;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address .checkboxes {
+  gap: 7px;
+  padding: 0;
+  opacity: 1;
+  min-width: auto;
+  transform: none;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save {
+  margin-top: 18px;
+  display: flex;
+  justify-content: flex-end;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save .btn-main {
+  margin-top: 0;
+  padding: 12px 63px;
+}
+.delivery-address-section .delivery-addresses .btn-main {
+  margin-top: 36px;
+  gap: 8px;
+  width: auto;
+  min-width: none;
+  transition: 0.3s;
+}
+.delivery-address-section .delivery-addresses .btn-main:hover svg path {
+  transition: 0.3s;
+  fill: #957D6D;
+}
 .delivery-address-section .form-floating > .form-control {
   height: 36px;
+}
+
+.personal-data-page-section {
+  padding-top: 71px;
+  padding-bottom: 95px;
+}
+.personal-data-page-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+.personal-data-page-section .my-order-pages {
+  display: flex;
+  flex-direction: column;
+  width: 217px;
+}
+.personal-data-page-section .my-order-pages .my-order-page,
+.personal-data-page-section .my-order-pages .delivery-address-page,
+.personal-data-page-section .my-order-pages .personal-data-page {
+  padding-top: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.personal-data-page-section .my-order-pages .my-order-page.selected,
+.personal-data-page-section .my-order-pages .delivery-address-page.selected,
+.personal-data-page-section .my-order-pages .personal-data-page.selected {
+  border-bottom: 1px solid #828282;
+}
+.personal-data-page-section .my-order-pages .my-order-page.selected a,
+.personal-data-page-section .my-order-pages .delivery-address-page.selected a,
+.personal-data-page-section .my-order-pages .personal-data-page.selected a {
+  font-weight: 300;
+}
+.personal-data-page-section .my-order-pages .my-order-page a,
+.personal-data-page-section .my-order-pages .delivery-address-page a,
+.personal-data-page-section .my-order-pages .personal-data-page a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+.personal-data-page-section .my-order-pages .my-order-page a:hover,
+.personal-data-page-section .my-order-pages .delivery-address-page a:hover,
+.personal-data-page-section .my-order-pages .personal-data-page a:hover {
+  text-decoration: underline;
+}
+.personal-data-page-section .my-order-pages .log-off {
+  margin-top: 45px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+.personal-data-page-section .my-order-pages .log-off:hover {
+  text-decoration: underline;
+}
+.personal-data-page-section .personal-data-forms {
+  width: 70%;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form,
+.personal-data-page-section .personal-data-forms .password-form,
+.personal-data-page-section .personal-data-forms .sub-to-news-form {
+  margin-top: 30px;
+  border: 1px solid #E0E0E0;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form.hide,
+.personal-data-page-section .personal-data-forms .password-form.hide,
+.personal-data-page-section .personal-data-forms .sub-to-news-form.hide {
+  display: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-head,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-head,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-head,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-head,
+.personal-data-page-section .personal-data-forms .password-form .password-form-head,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-head,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-head,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-head,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-head {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 15px 20px 15px 31px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  color: #333;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body {
+  padding: 41px 31px 30px 31px;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.full-name, .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.email-and-phone, .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.date-of-birth-full, .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.passwords,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.full-name,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.date-of-birth-full,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.passwords,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.full-name,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.date-of-birth-full,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.passwords,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.full-name,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.date-of-birth-full,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.passwords,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.full-name,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.date-of-birth-full,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.passwords,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.full-name,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.date-of-birth-full,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.passwords,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.full-name,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.date-of-birth-full,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.passwords,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.full-name,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.date-of-birth-full,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.passwords,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.full-name,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.date-of-birth-full,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.passwords {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.full-name input, .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.email-and-phone input, .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.date-of-birth-full input, .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.passwords input,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.full-name input,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.email-and-phone input,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.date-of-birth-full input,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.passwords input,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.full-name input,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.email-and-phone input,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.date-of-birth-full input,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.passwords input,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.full-name input,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.email-and-phone input,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.date-of-birth-full input,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.passwords input,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.full-name input,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.email-and-phone input,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.date-of-birth-full input,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.passwords input,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.full-name input,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.email-and-phone input,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.date-of-birth-full input,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.passwords input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.full-name input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.email-and-phone input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.date-of-birth-full input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.passwords input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.full-name input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.email-and-phone input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.date-of-birth-full input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.passwords input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.full-name input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.email-and-phone input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.date-of-birth-full input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.passwords input {
+  min-width: auto;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.email-and-phone, .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.date-of-birth,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.date-of-birth,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.date-of-birth,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.date-of-birth,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.date-of-birth,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.date-of-birth,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.date-of-birth,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.date-of-birth,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.email-and-phone,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.date-of-birth {
+  padding-top: 0;
+  margin-top: 16px;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .first-name,
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .last-name,
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .email,
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .phone,
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .date-of-birth,
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .valid-until-year,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .first-name,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .last-name,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .email,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .phone,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .date-of-birth,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .valid-until-year,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .first-name,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .last-name,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .email,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .phone,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .date-of-birth,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .valid-until-year,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .first-name,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .last-name,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .email,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .phone,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .date-of-birth,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .valid-until-year,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .first-name,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .last-name,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .email,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .phone,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .date-of-birth,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .valid-until-year,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .first-name,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .last-name,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .email,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .phone,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .date-of-birth,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .valid-until-year,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .first-name,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .last-name,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .email,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .phone,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .date-of-birth,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .valid-until-year,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .first-name,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .last-name,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .email,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .phone,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .date-of-birth,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .valid-until-year,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .first-name,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .last-name,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .email,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .phone,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .date-of-birth,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .valid-until-year {
+  width: 50%;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .old-password,
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .current-password,
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .new-password,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .old-password,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .current-password,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .new-password,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .old-password,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .current-password,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .new-password,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .old-password,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .current-password,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .new-password,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .old-password,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .current-password,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .new-password,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .old-password,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .current-password,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .new-password,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .old-password,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .current-password,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .new-password,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .old-password,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .current-password,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .new-password,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .old-password,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .current-password,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .new-password {
+  width: 33.33333%;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.valid-until-year,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.valid-until-year,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.valid-until-year,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.valid-until-year,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.valid-until-year,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.valid-until-year,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.valid-until-year,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.valid-until-year,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.valid-until-year {
+  height: 0;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.valid-until-year input,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.valid-until-year input,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.valid-until-year input,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.valid-until-year input,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.valid-until-year input,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.valid-until-year input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.valid-until-year input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.valid-until-year input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.valid-until-year input {
+  height: 0;
+  border: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating input,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating input,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating input,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating input,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating input,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating input {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1px solid #E0E0E0;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating input:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating input:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating input:focus,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating input:focus,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating input:focus,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating input:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating input:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating input:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating input:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating input::placeholder,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating input::placeholder,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating input::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating input::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating input::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating input::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating input::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating input::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating select,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating select,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating select,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating select,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating select,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating select {
+  position: relative;
+  border-radius: 0;
+  padding: 0px;
+  padding-left: 12px;
+  height: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating select:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating select:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating select:focus,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating select:focus,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating select:focus,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating select:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating select:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating select:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating select:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating label,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating label,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating label,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating label,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating label,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating label {
+  opacity: 0;
+  height: auto;
+  padding: 0 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  color: #957D6D;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .checkboxes,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .checkboxes,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .checkboxes,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .checkboxes,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .checkboxes,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .checkboxes,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .checkboxes,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .checkboxes,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .checkboxes {
+  padding: 0;
+  opacity: 1;
+  min-width: auto;
+  transform: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating > .form-control:focus ~ label,
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating > .form-select ~ label,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating > .form-control:focus ~ label,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating > .form-select ~ label,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating > .form-control:focus ~ label,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating > .form-select ~ label,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating > .form-control:focus ~ label,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating > .form-select ~ label,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating > .form-control:focus ~ label,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating > .form-select ~ label,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating > .form-control:focus ~ label,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating > .form-select ~ label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating > .form-control:focus ~ label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating > .form-select ~ label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating > .form-control:focus ~ label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating > .form-select ~ label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating > .form-control:focus ~ label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating > .form-select ~ label {
+  opacity: 1;
+  background: #fff;
+  transform: scale(1) translateY(-8px) translateX(17px);
+  transition: 0.3s;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form {
+  display: flex;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form input,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form input,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form input,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form input,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form input,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #957D6D;
+  min-width: auto;
+  color: #333;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form input:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form input:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form input:focus,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form input:focus,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form input:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form input:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus {
+  border: 1px solid #957D6D;
+  box-shadow: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus::placeholder {
+  color: transparent;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form input::placeholder,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form input::placeholder,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form input::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form input::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form input::placeholder,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form input::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form input::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form input::placeholder,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form button,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form button,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form button,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form button,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form button,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form button,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form button,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form button,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form button {
+  padding: 11px 38px;
+  border: 1px solid #957D6D;
+  background-color: #957D6D;
+  color: #fff;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form button:hover,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form button:hover,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form button:hover,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form button:hover,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form button:hover,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form button:hover,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form button:hover,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form button:hover,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form button:hover {
+  background-color: #fff;
+  color: #957D6D;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .save,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .save,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .save,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .save,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .save,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .save,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .save,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .save,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .save {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .save .btn-main,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .save .btn-main,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .save .btn-main,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .save .btn-main,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .save .btn-main,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .save .btn-main,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .save .btn-main,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .save .btn-main,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .save .btn-main {
+  margin-top: 0;
+  padding: 12px 63px;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body {
+  padding: 34px 31px 49px 31px;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form {
+  margin-top: 0;
 }
 
 footer {

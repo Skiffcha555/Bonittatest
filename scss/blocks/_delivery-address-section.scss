@@ -41,13 +41,6 @@
             }
         }
 
-        .my-order-page {
-            padding-top: 0px;
-            a {
-                font-weight: 300;
-            }
-        }
-
         .log-off {
             margin-top: 45px;
             font-family: 'Roboto';
@@ -67,158 +60,310 @@
         width: 70%;
 
         .delivery-address {
-            border: 1px solid #E0E0E0;
+            padding-top: 25px;
 
-            .delivery-address-head {
-                border-bottom: 1px solid #E0E0E0;
-                padding: 15px 20px 15px 31px;
-                display: flex;
-                justify-content: space-between;
+            &:first-child {
+                padding-top: 0;
+            }
 
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 100;
-                font-size: 16px;
-                color: $black-color;
+            .delivery-address-main {
+                border: 1px solid #E0E0E0;
+    
+                .delivery-address-head {
+                    border-bottom: 1px solid #E0E0E0;
+                    padding: 15px 20px 15px 31px;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 100;
+                    font-size: 16px;
+                    color: $black-color;
 
-                .hide {
+                    .default-address {
+                        &.hide {
+                            opacity: 0;
+                        }
+                    }
+    
+                    .make-default-and-edit {
+                        display: flex;
+                        gap: 23px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+    
+                        .hide {
+                            display: none;
+                        }
+    
+                        .make-default-address {
+                            &:hover {
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+    
+                        .edit-address {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 5px;
+    
+                            &:hover {
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+    
+                .delivery-address-body {
+                    padding: 25px 31px 30px 31px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+    
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 100;
+                    font-size: 14px;
+                    color: $black-color;
+    
+                    .full-address {
+                        padding-top: 2px;
+                    }
+                }
+            }
+
+            .delivery-address-form {
+                margin-top: 30px;
+                border: 1px solid #E0E0E0;
+
+                &.hide {
                     display: none;
                 }
 
-                .make-default-and-edit {
+                .delivery-address-form-head {
+                    border-bottom: 1px solid #E0E0E0;
+                    padding: 15px 20px 15px 31px;
                     display: flex;
-                    gap: 23px;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 14px;
+                    justify-content: space-between;
+    
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 100;
+                    font-size: 16px;
+                    color: $black-color;
+                }
 
+                .delivery-address-form-body {
+                    padding: 41px 31px 30px 31px;
 
-                    .make-default-address {
-                        &:hover {
-                            text-decoration: underline;
-                            cursor: pointer;
+                    .form-floating {
+
+                        &.full-name,
+                        &.address-and-apartment-suit,
+                        &.post-and-city,
+                        &.country-and-phone {
+                            display: flex;
+                            gap: 20px;
+                            width: 100%;
+        
+                            input {
+                                min-width: auto;
+                            }
+                        }
+        
+                        &.post-and-city,
+                        &.address-and-apartment-suit,
+                        &.country-and-phone {
+                            padding-top: 0;
+                            margin-top: 16px;
+                        }
+        
+                        .first-name,
+                        .last-name,
+                        .address,
+                        .post,
+                        .apartment-suit,
+                        .country,
+                        .phone,
+                        .city-village {
+                            width: 50%;
+                        }
+        
+                        &.country {
+                            position: relative;
+        
+                            &::after {
+                                content: '';
+                                background-color: #E0E0E0;
+                                top: 50%;
+                                right: 11%;
+                                transform: translateY(-50%);
+                                width: 1px;
+                                height: 21px;
+                                position: absolute;
+                            }
+                        }
+        
+                        &.phone {
+                            display: flex;
+                            align-items: center;
+                            border: 1px solid #ced4da;
+        
+                            select {
+                                padding-left: 8px;
+                                width: 20%;
+                                height: auto;
+                                border: none;
+                                border-right: 0.5px solid #E0E0E0;
+        
+                                &:focus {
+                                    border: none;
+                                    border-right: 0.5px solid #E0E0E0;
+                                }
+                            }
+        
+                            input {
+                                border: none;
+        
+                                &:focus {
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        input {
+                            min-width: 100%;
+                            border-radius: 0;
+                            border: 1px solid #E0E0E0;
+                            padding: 0px;
+                            padding-left: 12px;
+                            height: 36px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 12px;
+                            color: $black-color;
+                    
+                            &:focus {
+                                border: 1px solid $brown-color;
+                                box-shadow: none;
+                    
+                                &::placeholder {
+                                    color: transparent;
+                                }
+                            }
+                    
+                            &::placeholder {
+                                font-weight: 100;
+                                color: #828282;
+                            }
+                        }
+                    
+                        select {
+                            position: relative;
+                            border-radius: 0;
+                            padding: 0px;
+                            padding-left: 12px;
+                            height: 36px;
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 12px;
+                            color: $black-color;
+                    
+                            &:focus {
+                                border: 1px solid $brown-color;
+                                box-shadow: none;
+                            }
+                        }
+                    
+                        label {
+                            opacity: 0;
+                            height: auto;
+                            padding: 0 5px;
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 10px;
+                            color: $brown-color;
+                            background: #fff;
+                            transform: scale(1) translateY(-8px) translateX(17px);
+                            transition: 0.3s;
+                        }
+
+                        .checkboxes {
+                            padding: 0;
+                            opacity: 1;
+                            min-width: auto;
+                            transform: none;
+                        }
+                    
+                        >.form-control:focus,
+                        >.form-control:not(:placeholder-shown),
+                        >.form-select {
+                            ~label {
+                                opacity: 1;
+                                background: #fff;
+                                transform: scale(1) translateY(-8px) translateX(17px);
+                                transition: 0.3s;
+                            }
                         }
                     }
 
-                    .edit-address {
+                    .set-default-address {
+                        margin-top: 23px;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 100;
+                        font-size: 12px;
+                        color: #828282;
+        
+                        .checkboxes {
+                            gap: 7px;
+                            padding: 0;
+                            opacity: 1;
+                            min-width: auto;
+                            transform: none;
+                        }
+                    }
+
+                    .save {
+                        margin-top: 18px;
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 5px;
+                        justify-content: flex-end;
 
-                        &:hover {
-                            text-decoration: underline;
-                            cursor: pointer;
+                        .btn-main {
+                            margin-top: 0;
+                            padding: 12px 63px;
                         }
+                    }
+                }
+            }
+        }
+
+        .btn-main {
+            margin-top: 36px;
+            gap: 8px;
+            width: auto;
+            min-width: none;
+            transition: 0.3s;
+
+            &:hover {
+                svg {
+                    path {
+                        transition: 0.3s;
+                        fill: #957D6D;
                     }
                 }
             }
         }
     }
 
-    .form-floating {
-        &.phone {
-            display: flex;
-            align-items: center;
-            border: 1px solid #828282;
-    
-            select {
-                padding-left: 8px;
-                border: none;
-                border-right: 0.5px solid #E0E0E0;
-                width: 20%;
-                height: auto;
-    
-                &:focus {
-                    border: none;
-                    border-right: 0.5px solid #E0E0E0;
-                }
-            }
-    
-            input {
-                width: 80%;
-                min-width: auto;
-                border: none;
-    
-                &:focus {
-                    border: none;
-                }
-            }
-    
-        }
-    
-        input {
-            min-width: 100%;
-            border-radius: 0;
-            border: 1px solid #828282;
-            padding: 0px;
-            padding-left: 12px;
-            height: 36px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 12px;
-            color: $black-color;
-    
-            &:focus {
-                border: 1px solid $brown-color;
-                box-shadow: none;
-    
-                &::placeholder {
-                    color: transparent;
-                }
-            }
-    
-            &::placeholder {
-                font-weight: 100;
-                color: #828282;
-            }
-        }
-    
-        select {
-            position: relative;
-            border-radius: 0;
-            padding: 0px;
-            padding-left: 12px;
-            height: 36px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 12px;
-            color: $black-color;
-    
-            &:focus {
-                border: 1px solid $brown-color;
-                box-shadow: none;
-            }
-        }
-    
-        label {
-            opacity: 0;
-            height: auto;
-            padding: 0 5px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 10px;
-            color: $brown-color;
-            background: #fff;
-            transform: scale(1) translateY(-8px) translateX(17px);
-            transition: 0.3s;
-        }
-    
-        >.form-control:focus,
-        >.form-control:not(:placeholder-shown),
-        >.form-select {
-            ~label {
-                opacity: 1;
-                background: #fff;
-                transform: scale(1) translateY(-8px) translateX(17px);
-                transition: 0.3s;
-            }
-        }
-    }
-    
     .form-floating>.form-control {
         height: 36px; 
     }

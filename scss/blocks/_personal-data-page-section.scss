@@ -1,0 +1,274 @@
+.personal-data-page-section {
+    padding-top: 71px;
+    padding-bottom: 95px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .my-order-pages {
+        display: flex;
+        flex-direction: column;
+        width: 217px;
+
+        .my-order-page,
+        .delivery-address-page,
+        .personal-data-page {
+            padding-top: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #E0E0E0;
+
+            &.selected {
+                border-bottom: 1px solid #828282;
+    
+                a {
+                    font-weight: 300;
+                }
+            }
+
+            a {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 100;
+                font-size: 16px;
+                color: $black-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .log-off {
+            margin-top: 45px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 16px;
+            color: $black-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .personal-data-forms {
+        width: 70%;
+
+        .personal-data-form,
+        .password-form,
+        .sub-to-news-form {
+            margin-top: 30px;
+            border: 1px solid #E0E0E0;
+
+            &.hide {
+                display: none;
+            }
+
+            .personal-data-form-head,
+            .password-form-head,
+            .sub-to-news-form-head {
+                border-bottom: 1px solid #E0E0E0;
+                padding: 15px 20px 15px 31px;
+                display: flex;
+                justify-content: space-between;
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 100;
+                font-size: 16px;
+                color: $black-color;
+            }
+
+            .personal-data-form-body,
+            .password-form-body,
+            .sub-to-news-form-body {
+                padding: 41px 31px 30px 31px;
+
+                .form-floating {
+                    &.full-name,
+                    &.email-and-phone,
+                    &.date-of-birth-full,
+                    &.passwords {
+                        display: flex;
+                        gap: 20px;
+                        width: 100%;
+    
+                        input {
+                            min-width: auto;
+                        }
+                    }
+    
+                    &.email-and-phone,
+                    &.date-of-birth {
+                        padding-top: 0;
+                        margin-top: 16px;
+                    }
+    
+                    .first-name,
+                    .last-name,
+                    .email,
+                    .phone,
+                    .date-of-birth,
+                    .valid-until-year {
+                        width: 50%;
+                    }
+                    
+                    .old-password,
+                    .current-password,
+                    .new-password {
+                        width: 33.33333%;
+                    }
+
+                    &.valid-until-year {
+                        height: 0;
+                        
+                        input {
+                            height: 0;
+                            border: none;
+                        }
+                    }
+
+                    input {
+                        min-width: 100%;
+                        border-radius: 0;
+                        border: 1px solid #E0E0E0;
+                        padding: 0px;
+                        padding-left: 12px;
+                        height: 36px;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        color: $black-color;
+                
+                        &:focus {
+                            border: 1px solid $brown-color;
+                            box-shadow: none;
+                
+                            &::placeholder {
+                                color: transparent;
+                            }
+                        }
+                
+                        &::placeholder {
+                            font-weight: 100;
+                            color: #828282;
+                        }
+                    }
+                
+                    select {
+                        position: relative;
+                        border-radius: 0;
+                        padding: 0px;
+                        padding-left: 12px;
+                        height: 36px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        color: $black-color;
+                
+                        &:focus {
+                            border: 1px solid $brown-color;
+                            box-shadow: none;
+                        }
+                    }
+                
+                    label {
+                        opacity: 0;
+                        height: auto;
+                        padding: 0 5px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 10px;
+                        color: $brown-color;
+                        background: #fff;
+                        transform: scale(1) translateY(-8px) translateX(17px);
+                        transition: 0.3s;
+                    }
+
+                    .checkboxes {
+                        padding: 0;
+                        opacity: 1;
+                        min-width: auto;
+                        transform: none;
+                    }
+                
+                    >.form-control:focus,
+                    >.form-control:not(:placeholder-shown),
+                    >.form-select {
+                        ~label {
+                            opacity: 1;
+                            background: #fff;
+                            transform: scale(1) translateY(-8px) translateX(17px);
+                            transition: 0.3s;
+                        }
+                    }
+                }
+
+                .sub-to-news-email_block_form {
+                    display: flex;
+    
+                    input {
+                        width: 100%;
+                        padding: 11px;
+                        border: 1px solid $brown-color;
+                        min-width: auto;
+                        color: $black-color;
+                        
+                        &:focus {
+                            border: 1px solid $brown-color;
+                            box-shadow: none;
+                
+                            &::placeholder {
+                                color: transparent;
+                            }
+                        }
+                
+                        &::placeholder {
+                            font-weight: 100;
+                            color: #828282;
+                        }
+                    }
+    
+                    button {
+                        padding: 11px 38px;
+                        border: 1px solid $brown-color;
+                        background-color: $brown-color;
+                        color: #fff;
+    
+                        &:hover {
+                            background-color: #fff;
+                            color: $brown-color;
+                        }
+                    }
+                }
+
+                .save {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .btn-main {
+                        margin-top: 0;
+                        padding: 12px 63px;
+                    }
+                }
+            }
+
+            .sub-to-news-form-body {
+                padding: 34px 31px 49px 31px;
+            }
+        }
+
+        .personal-data-form {
+            margin-top: 0;
+        }
+    }
+}
