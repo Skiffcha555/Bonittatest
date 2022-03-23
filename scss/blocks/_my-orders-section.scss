@@ -234,46 +234,8 @@
             }
         }
     }
+
     .form-floating {
-        &.last-name,
-        &.email,
-        &.phone,
-        &.password,
-        &.password-repeat,
-        &.subscribe-for-newsletter {
-            margin-top: 24px;
-        }
-    
-        &.phone {
-            display: flex;
-            align-items: center;
-            border: 1px solid #828282;
-    
-            select {
-                padding-left: 8px;
-                border: none;
-                border-right: 0.5px solid #E0E0E0;
-                width: 20%;
-                height: auto;
-    
-                &:focus {
-                    border: none;
-                    border-right: 0.5px solid #E0E0E0;
-                }
-            }
-    
-            input {
-                width: 80%;
-                min-width: auto;
-                border: none;
-    
-                &:focus {
-                    border: none;
-                }
-            }
-    
-        }
-    
         input {
             min-width: 100%;
             border-radius: 0;

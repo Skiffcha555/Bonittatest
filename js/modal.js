@@ -2,6 +2,7 @@ var modalNotifyMe = document.getElementById("notifyMeModal");
 var modalFeedback = document.getElementById("modalFeedback");
 var btn = document.getElementById("showModal");
 var close = document.getElementsByClassName("close-modal")[0];
+var closeSecond = document.getElementsByClassName("close-modal-second")[0];
 
 btn.onclick = function () {
     modalNotifyMe.style.display = "block";
@@ -22,6 +23,10 @@ btn.onclick = function () {
 }
 
 close.onclick = function () {
+    modalFeedback.style.display = "none";
+}
+
+closeSecond.onclick = function () {
     modalFeedback.style.display = "none";
 }
 
