@@ -1105,9 +1105,6 @@ header.white .container nav .header_right .icon_heart {
   top: 0;
   transform: rotate(-45deg);
 }
-.shopping-cart-menu .container .hide {
-  display: none;
-}
 .shopping-cart-menu .container .shopping-cart-no-empty {
   width: 100%;
   height: 100%;
@@ -1202,6 +1199,9 @@ header.white .container nav .header_right .icon_heart {
 }
 .shopping-cart-menu .container .shopping-cart-empty .shopping-cart-menu_wrapper .btn-main {
   margin-top: 31px;
+}
+.shopping-cart-menu .container .hide {
+  display: none;
 }
 
 .search-bar {
