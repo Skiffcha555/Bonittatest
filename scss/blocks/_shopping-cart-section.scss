@@ -1,35 +1,35 @@
 .shopping-cart-section {
-    padding-top: 29px;
-    padding-bottom: 172px;
+    padding-top: 29rem;
+    padding-bottom: 172rem;
 
     h2 {
-        margin-top: 32px;
+        margin-top: 32rem;
         font-family: 'Cormorant Garamond';
         font-style: normal;
         font-weight: 300;
-        font-size: 18px;
+        font-size: 18rem;
         color: $black-color;
     }
 
     .list-and-promo {
-        padding-top: 31px;
+        padding-top: 31rem;
         display: flex;
-        gap: 120px;
+        gap: 120rem;
 
         .list-of-products {
             width: 65%;
 
             .list-titles {
                 display: flex;
-                gap: 18px;
-                padding-bottom: 17px;
-                padding-right: 40px;
-                border-bottom: 0.5px solid #BDBDBD;
+                gap: 18rem;
+                padding-bottom: 17rem;
+                padding-right: 40rem;
+                border-bottom: 0.5rem solid #BDBDBD;
 
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 16px;
+                font-size: 16rem;
                 color: $black-color;
 
                 .article {
@@ -39,7 +39,7 @@
                 .price-quantity-total {
                     width: 40%;
                     display: flex;
-                    gap: 60px;
+                    gap: 60rem;
 
                     .price,
                     .quantity,
@@ -51,13 +51,13 @@
 
             .products-in-cart {
                 width: 100%;
-                gap: 18px;
-                padding-right: 40px;
+                gap: 18rem;
+                padding-right: 40rem;
 
                 .product {
                     width: 100%;
                     display: flex;
-                    border-top: 0.5px solid #BDBDBD;
+                    border-top: 0.5rem solid #BDBDBD;
 
                     &:first-child {
                         border: none;
@@ -65,13 +65,13 @@
                 }
 
                 .product-name {
-                    padding: 34px 0;
+                    padding: 34rem 0;
                     display: flex;
-                    gap: 19px;
+                    gap: 19rem;
                     width: 60%;
 
                     .product-img {
-                        width: 142px;
+                        width: 142rem;
 
                         img {
                             width: 100%;
@@ -81,38 +81,38 @@
                     }
 
                     .product-descr {
-                        padding-top: 51px;
+                        padding-top: 51rem;
 
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: 100;
-                        font-size: 16px;
+                        font-size: 16rem;
                         color: $black-color;
 
                         .product-options {
-                            padding-top: 15px;
+                            padding-top: 15rem;
                             display: flex;
-                            gap: 8px;
+                            gap: 8rem;
 
                             .product-color {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                gap: 6px;
-                                padding-left: 12px;
-                                border-left: 0.5px solid #E0E0E0;
+                                gap: 6rem;
+                                padding-left: 12rem;
+                                border-left: 0.5rem solid #E0E0E0;
                             }
                         }
 
                         .save-and-delete {
                             display: flex;
-                            padding-top: 64px;
-                            gap: 48px;
+                            padding-top: 64rem;
+                            gap: 48rem;
 
                             .save-to-favorite,
                             .delete-product {
                                 display: flex;
-                                gap: 8px;
+                                gap: 8rem;
                                 justify-content: center;
                                 align-items: center;
                                 cursor: pointer;
@@ -154,16 +154,16 @@
                     width: 40%;
                     display: flex;
                     align-items: center;
-                    gap: 60px;
+                    gap: 60rem;
 
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 16px;
+                    font-size: 16rem;
                     color: $black-color;
 
                     .product-quantity {
-                        width: 19px;
+                        width: 19rem;
                     }
 
                     .product-price,
@@ -222,25 +222,25 @@
 
         .promo-and-continue {
             width: 35%;
-            padding-left: 21px;
-            border-left: 0.5px solid #BDBDBD;
+            padding-left: 21rem;
+            border-left: 0.5rem solid #BDBDBD;
 
             h4 {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 16px;
+                font-size: 16rem;
                 color: $black-color;
             }
 
             .promo-code {
-                margin-top: 18px;
+                margin-top: 18rem;
                 display: flex;
 
                 input {
                     width: 70%;
                     font-weight: 500;
-                    font-size: 16px;
+                    font-size: 16rem;
                     color: $black-color;
                 }
 
@@ -257,8 +257,8 @@
             .discount {
                 display: flex;
                 justify-content: space-between;
-                padding: 21px 0;
-                border-bottom: 0.5px solid #BDBDBD;
+                padding: 21rem 0;
+                border-bottom: 0.5rem solid #BDBDBD;
 
                 font-family: Roboto;
                 font-style: normal;
@@ -267,7 +267,7 @@
             }
 
             .total {
-                padding: 25px 0 40px 0;
+                padding: 25rem 0 40rem 0;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 100;
@@ -275,7 +275,7 @@
 
                 .total-sum {
                     display: flex;
-                    padding-bottom: 10px;
+                    padding-bottom: 10rem;
                     justify-content: space-between;
                     font-weight: 300;
                 }

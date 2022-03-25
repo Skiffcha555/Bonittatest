@@ -1,18 +1,18 @@
 .categories-section {
-    padding: 90px 0;
+    padding: 90rem 0;
 
     .container {
         display: flex;
         flex-wrap: wrap;
-        gap: 70px;
+        gap: 70rem;
         align-items: center;
 
         .category {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: calc(33.3333333% - 46.66666px);
-            min-height: 326px;
+            width: calc(33.3333333% - 46.66666rem);
+            min-height: 326rem;
             position: relative;
             transition: 0.3s;
             
@@ -20,7 +20,7 @@
                 font-family: 'Cormorant Garamond';
                 font-style: normal;
                 font-weight: bold;
-                font-size: 36px;
+                font-size: 36rem;
                 text-transform: capitalize;
                 color: #FFFFFF;
                 z-index: 10;

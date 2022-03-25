@@ -1,17 +1,17 @@
 .main {
-    padding-top: 81px;
+    padding-top: 81rem;
 }
 
 .favorites {
-    padding-top: 19px;
+    padding-top: 19rem;
 
     h2 {
-        padding-top: 5px;
+        padding-top: 5rem;
         text-align: center;
         font-family: Cormorant Garamond;
         font-style: normal;
         font-weight: 300;
-        font-size: 36px;
+        font-size: 36rem;
         color: $black-color;
     }
 
@@ -21,19 +21,19 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 100;
-        font-size: 12px;
+        font-size: 12rem;
         color: $black-color;
     }
 
     .favorite-products {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 54px;
-        padding-bottom: 130px;
-        gap: 36px;
+        padding-top: 54rem;
+        padding-bottom: 130rem;
+        gap: 36rem;
 
         .product_card {
-            width: calc(25% - 27px);
+            width: calc(25% - 27rem);
         }
     }
 }

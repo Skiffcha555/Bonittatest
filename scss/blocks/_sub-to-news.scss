@@ -1,6 +1,6 @@
 .sub-to-news {
     background-color: $brown-color;
-    padding: 56px 0;
+    padding: 56rem 0;
     
     .container {
         display: flex;
@@ -11,22 +11,23 @@
 
             &.sent {
                 .sub-to-news_email {
-                    padding-top: 17px;
+                    padding-top: 17rem;
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 16px;
+                    font-size: 16rem;
                     color: #FFFFFF;
                     text-align: center;
                 }
 
                 .sub-to-news_text {
-                    padding-top: 19px;
+                    padding-top: 19rem;
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 100;
-                    font-size: 16px;
+                    font-size: 16rem;
                     color: #FFFFFF;
+                    text-align: center;
                 }
             }
 
@@ -39,7 +40,7 @@
                     font-family: 'Cormorant Garamond';
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 36px;
+                    font-size: 36rem;
                     color: #FFFFFF;
                     text-align: center;
                 }
@@ -47,22 +48,22 @@
             .sub-to-news_subtitle {
                 display: flex;
                 justify-content: center;
-                padding-top: 15px;
+                padding-top: 15rem;
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 300;
-                font-size: 16px;
-                line-height: 19px;
+                font-size: 16rem;
+                line-height: 19rem;
                 color: #FFFFFF
             }
 
             .sub-to-news_form {
                 display: flex;
                 justify-content: center;
-                padding-top: 33px;
+                padding-top: 33rem;
 
                 .btn-main {
-                    padding: 16px 40px;
+                    padding: 16rem 40rem;
                 }
             }
         }

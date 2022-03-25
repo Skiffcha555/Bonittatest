@@ -1,6 +1,6 @@
 .order-completed-section {
-    padding-top: 66px;
-    padding-bottom: 76px;
+    padding-top: 66rem;
+    padding-bottom: 76rem;
 
     .order-completed-wrapper {
         width: 30%;
@@ -10,14 +10,14 @@
         flex-direction: column;
 
         .order-number {
-            padding-top: 12px;
+            padding-top: 12rem;
             display: flex;
             justify-content: center;
-            gap: 4px;
+            gap: 4rem;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 100;
-            font-size: 10px;
+            font-size: 10rem;
             color: $black-color;
         }
     }
@@ -26,7 +26,7 @@
         font-family: 'Cormorant Garamond';
         font-style: normal;
         font-weight: 300;
-        font-size: 18px;
+        font-size: 18rem;
         color: $black-color;
         text-align: center;
     }
@@ -36,18 +36,18 @@
     }
 
     .accordion {
-        border-top: 0.5px solid #BDBDBD;
-        padding-top: 11px;
+        border-top: 0.5rem solid #BDBDBD;
+        padding-top: 11rem;
 
         &:after {
             content: '';
             background: url(/icons/plus.svg) 50% 50% no-repeat;
             background-size: cover;
-            width: 14px;
-            height: 8px;
+            width: 14rem;
+            height: 8rem;
             font-weight: bold;
             float: right;
-            margin-right: 5px;
+            margin-right: 5rem;
             transition: transform .2s ease-in-out;
         }
         
@@ -64,12 +64,12 @@
     }
 
     .order-summary {
-        padding-bottom: 23px;
+        padding-bottom: 23rem;
 
         .btn-main {
             width: 50%;
             margin: 0 auto;
-            margin-top: 22px;
+            margin-top: 22rem;
             justify-content: center;
         }
     }

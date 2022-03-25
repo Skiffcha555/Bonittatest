@@ -1,50 +1,50 @@
 .payment-section {
-    padding-top: 29px;
+    padding-top: 29rem;
 
     .card-info-and-order-summary {
-        padding-top: 81px;
-        padding-bottom: 73px;
+        padding-top: 81rem;
+        padding-bottom: 73rem;
         display: flex;
-        gap: 78px;
+        gap: 78rem;
 
         h2 {
             font-family: 'Cormorant Garamond';
             font-style: normal;
             font-weight: 300;
-            font-size: 18px;
+            font-size: 18rem;
             color: $black-color; 
         }
 
         .card-information-title {
-            padding-bottom: 20px;
+            padding-bottom: 20rem;
             display: flex;
             justify-content: space-between;
             font-family: 'Cormorant Garamond';
             font-style: normal;
             font-weight: 100;
-            font-size: 18px;
+            font-size: 18rem;
             color: $black-color;
         }
 
         .return-to-cart {
-            margin-top: 34px;
+            margin-top: 34rem;
         }
 
         .card-information {
             width: 50%;
-            padding-right: 60px;
-            border-right: 0.5px solid #E0E0E0;
+            padding-right: 60rem;
+            border-right: 0.5rem solid #E0E0E0;
 
             .mustValidate {
-                padding: 31px 23px 37px 23px;
-                border: 0.5px solid #E0E0E0;
+                padding: 31rem 23rem 37rem 23rem;
+                border: 0.5rem solid #E0E0E0;
             }
 
             .form-floating {
 
                 &.full-name {
                     display: flex;
-                    gap: 20px;
+                    gap: 20rem;
                     width: 100%;
                     input {
                         min-width: auto;
@@ -52,9 +52,9 @@
                 }
 
                 &.valid-until-month-and-year {
-                    padding-top: 26px;
+                    padding-top: 26rem;
                     display: flex;
-                    gap: 20px;
+                    gap: 20rem;
                     width: 100%;
 
                     input {
@@ -64,7 +64,7 @@
 
                 &.valid-until-month-and-year {
                     padding-top: 0;
-                    margin-top: 16px;
+                    margin-top: 16rem;
                 }
 
                 .valid-until-year {
@@ -75,8 +75,8 @@
                         top: 50%;
                         right: 15%;
                         transform: translateY(-50%);
-                        width: 1px;
-                        height: 21px;
+                        width: 1rem;
+                        height: 21rem;
                         position: absolute;
                     }
                 }
@@ -89,22 +89,22 @@
                 }
 
                 &.card-number {
-                    margin-top: 16px;
+                    margin-top: 16rem;
                 }
 
                 input {
                     border-radius: 0;
-                    padding: 0px;
-                    padding-left: 12px;
-                    height: 36px;
+                    padding: 0rem;
+                    padding-left: 12rem;
+                    height: 36rem;
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 12px;
+                    font-size: 12rem;
                     color: $black-color;
 
                     &:focus {
-                        border: 1px solid $brown-color;
+                        border: 1rem solid $brown-color;
                         box-shadow: none;
 
                         &::placeholder {
@@ -121,17 +121,17 @@
                 select {
                     position: relative;
                     border-radius: 0;
-                    padding: 0px;
-                    padding-left: 12px;
-                    height: 36px;
+                    padding: 0rem;
+                    padding-left: 12rem;
+                    height: 36rem;
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 12px;
+                    font-size: 12rem;
                     color: $black-color;
 
                     &:focus {
-                        border: 1px solid $brown-color;
+                        border: 1rem solid $brown-color;
                         box-shadow: none;
                     }
                 }
@@ -139,14 +139,14 @@
                 label {
                     opacity: 0;
                     height: auto;
-                    padding: 0 5px;
+                    padding: 0 5rem;
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 10px;
+                    font-size: 10rem;
                     color: $brown-color;
                     background: #fff;
-                    transform: scale(1) translateY(-12px) translateX(17px);
+                    transform: scale(1) translateY(-12rem) translateX(17rem);
                     transition: 0.3s;
                 }
 
@@ -156,21 +156,21 @@
                     ~label {
                         opacity: 1;
                         background: #fff;
-                        transform: scale(1) translateY(-12px) translateX(17px);
+                        transform: scale(1) translateY(-12rem) translateX(17rem);
                         transition: 0.3s;
                     }
                 }
             }
 
             .remember-card-next-time {
-                margin-top: 16px;
+                margin-top: 16rem;
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: 10rem;
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 100;
-                font-size: 12px;
+                font-size: 12rem;
                 color: #828282;
 
                 .checkboxes {
@@ -196,7 +196,7 @@
         }
 
         .btn-main {
-            margin-top: 25px;
+            margin-top: 25rem;
             width: 65%;
             justify-content: center;
         }

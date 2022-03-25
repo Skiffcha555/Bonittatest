@@ -1,6 +1,6 @@
 .confirmation-of-registration-section {
-    padding-top: 70px;
-    padding-bottom: 210px;
+    padding-top: 70rem;
+    padding-bottom: 210rem;
 
     .confirmation-of-registration-wrapper {
         width: 45%;
@@ -10,27 +10,27 @@
         flex-direction: column;
 
         .mustValidate {
-            width: 180px;
+            width: 180rem;
             margin: 0 auto;
         }
     }
 
     h2 {
-        padding-bottom: 30px;
+        padding-bottom: 30rem;
         font-family: 'Cormorant Garamond';
         font-style: normal;
         font-weight: 300;
-        font-size: 36px;
+        font-size: 36rem;
         color: $black-color;
         text-align: center;
     }
 
     .confirm {
-        padding-bottom: 37px;
+        padding-bottom: 37rem;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 100;
-        font-size: 14px;
+        font-size: 14rem;
         text-align: center;
         color: $black-color;
 
@@ -40,11 +40,11 @@
     }
 
     .resend-code {
-        margin-top: 21px;
+        margin-top: 21rem;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 14rem;
         text-decoration-line: underline;
         text-align: center;
         color: $black-color;
@@ -60,18 +60,18 @@
         input {
             min-width: 100%;
             border-radius: 0;
-            border: 1px solid #828282;
-            padding: 0px;
-            padding-left: 12px;
-            height: 36px;
+            border: 1rem solid #828282;
+            padding: 0rem;
+            padding-left: 12rem;
+            height: 36rem;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 300;
-            font-size: 12px;
+            font-size: 12rem;
             color: $black-color;
 
             &:focus {
-                border: 1px solid $brown-color;
+                border: 1rem solid $brown-color;
                 box-shadow: none;
 
                 &::placeholder {
@@ -87,8 +87,8 @@
     }
     
     .btn-main {
-        margin-top: 26px;
-        padding: 14px 0;
+        margin-top: 26rem;
+        padding: 14rem 0;
         width: 100%;
         justify-content: center;
     }

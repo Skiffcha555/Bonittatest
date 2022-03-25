@@ -1,7 +1,7 @@
 .burger {
     cursor: pointer;
-    width: 19px;
-    height: 15px;
+    width: 19rem;
+    height: 15rem;
     z-index: 25;
 
     &.burger_active {
@@ -27,8 +27,8 @@
 
 .burger_lines {
     position: absolute;
-    width: 19px;
-    height: 2px;
+    width: 19rem;
+    height: 2rem;
     background-color: #fff;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
@@ -67,8 +67,8 @@
 
         .burger_block {
             width: 100%;
-            height: 80px;
-            border-bottom: 1px solid rgba($brown-color, 0.3);
+            height: 80rem;
+            border-bottom: 1rem solid rgba($brown-color, 0.3);
 
             .burger_wrapper {
                 position: relative;
@@ -92,13 +92,13 @@
                     top: 50%;
                     transform: translateY(-50%);
                     cursor: pointer;
-                    width: 19px;
+                    width: 19rem;
                     z-index: 21;
     
                     .close-icon_lines {
                         position: absolute;
-                        width: 19px;
-                        height: 2px;
+                        width: 19rem;
+                        height: 2rem;
                         background-color: $black-color;
                         -webkit-transition: 0.4s;
                         -moz-transition: 0.4s;
@@ -121,17 +121,17 @@
 
         .burger_wrapper {
             width: 100%;
-            padding: 0px 24px;
+            padding: 0rem 24rem;
         }
 
         .menu {
-            margin-top: 29px;
+            margin-top: 29rem;
             margin-bottom: 0;
             padding-left: 0;
             height: 100%;
             display: flex;
             flex-direction: column;
-            row-gap: 13px;
+            row-gap: 13rem;
 
             .menu_item {
                 list-style-type: none;
@@ -141,7 +141,7 @@
                     font-family: 'Cormorant Garamond';
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 18px;
+                    font-size: 18rem;
                     color: $black-color;
                     transition: 0.3s;
 
@@ -154,7 +154,7 @@
             }
 
             .sub_item {
-                margin-left: 16px;
+                margin-left: 16rem;
             }
         }
     }

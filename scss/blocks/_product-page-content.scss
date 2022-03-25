@@ -1,24 +1,24 @@
 .product-page-content {
-    padding-top: 29px;
+    padding-top: 29rem;
 
     .product-content {
         display: flex;
-        padding-top: 60px;
-        gap: 80px;
+        padding-top: 60rem;
+        gap: 80rem;
 
         .product-images {
             width: 60%;
-            // calc(55% - 40px);
+            // calc(55% - 40rem);
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 8rem;
 
             a {
-                width: calc(50% - 4px);
+                width: calc(50% - 4rem);
 
                 img {
                     width: 100%;
-                    min-height: 540px;
+                    min-height: 540rem;
                     object-fit: cover;
                 }
             }
@@ -31,65 +31,65 @@
                 font-family: Cormorant Garamond;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 36px;
+                font-size: 36rem;
                 text-transform: capitalize;
                 color: $black-color;
             }
 
             .product-price {
-                padding-top: 25px;
+                padding-top: 25rem;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 24px;
+                font-size: 24rem;
                 text-transform: capitalize;
                 color: $black-color;
             }
 
             .product-text-color {
-                padding-top: 25px;
+                padding-top: 25rem;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 14px;
+                font-size: 14rem;
                 text-transform: capitalize;
                 color: $black-color;
             }
 
             .product-colors {
-                padding-top: 15px;
+                padding-top: 15rem;
                 display: flex;
-                gap: 8px;
+                gap: 8rem;
 
                 .product-color {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding: 6px;
-                    border: 1px solid transparent;
+                    padding: 6rem;
+                    border: 1rem solid transparent;
                     border-radius: 50%;
                     transition: 0.3s;
                     cursor: pointer;
 
                     &.product-color_active {
                         transition: 0.3s;
-                        border: 1px solid $black-color;
+                        border: 1rem solid $black-color;
                     }
 
                     &:hover {
                         transition: 0.3s;
-                        border: 1px solid $black-color;
+                        border: 1rem solid $black-color;
                     }
                 }
             }
 
             .size-guide {
                 display: inline-block;
-                padding-top: 17px;
+                padding-top: 17rem;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 14px;
+                font-size: 14rem;
                 text-transform: capitalize;
                 color: $black-color;
                 cursor: pointer;
@@ -101,11 +101,11 @@
 
             .not-available {
                 display: none;
-                padding-top: 26px;
+                padding-top: 26rem;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 14px;
+                font-size: 14rem;
                 color: $red-color;
 
                 &.show {
@@ -114,23 +114,23 @@
             }
 
             .product-sizes {
-                padding-top: 15px;
+                padding-top: 15rem;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 14px;
+                font-size: 14rem;
                 text-transform: capitalize;
                 color: $black-color;
                 display: flex;
-                gap: 11px;
+                gap: 11rem;
 
                 .product-size {
-                    height: 44px;
-                    width: 44px;
+                    height: 44rem;
+                    width: 44rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border: 1px solid #BDBDBD;
+                    border: 1rem solid #BDBDBD;
                     border-radius: 50%;
                     transition: 0.3s;
                     cursor: pointer;
@@ -138,13 +138,13 @@
                     &.product-size_active {
                         transition: 0.3s;
                         font-weight: 600;
-                        border: 1px solid $black-color;
+                        border: 1rem solid $black-color;
                     }
 
                     &:hover {
                         transition: 0.3s;
                         font-weight: 600;
-                        border: 1px solid $black-color;
+                        border: 1rem solid $black-color;
                     }
                 }
 
@@ -154,14 +154,14 @@
             }
 
             .buy-and-save-product {
-                padding-top: 31px;
+                padding-top: 31rem;
                 display: flex;
-                gap: 27px;
+                gap: 27rem;
 
                 .btn-main {
                     color: #000;
-                    border: 1px solid #000;
-                    padding: 15px 70px;
+                    border: 1rem solid #000;
+                    padding: 15rem 70rem;
 
                     &.hide {
                         display: none;
@@ -174,7 +174,7 @@
                     &:hover {
                         color: #fff;
                         background-color: $brown-color;
-                        border: 1px solid $brown-color;
+                        border: 1rem solid $brown-color;
                     }
                 }
 
@@ -213,7 +213,7 @@
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 14px;
+                    font-size: 14rem;
                     color: $black-color;
                     text-align: start;
 
@@ -221,28 +221,28 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin: 15px 0;
+                    margin: 15rem 0;
                     background-color: transparent;
                     outline: none;
                     padding: 0;
-                    padding-bottom: 11px;
+                    padding-bottom: 11rem;
                     border: none;
-                    border-bottom: 0.5px solid #BDBDBD;
+                    border-bottom: 0.5rem solid #BDBDBD;
 
                     &:after {
                         content: '';
                         background: url(/icons/arrow-down.svg) 50% 50% no-repeat;
                         background-size: cover;
-                        width: 14px;
-                        height: 8px;
+                        width: 14rem;
+                        height: 8rem;
                         font-weight: bold;
                         float: right;
-                        margin-right: 5px;
+                        margin-right: 5rem;
                         transition: transform .2s ease-in-out;
                     }
 
                     &:first-child {
-                        margin-top: 45px;
+                        margin-top: 45rem;
                     }
                 }
 
@@ -257,11 +257,11 @@
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 100;
-                    font-size: 14px;
-                    line-height: 16px;
+                    font-size: 14rem;
+                    line-height: 16rem;
                     color: $black-color;
 
-                    padding: 0px 16px;
+                    padding: 0rem 16rem;
                     background-color: #fff;
                     max-height: 0;
                     overflow: hidden;

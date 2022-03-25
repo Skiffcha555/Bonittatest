@@ -1,12 +1,12 @@
 footer {
-    padding-top: 76px;
-    border-top: 1px solid rgba($brown-color, 0.3);
+    padding-top: 76rem;
+    border-top: 1rem solid rgba($brown-color, 0.3);
 
     .container {
-        padding-bottom: 52px;
+        padding-bottom: 52rem;
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid rgba($brown-color, 0.3);
+        border-bottom: 1rem solid rgba($brown-color, 0.3);
 
         .shop_and_contact_blocks {
             width: 50%;
@@ -17,7 +17,7 @@ footer {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 300;
-            font-size: 16px;
+            font-size: 16rem;
             color: $black-color;
         }
 
@@ -28,10 +28,10 @@ footer {
 
             li {
                 list-style-type: none;
-                margin-top: 21px;
+                margin-top: 21rem;
 
                 &:first-child {
-                    margin-top: 23px;
+                    margin-top: 23rem;
                 }
 
                 a {
@@ -39,7 +39,7 @@ footer {
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 14px;
+                    font-size: 14rem;
                     color: $black-color;
 
                     &:hover {
@@ -55,9 +55,9 @@ footer {
             flex-direction: column;
 
             .social-net_block_icons {
-                padding-top: 23px;
+                padding-top: 23rem;
                 display: flex;
-                gap: 12px;
+                gap: 12rem;
 
                 .social-net_block_icon {
                     svg {
@@ -89,41 +89,41 @@ footer {
 
             &.sent {
                 .sub-to-news_email {
-                    padding-top: 17px;
+                    padding-top: 17rem;
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 16px;
+                    font-size: 16rem;
                     color: $black-color;
                     text-align: start;
                 }
 
                 .sub-to-news_text {
-                    padding-top: 19px;
+                    padding-top: 19rem;
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 100;
-                    font-size: 16px;
+                    font-size: 16rem;
                     color: $black-color;
                 }
             }
 
             .sub-to-news-email_block_subtitle {
-                margin-top: 23px;
+                margin-top: 23rem;
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 100;
-                font-size: 14px;
+                font-size: 14rem;
                 color: $black-color;
             }
 
             .sub-to-news-email_block_form {
                 display: flex;
-                margin-top: 24px;
+                margin-top: 24rem;
 
                 input {
                     width: 100%;
-                    border: 1px solid $brown-color;
+                    border: 1rem solid $brown-color;
                     min-width: auto;
                     color: $black-color;
                     
@@ -133,7 +133,7 @@ footer {
                 }
 
                 button {
-                    border: 1px solid $brown-color;
+                    border: 1rem solid $brown-color;
                     background-color: $brown-color;
                     color: #fff;
 
@@ -147,14 +147,14 @@ footer {
     }
 
     .footer_author {
-        padding: 16px 0;
+        padding: 16rem 0;
         display: inline-block;
         width: 100%;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 12rem;
+        line-height: 14rem;
         text-align: center;
         color: $black-color;
     }

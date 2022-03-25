@@ -5,8 +5,8 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    gap: 17px;
-    padding: 18px 14px;
+    gap: 17rem;
+    padding: 18rem 14rem;
     cursor: pointer;
     background-color: transparent;
     transition: background-color 300ms linear;
@@ -14,7 +14,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 100;
-    font-size: 12px;
+    font-size: 12rem;
     color: #828282;
 
     input {
@@ -27,19 +27,19 @@
 
     .checkmark {
         position: relative;
-        height: 15px;
-        width: 15px;
+        height: 15rem;
+        width: 15rem;
         background-color: transparent;
-        border: 0.5px solid #828282;
-        border-radius: 2px;
+        border: 0.5rem solid #828282;
+        border-radius: 2rem;
         transition: 0.3s;
 
         &:after {
             content: "";
             background: url(/icons/checked.svg) 50% 50% no-repeat;
             background-size: cover;
-            width: 8px;
-            height: 6px;
+            width: 8rem;
+            height: 6rem;
             top: 50%;
             left: 50%;
             transform: translateY(-50%) translateX(-50%);
@@ -55,7 +55,7 @@
 }
 
 .checkboxes input:checked~.checkmark {
-    border: 0.5px solid transparent;
+    border: 0.5rem solid transparent;
     background-color: #957D6D;
 }
 

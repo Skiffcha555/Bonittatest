@@ -1,19 +1,19 @@
 input {
     background: transparent;
-    border: 1px solid #fff;
-    padding: 16px;
-    min-width: 350px;
+    border: 1rem solid #fff;
+    padding: 16rem;
+    min-width: 350rem;
     outline: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 14rem;
     color: #FFFFFF;
 }
 
 .brown-input {
     width: 100%;
-    border: 1px solid #957D6D;
+    border: 1rem solid #957D6D;
     min-width: auto;
     color: #333;
 }
@@ -23,7 +23,7 @@ input {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 12rem;
     color: $red-color;
 }
 
@@ -47,16 +47,16 @@ input[type=number] {
 //     font-family: 'Roboto';
 //     font-style: normal;
 //     font-weight: 100;
-//     font-size: 12px;
+//     font-size: 12rem;
 //     color: $black-color;
-//     border: 0.5px solid #828282;
+//     border: 0.5rem solid #828282;
 //     border-radius: 0;
 //     background-color: transparent;
 //     transition: 1s;
 // }
 
 // input[type=file]::file-selector-button:hover {
-//     border: 0.5px solid #828282;
+//     border: 0.5rem solid #828282;
 //     border-radius: 0;
 //     background-color: transparent;
 //     transition: 1s;

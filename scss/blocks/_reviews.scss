@@ -1,5 +1,5 @@
 .reviews {
-    padding-top: 75px;
+    padding-top: 75rem;
 
     .container {
         max-width: 80%;
@@ -12,7 +12,7 @@
                 font-family: Cormorant Garamond;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 36px;
+                font-size: 36rem;
                 color: $black-color;
             }
 
@@ -23,9 +23,9 @@
 
             .review {
                 display: flex;
-                gap: 70px;
-                margin-bottom: 36px;
-                border-top: 0.5px solid #E0E0E0;
+                gap: 70rem;
+                margin-bottom: 36rem;
+                border-top: 0.5rem solid #E0E0E0;
 
                 &:first-child {
                     border: none;
@@ -33,16 +33,16 @@
 
                 .review-info {
                     width: 20%;
-                    margin-top: 26px;
+                    margin-top: 26rem;
                     display: flex;
                     flex-direction: column;
-                    gap: 12px;
+                    gap: 12rem;
 
                     .review-username {
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: 300;
-                        font-size: 14px;
+                        font-size: 14rem;
                         color: $black-color;
                     }
 
@@ -50,32 +50,32 @@
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: 100;
-                        font-size: 14px;
+                        font-size: 14rem;
                         color: $black-color;
                     }
 
                     .stars {
                         margin-left: 0;
-                        margin-top: 5px;
+                        margin-top: 5rem;
                         justify-content: start;
                     }
                 }
 
                 .review-descr {
                     width: 80%;
-                    margin-top: 26px;
+                    margin-top: 26rem;
 
                     .review-imgs {
-                        padding-top: 50px;
+                        padding-top: 50rem;
                         display: flex;
-                        gap: 18px;
+                        gap: 18rem;
 
                         .review-img {
                             cursor: pointer;
 
                             img {
-                                width: 60px;
-                                height: 60px;
+                                width: 60rem;
+                                height: 60rem;
                                 object-fit: cover;
                             }
                         }
@@ -87,17 +87,17 @@
 }
 
 .stars {
-    margin-left: 15px;
+    margin-left: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 2rem;
 
     svg {
         path {
             fill: transparent;
             stroke: #000;
-            stroke-width: 0.5px;
+            stroke-width: 0.5rem;
 
 
         }
@@ -111,15 +111,15 @@
 .review-img-open {
     position: relative;
     display: none;
-    border-top: 0.5px solid #E0E0E0;
-    margin-top: 26px;
-    padding-top: 25px;
-    width: 297px;
+    border-top: 0.5rem solid #E0E0E0;
+    margin-top: 26rem;
+    padding-top: 25rem;
+    width: 297rem;
 }
 
 .closebtn {
     position: absolute;
-    top: 8px;
-    right: 7px;
+    top: 8rem;
+    right: 7rem;
     cursor: pointer;
 }

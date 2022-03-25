@@ -1,11 +1,12 @@
 .product_card-in-cart {
-    padding: 28px 0;
-    border-top: 1px solid rgba($brown-color, 0.3);
+    padding: 28rem 0;
+    border-top: 1rem solid rgba($brown-color, 0.3);
     display: flex;
-    gap: 17px;
+    justify-content: space-between;
+    gap: 17rem;
     font-family: Roboto;
     font-style: normal;
-    font-size: 14px;
+    font-size: 14rem;
 
     &:first-child {
         border-top: none;
@@ -18,7 +19,7 @@
     .product_card-in-cart_img {
         img {
             width: 100%;
-            max-height: 136px;
+            max-height: 136rem;
         }
     }
 
@@ -33,34 +34,39 @@
         }
 
         .product_card-in-cart_title {
-            padding-top: 9px;
+            padding-top: 9rem;
             font-weight: 100;
             color: $black-color;
         }
 
         .product_card-in-cart_options {
-            padding-top: 9px;
+            padding-top: 9rem;
             font-weight: 100;
             color: $black-color;
             display: flex;
 
             .product_card-in-cart_size {
-                padding-right: 7px;
-                border-right: 1px solid rgba($brown-color, 0.3);
+                padding-right: 7rem;
+                border-right: 1rem solid rgba($brown-color, 0.3);
             }
 
             .product_card-in-cart_color {
                 display: flex;
                 align-items: center;
-                gap: 3px;
-                padding-left: 7px;
+                gap: 3rem;
+                padding-left: 7rem;
             }
         }
 
         .product_card-in-cart_quantity {
-            padding-top: 9px;
+            padding-top: 9rem;
             font-weight: 100;
             color: $black-color;
         }
+    }
+
+    .product_card-in-cart_icons {
+        display: flex;
+        gap: 8rem;
     }
 }

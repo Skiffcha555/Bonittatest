@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 550px;
+    width: 550rem;
     height: 100vh;
     background-color: #fff;
     transform: translateX(100vw);
@@ -22,27 +22,27 @@
             display: flex;
             align-items: center;
             width: 100%;
-            height: 80px;
-            border-bottom: 1px solid #BDBDBD;
-            padding: 25px 0;
+            height: 80rem;
+            border-bottom: 1rem solid #BDBDBD;
+            padding: 25rem 0;
 
             .size-guide-block_wrapper {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 0px 32px;
+                padding: 0rem 32rem;
             }
 
             .close-icon3 {
                 position: relative;
                 cursor: pointer;
-                width: 19px;
+                width: 19rem;
                 z-index: 21;
 
                 .close-icon_lines {
                     position: absolute;
-                    width: 19px;
-                    height: 2px;
+                    width: 19rem;
+                    height: 2rem;
                     background-color: $black-color;
                     -webkit-transition: 0.4s;
                     -moz-transition: 0.4s;
@@ -65,20 +65,20 @@
         .size-guide-block_wrapper {
             width: 100%;
             height: 100%;
-            padding: 0 40px;
+            padding: 0 40rem;
 
             h4 {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 300;
-                font-size: 14px;
+                font-size: 14rem;
                 color: $black-color;
             }
 
             .sizes-table {
                 display: flex;
                 flex-direction: column;
-                padding-top: 18px;
+                padding-top: 18rem;
 
                 .main-names-row,
                 .xs-size-row,
@@ -87,7 +87,7 @@
                 .l-size-row,
                 .xl-size-row {
                     display: flex;
-                    padding: 18px 0;
+                    padding: 18rem 0;
 
                     &:nth-child(2n) {
                         background: #F9F9F9;
@@ -102,7 +102,7 @@
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 300;
-                        font-size: 16px;
+                        font-size: 16rem;
                         color: $black-color;
                     }
                 }
@@ -115,42 +115,42 @@
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 100;
-                        font-size: 16px;
+                        font-size: 16rem;
                         color: $black-color;
                     }
                 }
             }
 
             .measurement-example {
-                padding-top: 30px;
+                padding-top: 30rem;
 
                 h4 {
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 16px;
+                    font-size: 16rem;
                     color: $black-color;
                 }
 
                 .measurement-content {
-                    padding-top: 20px;
+                    padding-top: 20rem;
                     display: flex;
-                    gap: 37px;
+                    gap: 37rem;
 
                     .measurement-descr {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
-                        gap: 26px;
+                        gap: 26rem;
 
                         .measurement-title {
                             display: flex;
-                            gap: 9px;
+                            gap: 9rem;
 
                             .measurement-icon {
-                                height: 33px;
-                                width: 33px;
+                                height: 33rem;
+                                width: 33rem;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -159,7 +159,7 @@
                                 font-family: Roboto;
                                 font-style: normal;
                                 font-weight: normal;
-                                font-size: 18px;
+                                font-size: 18rem;
                                 text-transform: capitalize;
                                 color: #FFFFFF;
 
@@ -175,7 +175,7 @@
                                 font-family: Roboto;
                                 font-style: normal;
                                 font-weight: 300;
-                                font-size: 14px;
+                                font-size: 14rem;
                                 color: $brown-color;
 
                                 &.black {
@@ -185,12 +185,12 @@
                         }
 
                         .measurement-text {
-                            padding-top: 10px;
+                            padding-top: 10rem;
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: 100;
-                            font-size: 14px;
-                            line-height: 16px;
+                            font-size: 14rem;
+                            line-height: 16rem;
                             color: $black-color;
                         }
                     }

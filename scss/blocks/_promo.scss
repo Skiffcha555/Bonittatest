@@ -1,5 +1,5 @@
 .promo {
-    padding: 110px 0 130px 0;
+    padding: 110rem 0 130rem 0;
     height: 100vh;
     background: url('/img/promo/main-bg.jpg') center (center/cover) no-repeat;
 
@@ -10,23 +10,23 @@
     }
 
     &_wrapper {
-        max-width: 50%;
+        max-width: 55%;
 
         .promo_collection {
             font-family: Roboto;
             font-style: normal;
             font-weight: 300;
-            font-size: 16px;
+            font-size: 16rem;
             color: #fff;
         }
 
         .promo_title {
             h1 {
-                padding: 19px 0;
+                padding: 19rem 0;
                 font-family: 'Cormorant Garamond';
                 font-weight: 300;
-                font-size: 64px;
-                line-height: 78px;
+                font-size: 64rem;
+                line-height: 78rem;
                 text-transform: uppercase;
                 color: #FFFFFF;
             }
@@ -36,13 +36,13 @@
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 16rem;
+            line-height: 19rem;
             color: #FFFFFF;
         }
 
         .promo_btn {
-            margin-top: 30px;
+            margin-top: 30rem;
             display: inline-flex;
         }
     }

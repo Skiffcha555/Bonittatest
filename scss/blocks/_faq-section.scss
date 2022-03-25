@@ -1,10 +1,10 @@
 .faq-section {
-    padding-bottom: 100px;
+    padding-bottom: 100rem;
 
     .bread-crumbs {
-        padding-top: 30px;
-        padding-bottom: 5px;
-        padding-left: 24px;
+        padding-top: 30rem;
+        padding-bottom: 5rem;
+        padding-left: 24rem;
         justify-content: flex-start;
 
         a {
@@ -19,11 +19,11 @@
     }
 
     h2 {
-        padding-bottom: 50px;
+        padding-bottom: 50rem;
         font-family: 'Cormorant Garamond';
         font-style: normal;
         font-weight: 300;
-        font-size: 36px;
+        font-size: 36rem;
         color: $black-color;
         text-align: center;
     }
@@ -32,7 +32,7 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 100;
-        font-size: 14px;
+        font-size: 14rem;
         color: $black-color;
 
         .accordion-content {
@@ -40,13 +40,13 @@
         }
 
         .accordion-box {
-            border: 1px solid #E0E0E0;
-            margin-top: 27px;
-            padding: 15px 24px 0 24px;
+            border: 1rem solid #E0E0E0;
+            margin-top: 27rem;
+            padding: 15rem 24rem 0 24rem;
 
             &.brown-border-and-padding {
-                padding-bottom: 28px;
-                border: 1px solid #957D6D;
+                padding-bottom: 28rem;
+                border: 1rem solid #957D6D;
             }
 
             &:first-child {
@@ -57,7 +57,7 @@
         .accordion {
             margin-top: 0;
             padding-top: 0;
-            margin-bottom: 15px;
+            margin-bottom: 15rem;
             padding-bottom: 0;
 
             border: none;
@@ -66,18 +66,18 @@
                 content: '';
                 background: url(/icons/plus.svg) 50% 50% no-repeat;
                 background-size: cover;
-                width: 14px;
-                height: 8px;
+                width: 14rem;
+                height: 8rem;
                 font-weight: bold;
                 float: right;
-                margin-right: 5px;
+                margin-right: 5rem;
                 transition: transform .2s ease-in-out;
             }
             
             &.active{
-                margin-bottom: 15px;
-                padding-bottom: 11px;
-                border-bottom: 0.5px solid #BDBDBD;
+                margin-bottom: 15rem;
+                padding-bottom: 11rem;
+                border-bottom: 0.5rem solid #BDBDBD;
 
                 &::after {
                     content: '';

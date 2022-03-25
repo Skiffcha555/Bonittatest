@@ -1,7 +1,7 @@
 header {
     position: fixed;
     width: 100%;
-    padding: 24.5px 0;
+    padding: 24.5rem 0;
     transition: 0.3s;
     z-index: 20;
 
@@ -20,11 +20,35 @@ header {
             .header_left {
                 width: 33.33333%;
                 display: flex;
-                gap: 35px;
+                gap: 35rem;
                 align-items: center;
 
+                .search-icon {
+                    display: none;
+
+                    &.mobile {
+                        display: block;
+                    }
+                }
+
+                .languages {
+                    &.mobile {
+                        display: block;
+                    }
+                }
+
                 svg {
+                    display: none;
                     cursor: pointer;
+                    transition: 0.3s;
+                    margin-right: 30rem;
+
+                    &:hover {
+                        path {
+                            transition: 0.3s;
+                            stroke: $black-color;
+                        }
+                    }
                 }
 
                 select {
@@ -51,15 +75,21 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                gap: 16px;
+                gap: 16rem;
+
+                .my-account {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-right: 0;
+                    }
+                }
 
                 svg {
                     cursor: pointer;
                     transition: 0.3s;
-
-                    &:first-child {
-                        margin-right: 30px;
-                    }
+                    margin-right: 30rem;
 
                     &:hover {
                         path {
@@ -73,7 +103,7 @@ header {
                 .icon_heart {
                     display: flex;
                     align-items: center;
-                    gap: 5px;
+                    gap: 5rem;
                     color: #fff;
                     cursor: pointer;
 
@@ -102,6 +132,28 @@ header {
                         }
                     }
                 }
+
+                .cart-wishlist {
+                    display: none;
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        width: 14rem;
+                        height: 14rem;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 11rem;
+                        color: #fff;
+                        top: 8.2rem;
+                        left: 2rem;
+                    }
+                }
             }
         }
     }
@@ -110,7 +162,7 @@ header {
 header {
     &.white {
         background-color: #fff;
-        border-bottom: 1px solid rgba(149, 125, 109, 0.3);
+        border-bottom: 1rem solid rgba(149, 125, 109, 0.3);
 
         .burger_lines {
             background-color: $black-color;

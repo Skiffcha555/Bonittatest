@@ -2,14 +2,14 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 16rem;
     color: $black-color;
 }
 
 .dropdown {
     position: relative;
     display: flex;
-    gap: 7px;
+    gap: 7rem;
     align-items: center;
     cursor: pointer;
 
@@ -17,8 +17,8 @@
         content: '';
         background: url(/icons/arrow-down.svg) 50% 50% no-repeat;
         background-size: cover;
-        width: 8px;
-        height: 6px;
+        width: 8rem;
+        height: 6rem;
         font-weight: bold;
         float: right;
         transition: transform .2s ease-in-out;
@@ -35,23 +35,23 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 30px;
+    top: 30rem;
     background-color: #fff;
     overflow: auto;
     z-index: 1;
 }
 
 .filter-sort-by {
-    min-width: 260px;
+    min-width: 260rem;
     display: flex;
     align-items: center;
-    gap: 17px;
+    gap: 17rem;
     cursor: pointer;
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 16rem;
     color: $black-color;
     transition: 0.3s;
 
@@ -76,25 +76,25 @@ input[type="radio"] {
     +.radio-label {
         display: flex;
         align-items: center;
-        padding: 18px 14px;
-        gap: 17px;
+        padding: 18rem 14rem;
+        gap: 17rem;
         width: 100%;
         cursor: pointer;
 
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 100;
-        font-size: 16px;
+        font-size: 16rem;
         color: $black-color;
 
         &:before {
             content: '';
             background: #ffffff;
             border-radius: 100%;
-            border: 1px solid #828282;
+            border: 1rem solid #828282;
             display: inline-block;
-            width: 16px;
-            height: 16px;
+            width: 16rem;
+            height: 16rem;
             position: relative;
             vertical-align: top;
             cursor: pointer;
@@ -107,8 +107,8 @@ input[type="radio"] {
         +.radio-label {
             &:before {
                 background-color: #957D6D;
-                box-shadow: inset 0 0 0 2px #ffffff;
-                border: 1px solid #957D6D;
+                box-shadow: inset 0 0 0 2rem #ffffff;
+                border: 1rem solid #957D6D;
             }
         }
     }
@@ -132,15 +132,15 @@ input[type="radio"] {
 }
 
 .filter-sizes {
-    min-width: 260px;
+    min-width: 260rem;
     display: flex;
     position: relative;
     user-select: none;
     flex-direction: row-reverse;
     justify-content: start;
     align-items: center;
-    gap: 17px;
-    padding: 18px 14px;
+    gap: 17rem;
+    padding: 18rem 14rem;
     cursor: pointer;
     background-color: transparent;
     transition: background-color 300ms linear;
@@ -155,19 +155,19 @@ input[type="radio"] {
 
     .checkmark {
         position: relative;
-        height: 15px;
-        width: 15px;
+        height: 15rem;
+        width: 15rem;
         background-color: transparent;
-        border: 0.5px solid #828282;
-        border-radius: 2px;
+        border: 0.5rem solid #828282;
+        border-radius: 2rem;
         transition: 0.3s;
 
         &:after {
             content: "";
             background: url(/icons/checked.svg) 50% 50% no-repeat;
             background-size: cover;
-            width: 8px;
-            height: 6px;
+            width: 8rem;
+            height: 6rem;
             top: 50%;
             left: 50%;
             transform: translateY(-50%) translateX(-50%);
@@ -187,7 +187,7 @@ input[type="radio"] {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 100;
-        font-size: 15px;
+        font-size: 15rem;
         color: $black-color;
     }
 
@@ -213,7 +213,7 @@ input[type="radio"] {
 }
 
 .filter-sizes input:checked~.checkmark {
-    border: 0.5px solid transparent;
+    border: 0.5rem solid transparent;
     background-color: #957D6D;
 }
 
@@ -222,27 +222,27 @@ input[type="radio"] {
 }
 
 .filter-colors {
-    min-width: 260px;
+    min-width: 260rem;
     display: flex;
     position: relative;
     user-select: none;
     flex-direction: row-reverse;
     justify-content: start;
     align-items: center;
-    gap: 17px;
-    padding: 18px 14px;
+    gap: 17rem;
+    padding: 18rem 14rem;
     cursor: pointer;
     background-color: transparent;
     transition: background-color 300ms linear;
 
     .color-type {
-        width: 15px;
-        height: 15px;
+        width: 15rem;
+        height: 15rem;
         background-color: transparent;
 
         &.white-color {
             background-color: #fff;
-            border: 1px solid $black-color;
+            border: 1rem solid $black-color;
         }
 
         &.black-color {
@@ -272,7 +272,7 @@ input[type="radio"] {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 100;
-        font-size: 15px;
+        font-size: 15rem;
         color: $black-color;
     }
 

@@ -1,6 +1,6 @@
 .my-orders-section {
-    padding-top: 71px;
-    padding-bottom: 100px;
+    padding-top: 71rem;
+    padding-bottom: 100rem;
 
     .container {
         display: flex;
@@ -10,17 +10,17 @@
     .my-order-pages {
         display: flex;
         flex-direction: column;
-        width: 217px;
+        width: 217rem;
 
         .my-order-page,
         .delivery-address-page,
         .personal-data-page {
-            padding-top: 16px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #E0E0E0;
+            padding-top: 16rem;
+            padding-bottom: 10rem;
+            border-bottom: 1rem solid #E0E0E0;
 
             &.selected {
-                border-bottom: 1px solid #828282;
+                border-bottom: 1rem solid #828282;
     
                 a {
                     font-weight: 300;
@@ -31,7 +31,7 @@
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 100;
-                font-size: 16px;
+                font-size: 16rem;
                 color: $black-color;
                 text-decoration: none;
 
@@ -42,7 +42,7 @@
         }
 
         .my-order-page {
-            padding-top: 0px;
+            padding-top: 0rem;
             
             a {
                 font-weight: 300;
@@ -50,11 +50,11 @@
         }
 
         .log-off {
-            margin-top: 45px;
+            margin-top: 45rem;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 100;
-            font-size: 16px;
+            font-size: 16rem;
             color: $black-color;
             text-decoration: none;
 
@@ -68,9 +68,9 @@
         width: 70%;
 
         .my-order {
-            padding-top: 28px;
-            padding-bottom: 26px;
-            border-top: 0.5px solid #BDBDBD;
+            padding-top: 28rem;
+            padding-bottom: 26rem;
+            border-top: 0.5rem solid #BDBDBD;
         
             &:first-child {
                 border: none;
@@ -86,12 +86,12 @@
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 300;
-                font-size: 16px;
+                font-size: 16rem;
                 color: $black-color;
     
                 .my-order-num-and-datetime {
                     display: flex;
-                    gap: 30px;
+                    gap: 30rem;
     
                     .my-order-datetime {
                         display: flex;
@@ -105,19 +105,19 @@
                 
                 .product {
                     width: 100%;
-                    height: 150px;
-                    padding-top: 28px;
+                    height: 150rem;
+                    padding-top: 28rem;
                     display: flex;
                     flex-direction: column;
     
                     .product-name {
                         display: flex;
-                        gap: 17px;
+                        gap: 17rem;
             
                         .product-img {
                             width: 25%;
-                            max-width: 79px;
-                            height: 104px;
+                            max-width: 79rem;
+                            height: 104rem;
             
                             img {
                                 width: 100%;
@@ -127,11 +127,11 @@
                         }
             
                         .product-descr {
-                            width: calc(100% - 96px);
+                            width: calc(100% - 96rem);
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: 100;
-                            font-size: 16px;
+                            font-size: 16rem;
                             color: $black-color;
     
                             .product-title-and-evaluation {
@@ -141,54 +141,54 @@
                             }
             
                             .product-options {
-                                padding-top: 13px;
+                                padding-top: 13rem;
                                 display: flex;
                                 align-items: center;
     
                                 .vl {
-                                    width: 0.5px;
-                                    height: 18px;
+                                    width: 0.5rem;
+                                    height: 18rem;
                                     background-color: #E0E0E0;
                                 }
     
                                 .product-size {
-                                    padding-right: 8px;
+                                    padding-right: 8rem;
                                 }
             
                                 .product-color {
-                                    padding: 0 12px;
+                                    padding: 0 12rem;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    gap: 6px;
+                                    gap: 6rem;
                                 }
     
                                 .product-price {
-                                    padding: 0 8px;
+                                    padding: 0 8rem;
                                 }
     
                                 .product-quantity {
-                                    padding-left: 8px;
+                                    padding-left: 8rem;
                                 }
                             }
     
                             .product-code {
-                                padding-top: 13px;
+                                padding-top: 13rem;
                             }
                         }
                     }
                 }
 
                 .full-address-and-phone {
-                    padding-top: 28px;
+                    padding-top: 28rem;
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 100;
-                    font-size: 14px;
+                    font-size: 14rem;
                     color: $black-color;
 
                     .full-phone {
-                        padding-top: 13px;
+                        padding-top: 13rem;
                     }
                 }
 
@@ -200,20 +200,20 @@
                     width: 20%;
 
                     .product-evaluation {
-                        height: 150px;
-                        padding-top: 28px;
+                        height: 150rem;
+                        padding-top: 28rem;
                         display: flex;
                         flex-direction: column;
 
                         &:last-child {
-                            height: 80px;
+                            height: 80rem;
                         }
 
                         .feedback {
                             font-family: 'Roboto';
                             font-style: normal;
                             font-weight: 100;
-                            font-size: 14px;
+                            font-size: 14rem;
                             text-align: end;
 
                             &:hover {
@@ -240,18 +240,18 @@
         input {
             min-width: 100%;
             border-radius: 0;
-            border: 1px solid #828282;
-            padding: 0px;
-            padding-left: 12px;
-            height: 36px;
+            border: 1rem solid #828282;
+            padding: 0rem;
+            padding-left: 12rem;
+            height: 36rem;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 300;
-            font-size: 12px;
+            font-size: 12rem;
             color: $black-color;
     
             &:focus {
-                border: 1px solid $brown-color;
+                border: 1rem solid $brown-color;
                 box-shadow: none;
     
                 &::placeholder {
@@ -268,17 +268,17 @@
         select {
             position: relative;
             border-radius: 0;
-            padding: 0px;
-            padding-left: 12px;
-            height: 36px;
+            padding: 0rem;
+            padding-left: 12rem;
+            height: 36rem;
             font-family: Roboto;
             font-style: normal;
             font-weight: 300;
-            font-size: 12px;
+            font-size: 12rem;
             color: $black-color;
     
             &:focus {
-                border: 1px solid $brown-color;
+                border: 1rem solid $brown-color;
                 box-shadow: none;
             }
         }
@@ -286,14 +286,14 @@
         label {
             opacity: 0;
             height: auto;
-            padding: 0 5px;
+            padding: 0 5rem;
             font-family: Roboto;
             font-style: normal;
             font-weight: 300;
-            font-size: 10px;
+            font-size: 10rem;
             color: $brown-color;
             background: #fff;
-            transform: scale(1) translateY(-8px) translateX(17px);
+            transform: scale(1) translateY(-8rem) translateX(17rem);
             transition: 0.3s;
         }
     
@@ -303,13 +303,13 @@
             ~label {
                 opacity: 1;
                 background: #fff;
-                transform: scale(1) translateY(-8px) translateX(17px);
+                transform: scale(1) translateY(-8rem) translateX(17rem);
                 transition: 0.3s;
             }
         }
     }
     
     .form-floating>.form-control {
-        height: 36px; 
+        height: 36rem; 
     }
 }

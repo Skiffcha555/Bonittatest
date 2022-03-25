@@ -1,23 +1,23 @@
 .main {
-    padding-top: 81px;
+    padding-top: 81rem;
 }
 
 .search-results {
-    padding-top: 29px;
+    padding-top: 29rem;
 
     h2 {
-        padding-top: 5px;
+        padding-top: 5rem;
         text-align: center;
         font-family: Cormorant Garamond;
         font-style: normal;
         font-weight: 300;
-        font-size: 36px;
+        font-size: 36rem;
         color: $black-color;
     }
 
     .search-query {
-        padding-top: 30px;
-        padding-bottom: 40px;
+        padding-top: 30rem;
+        padding-bottom: 40rem;
 
         font-family: Roboto;
         font-style: normal;
@@ -41,20 +41,20 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: 100;
-            font-size: 12px;
+            font-size: 12rem;
             color: $black-color;
         }
     }
 
     .filters {
         display: flex;
-        gap: 47px;
+        gap: 47rem;
     }
 
     .selected-filters {
         display: flex;
-        gap: 23px;
-        padding-top: 26px;
+        gap: 23rem;
+        padding-top: 26rem;
 
         .selected-filters_title {
             display: flex;
@@ -62,19 +62,19 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 14rem;
             color: $black-color;
         }
 
         .selected-filter {
             display: flex;
-            gap: 42px;
-            border: 0.5px solid $black-color;
-            padding: 5px 11px;
+            gap: 42rem;
+            border: 0.5rem solid $black-color;
+            padding: 5rem 11rem;
             font-family: Roboto;
             font-style: normal;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 14rem;
             color: $black-color;
         }
     }
@@ -82,12 +82,12 @@
     .search-result   {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 49px;
-        padding-bottom: 130px;
-        gap: 36px;
+        padding-top: 49rem;
+        padding-bottom: 130rem;
+        gap: 36rem;
 
         .product_card {
-            width: calc(25% - 27px);
+            width: calc(25% - 27rem);
         }
     }
 }

@@ -1,6 +1,6 @@
 .personal-data-page-section {
-    padding-top: 71px;
-    padding-bottom: 95px;
+    padding-top: 71rem;
+    padding-bottom: 95rem;
 
     .container {
         display: flex;
@@ -10,17 +10,17 @@
     .my-order-pages {
         display: flex;
         flex-direction: column;
-        width: 217px;
+        width: 217rem;
 
         .my-order-page,
         .delivery-address-page,
         .personal-data-page {
-            padding-top: 16px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #E0E0E0;
+            padding-top: 16rem;
+            padding-bottom: 10rem;
+            border-bottom: 1rem solid #E0E0E0;
 
             &.selected {
-                border-bottom: 1px solid #828282;
+                border-bottom: 1rem solid #828282;
     
                 a {
                     font-weight: 300;
@@ -31,7 +31,7 @@
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 100;
-                font-size: 16px;
+                font-size: 16rem;
                 color: $black-color;
                 text-decoration: none;
 
@@ -42,11 +42,11 @@
         }
 
         .log-off {
-            margin-top: 45px;
+            margin-top: 45rem;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 100;
-            font-size: 16px;
+            font-size: 16rem;
             color: $black-color;
             text-decoration: none;
 
@@ -62,8 +62,8 @@
         .personal-data-form,
         .password-form,
         .sub-to-news-form {
-            margin-top: 30px;
-            border: 1px solid #E0E0E0;
+            margin-top: 30rem;
+            border: 1rem solid #E0E0E0;
 
             &.hide {
                 display: none;
@@ -72,22 +72,22 @@
             .personal-data-form-head,
             .password-form-head,
             .sub-to-news-form-head {
-                border-bottom: 1px solid #E0E0E0;
-                padding: 15px 20px 15px 31px;
+                border-bottom: 1rem solid #E0E0E0;
+                padding: 15rem 20rem 15rem 31rem;
                 display: flex;
                 justify-content: space-between;
 
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 100;
-                font-size: 16px;
+                font-size: 16rem;
                 color: $black-color;
             }
 
             .personal-data-form-body,
             .password-form-body,
             .sub-to-news-form-body {
-                padding: 41px 31px 30px 31px;
+                padding: 41rem 31rem 30rem 31rem;
 
                 .form-floating {
                     &.full-name,
@@ -95,7 +95,7 @@
                     &.date-of-birth-full,
                     &.passwords {
                         display: flex;
-                        gap: 20px;
+                        gap: 20rem;
                         width: 100%;
     
                         input {
@@ -106,7 +106,7 @@
                     &.email-and-phone,
                     &.date-of-birth {
                         padding-top: 0;
-                        margin-top: 16px;
+                        margin-top: 16rem;
                     }
     
                     .first-name,
@@ -136,18 +136,18 @@
                     input {
                         min-width: 100%;
                         border-radius: 0;
-                        border: 1px solid #E0E0E0;
-                        padding: 0px;
-                        padding-left: 12px;
-                        height: 36px;
+                        border: 1rem solid #E0E0E0;
+                        padding: 0rem;
+                        padding-left: 12rem;
+                        height: 36rem;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 300;
-                        font-size: 12px;
+                        font-size: 12rem;
                         color: $black-color;
                 
                         &:focus {
-                            border: 1px solid $brown-color;
+                            border: 1rem solid $brown-color;
                             box-shadow: none;
                 
                             &::placeholder {
@@ -164,17 +164,17 @@
                     select {
                         position: relative;
                         border-radius: 0;
-                        padding: 0px;
-                        padding-left: 12px;
-                        height: 36px;
+                        padding: 0rem;
+                        padding-left: 12rem;
+                        height: 36rem;
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: 300;
-                        font-size: 12px;
+                        font-size: 12rem;
                         color: $black-color;
                 
                         &:focus {
-                            border: 1px solid $brown-color;
+                            border: 1rem solid $brown-color;
                             box-shadow: none;
                         }
                     }
@@ -182,14 +182,14 @@
                     label {
                         opacity: 0;
                         height: auto;
-                        padding: 0 5px;
+                        padding: 0 5rem;
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: 300;
-                        font-size: 10px;
+                        font-size: 10rem;
                         color: $brown-color;
                         background: #fff;
-                        transform: scale(1) translateY(-8px) translateX(17px);
+                        transform: scale(1) translateY(-8rem) translateX(17rem);
                         transition: 0.3s;
                     }
 
@@ -206,7 +206,7 @@
                         ~label {
                             opacity: 1;
                             background: #fff;
-                            transform: scale(1) translateY(-8px) translateX(17px);
+                            transform: scale(1) translateY(-8rem) translateX(17rem);
                             transition: 0.3s;
                         }
                     }
@@ -217,13 +217,13 @@
     
                     input {
                         width: 100%;
-                        padding: 11px;
-                        border: 1px solid $brown-color;
+                        padding: 11rem;
+                        border: 1rem solid $brown-color;
                         min-width: auto;
                         color: $black-color;
                         
                         &:focus {
-                            border: 1px solid $brown-color;
+                            border: 1rem solid $brown-color;
                             box-shadow: none;
                 
                             &::placeholder {
@@ -238,8 +238,8 @@
                     }
     
                     button {
-                        padding: 11px 38px;
-                        border: 1px solid $brown-color;
+                        padding: 11rem 38rem;
+                        border: 1rem solid $brown-color;
                         background-color: $brown-color;
                         color: #fff;
     
@@ -251,19 +251,19 @@
                 }
 
                 .save {
-                    margin-top: 30px;
+                    margin-top: 30rem;
                     display: flex;
                     justify-content: flex-end;
 
                     .btn-main {
                         margin-top: 0;
-                        padding: 12px 63px;
+                        padding: 12rem 63rem;
                     }
                 }
             }
 
             .sub-to-news-form-body {
-                padding: 34px 31px 49px 31px;
+                padding: 34rem 31rem 49rem 31rem;
             }
         }
 

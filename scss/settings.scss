@@ -1,3 +1,19 @@
+html {
+    font-size: 1px;
+
+    @media (min-width: 1919px) {
+        font-size: 1.2px;
+    }
+
+    @media (min-width: 1599px) {
+        font-size: 1.1px;
+    }
+}
+
+body {
+    font-size: 14px;
+}
+
 input::-webkit-input-placeholder {
     color: #fff; 
 }
@@ -12,12 +28,16 @@ h1, h2, h3, h4 {
     }
 }
 
+.dragscroll {
+    cursor: grab;
+}
+
 .bread-crumbs {
 
     &.first {
         display: flex;
         justify-content: center;
-        gap: 5px;
+        gap: 5rem;
 
         a {
             &:first-child {
@@ -33,7 +53,7 @@ h1, h2, h3, h4 {
     &.second {
         display: flex;
         justify-content: center;
-        gap: 5px;
+        gap: 5rem;
 
         a {
             &:nth-child(2) {
@@ -49,7 +69,7 @@ h1, h2, h3, h4 {
     &.third {
         display: flex;
         justify-content: center;
-        gap: 5px;
+        gap: 5rem;
 
         a {
             &:nth-child(3) {
@@ -65,7 +85,7 @@ h1, h2, h3, h4 {
     &.fourth {
         display: flex;
         justify-content: center;
-        gap: 5px;
+        gap: 5rem;
 
         a {
             &:nth-child(4) {
@@ -79,8 +99,8 @@ h1, h2, h3, h4 {
         font-family: Roboto;
         font-style: normal;
         font-weight: 100;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 14rem;
+        line-height: 16rem;
         color: $black-color;
 
         &:hover {
@@ -96,13 +116,13 @@ h1, h2, h3, h4 {
 .return-to-cart {
     display: flex;
     align-items: center;
-    gap: 6px;
-    margin-top: 114px;
+    gap: 6rem;
+    margin-top: 114rem;
     
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 12rem;
     color: #828282;
     text-decoration: none;
 
