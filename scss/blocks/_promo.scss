@@ -1,7 +1,14 @@
 .promo {
     padding: 110px 0 130px 0;
-    // height: 100vh;
+    height: 100vh;
     background: url('/img/promo/main-bg.jpg') center (center/cover) no-repeat;
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
     &_wrapper {
         max-width: 50%;
 
@@ -36,6 +43,7 @@
 
         .promo_btn {
             margin-top: 30px;
+            display: inline-flex;
         }
     }
 }
