@@ -9,6 +9,31 @@
         .sub-to-news_wrapper {
             width: 50%;
 
+            &.sent {
+                .sub-to-news_email {
+                    padding-top: 17px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+
+                .sub-to-news_text {
+                    padding-top: 19px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 100;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                }
+            }
+
+            &.hide {
+                display: none;
+            }
+
             .sub-to-news_title {
                 h3 {
                     font-family: 'Cormorant Garamond';

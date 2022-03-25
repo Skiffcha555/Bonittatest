@@ -11,6 +11,10 @@
         border-top: none;
     }
 
+    &:last-child {
+        padding-bottom: 0;
+    }
+
     .product_card-in-cart_img {
         img {
             width: 100%;

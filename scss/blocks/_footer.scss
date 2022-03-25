@@ -83,6 +83,31 @@ footer {
         .sub-to-news-email_block {
             width: 25%;
 
+            &.hide {
+                display: none;
+            }
+
+            &.sent {
+                .sub-to-news_email {
+                    padding-top: 17px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: $black-color;
+                    text-align: start;
+                }
+
+                .sub-to-news_text {
+                    padding-top: 19px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 100;
+                    font-size: 16px;
+                    color: $black-color;
+                }
+            }
+
             .sub-to-news-email_block_subtitle {
                 margin-top: 23px;
                 font-family: 'Roboto';
