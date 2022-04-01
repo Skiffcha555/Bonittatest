@@ -1,0 +1,78 @@
+.modal-select-size {
+    display: none;
+    position: fixed;
+    z-index: 30;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    .modal-content {
+        display: flex;
+        gap: 14rem;
+        background: none;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        border: none;
+        border-radius: 0;
+
+        .size-guide-and-close {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .size-guide {
+                padding: 12rem 48rem;
+                background: #fff;
+                font-size: 20rem;
+                text-decoration: underline;
+            }
+
+            .close-modal-select-size {
+                display: flex;
+                padding: 19rem;
+                background: #fff;
+                border-radius: 50%;
+            }
+        }
+    
+        .modal-descr {
+            padding: 18rem 20rem 23rem 20rem;
+            background-color: #fff;
+            
+            .product-size-select {
+                padding: 12rem 0;
+                display: flex;
+                position: relative;
+                user-select: none;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 17rem;
+                padding: 18rem 14rem;
+                cursor: pointer;
+                background-color: transparent;
+                transition: background-color 300ms linear;
+            
+                &.product-size-select_active {
+                    background: #F2F2F2;
+                    transition: background-color 300ms linear;
+            
+                    .size-name {
+                        font-weight: 300;
+                    }
+                }
+
+                .size-name {
+                    font-size: 20rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}

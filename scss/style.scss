@@ -7,10 +7,12 @@
 @import "filters.scss";
 @import "pagination.scss";
 @import "checkboxes.scss";
+@import "select-size.scss";
 @import "modals.scss";
 @import "blocks/_header.scss";
 @import "blocks/_burger-menu.scss";
 @import "blocks/_shopping-cart-menu.scss";
+@import "blocks/_shopping-cart-wishlist.scss";
 @import "blocks/_search-bar.scss";
 @import "blocks/_product_card-in-cart.scss";
 @import "blocks/_promo.scss";
@@ -22,8 +24,9 @@
 @import "blocks/_similiar-products.scss";
 @import "blocks/_follow-inst.scss";
 @import "blocks/_recently-viewed.scss";
-@import "blocks/_product-category-bodysuit.scss";
+@import "blocks/_product-category.scss";
 @import "blocks/_product-page-content.scss";
+@import "blocks/_select-sizes-mobile.scss";
 @import "blocks/_size-guide-block.scss";
 @import "blocks/_reviews.scss";
 @import "blocks/_favorite-products.scss";

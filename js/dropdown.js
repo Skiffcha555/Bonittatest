@@ -71,3 +71,36 @@ function filterColorsActiveCheckBox($el, event) {
     event.preventDefault()
     $el.classList.toggle('filter-colors_active')
 }
+
+
+function dropDownPrice() {
+    document.getElementById("DropdownPrice").classList.toggle("show");
+}
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+document.getElementById("DropdownPrice").onclick = e => e.stopPropagation()
+let filtersPrice = document.querySelectorAll('.filter-price');
+filtersPrice.forEach(filterPrice => {
+    filterPrice.addEventListener('click', function () {
+        filtersPrice.forEach(btn => btn.classList.remove('filter-price_active'));
+        filterPrice.classList.add('filter-price_active');
+    });
+});
+
+// filterSizeActive.forEach(filterSize => {
+//     filterSize.addEventListener('click', function () {
+//         filterSizeActive.forEach(btn => btn.classList.remove('filter-size-mobile_active'));
+//         filterSize.classList.add('filter-size-mobile_active');
+//     });
+// });

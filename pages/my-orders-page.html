@@ -370,7 +370,7 @@
                             <div class="product-evaluation-and-summary">
                                 <div class="products-evaluation">
                                     <div class="product-evaluation">
-                                        <div id="showModal" class="feedback">Leave feedback</div>
+                                        <div id="showModalFeedback" class="feedback">Leave feedback</div>
 
                                         <div class="stars hide">
                                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
@@ -505,7 +505,7 @@
                             <div class="product-evaluation-and-summary">
                                 <div class="products-evaluation">
                                     <div class="product-evaluation">
-                                        <div id="showModal" class="feedback hide">Leave feedback</div>
+                                        <div id="showModalFeedback" class="feedback hide">Leave feedback</div>
                                         <div class="stars">
                                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -540,7 +540,7 @@
                                         </div>
                                     </div>
                                     <div class="product-evaluation">
-                                        <div id="showModal" class="feedback hide">Leave feedback</div>
+                                        <div id="showModalFeedback" class="feedback hide">Leave feedback</div>
                                         <div class="stars">
                                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -741,6 +741,31 @@
         </div>
         <span class="footer_author">RomarkCode 2022</span>
     </footer>
+
+    <script>
+        var modalFeedback = document.getElementById("modalFeedback");
+        var btnSecond = document.getElementById("showModalFeedback");
+        var close = document.getElementsByClassName("close-modal")[0];
+        var closeSecond = document.getElementsByClassName("close-modal-second")[0];
+
+        btnSecond.onclick = function () {
+            modalFeedback.style.display = "block";
+        }
+
+        close.onclick = function () {
+            modalFeedback.style.display = "none";
+        }
+
+        closeSecond.onclick = function () {
+            modalFeedback.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modalFeedback) {
+                modalFeedback.style.display = "none";
+            }
+        }
+    </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

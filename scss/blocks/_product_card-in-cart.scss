@@ -8,12 +8,20 @@
     font-style: normal;
     font-size: 14rem;
 
-    &:first-child {
-        border-top: none;
+    @media (max-width: 575px) {
+        font-size: 18rem;
     }
 
-    &:last-child {
-        padding-bottom: 0;
+    @media (max-width: 425px) {
+        font-size: 14rem;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 13rem;
+    }
+
+    &:first-child {
+        border-top: none;
     }
 
     .product_card-in-cart_img {
@@ -62,11 +70,70 @@
             padding-top: 9rem;
             font-weight: 100;
             color: $black-color;
+
+            .product-quantity {
+                width: 19rem;
+                min-width: auto;
+                color: #333;
+                padding: 0;
+                font-weight: 100;
+                text-align: center;
+            }
+
+            .number-input {
+                display: flex;
+                gap: 8px;
+            }
+
+            .number-input button {
+                outline: none;
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: none;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                font-size: 18rem;
+            }
+
+            .number-input button.minus:after {
+                content: '-';
+            }
+
+            .number-input button.plus:after {
+                content: '+';
+            }
         }
     }
 
     .product_card-in-cart_icons {
         display: flex;
         gap: 8rem;
+
+        .heart-icon_svg {
+            cursor: pointer;
+            width: 19px;
+
+            .heart-icon_path {
+                transition: 0.3s;
+
+                &.heart-icon_path_active {
+                    transition: 0.3s;
+                    fill: $red-color;
+                    stroke: transparent;
+                }
+            }
+
+            &:hover {
+                .heart-icon_path {
+                    transition: 0.3s;
+                    fill: $red-color;
+                    stroke: transparent;
+                }
+            }
+        }
     }
 }

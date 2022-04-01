@@ -4,6 +4,15 @@
     .container {
         position: relative;
 
+        &.for-title {
+            max-width: 70%;
+        }
+
+        &.padding-left {
+            max-width: 100%;
+            padding-left: 15%;
+        }
+
         .promotion-products_title {
             display: flex;
             justify-content: space-between;

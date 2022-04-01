@@ -5,6 +5,11 @@ header {
     transition: 0.3s;
     z-index: 20;
 
+    @media (max-width: 575px) {
+        background: #FDFCFB;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    }
+
     &._brown {
         background-color: $brown-color;
     }
@@ -136,6 +141,12 @@ header {
                 .cart-wishlist {
                     display: none;
                     position: relative;
+
+                    &.black {
+                        span {
+                            color: $black-color;
+                        }
+                    }
 
                     span {
                         position: absolute;

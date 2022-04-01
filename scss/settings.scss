@@ -8,6 +8,7 @@ html {
     @media (min-width: 1599px) {
         font-size: 1.1px;
     }
+    
 }
 
 body {
@@ -25,6 +26,11 @@ h1, h2, h3, h4 {
 .container {
     &.large-container {
         max-width: 95%;
+    }
+    
+    &.padding-left {
+        max-width: 100%;
+        padding-left: 10%;
     }
 }
 
@@ -103,6 +109,10 @@ h1, h2, h3, h4 {
         line-height: 16rem;
         color: $black-color;
 
+        @media (max-width: 425px) {
+            font-size: 14rem;
+        }
+
         &:hover {
             text-decoration: underline;
         }
@@ -118,6 +128,10 @@ h1, h2, h3, h4 {
     align-items: center;
     gap: 6rem;
     margin-top: 114rem;
+
+    @media (max-width: 991px) {
+        margin-top: 70rem;
+    }
     
     font-family: 'Roboto';
     font-style: normal;
@@ -140,4 +154,9 @@ h1, h2, h3, h4 {
 
 .datepicker {
     font-family: 'Roboto';
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
 }

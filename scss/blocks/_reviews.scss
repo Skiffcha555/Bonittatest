@@ -1,11 +1,27 @@
 .reviews {
     padding-top: 75rem;
 
+    @media (max-width: 1199px) {
+        padding-top: 40rem;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 30rem;
+    }
+
     .container {
         max-width: 80%;
 
+        @media (max-width: 768px) {
+            max-width: 720px;
+        }
+
         .reviews-wrapper {
             width: 59%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
 
             .reviews-title {
                 display: flex;
@@ -14,6 +30,10 @@
                 font-weight: 300;
                 font-size: 36rem;
                 color: $black-color;
+
+                @media (max-width: 768px) {
+                    font-size: 28rem;
+                }
             }
 
             .reviews-content {
@@ -27,16 +47,33 @@
                 margin-bottom: 36rem;
                 border-top: 0.5rem solid #E0E0E0;
 
+                @media (max-width: 575px) {
+                    margin-bottom: 20rem;
+                    flex-direction: column;
+                    gap: 0;
+                }
+
                 &:first-child {
                     border: none;
+
+                    .review-info {
+                        @media (max-width: 575px) {
+                            padding-top: 0;
+                        }
+                    }
                 }
 
                 .review-info {
                     width: 20%;
-                    margin-top: 26rem;
+                    padding-top: 26rem;
                     display: flex;
                     flex-direction: column;
                     gap: 12rem;
+
+                    @media (max-width: 575px) {
+                        padding-top: 22rem;
+                        gap: 7rem;
+                    }
 
                     .review-username {
                         font-family: Roboto;
@@ -65,10 +102,19 @@
                     width: 80%;
                     margin-top: 26rem;
 
+                    @media (max-width: 575px) {
+                        width: 100%;
+                        margin-top: 10rem;
+                    }
+
                     .review-imgs {
                         padding-top: 50rem;
                         display: flex;
                         gap: 18rem;
+
+                        @media (max-width: 575px) {
+                            padding-top: 10rem;
+                        }
 
                         .review-img {
                             cursor: pointer;

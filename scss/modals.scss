@@ -8,8 +8,88 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-discount {
+    display: none;
+    position: fixed;
+    z-index: 30;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    .modal-content {
+        .modal-title {
+            padding: 21rem;
+        }
+
+        .modal-descr {
+            padding: 24rem 22rem 40rem 22rem;
+
+            .promocode-input {
+                padding-top: 12rem;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                input {
+                    min-width: auto;
+                    width: 80%;
+                    font-size: 18rem;
+                    border: 0.5rem solid $brown-color;
+                    color: $black-color;
+                    
+                    &::placeholder {
+                        color: #828282;
+                    }
+
+                    @media (max-width: 425px) {
+                        font-size: 14rem;
+                    }
+
+                    @media (max-width: 375px) {
+                        font-size: 13rem;
+                    }
+                }
+
+                button {
+                    padding: 12rem 37rem;
+                    font-size: 18rem;
+
+                    @media (max-width: 425px) {
+                        font-size: 14rem;
+                    }
+
+                    @media (max-width: 375px) {
+                        font-size: 13rem;
+                    }
+                }
+            }
+
+            .apply-block {
+                padding-top: 38rem;
+                display: flex;
+                justify-content: flex-end;
+
+                button {
+                    padding: 12rem 60rem;
+                    font-size: 18rem;
+
+                    @media (max-width: 425px) {
+                        font-size: 14rem;
+                    }
+
+                    @media (max-width: 375px) {
+                        font-size: 13rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .modal-feedback {
@@ -22,7 +102,6 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 
     .modal-content {
@@ -155,6 +234,12 @@
         border-radius: 5rem;
     }
 
+    &.discount {
+        width: 100%;
+        position: absolute;
+        top: 25%;
+    }
+
     .modal-title {
         display: flex;
         justify-content: space-between;
@@ -262,7 +347,8 @@
     }
 }
 
-.close-modal {
+.close-modal,
+.close-modal-notify {
     &:hover {
         cursor: pointer;
     }

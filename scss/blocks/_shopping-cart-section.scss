@@ -1,6 +1,9 @@
 .shopping-cart-section {
     padding-top: 29rem;
     padding-bottom: 172rem;
+    @media (max-width: 1399px) {
+        padding-bottom: 102rem;
+    }
 
     h2 {
         margin-top: 32rem;
@@ -9,12 +12,28 @@
         font-weight: 300;
         font-size: 18rem;
         color: $black-color;
+
+        @media (max-width: 1399px) {
+            margin-top: 25rem;
+        }
+
+        @media (max-width: 1399px) {
+            gap: 60rem;
+        }
     }
 
     .list-and-promo {
         padding-top: 31rem;
         display: flex;
         gap: 120rem;
+
+        @media (max-width: 1920px) and (min-width: 1600px) {
+            gap: 90rem;
+        }
+
+        @media (max-width: 1399px) {
+            gap: 90rem;
+        }
 
         .list-of-products {
             width: 65%;
@@ -54,6 +73,14 @@
                 gap: 18rem;
                 padding-right: 40rem;
 
+                @media (max-width: 1920px) and (min-width: 1600px) {
+                    padding-right: 30rem;
+                }
+
+                @media (max-width: 1399px) {
+                    padding-right: 30rem;
+                }
+
                 .product {
                     width: 100%;
                     display: flex;
@@ -88,6 +115,10 @@
                         font-weight: 100;
                         font-size: 16rem;
                         color: $black-color;
+
+                        @media (max-width: 1399px) {
+                            padding-top: 30rem;
+                        }
 
                         .product-options {
                             padding-top: 15rem;
@@ -161,6 +192,10 @@
                     font-weight: 300;
                     font-size: 16rem;
                     color: $black-color;
+
+                    @media (max-width: 1399px) {
+                        gap: 50rem;
+                    }
 
                     .product-quantity {
                         width: 19rem;

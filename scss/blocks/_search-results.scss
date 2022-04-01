@@ -5,6 +5,44 @@
 .search-results {
     padding-top: 29rem;
 
+    .bread-crumbs-and-mobile-filter {
+        display: flex;
+        justify-content: space-between;
+
+        .bread-crumbs {
+            a {
+                font-size: 16rem;
+
+                @media (max-width: 425px) {
+                    font-size: 14rem;
+                }
+            }
+        }
+
+        .mobile-filter {
+            display: none;
+
+            span {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16rem;
+                color: $black-color;
+
+                @media (max-width: 425px) {
+                    font-size: 14rem;
+                }
+            }
+
+            @media (max-width: 575px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6rem;
+            }
+        }
+    }
+
     h2 {
         padding-top: 5rem;
         text-align: center;
@@ -24,6 +62,20 @@
         font-weight: 100;
         color: $black-color;
 
+        @media (max-width: 991px) {
+            padding-top: 20rem;
+            padding-bottom: 20rem;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 20rem;
+            padding-bottom: 0;
+        }
+
+        @media (max-width: 575px) {
+            padding-top: 10rem;
+        }
+
         .search-query-quantity-products {
             font-weight: 500;
         }
@@ -41,8 +93,16 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: 100;
-            font-size: 12rem;
+            font-size: 16rem;
             color: $black-color;
+
+            @media (max-width: 425px) {
+                font-size: 14rem;
+            }
+
+            @media (max-width: 375px) {
+                font-size: 13rem;
+            }
         }
     }
 
@@ -55,6 +115,10 @@
         display: flex;
         gap: 23rem;
         padding-top: 26rem;
+
+        @media (max-width: 575px) {
+            display: none;
+        }
 
         .selected-filters_title {
             display: flex;
@@ -85,6 +149,18 @@
         padding-top: 49rem;
         padding-bottom: 130rem;
         gap: 36rem;
+
+        @media (max-width: 575px) {
+            padding-bottom: 80rem;
+        }
+
+        @media (max-width: 425px) {
+            padding-bottom: 60rem;
+        }
+
+        @media (max-width: 375px) {
+            padding-bottom: 50rem;
+        }
 
         .product_card {
             width: calc(25% - 27rem);

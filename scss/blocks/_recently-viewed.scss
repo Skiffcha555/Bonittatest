@@ -1,9 +1,35 @@
 .recently-viewed-products {
     padding: 60rem 0;
+
+    @media (max-width: 1199px) {
+        padding: 40rem 0;
+    }
+
+    @media (max-width: 991px) {
+        padding: 30rem 0;
+    }
+
+    @media (max-width: 768px) {
+        padding-bottom: 10rem;
+    }
     
     .container {
         position: relative;
         max-width: 80%;
+
+        @media (max-width: 768px) {
+            max-width: 720px;
+        }
+
+        &.padding-left {
+            max-width: 100%;
+            padding-left: 10%;
+
+            @media (max-width: 768px) {
+                max-width: 720px;
+                padding-left: 0%;
+            }
+        }
 
         .recently-viewed-products_title {
             display: flex;
@@ -17,6 +43,10 @@
                 font-size: 36rem;
                 line-height: 44rem;
                 color: $black-color;
+
+                @media (max-width: 768px) {
+                    font-size: 28rem;
+                }
             }
     
             a {
@@ -41,6 +71,11 @@
             display: flex;
             gap: 30rem;
             overflow-x: auto;
+
+            @media (max-width: 991px) {
+                padding-top: 20rem;
+                padding-bottom: 30rem;
+            }
 
             &::-webkit-scrollbar {
                 width: 1rem;

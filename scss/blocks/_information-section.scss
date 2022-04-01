@@ -1,16 +1,97 @@
 .information-section {
     padding-top: 29rem;
 
+    .bread-crumbs {
+        @media (max-width: 575px) {
+            a {
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .return-and-log-in-mobile {
+        display: none;
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 14rem;
+        color: $black-color;
+
+        @media (max-width: 575px) {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 24rem;
+
+            .return-to-cart {
+                margin-top: 0;
+            }
+        }
+
+        .have-an-account {
+            font-family: 'Roboto';
+
+            @media (max-width: 575px) {
+                display: flex;
+                justify-content: space-between;
+    
+                .return-to-cart {
+                    margin-top: 0;
+                }
+            }
+
+            .log-in {
+                font-weight: 500;
+                text-decoration: none;
+                color: $black-color;
+            }
+        }
+    }
+
     .contact-information-and-list {
         padding-top: 85rem;
         padding-bottom: 62rem;
         display: flex;
         gap: 77rem;
 
+        @media (max-width: 1199px) {
+            gap: 55rem;
+        }
+
+        @media (max-width: 991px) {
+            padding: 40rem 0;
+            gap: 35rem;
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            padding: 30rem 0;
+            gap: 40rem;
+        }
+
+        @media (max-width: 575px) {
+            padding-top: 20rem;
+        }
+
         .contact-information {
             width: 55%;
             padding-right: 62rem;
             border-right: 0.5rem solid #E0E0E0;
+
+            @media (max-width: 1199px) {
+                padding-right: 55rem;
+            }
+
+            @media (max-width: 991px) {
+                padding-right: 35rem;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+                border: none;
+                padding-right: 0;
+            }
 
             h2 {
                 font-family: 'Cormorant Garamond';
@@ -30,6 +111,10 @@
                 font-size: 14rem;
                 color: $black-color;
 
+                @media (max-width: 575px) {
+                    padding-bottom: 14rem;
+                }
+
                 h2 {
                     font-size: 18rem;
                     font-weight: 300;
@@ -37,6 +122,10 @@
 
                 .have-an-account {
                     font-family: 'Roboto';
+            
+                    @media (max-width: 575px) {
+                        display: none;
+                    }
 
                     .log-in {
                         font-weight: 500;
@@ -49,6 +138,19 @@
             .form-floating {
                 &.email {
                     padding-bottom: 37rem;
+
+                    @media (max-width: 991px) {
+                        padding-right: 35rem;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding-right: 0;
+                        padding-bottom: 25rem;
+                    }
+
+                    @media (max-width: 575px) {
+                        padding-bottom: 14rem;
+                    }
                 }
 
                 &.full-name,
@@ -57,6 +159,10 @@
                     display: flex;
                     gap: 20rem;
                     width: 100%;
+
+                    @media (max-width: 575px) {
+                        flex-direction: column;
+                    }
 
                     input {
                         min-width: auto;
@@ -73,6 +179,10 @@
                 .post,
                 .city-village {
                     width: 50%;
+
+                    @media (max-width: 575px) {
+                        width: 100%;
+                    }
                 }
 
                 &.address,
@@ -94,6 +204,14 @@
                         width: 1rem;
                         height: 21rem;
                         position: absolute;
+
+                        @media (max-width: 991px) {
+                            right: 7%;
+                        }
+
+                        @media (max-width: 767px) {
+                            right: 5%;
+                        }
                     }
                 }
 
@@ -109,6 +227,24 @@
                         border: none;
                         border-right: 0.5rem solid #E0E0E0;
 
+                        @media (max-width: 1199px) {
+                            padding-right: 15rem;
+                            width: 12%;
+                        }
+
+                        @media (max-width: 991px) {
+                            width: 15%;
+                        }
+
+                        @media (max-width: 767px) {
+                            padding-right: 0;
+                            width: 10%;
+                        }
+
+                        @media (max-width: 425px) {
+                            width: 15%;
+                        }
+
                         &:focus {
                             border: none;
                             border-right: 0.5rem solid #E0E0E0;
@@ -117,6 +253,10 @@
 
                     input {
                         border: none;
+
+                        @media (max-width: 991px) {
+                            min-width: auto;
+                        }
 
                         &:focus {
                             border: none;
@@ -134,6 +274,10 @@
                     font-weight: 300;
                     font-size: 12rem;
                     color: $black-color;
+
+                    @media (max-width: 767px) {
+                        min-width: auto;
+                    }
 
                     &:focus {
                         border: 1rem solid $brown-color;
@@ -244,6 +388,18 @@
             .delivery-methods {
                 padding-top: 55rem;
 
+                @media (max-width: 991px) {
+                    padding-top: 35rem;
+                }
+
+                @media (max-width: 767px) {
+                    padding-top: 30rem;
+                }
+
+                @media (max-width: 575px) {
+                    padding-top: 27rem;
+                }
+
                 .delivery-method {
                     padding-top: 29rem;
                     display: flex;
@@ -258,8 +414,20 @@
                     color: $black-color;
                     transition: 0.3s;
 
+                    @media (max-width: 767px) {
+                        padding-top: 20rem;
+                    }
+
+                    @media (max-width: 575px) {
+                        padding-top: 14rem;
+                    }
+
                     &:last-child {
                         padding-top: 21rem;
+
+                        @media (max-width: 767px) {
+                            padding-top: 20rem;
+                        }
                     }
 
                     &.delivery-method_selected {
@@ -286,6 +454,18 @@
             .amount-of-prepayment {
                 padding-top: 58rem;
 
+                @media (max-width: 991px) {
+                    padding-top: 35rem;
+                }
+
+                @media (max-width: 767px) {
+                    padding-top: 30rem;
+                }
+
+                @media (max-width: 575px) {
+                    padding-top: 27rem;
+                }
+
                 .prepayment-sum {
                     padding-top: 29rem;
                     display: flex;
@@ -299,6 +479,14 @@
                     font-size: 14rem;
                     color: $black-color;
                     transition: 0.3s;
+
+                    @media (max-width: 767px) {
+                        padding-top: 20rem;
+                    }
+
+                    @media (max-width: 575px) {
+                        padding-top: 14rem;
+                    }
 
                     &.prepayment-sum_selected {
                         transition: 0.3s;
@@ -323,6 +511,18 @@
             .payment-methods {
                 padding-top: 43rem;
 
+                @media (max-width: 991px) {
+                    padding-top: 35rem;
+                }
+
+                @media (max-width: 767px) {
+                    padding-top: 30rem;
+                }
+
+                @media (max-width: 575px) {
+                    padding-top: 27rem;
+                }
+
                 .payment-method {
                     padding-top: 29rem;
                     display: flex;
@@ -336,6 +536,14 @@
                     font-size: 14rem;
                     color: $black-color;
                     transition: 0.3s;
+
+                    @media (max-width: 767px) {
+                        padding-top: 20rem;
+                    }
+
+                    @media (max-width: 575px) {
+                        padding-top: 14rem;
+                    }
 
                     &.payment-method_selected {
                         transition: 0.3s;
@@ -351,10 +559,30 @@
                     }
                 }
             }
+
+            .return-to-cart {
+                @media (max-width: 767px) {
+                    display: none;
+                }
+
+                &.mobile {
+                    @media (max-width: 767px) {
+                        display: block;
+                    }
+                }
+            }
         }
 
         .ordered-items {
             width: 40%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            @media (max-width: 575px) {
+                display: none;
+            }
         }
     }
 }
@@ -392,6 +620,14 @@
                 max-width: 79rem;
                 height: 104rem;
 
+                @media (max-width: 991px) {
+                    width: 30%;
+                }
+
+                @media (max-width: 767px) {
+                    width: 20%;
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -406,6 +642,14 @@
                 font-weight: 100;
                 font-size: 16rem;
                 color: $black-color;
+
+                @media (max-width: 991px) {
+                    width: 70%;
+                }
+
+                @media (max-width: 767px) {
+                    width: 80%;
+                }
 
                 .product-title-and-price {
                     display: flex;
@@ -436,6 +680,112 @@
     .btn-main {
         margin-top: 29rem;
         justify-content: center;
+    }
+
+    .return-to-cart {
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        &.mobile {
+            @media (max-width: 767px) {
+                display: block;
+            }
+        }
+    }
+}
+
+.total-sum-menu {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20rem;
+    background: #FDFCFB;
+    box-shadow: 0rem -4rem 4rem rgb(0 0 0 / 5%);
+    display: none;
+
+    @media (max-width: 575px) {
+        display: block;
+    }
+
+    .menu-discount {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 18rem;
+        text-transform: capitalize;
+        color: $black-color;
+
+        @media (max-width: 425px) {
+            font-size: 14rem;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 13rem;
+        }
+
+        .apply-discount {
+            font-weight: 300;
+            text-decoration: underline;
+        }
+    }
+
+    .menu-sum {
+        width: 100%;
+        padding: 0;
+        margin-top: 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18rem;
+        text-transform: capitalize;
+        color: $black-color;
+
+        @media (max-width: 425px) {
+            font-size: 14rem;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 13rem;
+        }
+    }
+
+    .continue {
+        width: 100%;
+        justify-content: center;
+        font-size: 18rem;
+        color: #fff;
+        border: 1rem solid $brown-color;
+        background-color: $brown-color;
+        margin: 0rem auto;
+        margin-top: 20rem;
+
+        &:hover {
+            color: $brown-color;
+            border: 1rem solid $brown-color;
+            background-color: #fff;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 14rem;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 13rem;
+        }
     }
 }
 

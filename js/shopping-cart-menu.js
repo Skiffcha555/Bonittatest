@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.shopping-cart-menu')
-    let shopping_cart = document.querySelector('.icon_cart')
+    let shoppingCart = document.querySelector('.icon_cart')
     let close = document.querySelector('.close-icon')
         
-    shopping_cart.addEventListener('click', () => {
+    shoppingCart.addEventListener('click', () => {
         menu.classList.toggle('shopping-cart-menu_active');
     });
 

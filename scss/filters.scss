@@ -13,6 +13,14 @@
     align-items: center;
     cursor: pointer;
 
+    &.sizes,
+    &.colors,
+    &.price {
+        @media (max-width: 575px) {
+            display: none;
+        }
+    }
+
     &:after {
         content: '';
         background: url(/icons/arrow-down.svg) 50% 50% no-repeat;
@@ -290,6 +298,37 @@ input[type="radio"] {
         .color-name {
             font-weight: 300;
         }
+    }
+}
+
+.filter-price {
+    min-width: 260rem;
+    display: flex;
+    align-items: center;
+    gap: 17rem;
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16rem;
+    color: $black-color;
+    transition: 0.3s;
+
+    @media (max-width: 575px) {
+        display: none;
+    }
+
+    &:hover {
+        font-weight: 300;
+        background: #F2F2F2;
+        transition: 0.3s;
+    }
+
+    &.filter-price_active {
+        transition: 0.3s;
+        font-weight: 300;
+        background: #F2F2F2;
     }
 }
 
