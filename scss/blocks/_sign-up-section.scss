@@ -2,12 +2,40 @@
     padding-top: 50rem;
     padding-bottom: 200rem;
 
+    @media (max-width: 1199px) {
+        padding-bottom: 150rem;
+    }
+
+    @media (max-width: 991px) {
+        padding-bottom: 120rem;
+    }
+
     .sign-up-wrapper {
         width: 25%;
         margin: 0 auto;
         display: flex;
         justify-content: center;
         flex-direction: column;
+
+        @media (max-width: 1399px) {
+            width: 30%;
+        }
+
+        @media (max-width: 1199px) {
+            width: 35%;
+        }
+
+        @media (max-width: 991px) {
+            width: 45%;
+        }
+
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+
+        @media (max-width: 575px) {
+            width: 90%;
+        }
 
         .mustValidate {
             width: 100%;
@@ -73,6 +101,26 @@
                 border-right: 0.5rem solid #E0E0E0;
                 width: 20%;
                 height: auto;
+
+                @media (max-width: 1399px) {
+                    width: 15%;
+                }
+        
+                @media (max-width: 768px) {
+                    width: 18%;
+                }
+        
+                @media (max-width: 575px) {
+                    width: 12%;
+                }
+
+                @media (max-width: 425px) {
+                    width: 15%;
+                }
+
+                @media (max-width: 375px) {
+                    width: 15%;
+                }
 
                 &:focus {
                     border: none;
@@ -185,5 +233,16 @@
         padding: 14rem 0;
         width: 100%;
         justify-content: center;
+
+        @media (max-width: 575px) {
+            border: 1rem solid $brown-color;
+            background-color: $brown-color;
+            color: #fff;
+    
+            &:hover {
+                background-color: #fff;
+                color: $brown-color;
+            }
+        }
     }
 }

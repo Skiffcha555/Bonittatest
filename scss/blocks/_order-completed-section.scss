@@ -9,6 +9,26 @@
         justify-content: center;
         flex-direction: column;
 
+        @media (max-width: 1400px) {
+            width: 35%;
+        }
+
+        @media (max-width: 1199px) {
+            width: 40%;
+        }
+
+        @media (max-width: 991px) {
+            width: 45%;
+        }
+
+        @media (max-width: 768px) {
+            width: 60%;
+        }
+
+        @media (max-width: 575px) {
+            width: 90%;
+        }
+
         .order-number {
             padding-top: 12rem;
             display: flex;
@@ -71,6 +91,14 @@
             margin: 0 auto;
             margin-top: 22rem;
             justify-content: center;
+
+            @media (max-width: 1199px) {
+                width: 60%;
+            }
+
+            @media (max-width: 575px) {
+                width: 40%;
+            }
         }
     }
 }

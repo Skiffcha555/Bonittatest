@@ -1,7 +1,8 @@
 .shopping-cart-section {
     padding-top: 29rem;
     padding-bottom: 172rem;
-    @media (max-width: 1399px) {
+
+    @media (max-width: 1400px) {
         padding-bottom: 102rem;
     }
 
@@ -13,11 +14,11 @@
         font-size: 18rem;
         color: $black-color;
 
-        @media (max-width: 1399px) {
+        @media (max-width: 1400px) {
             margin-top: 25rem;
         }
 
-        @media (max-width: 1399px) {
+        @media (max-width: 1400px) {
             gap: 60rem;
         }
     }
@@ -31,12 +32,25 @@
             gap: 90rem;
         }
 
-        @media (max-width: 1399px) {
+        @media (max-width: 1400px) {
             gap: 90rem;
+        }
+
+        @media (max-width: 1200px) {
+            gap: 40rem;
+        }
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            gap: 30rem;
         }
 
         .list-of-products {
             width: 65%;
+
+            @media (max-width: 992px) {
+                width: 100%;
+            }
 
             .list-titles {
                 display: flex;
@@ -51,40 +65,83 @@
                 font-size: 16rem;
                 color: $black-color;
 
+                @media (max-width: 992px) {
+                    padding-right: 0;
+                }
+
+                @media (max-width: 768px) {
+                    gap: 10rem;
+                }
+
                 .article {
-                    width: 60%;
+                    width: calc(60% - 18rem);
+
+                    @media (max-width: 768px) {
+                        width: calc(65% - 10rem);
+                    }
                 }
 
                 .price-quantity-total {
                     width: 40%;
                     display: flex;
-                    gap: 60rem;
+                    gap: 50rem;
+
+                    @media (max-width: 1200px) {
+                        gap: 35rem;
+                        font-size: 14rem;
+                    }
+
+                    @media (max-width: 768px) {
+                        width: 35%;
+                        gap: 25rem;
+                    }
 
                     .price,
                     .quantity,
                     .total {
+                        text-align: center;
                         width: 33.33333%;
+
+                        @media (max-width: 992px) {
+                            text-align: start;
+                        }
                     }
                 }
             }
 
             .products-in-cart {
                 width: 100%;
-                gap: 18rem;
                 padding-right: 40rem;
 
                 @media (max-width: 1920px) and (min-width: 1600px) {
                     padding-right: 30rem;
                 }
 
-                @media (max-width: 1399px) {
+                @media (max-width: 1400px) {
                     padding-right: 30rem;
+                }
+
+                @media (max-width: 1200px) {
+                    padding-right: 20rem;
+                }
+
+                @media (max-width: 992px) {
+                    border-bottom: 0.5rem solid #BDBDBD;
+                    padding-right: 0;
+                }
+
+                @media (max-width: 992px) {
                 }
 
                 .product {
                     width: 100%;
                     display: flex;
+                    gap: 18rem;
                     border-top: 0.5rem solid #BDBDBD;
+
+                    @media (max-width: 768px) {
+                        gap: 10rem;
+                    }
 
                     &:first-child {
                         border: none;
@@ -95,10 +152,22 @@
                     padding: 34rem 0;
                     display: flex;
                     gap: 19rem;
-                    width: 60%;
+                    width: calc(60% - 18rem);
+
+                    @media (max-width: 1200px) {
+                        padding: 26rem 0;
+                    }
+
+                    @media (max-width: 768px) {
+                        width: calc(65% - 10rem);
+                    }
 
                     .product-img {
                         width: 142rem;
+
+                        @media (max-width: 1200px) {
+                            width: auto;
+                        }
 
                         img {
                             width: 100%;
@@ -116,7 +185,7 @@
                         font-size: 16rem;
                         color: $black-color;
 
-                        @media (max-width: 1399px) {
+                        @media (max-width: 1400px) {
                             padding-top: 30rem;
                         }
 
@@ -139,6 +208,16 @@
                             display: flex;
                             padding-top: 64rem;
                             gap: 48rem;
+
+                            @media (max-width: 1400px) {
+                                gap: 35rem;
+                            }
+
+                            @media (max-width: 1200px) {
+                                gap: 25rem;
+                                padding-top: 50rem;
+                                font-size: 14rem;
+                            }
 
                             .save-to-favorite,
                             .delete-product {
@@ -185,7 +264,7 @@
                     width: 40%;
                     display: flex;
                     align-items: center;
-                    gap: 60rem;
+                    gap: 50rem;
 
                     font-family: Roboto;
                     font-style: normal;
@@ -193,8 +272,18 @@
                     font-size: 16rem;
                     color: $black-color;
 
-                    @media (max-width: 1399px) {
+                    @media (max-width: 1400px) {
                         gap: 50rem;
+                    }
+
+                    @media (max-width: 1200px) {
+                        gap: 35rem;
+                        font-size: 14rem;
+                    }
+
+                    @media (max-width: 768px) {
+                        width: 35%;
+                        gap: 25rem;
                     }
 
                     .product-quantity {
@@ -260,6 +349,12 @@
             padding-left: 21rem;
             border-left: 0.5rem solid #BDBDBD;
 
+            @media (max-width: 992px) {
+                width: 100%;
+                padding-left: 0;
+                border: none;
+            }
+
             h4 {
                 font-family: Roboto;
                 font-style: normal;
@@ -307,6 +402,10 @@
                 font-style: normal;
                 font-weight: 100;
                 color: $black-color;
+
+                @media (max-width: 992px) {
+                    padding: 15rem 0 25rem 0;
+                }
 
                 .total-sum {
                     display: flex;

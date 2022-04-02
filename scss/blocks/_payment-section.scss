@@ -1,11 +1,77 @@
 .payment-section {
     padding-top: 29rem;
 
+    .bread-crumbs {
+        @media (max-width: 575px) {
+            a {
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .return-mobile {
+        display: none;
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 14rem;
+        color: $black-color;
+
+        @media (max-width: 575px) {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 24rem;
+
+            .return-to-cart {
+                margin-top: 0;
+            }
+        }
+
+        .have-an-account {
+            font-family: 'Roboto';
+
+            @media (max-width: 575px) {
+                display: flex;
+                justify-content: space-between;
+    
+                .return-to-cart {
+                    margin-top: 0;
+                }
+            }
+
+            .log-in {
+                font-weight: 500;
+                text-decoration: none;
+                color: $black-color;
+            }
+        }
+    }
+
     .card-info-and-order-summary {
         padding-top: 81rem;
         padding-bottom: 73rem;
         display: flex;
         gap: 78rem;
+
+        @media (max-width: 1200px) {
+            gap: 50rem;
+        }
+
+        @media (max-width: 992px) {
+            padding-top: 40rem;
+            padding-bottom: 55rem;
+            gap: 30rem;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: 575px) {
+            padding-top: 20rem;
+        }
 
         h2 {
             font-family: 'Cormorant Garamond';
@@ -28,6 +94,18 @@
 
         .return-to-cart {
             margin-top: 34rem;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            &.mobile {
+                display: none;
+
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
         }
 
         .card-information {
@@ -35,9 +113,30 @@
             padding-right: 60rem;
             border-right: 0.5rem solid #E0E0E0;
 
+            @media (max-width: 1200px) {
+                width: 55%;
+                padding-right: 30rem;
+            }
+
+            @media (max-width: 992px) {
+                width: 60%;
+                padding-right: 20rem;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                padding-right: 0rem;
+                border: none;
+            }
+
             .mustValidate {
                 padding: 31rem 23rem 37rem 23rem;
                 border: 0.5rem solid #E0E0E0;
+
+                @media (max-width: 575px) {
+                    padding: 0;
+                    border: none;
+                }
             }
 
             .form-floating {
@@ -46,8 +145,13 @@
                     display: flex;
                     gap: 20rem;
                     width: 100%;
+
                     input {
                         min-width: auto;
+                    }
+
+                    @media (max-width: 575px) {
+                        flex-direction: column;
                     }
                 }
 
@@ -56,6 +160,10 @@
                     display: flex;
                     gap: 20rem;
                     width: 100%;
+
+                    @media (max-width: 575px) {
+                        flex-direction: column;
+                    }
 
                     input {
                         min-width: auto;
@@ -67,7 +175,8 @@
                     margin-top: 16rem;
                 }
 
-                .valid-until-year {
+                .valid-until-year,
+                .valid-until-month {
                     position: relative;
                     &::after {
                         content: '';
@@ -86,6 +195,10 @@
                 .valid-until-month,
                 .valid-until-year {
                     width: 50%;
+
+                    @media (max-width: 575px) {
+                        width: 100%;
+                    }
                 }
 
                 &.card-number {
@@ -102,6 +215,10 @@
                     font-weight: 300;
                     font-size: 12rem;
                     color: $black-color;
+
+                    @media (max-width: 992px) {
+                        min-width: auto;
+                    }
 
                     &:focus {
                         border: 1rem solid $brown-color;
@@ -184,11 +301,31 @@
         width: 50%;
         padding-top: 0;
 
+        @media (max-width: 1200px) {
+            width: 45%;
+        }
+
+        @media (max-width: 992px) {
+            width: 40%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media (max-width: 575px) {
+            display: none;
+        }
+
         .products-price-field,
         .discount-field,
         .delivery-field,
         .payment-total-sum-field {
             width: 65%;
+
+            @media (max-width: 1200px) {
+                width: 100%;
+            }
         }
 
         .order-summary-title {
@@ -199,6 +336,104 @@
             margin-top: 25rem;
             width: 65%;
             justify-content: center;
+
+            @media (max-width: 1200px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .total-sum-menu {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 20rem;
+        background: #FDFCFB;
+        box-shadow: 0rem -4rem 4rem rgb(0 0 0 / 5%);
+        display: none;
+    
+        @media (max-width: 575px) {
+            display: block;
+        }
+    
+        .menu-discount {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 18rem;
+            text-transform: capitalize;
+            color: $black-color;
+    
+            @media (max-width: 425px) {
+                font-size: 14rem;
+            }
+    
+            @media (max-width: 375px) {
+                font-size: 13rem;
+            }
+    
+            .apply-discount {
+                font-weight: 300;
+                text-decoration: underline;
+            }
+        }
+    
+        .menu-sum {
+            width: 100%;
+            padding: 0;
+            margin-top: 15rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18rem;
+            text-transform: capitalize;
+            color: $black-color;
+    
+            @media (max-width: 425px) {
+                font-size: 14rem;
+            }
+    
+            @media (max-width: 375px) {
+                font-size: 13rem;
+            }
+        }
+    
+        .continue {
+            width: 100%;
+            justify-content: center;
+            font-size: 18rem;
+            color: #fff;
+            border: 1rem solid $brown-color;
+            background-color: $brown-color;
+            margin: 0rem auto;
+            margin-top: 20rem;
+    
+            &:hover {
+                color: $brown-color;
+                border: 1rem solid $brown-color;
+                background-color: #fff;
+            }
+    
+            @media (max-width: 425px) {
+                font-size: 14rem;
+            }
+    
+            @media (max-width: 375px) {
+                font-size: 13rem;
+            }
         }
     }
 }

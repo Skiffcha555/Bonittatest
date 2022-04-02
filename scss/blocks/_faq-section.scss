@@ -1,11 +1,19 @@
 .faq-section {
     padding-bottom: 100rem;
 
+    @media (max-width: 575px) {
+        padding-bottom: 50rem;
+    }
+
     .bread-crumbs {
         padding-top: 30rem;
         padding-bottom: 5rem;
         padding-left: 24rem;
         justify-content: flex-start;
+
+        @media (max-width: 575px) {
+            padding-bottom: 30rem;
+        }
 
         a {
             &:nth-child(2) {
@@ -26,6 +34,10 @@
         font-size: 36rem;
         color: $black-color;
         text-align: center;
+
+        @media (max-width: 575px) {
+            display: none;
+        }
     }
 
     .faq-descr {

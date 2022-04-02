@@ -5,6 +5,10 @@
         padding-left: 24rem;
         justify-content: flex-start;
 
+        @media (max-width: 575px) {
+            padding-bottom: 30rem;
+        }
+
         a {
             &:nth-child(2) {
                 font-weight: 300;
@@ -24,6 +28,10 @@
         font-size: 36rem;
         color: $black-color;
         text-align: center;
+
+        @media (max-width: 575px) {
+            display: none;
+        }
     }
 
     .about-us-descr {

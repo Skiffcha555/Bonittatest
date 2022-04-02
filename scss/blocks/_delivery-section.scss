@@ -1,6 +1,10 @@
 .delivery-section {
     padding-bottom: 80rem;
 
+    @media (max-width: 575px) {
+        padding-bottom: 45rem;
+    }
+
     .bread-crumbs {
         padding-top: 30rem;
         padding-bottom: 5rem;
@@ -26,17 +30,38 @@
         font-size: 36rem;
         color: $black-color;
         text-align: center;
+
+        @media (max-width: 575px) {
+            display: none;
+        }
     }
 
     .delivery-methods {
         display: flex;
         gap: 45rem;
 
+        @media (max-width: 991px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: 575px) {
+            padding-top: 30rem;
+            gap: 15rem;
+        }
+
         .delivery-method {
             padding: 40rem 25rem 60rem 25rem;
             min-width: 290rem;
             max-width: 290rem;
             border: 1rem solid #E0E0E0;
+
+            @media (max-width: 768px) {
+                margin: 0 auto;
+            }
 
             .delivery-icon {
                 display: flex;
