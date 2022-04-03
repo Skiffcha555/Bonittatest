@@ -2,15 +2,38 @@
     padding-top: 71rem;
     padding-bottom: 95rem;
 
+    @media (max-width: 991px) {
+        padding-top: 50rem;
+        padding-bottom: 70rem;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 45rem;
+        padding-bottom: 65rem;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 45rem;
+        }
     }
 
     .my-order-pages {
         display: flex;
         flex-direction: column;
         width: 217rem;
+
+        @media (max-width: 991px) {
+            width: 20%;
+        }
+
+        @media (max-width: 768px) {
+            width: 50%;
+        }
 
         .my-order-page,
         .delivery-address-page,
@@ -41,6 +64,10 @@
             }
         }
 
+        .my-order-page {
+            padding-top: 0;
+        }
+
         .log-off {
             margin-top: 45rem;
             font-family: 'Roboto';
@@ -50,6 +77,10 @@
             color: $black-color;
             text-decoration: none;
 
+            @media (max-width: 768px) {
+                margin-top: 30rem;
+            }
+
             &:hover {
                 text-decoration: underline;
             }
@@ -58,6 +89,14 @@
 
     .personal-data-forms {
         width: 70%;
+
+        @media (max-width: 991px) {
+            width: 75%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
 
         .personal-data-form,
         .password-form,
@@ -82,6 +121,10 @@
                 font-weight: 100;
                 font-size: 16rem;
                 color: $black-color;
+
+                @media (max-width: 991px) {
+                    font-size: 14rem;
+                }
             }
 
             .personal-data-form-body,

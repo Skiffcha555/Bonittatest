@@ -324,7 +324,7 @@
                         <form class="personal-data-form-body mustValidate">
                             <div class="form-floating full-name">
                                 <div class="form-floating first-name">
-                                    <input type="text" class="form-control" placeholder="Old Password">
+                                    <input type="text" class="form-control" placeholder="First name">
                                     <div class="form-error">
                                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -342,7 +342,7 @@
                                     <label for="floatingInput">First name</label>
                                 </div>
                                 <div class="form-floating last-name">
-                                    <input type="text" class="form-control" placeholder="Current password">
+                                    <input type="text" class="form-control" placeholder="Second name">
                                     <div class="form-error">
                                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -357,7 +357,7 @@
                                         </svg>
                                         <span>This field can not be empty</span>
                                     </div>
-                                    <label for="floatingInput">Current password</label>
+                                    <label for="floatingInput">Second name</label>
                                 </div>
                             </div>
 
@@ -404,7 +404,7 @@
 
                             <div class="form-floating date-of-birth-full">
                                 <div class="form-floating date-of-birth">
-                                    <input type='text' class='form-control datepicker-here' />
+                                    <input type='text' class='form-control datepicker-full' />
                                     <div class="form-error">
                                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -423,9 +423,8 @@
                                 </div>
 
                                 <div class="form-floating valid-until-year">
-                                    <input type='text' data-date="Years" class='form-control datepicker-year'
-                                        onKeyPress="YearNum(this)" maxlength="4" />
-
+                                    <!-- <input type='text' data-date="Years" class='form-control datepicker-year'
+                                        onKeyPress="YearNum(this)" maxlength="4" /> -->
                                 </div>
                             </div>
 
@@ -599,6 +598,17 @@
         <span class="footer_author">RomarkCode 2022</span>
     </footer>
 
+    <script>
+        window.addEventListener('load', () => {
+            const fullDate = document.querySelector('.datepicker-full');
+
+            const datepickerFull = new Datepicker(fullDate, {
+                format: 'dd.mm.yyyy',
+                weekStart: 1
+            }); 
+        })
+    </script>
+
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/datepicker.min.js"></script>
@@ -608,7 +618,6 @@
     <script src="/js/accordion.js"></script>
     <script src="/js/scroll.js"></script>
     <script src="/js/validity.js"></script>
-    <script src="/js/datepicker.js"></script>
     <script src="/js/script.js"></script>
 
 </body>

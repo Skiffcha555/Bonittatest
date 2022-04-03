@@ -785,6 +785,70 @@ input[type=radio] + .radio-label:empty:before {
   outline: 0;
   box-shadow: none;
 }
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating input {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1rem solid #828282;
+  padding: 0rem;
+  padding-left: 12rem;
+  height: 36rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12rem;
+  color: #333;
+}
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating input:focus {
+  border: 1rem solid #957D6D;
+  box-shadow: none;
+}
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating select {
+  position: relative;
+  border-radius: 0;
+  padding: 0rem;
+  padding-left: 12rem;
+  height: 36rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12rem;
+  color: #333;
+}
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating select:focus {
+  border: 1rem solid #957D6D;
+  box-shadow: none;
+}
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating label {
+  opacity: 0;
+  height: auto;
+  padding: 0 5rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10rem;
+  color: #957D6D;
+  background: #fff;
+  transform: scale(1) translateY(-8rem) translateX(17rem);
+  transition: 0.3s;
+}
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating > .form-control:focus ~ label,
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating > .form-select ~ label {
+  opacity: 1;
+  background: #fff;
+  transform: scale(1) translateY(-8rem) translateX(17rem);
+  transition: 0.3s;
+}
+.modal-feedback .modal-content .modal-descr .mustValidate .form-floating > .form-control {
+  height: 36rem;
+}
 .modal-feedback .modal-content .modal-descr .feedback-evaluation {
   padding-top: 29rem;
   display: flex;
@@ -954,6 +1018,7 @@ input[type=radio] + .radio-label:empty:before {
 }
 
 .close-modal:hover,
+.close-modal-feedback:hover,
 .close-modal-notify:hover {
   cursor: pointer;
 }
@@ -7385,14 +7450,1366 @@ header.white .container nav .header_right .icon_heart {
   padding-top: 71rem;
   padding-bottom: 100rem;
 }
+.my-orders-section.mobile {
+  display: none;
+}
+.my-orders-section.mobile .log-off {
+  margin-top: 16rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16rem;
+  color: #333;
+  text-decoration: none;
+}
+.my-orders-section.mobile .log-off:hover {
+  text-decoration: underline;
+}
+.my-orders-section.mobile .delivery-addresses {
+  width: 70%;
+  padding-bottom: 18rem;
+}
+@media (max-width: 991px) {
+  .my-orders-section.mobile .delivery-addresses {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .my-orders-section.mobile .delivery-addresses {
+    width: 100%;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address {
+  padding-top: 25rem;
+  position: relative;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address:first-child {
+  padding-top: 0;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main {
+  border: 1rem solid #E0E0E0;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head {
+  border-bottom: 1rem solid #E0E0E0;
+  padding: 15rem 20rem 15rem 31rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16rem;
+  color: #333;
+}
+@media (max-width: 991px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head {
+    font-size: 14rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .default-address.hide {
+  opacity: 0;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit {
+  display: flex;
+  gap: 23rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 14rem;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit .hide {
+  display: none;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit .make-default-address:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit .edit-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .make-default-and-edit .edit-address:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-body {
+  padding: 25rem 31rem 30rem 31rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14rem;
+  color: #333;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-body .full-address {
+  padding-top: 2rem;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form.edit-delivery-address-form_active {
+  transform: translateX(0vw);
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form {
+  margin-top: 30rem;
+  border: 1rem solid #E0E0E0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffff;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  margin: 0;
+  transform: translateX(100vw);
+  transition: 0.4s;
+  z-index: 21;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form.delivery-address-form_active,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form.delivery-address-form_active {
+  transform: translateX(0vw);
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form.hide,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form.hide {
+  display: none;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-head,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-head {
+  border-bottom: 1rem solid #E0E0E0;
+  padding: 15rem 20rem 15rem 31rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16rem;
+  color: #333;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body {
+  padding: 41rem 31rem 30rem 31rem;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body {
+    padding: 20rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.full-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+  display: flex;
+  gap: 20rem;
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.full-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+    flex-direction: column;
+    gap: 14rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name input, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit input, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city input, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone input,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.full-name input,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit input,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city input,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone input {
+  min-width: auto;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+  padding-top: 0;
+  margin-top: 16rem;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+    margin-top: 14rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .post,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .country,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .city-village,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .post,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .country,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .city-village {
+  width: 50%;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .post,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .country,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .city-village,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .post,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .country,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .city-village {
+    width: 100%;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country {
+  position: relative;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country::after,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country::after {
+  content: "";
+  background-color: #E0E0E0;
+  top: 50%;
+  right: 11%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 21rem;
+  position: absolute;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country::after,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country::after {
+    right: 5%;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone {
+  display: flex;
+  align-items: center;
+  border: 1rem solid #ced4da;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select {
+  padding-left: 8rem;
+  width: 20%;
+  height: auto;
+  border: none;
+  border-right: 0.5rem solid #E0E0E0;
+}
+@media (max-width: 991px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select {
+    width: 26%;
+  }
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select {
+    width: 10%;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select:focus,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select:focus {
+  border: none;
+  border-right: 0.5rem solid #E0E0E0;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone input {
+  border: none;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input:focus,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone input:focus {
+  border: none;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1rem solid #E0E0E0;
+  padding: 0rem;
+  padding-left: 12rem;
+  height: 36rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12rem;
+  color: #333;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input {
+    height: 48rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input:focus {
+  border: 1rem solid #957D6D;
+  box-shadow: none;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating select {
+  position: relative;
+  border-radius: 0;
+  padding: 0rem;
+  padding-left: 12rem;
+  height: 36rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12rem;
+  color: #333;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating select {
+    height: 48rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select:focus,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating select:focus {
+  border: 1rem solid #957D6D;
+  box-shadow: none;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating label {
+  opacity: 0;
+  height: auto;
+  padding: 0 5rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10rem;
+  color: #957D6D;
+  background: #fff;
+  transform: scale(1) translateY(-8rem) translateX(17rem);
+  transition: 0.3s;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .checkboxes {
+  padding: 0;
+  opacity: 1;
+  min-width: auto;
+  transform: none;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating > .form-select ~ label {
+  opacity: 1;
+  background: #fff;
+  transform: scale(1) translateY(-8rem) translateX(17rem);
+  transition: 0.3s;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address {
+  margin-top: 23rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12rem;
+  color: #828282;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address {
+    margin-top: 15rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address .checkboxes,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address .checkboxes {
+  gap: 7rem;
+  padding: 0;
+  opacity: 1;
+  min-width: auto;
+  transform: none;
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .save {
+  margin-top: 18rem;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .save {
+    margin-top: 35rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save .btn-main,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .save .btn-main {
+  margin-top: 0;
+  padding: 12rem 63rem;
+}
+.my-orders-section.mobile .delivery-addresses .btn-main {
+  margin-top: 36rem;
+  gap: 8rem;
+  width: auto;
+  min-width: none;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .my-orders-section.mobile .delivery-addresses .btn-main {
+    margin-top: 25rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .btn-main:hover svg path {
+  transition: 0.3s;
+  fill: #957D6D;
+}
+.my-orders-section.mobile .form-floating > .form-control {
+  height: 36rem;
+}
+.my-orders-section.mobile .personal-data-forms {
+  width: 70%;
+}
+@media (max-width: 991px) {
+  .my-orders-section.mobile .personal-data-forms {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .my-orders-section.mobile .personal-data-forms {
+    width: 100%;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form,
+.my-orders-section.mobile .personal-data-forms .password-form,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form {
+  margin-top: 30rem;
+  border: 1rem solid #E0E0E0;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form,
+.my-orders-section.mobile .personal-data-forms .password-form,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form {
+    border: none;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form.hide,
+.my-orders-section.mobile .personal-data-forms .password-form.hide,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form.hide {
+  display: none;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-head,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-head,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-head,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-head,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-head,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-head,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-head,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-head,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-head {
+  border-bottom: 1rem solid #E0E0E0;
+  padding: 15rem 20rem 15rem 31rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16rem;
+  color: #333;
+}
+@media (max-width: 991px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-head,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-head,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-head,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-head,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-head,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-head,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-head,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-head,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-head {
+    font-size: 14rem;
+  }
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-head,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-head,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-head,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-head,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-head,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-head,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-head,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-head,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-head {
+    border: none;
+    padding: 0;
+    padding-top: 10rem;
+    justify-content: center;
+    font-size: 16rem;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body {
+  padding: 41rem 31rem 30rem 31rem;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body {
+    padding: 0;
+    padding-top: 21rem;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.full-name, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.email-and-phone, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.date-of-birth-full, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.passwords {
+  display: flex;
+  gap: 20rem;
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.full-name, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.email-and-phone, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.date-of-birth-full, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.passwords,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.full-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.date-of-birth-full,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.passwords {
+    flex-direction: column;
+    gap: 14rem;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.full-name input, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.email-and-phone input, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.date-of-birth-full input, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.passwords input {
+  min-width: auto;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.full-name input, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.email-and-phone input, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.date-of-birth-full input, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.passwords input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.full-name input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.email-and-phone input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.date-of-birth-full input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.passwords input {
+    height: 48rem;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.email-and-phone, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.date-of-birth {
+  padding-top: 0;
+  margin-top: 16rem;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.email-and-phone, .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.email-and-phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.date-of-birth {
+    margin-top: 14rem;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .valid-until-year {
+  width: 50%;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .valid-until-year,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .first-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .last-name,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .email,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .phone,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .date-of-birth,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .valid-until-year {
+    width: 100%;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .new-password {
+  width: 33.33333%;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .new-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .old-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .current-password,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .new-password {
+    width: 100%;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.valid-until-year,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.valid-until-year,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.valid-until-year,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.valid-until-year,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.valid-until-year,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.valid-until-year,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.valid-until-year,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.valid-until-year,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.valid-until-year {
+  height: 0;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.valid-until-year input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating.valid-until-year input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.valid-until-year input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating.valid-until-year input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating.valid-until-year input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating.valid-until-year input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.valid-until-year input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating.valid-until-year input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.valid-until-year input {
+  height: 0;
+  border: none;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating input {
+  min-width: 100%;
+  border-radius: 0;
+  border: 1rem solid #E0E0E0;
+  padding: 0rem;
+  padding-left: 12rem;
+  height: 36rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12rem;
+  color: #333;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating input {
+    height: 48rem;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating input:focus,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating input:focus,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating input:focus,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating input:focus,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating input:focus,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating input:focus,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating input:focus,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating input:focus,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating input:focus {
+  border: 1rem solid #957D6D;
+  box-shadow: none;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating input:focus::placeholder {
+  color: transparent;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating select {
+  position: relative;
+  border-radius: 0;
+  padding: 0rem;
+  padding-left: 12rem;
+  height: 36rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12rem;
+  color: #333;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating select,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating select {
+    height: 48rem;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating select:focus,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating select:focus,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating select:focus,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating select:focus,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating select:focus,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating select:focus,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating select:focus,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating select:focus,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating select:focus {
+  border: 1rem solid #957D6D;
+  box-shadow: none;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating label,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating label,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating label,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating label {
+  opacity: 0;
+  height: auto;
+  padding: 0 5rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10rem;
+  color: #957D6D;
+  background: #fff;
+  transform: scale(1) translateY(-8rem) translateX(17rem);
+  transition: 0.3s;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .checkboxes {
+  padding: 0;
+  opacity: 1;
+  min-width: auto;
+  transform: none;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating > .form-select ~ label {
+  opacity: 1;
+  background: #fff;
+  transform: scale(1) translateY(-8rem) translateX(17rem);
+  transition: 0.3s;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form {
+  display: flex;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form input,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form input,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form input,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form input,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form input,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form input {
+  width: 100%;
+  padding: 11rem;
+  border: 1rem solid #957D6D;
+  min-width: auto;
+  color: #333;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form input:focus,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form input:focus,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form input:focus,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form input:focus,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form input:focus,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form input:focus,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus {
+  border: 1rem solid #957D6D;
+  box-shadow: none;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form input:focus::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form input:focus::placeholder {
+  color: transparent;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form input::placeholder,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form input::placeholder,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form input::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form input::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form input::placeholder,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form input::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form input::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form input::placeholder,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form input::placeholder {
+  font-weight: 100;
+  color: #828282;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form button,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form button,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form button,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form button,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form button,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form button,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form button,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form button,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form button {
+  padding: 11rem 38rem;
+  border: 1rem solid #957D6D;
+  background-color: #957D6D;
+  color: #fff;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .sub-to-news-email_block_form button:hover,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .sub-to-news-email_block_form button:hover,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .sub-to-news-email_block_form button:hover,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .sub-to-news-email_block_form button:hover,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .sub-to-news-email_block_form button:hover,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .sub-to-news-email_block_form button:hover,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .sub-to-news-email_block_form button:hover,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .sub-to-news-email_block_form button:hover,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .sub-to-news-email_block_form button:hover {
+  background-color: #fff;
+  color: #957D6D;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .save,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .save,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .save,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .save,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .save,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .save,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .save,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .save,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .save {
+  margin-top: 30rem;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .save,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .save,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .save,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .save,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .save,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .save,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .save,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .save,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .save {
+    margin-top: 18rem;
+    margin-bottom: 19rem;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .save .btn-main {
+  margin-top: 0;
+  padding: 12rem 63rem;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile .personal-data-forms .personal-data-form .personal-data-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .password-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .password-form .personal-data-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .password-form .password-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .personal-data-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .password-form-body .save .btn-main,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body .save .btn-main {
+    width: 100%;
+    padding: 15rem 63rem;
+    justify-content: center;
+  }
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form .sub-to-news-form-body,
+.my-orders-section.mobile .personal-data-forms .password-form .sub-to-news-form-body,
+.my-orders-section.mobile .personal-data-forms .sub-to-news-form .sub-to-news-form-body {
+  padding: 34rem 31rem 49rem 31rem;
+}
+.my-orders-section.mobile .personal-data-forms .password-form {
+  margin-top: 0;
+}
+.my-orders-section.mobile .personal-data-forms .personal-data-form {
+  margin-top: 0;
+}
+@media (max-width: 575px) {
+  .my-orders-section.mobile {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .my-orders-section {
+    padding-top: 45rem;
+    padding-bottom: 65rem;
+  }
+}
+@media (max-width: 575px) {
+  .my-orders-section {
+    display: none;
+  }
+}
+.my-orders-section .accordion {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14rem;
+  color: #333;
+  text-align: start;
+  transition: 0.4s;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15rem 0;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  padding-bottom: 11rem;
+  border: none;
+  border-bottom: 0.5rem solid #E0E0E0;
+}
+.my-orders-section .accordion:after {
+  content: "";
+  background: url(/icons/plus.svg) 50% 50% no-repeat;
+  background-size: cover;
+  width: 14rem;
+  height: 14rem;
+  font-weight: bold;
+  float: right;
+  margin-right: 0;
+  transition: transform 0.2s ease-in-out;
+}
+.my-orders-section .accordion.active {
+  border-bottom: 1px solid #828282;
+}
+.my-orders-section .accordion.active::after {
+  content: "";
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(0);
+  background: url(/icons/minus.svg) 50% 50% no-repeat;
+}
+.my-orders-section .accordion-content {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14rem;
+  line-height: 16rem;
+  color: #333;
+  transition: cubic-bezier(0, 0, 0, 0.99) 0.3s !important;
+  padding: 0rem 16rem;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+@media (max-width: 575px) {
+  .my-orders-section .accordion-content {
+    padding: 0;
+  }
+}
 .my-orders-section .container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .my-orders-section .container {
+    flex-direction: column;
+    gap: 45rem;
+  }
+}
+@media (max-width: 575px) {
+  .my-orders-section .container {
+    gap: 0;
+  }
 }
 .my-orders-section .my-order-pages {
   display: flex;
   flex-direction: column;
   width: 217rem;
+}
+@media (max-width: 991px) {
+  .my-orders-section .my-order-pages {
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .my-orders-section .my-order-pages {
+    width: 50%;
+  }
 }
 .my-orders-section .my-order-pages .my-order-page,
 .my-orders-section .my-order-pages .delivery-address-page,
@@ -7441,11 +8858,26 @@ header.white .container nav .header_right .icon_heart {
   color: #333;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .my-orders-section .my-order-pages .log-off {
+    margin-top: 30rem;
+  }
+}
 .my-orders-section .my-order-pages .log-off:hover {
   text-decoration: underline;
 }
 .my-orders-section .my-orders {
   width: 70%;
+}
+@media (max-width: 991px) {
+  .my-orders-section .my-orders {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .my-orders-section .my-orders {
+    width: 100%;
+  }
 }
 .my-orders-section .my-orders .my-order {
   padding-top: 28rem;
@@ -7467,32 +8899,61 @@ header.white .container nav .header_right .icon_heart {
   font-size: 16rem;
   color: #333;
 }
+@media (max-width: 991px) {
+  .my-orders-section .my-orders .my-order .my-order-title {
+    font-size: 14rem;
+  }
+}
 .my-orders-section .my-orders .my-order .my-order-title .my-order-num-and-datetime {
   display: flex;
   gap: 30rem;
 }
+@media (max-width: 575px) {
+  .my-orders-section .my-orders .my-order .my-order-title .my-order-num-and-datetime {
+    flex-direction: column;
+    gap: 10rem;
+  }
+}
 .my-orders-section .my-orders .my-order .my-order-title .my-order-num-and-datetime .my-order-datetime {
   display: flex;
+}
+@media (max-width: 575px) {
+  .my-orders-section .my-orders .my-order .my-order-title .my-order-num-and-datetime .my-order-datetime {
+    font-weight: 100;
+  }
 }
 .my-orders-section .my-orders .my-order .my-order-body {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .my-orders-section .my-orders .my-order .my-order-body .product {
   width: 100%;
   height: 150rem;
   padding-top: 28rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 575px) {
+  .my-orders-section .my-orders .my-order .my-order-body .product {
+    height: 120rem;
+  }
 }
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name {
   display: flex;
   gap: 17rem;
+  width: 80%;
+}
+@media (max-width: 575px) {
+  .my-orders-section .my-orders .my-order .my-order-body .product .product-name {
+    gap: 10rem;
+    width: 70%;
+  }
 }
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-img {
   width: 25%;
-  max-width: 79rem;
-  height: 104rem;
+  max-width: 90rem;
+  height: 100%;
 }
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-img img {
   width: 100%;
@@ -7507,9 +8968,15 @@ header.white .container nav .header_right .icon_heart {
   font-size: 16rem;
   color: #333;
 }
-.my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-title-and-evaluation {
-  display: flex;
-  justify-content: space-between;
+@media (max-width: 991px) {
+  .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr {
+    font-size: 14rem;
+  }
+}
+@media (max-width: 575px) {
+  .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr {
+    width: 70%;
+  }
 }
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options {
   padding-top: 13rem;
@@ -7524,6 +8991,11 @@ header.white .container nav .header_right .icon_heart {
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-size {
   padding-right: 8rem;
 }
+@media (max-width: 425px) {
+  .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-size {
+    padding-right: 4rem;
+  }
+}
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-color {
   padding: 0 12rem;
   display: flex;
@@ -7531,17 +9003,64 @@ header.white .container nav .header_right .icon_heart {
   align-items: center;
   gap: 6rem;
 }
+@media (max-width: 425px) {
+  .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-color {
+    padding: 0 6rem;
+  }
+}
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-price {
   padding: 0 8rem;
+}
+@media (max-width: 425px) {
+  .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-price {
+    padding: 0 4rem;
+  }
 }
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-quantity {
   padding-left: 8rem;
 }
+@media (max-width: 425px) {
+  .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-options .product-quantity {
+    padding-left: 4rem;
+  }
+}
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-descr .product-code {
   padding-top: 13rem;
 }
-.my-orders-section .my-orders .my-order .my-order-body .full-address-and-phone {
+.my-orders-section .my-orders .my-order .my-order-body .product .product-evaluation {
+  display: flex;
+  flex-direction: column;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-evaluation .feedback {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14rem;
+  text-align: end;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-evaluation .feedback:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-evaluation .stars {
+  margin-left: 0;
+  justify-content: flex-end;
+}
+.my-orders-section .my-orders .my-order .my-order-body .product .product-evaluation .hide {
+  display: none;
+}
+.my-orders-section .my-orders .my-order .my-order-body .information-and-order-sum {
   padding-top: 28rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 575px) {
+  .my-orders-section .my-orders .my-order .my-order-body .information-and-order-sum {
+    padding-top: 16rem;
+    flex-direction: column;
+  }
+}
+.my-orders-section .my-orders .my-order .my-order-body .full-address-and-phone {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
@@ -7551,38 +9070,13 @@ header.white .container nav .header_right .icon_heart {
 .my-orders-section .my-orders .my-order .my-order-body .full-address-and-phone .full-phone {
   padding-top: 13rem;
 }
+@media (max-width: 575px) {
+  .my-orders-section .my-orders .my-order .my-order-body .full-address-and-phone .full-phone {
+    padding-top: 6rem;
+  }
+}
 .my-orders-section .my-orders .my-order .my-order-body .products-and-contact-info {
-  width: 80%;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary {
-  width: 20%;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation {
-  height: 150rem;
-  padding-top: 28rem;
-  display: flex;
-  flex-direction: column;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation:last-child {
-  height: 80rem;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .feedback {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14rem;
-  text-align: end;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .feedback:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .stars {
-  margin-left: 0;
-  justify-content: flex-end;
-}
-.my-orders-section .my-orders .my-order .my-order-body .product-evaluation-and-summary .product-evaluation .hide {
-  display: none;
+  width: 100%;
 }
 .my-orders-section .form-floating input {
   min-width: 100%;
@@ -7648,19 +9142,72 @@ header.white .container nav .header_right .icon_heart {
 .my-orders-section .form-floating > .form-control {
   height: 36rem;
 }
+.my-orders-section .order-summary {
+  width: 20%;
+  transform: translateY(-70rem);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14rem;
+  color: #333;
+}
+@media (max-width: 991px) {
+  .my-orders-section .order-summary {
+    width: 25%;
+    font-size: 14rem;
+  }
+}
+@media (max-width: 575px) {
+  .my-orders-section .order-summary {
+    padding-top: 15rem;
+    width: 35%;
+    transform: none;
+  }
+}
+.my-orders-section .order-summary .products-price-field {
+  padding-top: 0;
+}
 
 .delivery-address-section {
   padding-top: 71rem;
   padding-bottom: 100rem;
 }
+@media (max-width: 991px) {
+  .delivery-address-section {
+    padding-top: 50rem;
+    padding-bottom: 70rem;
+  }
+}
+@media (max-width: 768px) {
+  .delivery-address-section {
+    padding-top: 45rem;
+    padding-bottom: 65rem;
+  }
+}
 .delivery-address-section .container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .delivery-address-section .container {
+    flex-direction: column;
+    gap: 45rem;
+  }
 }
 .delivery-address-section .my-order-pages {
   display: flex;
   flex-direction: column;
   width: 217rem;
+}
+@media (max-width: 991px) {
+  .delivery-address-section .my-order-pages {
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .delivery-address-section .my-order-pages {
+    width: 50%;
+  }
 }
 .delivery-address-section .my-order-pages .my-order-page,
 .delivery-address-section .my-order-pages .delivery-address-page,
@@ -7694,6 +9241,9 @@ header.white .container nav .header_right .icon_heart {
 .delivery-address-section .my-order-pages .personal-data-page a:hover {
   text-decoration: underline;
 }
+.delivery-address-section .my-order-pages .my-order-page {
+  padding-top: 0rem;
+}
 .delivery-address-section .my-order-pages .log-off {
   margin-top: 45rem;
   font-family: "Roboto";
@@ -7703,11 +9253,26 @@ header.white .container nav .header_right .icon_heart {
   color: #333;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .delivery-address-section .my-order-pages .log-off {
+    margin-top: 30rem;
+  }
+}
 .delivery-address-section .my-order-pages .log-off:hover {
   text-decoration: underline;
 }
 .delivery-address-section .delivery-addresses {
   width: 70%;
+}
+@media (max-width: 991px) {
+  .delivery-address-section .delivery-addresses {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .delivery-address-section .delivery-addresses {
+    width: 100%;
+  }
 }
 .delivery-address-section .delivery-addresses .delivery-address {
   padding-top: 25rem;
@@ -7728,6 +9293,11 @@ header.white .container nav .header_right .icon_heart {
   font-weight: 100;
   font-size: 16rem;
   color: #333;
+}
+@media (max-width: 991px) {
+  .delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head {
+    font-size: 14rem;
+  }
 }
 .delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-head .default-address.hide {
   opacity: 0;
@@ -7770,14 +9340,20 @@ header.white .container nav .header_right .icon_heart {
 .delivery-address-section .delivery-addresses .delivery-address .delivery-address-main .delivery-address-body .full-address {
   padding-top: 2rem;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form {
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form {
+  display: none;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form {
   margin-top: 30rem;
   border: 1rem solid #E0E0E0;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form.hide {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form.hide,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form.hide {
   display: none;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-head {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-head,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-head {
   border-bottom: 1rem solid #E0E0E0;
   padding: 15rem 20rem 15rem 31rem;
   display: flex;
@@ -7788,18 +9364,30 @@ header.white .container nav .header_right .icon_heart {
   font-size: 16rem;
   color: #333;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body {
   padding: 41rem 31rem 30rem 31rem;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.full-name,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
   display: flex;
   gap: 20rem;
   width: 100%;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name input, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit input, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city input, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone input {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name input, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit input, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city input, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone input,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.full-name input,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit input,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city input,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone input {
   min-width: auto;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
   padding-top: 0;
   margin-top: 16rem;
 }
@@ -7810,13 +9398,23 @@ header.white .container nav .header_right .icon_heart {
 .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
 .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .country,
 .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .phone,
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .city-village {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .city-village,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .address,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .post,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .country,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .phone,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .city-village {
   width: 50%;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country {
   position: relative;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country::after {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country::after,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country::after {
   content: "";
   background-color: #E0E0E0;
   top: 50%;
@@ -7826,29 +9424,41 @@ header.white .container nav .header_right .icon_heart {
   height: 21rem;
   position: absolute;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone {
   display: flex;
   align-items: center;
   border: 1rem solid #ced4da;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select {
   padding-left: 8rem;
   width: 20%;
   height: auto;
   border: none;
   border-right: 0.5rem solid #E0E0E0;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select:focus {
+@media (max-width: 991px) {
+  .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select {
+    width: 26%;
+  }
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select:focus,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select:focus {
   border: none;
   border-right: 0.5rem solid #E0E0E0;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone input {
   border: none;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input:focus {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input:focus,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone input:focus {
   border: none;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input {
   min-width: 100%;
   border-radius: 0;
   border: 1rem solid #E0E0E0;
@@ -7861,18 +9471,22 @@ header.white .container nav .header_right .icon_heart {
   font-size: 12rem;
   color: #333;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input:focus {
   border: 1rem solid #957D6D;
   box-shadow: none;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus::placeholder {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus::placeholder,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input:focus::placeholder {
   color: transparent;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input::placeholder {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input::placeholder,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input::placeholder {
   font-weight: 100;
   color: #828282;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating select {
   position: relative;
   border-radius: 0;
   padding: 0rem;
@@ -7884,11 +9498,13 @@ header.white .container nav .header_right .icon_heart {
   font-size: 12rem;
   color: #333;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select:focus {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select:focus,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating select:focus {
   border: 1rem solid #957D6D;
   box-shadow: none;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating label {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating label,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating label {
   opacity: 0;
   height: auto;
   padding: 0 5rem;
@@ -7901,7 +9517,8 @@ header.white .container nav .header_right .icon_heart {
   transform: scale(1) translateY(-8rem) translateX(17rem);
   transition: 0.3s;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .checkboxes {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .checkboxes,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .checkboxes {
   padding: 0;
   opacity: 1;
   min-width: auto;
@@ -7909,13 +9526,17 @@ header.white .container nav .header_right .icon_heart {
 }
 .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-control:focus ~ label,
 .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-select ~ label {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-select ~ label,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating > .form-control:focus ~ label,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating > .form-select ~ label {
   opacity: 1;
   background: #fff;
   transform: scale(1) translateY(-8rem) translateX(17rem);
   transition: 0.3s;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address {
   margin-top: 23rem;
   font-family: "Roboto";
   font-style: normal;
@@ -7923,19 +9544,22 @@ header.white .container nav .header_right .icon_heart {
   font-size: 12rem;
   color: #828282;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address .checkboxes {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address .checkboxes,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address .checkboxes {
   gap: 7rem;
   padding: 0;
   opacity: 1;
   min-width: auto;
   transform: none;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .save {
   margin-top: 18rem;
   display: flex;
   justify-content: flex-end;
 }
-.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save .btn-main {
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save .btn-main,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .save .btn-main {
   margin-top: 0;
   padding: 12rem 63rem;
 }
@@ -7945,6 +9569,11 @@ header.white .container nav .header_right .icon_heart {
   width: auto;
   min-width: none;
   transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .delivery-address-section .delivery-addresses .btn-main {
+    margin-top: 25rem;
+  }
 }
 .delivery-address-section .delivery-addresses .btn-main:hover svg path {
   transition: 0.3s;
@@ -7958,14 +9587,42 @@ header.white .container nav .header_right .icon_heart {
   padding-top: 71rem;
   padding-bottom: 95rem;
 }
+@media (max-width: 991px) {
+  .personal-data-page-section {
+    padding-top: 50rem;
+    padding-bottom: 70rem;
+  }
+}
+@media (max-width: 768px) {
+  .personal-data-page-section {
+    padding-top: 45rem;
+    padding-bottom: 65rem;
+  }
+}
 .personal-data-page-section .container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .personal-data-page-section .container {
+    flex-direction: column;
+    gap: 45rem;
+  }
 }
 .personal-data-page-section .my-order-pages {
   display: flex;
   flex-direction: column;
   width: 217rem;
+}
+@media (max-width: 991px) {
+  .personal-data-page-section .my-order-pages {
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .personal-data-page-section .my-order-pages {
+    width: 50%;
+  }
 }
 .personal-data-page-section .my-order-pages .my-order-page,
 .personal-data-page-section .my-order-pages .delivery-address-page,
@@ -7999,6 +9656,9 @@ header.white .container nav .header_right .icon_heart {
 .personal-data-page-section .my-order-pages .personal-data-page a:hover {
   text-decoration: underline;
 }
+.personal-data-page-section .my-order-pages .my-order-page {
+  padding-top: 0;
+}
 .personal-data-page-section .my-order-pages .log-off {
   margin-top: 45rem;
   font-family: "Roboto";
@@ -8008,11 +9668,26 @@ header.white .container nav .header_right .icon_heart {
   color: #333;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .personal-data-page-section .my-order-pages .log-off {
+    margin-top: 30rem;
+  }
+}
 .personal-data-page-section .my-order-pages .log-off:hover {
   text-decoration: underline;
 }
 .personal-data-page-section .personal-data-forms {
   width: 70%;
+}
+@media (max-width: 991px) {
+  .personal-data-page-section .personal-data-forms {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .personal-data-page-section .personal-data-forms {
+    width: 100%;
+  }
 }
 .personal-data-page-section .personal-data-forms .personal-data-form,
 .personal-data-page-section .personal-data-forms .password-form,
@@ -8043,6 +9718,19 @@ header.white .container nav .header_right .icon_heart {
   font-weight: 100;
   font-size: 16rem;
   color: #333;
+}
+@media (max-width: 991px) {
+  .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-head,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-head,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-head,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-head,
+.personal-data-page-section .personal-data-forms .password-form .password-form-head,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-head,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-head,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-head,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-head {
+    font-size: 14rem;
+  }
 }
 .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body,
 .personal-data-page-section .personal-data-forms .personal-data-form .password-form-body,

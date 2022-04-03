@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
     }); 
 
     const datepickerFull = new Datepicker(fullDate, {
-        format: 'dd MM',
+        format: 'dd/mm/yyyy',
         weekStart: 1
     }); 
 })
