@@ -257,7 +257,7 @@ input[type=number] {
 }
 .accordion:after {
   content: "";
-  background: url(/icons/arrow-down.svg) 50% 50% no-repeat;
+  background: url(../icons/arrow-down.svg) 50% 50% no-repeat;
   background-size: cover;
   width: 14rem;
   height: 8rem;
@@ -309,7 +309,7 @@ input[type=number] {
 }
 .dropdown:after {
   content: "";
-  background: url(/icons/arrow-down.svg) 50% 50% no-repeat;
+  background: url(../icons/arrow-down.svg) 50% 50% no-repeat;
   background-size: cover;
   width: 8rem;
   height: 6rem;
@@ -432,7 +432,7 @@ input[type=radio] + .radio-label:empty:before {
 }
 .filter-sizes .checkmark:after {
   content: "";
-  background: url(/icons/checked.svg) 50% 50% no-repeat;
+  background: url(../icons/checked.svg) 50% 50% no-repeat;
   background-size: cover;
   width: 8rem;
   height: 6rem;
@@ -626,7 +626,7 @@ input[type=radio] + .radio-label:empty:before {
 }
 .checkboxes .checkmark:after {
   content: "";
-  background: url(/icons/checked.svg) 50% 50% no-repeat;
+  background: url(../icons/checked.svg) 50% 50% no-repeat;
   background-size: cover;
   width: 8rem;
   height: 6rem;
@@ -2139,7 +2139,7 @@ header.white .container nav .header_right .icon_heart {
 .promo {
   padding: 110rem 0 130rem 0;
   height: 100vh;
-  background: url("/img/promo/main-bg.jpg") center center/cover no-repeat;
+  background: url("../img/promo/main-bg.jpg") center center/cover no-repeat;
 }
 .promo .container {
   height: 100%;
@@ -2230,22 +2230,22 @@ header.white .container nav .header_right .icon_heart {
   transition: 0.3s;
 }
 .categories-section .container .bodysuit {
-  background: url("/img/categories/bodysuit.jpg") center center/cover no-repeat;
+  background: url("../img/categories/bodysuit.jpg") center center/cover no-repeat;
 }
 .categories-section .container .lingerie-sets {
-  background: url("/img/categories/lingerie-sets.jpg") center center/cover no-repeat;
+  background: url("../img/categories/lingerie-sets.jpg") center center/cover no-repeat;
 }
 .categories-section .container .bralette {
-  background: url("/img/categories/bralette.jpg") center center/cover no-repeat;
+  background: url("../img/categories/bralette.jpg") center center/cover no-repeat;
 }
 .categories-section .container .pajamas {
-  background: url("/img/categories/pajamas.jpg") center center/cover no-repeat;
+  background: url("../img/categories/pajamas.jpg") center center/cover no-repeat;
 }
 .categories-section .container .belts-straps {
-  background: url("/img/categories/belts-straps.jpg") center center/cover no-repeat;
+  background: url("../img/categories/belts-straps.jpg") center center/cover no-repeat;
 }
 .categories-section .container .accessories {
-  background: url("/img/categories/accessories.jpg") center center/cover no-repeat;
+  background: url("../img/categories/accessories.jpg") center center/cover no-repeat;
 }
 
 .sub-to-news {
@@ -3142,7 +3142,7 @@ header.white .container nav .header_right .icon_heart {
 }
 .mobile-filters .container .mobile-filters-content .accordions .accordion:after {
   content: "";
-  background: url(/icons/plus.svg) 50% 50% no-repeat;
+  background: url(../icons/plus.svg) 50% 50% no-repeat;
   background-size: cover;
   width: 14rem;
   height: 14rem;
@@ -3158,7 +3158,7 @@ header.white .container nav .header_right .icon_heart {
   content: "";
   transition: transform 0.2s ease-in-out;
   transform: rotate(0);
-  background: url(/icons/minus.svg) 50% 50% no-repeat;
+  background: url(../icons/minus.svg) 50% 50% no-repeat;
 }
 @media (max-width: 425px) {
   .mobile-filters .container .mobile-filters-content .accordions .accordion {
@@ -4022,7 +4022,7 @@ header.white .container nav .header_right .icon_heart {
 }
 .product-page-content .product-content .product-descr .accordions .accordion:after {
   content: "";
-  background: url(/icons/arrow-down.svg) 50% 50% no-repeat;
+  background: url(../icons/arrow-down.svg) 50% 50% no-repeat;
   background-size: cover;
   width: 14rem;
   height: 8rem;
@@ -6488,7 +6488,7 @@ header.white .container nav .header_right .icon_heart {
 }
 .order-completed-section .accordion:after {
   content: "";
-  background: url(/icons/plus.svg) 50% 50% no-repeat;
+  background: url(../icons/plus.svg) 50% 50% no-repeat;
   background-size: cover;
   width: 14rem;
   height: 8rem;
@@ -6504,7 +6504,7 @@ header.white .container nav .header_right .icon_heart {
   content: "";
   transition: transform 0.2s ease-in-out;
   transform: rotate(0);
-  background: url(/icons/minus.svg) 50% 50% no-repeat;
+  background: url(../icons/minus.svg) 50% 50% no-repeat;
 }
 .order-completed-section .order-summary {
   padding-bottom: 23rem;
@@ -8744,7 +8744,7 @@ header.white .container nav .header_right .icon_heart {
 }
 .my-orders-section .accordion:after {
   content: "";
-  background: url(/icons/plus.svg) 50% 50% no-repeat;
+  background: url(../icons/plus.svg) 50% 50% no-repeat;
   background-size: cover;
   width: 14rem;
   height: 14rem;
@@ -8760,7 +8760,7 @@ header.white .container nav .header_right .icon_heart {
   content: "";
   transition: transform 0.2s ease-in-out;
   transform: rotate(0);
-  background: url(/icons/minus.svg) 50% 50% no-repeat;
+  background: url(../icons/minus.svg) 50% 50% no-repeat;
 }
 .my-orders-section .accordion-content {
   font-family: Roboto;
