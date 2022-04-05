@@ -61,7 +61,7 @@
 
         &:after {
             content: '';
-            background: url(/icons/plus.svg) 50% 50% no-repeat;
+            background: url(../icons/plus.svg) 50% 50% no-repeat;
             background-size: cover;
             width: 14rem;
             height: 8rem;
@@ -78,7 +78,7 @@
                 content: '';
                 transition: transform .2s ease-in-out;
                 transform: rotate(0);
-                background: url(/icons/minus.svg) 50% 50% no-repeat;
+                background: url(../icons/minus.svg) 50% 50% no-repeat;
             }
         }
     }
