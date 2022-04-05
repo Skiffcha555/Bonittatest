@@ -2230,22 +2230,22 @@ header.white .container nav .header_right .icon_heart {
   transition: 0.3s;
 }
 .categories-section .container .bodysuit {
-  background: url("./img/categories/bodysuit.jpg") center center/cover no-repeat;
+  background: url("../img/categories/bodysuit.jpg") center center/cover no-repeat;
 }
 .categories-section .container .lingerie-sets {
-  background: url("./img/categories/lingerie-sets.jpg") center center/cover no-repeat;
+  background: url("../img/categories/lingerie-sets.jpg") center center/cover no-repeat;
 }
 .categories-section .container .bralette {
-  background: url("./img/categories/bralette.jpg") center center/cover no-repeat;
+  background: url("../img/categories/bralette.jpg") center center/cover no-repeat;
 }
 .categories-section .container .pajamas {
-  background: url("./img/categories/pajamas.jpg") center center/cover no-repeat;
+  background: url("../img/categories/pajamas.jpg") center center/cover no-repeat;
 }
 .categories-section .container .belts-straps {
-  background: url("./img/categories/belts-straps.jpg") center center/cover no-repeat;
+  background: url("../img/categories/belts-straps.jpg") center center/cover no-repeat;
 }
 .categories-section .container .accessories {
-  background: url("./img/categories/accessories.jpg") center center/cover no-repeat;
+  background: url("../img/categories/accessories.jpg") center center/cover no-repeat;
 }
 
 .sub-to-news {
