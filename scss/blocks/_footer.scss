@@ -1,12 +1,14 @@
 footer {
     padding-top: 76rem;
-    border-top: 1rem solid rgba($brown-color, 0.3);
+    // border-top: 1rem solid rgba($brown-color, 0.3);
+    border-top: 1rem solid #F2F2F2;
 
     .container {
         padding-bottom: 52rem;
         display: flex;
         justify-content: space-between;
-        border-bottom: 1rem solid rgba($brown-color, 0.3);
+        // border-bottom: 1rem solid rgba($brown-color, 0.3);
+        border-bottom: 1rem solid #F2F2F2;
 
         .shop_and_contact_blocks {
             width: 50%;
@@ -61,9 +63,13 @@ footer {
 
                 .social-net_block_icon {
                     svg {
+                        fill: #333333;
+                        
                         path {
                             transition: 0.3s;
+                            fill: #333333;
                         }
+
                         &:hover {
                             cursor: pointer;
                             path {
@@ -136,6 +142,7 @@ footer {
                     border: 1rem solid $brown-color;
                     background-color: $brown-color;
                     color: #fff;
+                    font-size: 14rem;
 
                     &:hover {
                         background-color: #fff;

@@ -16,6 +16,7 @@ html {
 
 body {
   font-size: 14px;
+  background-color: #FDFCFB;
 }
 
 input::-webkit-input-placeholder {
@@ -1158,8 +1159,8 @@ header .container nav .header_right .cart-wishlist span {
 }
 
 header.white {
-  background-color: #fff;
-  border-bottom: 1rem solid rgba(149, 125, 109, 0.3);
+  background-color: #FDFCFB;
+  border-bottom: 1rem solid #F2F2F2;
 }
 header.white .burger_lines {
   background-color: #333;
@@ -2978,6 +2979,7 @@ header.white .container nav .header_right .icon_heart {
 }
 .product-category h2 {
   padding-top: 5rem;
+  padding-bottom: 25rem;
   text-align: center;
   font-family: Cormorant Garamond;
   font-style: normal;
@@ -3003,6 +3005,11 @@ header.white .container nav .header_right .icon_heart {
   font-weight: 100;
   font-size: 16rem;
   color: #333;
+}
+@media (max-width: 1440px) {
+  .product-category .filters-and-quantity-prod .quantity-prod {
+    font-size: 12rem;
+  }
 }
 @media (max-width: 425px) {
   .product-category .filters-and-quantity-prod .quantity-prod {
@@ -3041,7 +3048,7 @@ header.white .container nav .header_right .icon_heart {
   display: flex;
   gap: 42rem;
   border: 0.5rem solid #333;
-  padding: 5rem 11rem;
+  padding: 1rem 11rem;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -7299,6 +7306,9 @@ header.white .container nav .header_right .icon_heart {
   padding-top: 65rem;
   padding-bottom: 56rem;
 }
+.follow-inst-padding .follow-inst_posts {
+  padding-top: 40rem;
+}
 
 .terms-of-service-section {
   padding-bottom: 60rem;
@@ -10221,13 +10231,13 @@ header.white .container nav .header_right .icon_heart {
 
 footer {
   padding-top: 76rem;
-  border-top: 1rem solid rgba(149, 125, 109, 0.3);
+  border-top: 1rem solid #F2F2F2;
 }
 footer .container {
   padding-bottom: 52rem;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1rem solid rgba(149, 125, 109, 0.3);
+  border-bottom: 1rem solid #F2F2F2;
 }
 footer .container .shop_and_contact_blocks {
   width: 50%;
@@ -10273,8 +10283,12 @@ footer .container .social-net_block .social-net_block_icons {
   display: flex;
   gap: 12rem;
 }
+footer .container .social-net_block .social-net_block_icons .social-net_block_icon svg {
+  fill: #333333;
+}
 footer .container .social-net_block .social-net_block_icons .social-net_block_icon svg path {
   transition: 0.3s;
+  fill: #333333;
 }
 footer .container .social-net_block .social-net_block_icons .social-net_block_icon svg:hover {
   cursor: pointer;
@@ -10334,6 +10348,7 @@ footer .container .sub-to-news-email_block .sub-to-news-email_block_form button 
   border: 1rem solid #957D6D;
   background-color: #957D6D;
   color: #fff;
+  font-size: 14rem;
 }
 footer .container .sub-to-news-email_block .sub-to-news-email_block_form button:hover {
   background-color: #fff;

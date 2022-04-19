@@ -45,6 +45,7 @@
 
     h2 {
         padding-top: 5rem;
+        padding-bottom: 25rem;
         text-align: center;
         font-family: Cormorant Garamond;
         font-style: normal;
@@ -71,6 +72,10 @@
             font-weight: 100;
             font-size: 16rem;
             color: $black-color;
+
+            @media (max-width: 1440px) {
+                font-size: 12rem;
+            }
 
             @media (max-width: 425px) {
                 font-size: 14rem;
@@ -110,7 +115,7 @@
             display: flex;
             gap: 42rem;
             border: 0.5rem solid $black-color;
-            padding: 5rem 11rem;
+            padding: 1rem 11rem;
             font-family: Roboto;
             font-style: normal;
             font-weight: 300;
