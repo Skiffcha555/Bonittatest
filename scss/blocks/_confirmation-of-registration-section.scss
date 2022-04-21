@@ -1,6 +1,6 @@
 .confirmation-of-registration-section {
     padding-top: 70rem;
-    padding-bottom: 210rem;
+    padding-bottom: 184rem;
 
     @media (max-width: 1199px) {
         padding-bottom: 150rem;
@@ -38,7 +38,7 @@
         }
 
         .mustValidate {
-            width: 180rem;
+            width: 177rem;
             margin: 0 auto;
 
             @media (max-width: 575px) {
@@ -95,7 +95,7 @@
             border: 1rem solid #828282;
             padding: 0rem;
             padding-left: 12rem;
-            height: 36rem;
+            height: 43rem;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 300;
@@ -121,6 +121,7 @@
     .btn-main {
         margin-top: 26rem;
         padding: 14rem 0;
+        max-height: 48rem;
         width: 100%;
         justify-content: center;
 

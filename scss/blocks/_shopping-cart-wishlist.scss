@@ -36,15 +36,15 @@
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 18rem;
+                    font-size: 14rem;
                     color: $black-color;
 
                     @media (max-width: 425px) {
-                        font-size: 14rem;
+                        // font-size: 14rem;
                     }
 
                     @media (max-width: 375px) {
-                        font-size: 13rem;
+                        // font-size: 13rem;
                     }
                 }
 
@@ -177,15 +177,15 @@
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 300;
-                        font-size: 18rem;
+                        font-size: 14rem;
                         color: $black-color;
 
                         @media (max-width: 425px) {
-                            font-size: 14rem;
+                            // font-size: 14rem;
                         }
 
                         @media (max-width: 375px) {
-                            font-size: 13rem;
+                            // font-size: 13rem;
                         }
                     }
                 }
@@ -200,16 +200,16 @@
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 100;
-                    font-size: 18rem;
+                    font-size: 16rem;
                     text-transform: capitalize;
                     color: $black-color;
 
                     @media (max-width: 425px) {
-                        font-size: 14rem;
+                        // font-size: 14rem;
                     }
 
                     @media (max-width: 375px) {
-                        font-size: 13rem;
+                        // font-size: 13rem;
                     }
 
                     .apply-discount {
@@ -228,23 +228,23 @@
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 18rem;
+                    font-size: 16rem;
                     text-transform: capitalize;
                     color: $black-color;
 
                     @media (max-width: 425px) {
-                        font-size: 14rem;
+                        // font-size: 14rem;
                     }
 
                     @media (max-width: 375px) {
-                        font-size: 13rem;
+                        // font-size: 13rem;
                     }
                 }
         
                 .checkout {
                     width: 100%;
                     justify-content: center;
-                    font-size: 18rem;
+                    font-size: 16rem;
                     color: #fff;
                     border: 1rem solid $brown-color;
                     background-color: $brown-color;
@@ -258,11 +258,11 @@
                     }
         
                     @media (max-width: 425px) {
-                        font-size: 14rem;
+                        // font-size: 14rem;
                     }
 
                     @media (max-width: 375px) {
-                        font-size: 13rem;
+                        // font-size: 13rem;
                     }
                 }
             }
@@ -350,15 +350,15 @@
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 100;
-                        font-size: 18rem;
+                        font-size: 14rem;
                         color: $black-color;
 
                         @media (max-width: 425px) {
-                            font-size: 14rem;
+                            // font-size: 14rem;
                         }
 
                         @media (max-width: 375px) {
-                            font-size: 13rem;
+                            // font-size: 13rem;
                         }
 
                         .product_card-in-cart_price {
@@ -398,29 +398,29 @@
                             width: 100%;
                             padding: 16rem 27rem;
                             color: $black-color;
-                            font-size: 18rem;
+                            font-size: 14rem;
                             border: 1rem solid #BDBDBD;
 
                             @media (max-width: 425px) {
-                                font-size: 14rem;
+                                // font-size: 14rem;
                             }
 
                             @media (max-width: 375px) {
-                                font-size: 13rem;
+                                // font-size: 13rem;
                             }
                         }
                         
                         .brown-btn {
                             margin-top: 10rem;
                             color: #fff;
-                            font-size: 18rem;
+                            font-size: 16rem;
 
                             @media (max-width: 425px) {
-                                font-size: 14rem;
+                                // font-size: 14rem;
                             }
 
                             @media (max-width: 375px) {
-                                font-size: 13rem;
+                                // font-size: 13rem;
                             }
                         }
                     }
@@ -436,15 +436,15 @@
                             font-family: 'Roboto';
                             font-style: normal;
                             font-weight: 300;
-                            font-size: 18rem;
+                            font-size: 14rem;
                             color: $red-color;
 
                             @media (max-width: 425px) {
-                                font-size: 14rem;
+                                // font-size: 14rem;
                             }
 
                             @media (max-width: 375px) {
-                                font-size: 13rem;
+                                // font-size: 13rem;
                             }
                         }
 
@@ -454,16 +454,16 @@
                             gap: 9rem;
 
                             .notify-me-text {
-                                font-size: 18rem;
+                                font-size: 14rem;
                                 font-weight: 300;
                                 color: $brown-color;
 
                                 @media (max-width: 425px) {
-                                    font-size: 14rem;
+                                    // font-size: 14rem;
                                 }
 
                                 @media (max-width: 375px) {
-                                    font-size: 13rem;
+                                    // font-size: 13rem;
                                 }
                             }
                         }

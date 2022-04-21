@@ -201,15 +201,15 @@
                 @media (max-width: 575px) {
                     display: block;
                     font-weight: 100;
-                    font-size: 24rem;
+                    font-size: 16rem;
                 }
 
                 @media (max-width: 425px) {
-                    font-size: 18rem;
+                    // font-size: 18rem;
                 }
 
                 @media (max-width: 375px) {
-                    font-size: 16rem;
+                    // font-size: 16rem;
                 }
             }
 
@@ -254,14 +254,14 @@
                     text-align: center;
 
                     .color-name {
-                        font-size: 21.5rem;
+                        font-size: 12rem;
 
                         @media (max-width: 425px) {
-                            font-size: 14rem;
+                            // font-size: 14rem;
                         }
 
                         @media (max-width: 375px) {
-                            font-size: 12rem;
+                            // font-size: 12rem;
                         }
                     }
                 }
@@ -305,12 +305,12 @@
                         padding-top: 0;
                         font-size: 24rem;
 
-                        @media (max-width: 425px) {
-                            font-size: 18rem;
+                        @media (max-width: 575px) {
+                            font-size: 16rem;
                         }
 
                         @media (max-width: 375px) {
-                            font-size: 16rem;
+                            // font-size: 16rem;
                         }
                     }
                 }
@@ -337,35 +337,35 @@
                         .select-size-product {
                             display: inline-flex;
                             gap: 8rem;
-                            padding: 21rem 40.5rem;
-                            font-size: 18rem;
+                            padding: 16rem 18rem 16rem 21rem;
+                            font-size: 14rem;
                             color: #333333;
                             border: 1px solid #BDBDBD;
 
                             @media (max-width: 425px) {
-                                padding: 20rem 42.5rem;
-                                font-size: 16rem;
+                                // padding: 20rem 42.5rem;
+                                // font-size: 16rem;
                             }
     
                             @media (max-width: 375px) {
-                                padding: 18rem 34rem;
-                                font-size: 16rem;
+                                // padding: 18rem 34rem;
+                                // font-size: 16rem;
                             }
                         }
 
                         .brown-btn {
                             display: inline-flex;
-                            padding: 21rem 40.5rem;
-                            font-size: 18rem;
+                            padding: 15rem 32rem;
+                            font-size: 16rem;
 
                             @media (max-width: 425px) {
-                                padding: 20rem 42.5rem;
-                                font-size: 16rem;
+                                // padding: 20rem 42.5rem;
+                                // font-size: 16rem;
                             }
     
                             @media (max-width: 375px) {
-                                padding: 18rem 34rem;
-                                font-size: 16rem;
+                                // padding: 18rem 34rem;
+                                // font-size: 16rem;
                             }
                         }
                     }
@@ -382,35 +382,35 @@
                         .disabled {
                             display: inline-flex;
                             gap: 8rem;
-                            padding: 21rem 40.5rem;
-                            font-size: 18rem;
+                            padding: 16rem 12rem 16rem 14rem;
+                            font-size: 14rem;
                             color: $red-color;
                             border: 1px solid #BDBDBD;
 
                             @media (max-width: 425px) {
-                                padding: 20rem 42.5rem;
-                                font-size: 16rem;
+                                // padding: 20rem 42.5rem;
+                                // font-size: 16rem;
                             }
     
                             @media (max-width: 375px) {
-                                padding: 18rem 34rem;
-                                font-size: 16rem;
+                                // padding: 18rem 34rem;
+                                // font-size: 16rem;
                             }
                         }
 
                         .show-modal-notifyme {
                             display: inline-flex;
-                            padding: 21rem 44.5rem;
-                            font-size: 18rem;
+                            padding: 14rem 38rem;
+                            font-size: 16rem;
 
                             @media (max-width: 425px) {
-                                padding: 20rem 44.5rem;
-                                font-size: 16rem;
+                                // padding: 20rem 44.5rem;
+                                // font-size: 16rem;
                             }
     
                             @media (max-width: 375px) {
-                                padding: 18rem 34rem;
-                                font-size: 16rem;
+                                // padding: 18rem 34rem;
+                                // font-size: 16rem;
                             }
                         }
                     }
@@ -436,8 +436,8 @@
                 color: $black-color;
 
                 @media (max-width: 1199px) {
-                    padding-top: 15rem;
-                    font-size: 20rem;
+                    // padding-top: 15rem;
+                    // font-size: 20rem;
                 }
             }
 
@@ -453,12 +453,12 @@
                     font-size: 18rem;
 
                     @media (max-width: 1440px) {
-                        font-size: 14rem;
+                        // font-size: 14rem;
                     }
                 }
 
                 @media (max-width: 1199px) {
-                    padding-top: 15rem;
+                    // padding-top: 15rem;
                 }
             }
 
@@ -640,15 +640,15 @@
                     border-bottom: 0.5rem solid #BDBDBD;
 
                     @media (max-width: 575px) {
-                        font-size: 20rem;
+                        font-size: 14rem;
                     }
 
                     @media (max-width: 425px) {
-                        font-size: 18rem;
+                        // font-size: 18rem;
                     }
 
                     @media (max-width: 375px) {
-                        font-size: 16rem;
+                        // font-size: 16rem;
                     }
 
                     &:after {
@@ -694,16 +694,16 @@
                     transition: max-height 0.3s ease-out;
 
                     @media (max-width: 575px) {
-                        font-size: 20rem;
-                        line-height: 26rem;
+                        font-size: 14rem;
+                        line-height: 16rem;
                     }
 
                     @media (max-width: 425px) {
-                        font-size: 28rem;
+                        // font-size: 28rem;
                     }
 
                     @media (max-width: 375px) {
-                        font-size: 16rem;
+                        // font-size: 16rem;
                     }
                 }
             }

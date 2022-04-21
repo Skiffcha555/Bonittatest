@@ -121,7 +121,7 @@
                     color: $black-color;
 
                     @media (max-width: 991px) {
-                        font-size: 14rem;
+                        // font-size: 14rem;
                     }
 
                     .default-address {
@@ -373,7 +373,7 @@
                         font-style: normal;
                         font-weight: 100;
                         font-size: 12rem;
-                        color: #828282;
+                        color: $black-color;
         
                         .checkboxes {
                             gap: 7rem;
@@ -381,6 +381,10 @@
                             opacity: 1;
                             min-width: auto;
                             transform: none;
+
+                            span {
+                                color: $black-color;
+                            }
                         }
                     }
 

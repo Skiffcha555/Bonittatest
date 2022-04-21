@@ -13,8 +13,8 @@
             a {
                 font-size: 16rem;
 
-                @media (max-width: 425px) {
-                    font-size: 14rem;
+                @media (max-width: 575px) {
+                    font-size: 12rem;
                 }
             }
         }
@@ -29,8 +29,8 @@
                 font-size: 16rem;
                 color: $black-color;
 
-                @media (max-width: 425px) {
-                    font-size: 14rem;
+                @media (max-width: 575px) {
+                    font-size: 12rem;
                 }
             }
 
@@ -96,12 +96,12 @@
             font-size: 16rem;
             color: $black-color;
 
-            @media (max-width: 425px) {
+            @media (max-width: 575px) {
                 font-size: 14rem;
             }
 
             @media (max-width: 375px) {
-                font-size: 13rem;
+                // font-size: 13rem;
             }
         }
     }

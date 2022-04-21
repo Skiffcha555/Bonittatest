@@ -3,16 +3,6 @@
 html {
   font-size: 1px;
 }
-@media (min-width: 1919px) {
-  html {
-    font-size: 1.2px;
-  }
-}
-@media (min-width: 1599px) {
-  html {
-    font-size: 1.1px;
-  }
-}
 
 body {
   font-size: 14px;
@@ -6905,7 +6895,7 @@ header.white .container nav .header_right .icon_heart {
 
 .confirmation-of-registration-section {
   padding-top: 70rem;
-  padding-bottom: 210rem;
+  padding-bottom: 184rem;
 }
 @media (max-width: 1199px) {
   .confirmation-of-registration-section {
@@ -6950,7 +6940,7 @@ header.white .container nav .header_right .icon_heart {
   }
 }
 .confirmation-of-registration-section .confirmation-of-registration-wrapper .mustValidate {
-  width: 180rem;
+  width: 177rem;
   margin: 0 auto;
 }
 @media (max-width: 575px) {
@@ -6998,7 +6988,7 @@ header.white .container nav .header_right .icon_heart {
   border: 1rem solid #828282;
   padding: 0rem;
   padding-left: 12rem;
-  height: 36rem;
+  height: 43rem;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -7019,6 +7009,7 @@ header.white .container nav .header_right .icon_heart {
 .confirmation-of-registration-section .btn-main {
   margin-top: 26rem;
   padding: 14rem 0;
+  max-height: 48rem;
   width: 100%;
   justify-content: center;
 }
@@ -7134,11 +7125,11 @@ header.white .container nav .header_right .icon_heart {
   border: 1rem solid #828282;
   padding: 0rem;
   padding-left: 12rem;
-  height: 36rem;
+  height: 43rem;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 12rem;
+  font-size: 16rem;
   color: #333;
 }
 .forgot-password-section .form-floating input:focus {
@@ -7172,7 +7163,7 @@ header.white .container nav .header_right .icon_heart {
 }
 
 .delivery-section {
-  padding-bottom: 80rem;
+  padding-bottom: 145rem;
 }
 @media (max-width: 575px) {
   .delivery-section {
@@ -7431,11 +7422,12 @@ header.white .container nav .header_right .icon_heart {
   padding-top: 0;
   margin-bottom: 15rem;
   padding-bottom: 0;
+  font-size: 16rem;
   border: none;
 }
 .faq-section .faq-descr .accordion:after {
   content: "";
-  background: url(/icons/plus.svg) 50% 50% no-repeat;
+  background: url("../icons/plus.svg") 50% 50% no-repeat;
   background-size: cover;
   width: 14rem;
   height: 8rem;
@@ -7447,13 +7439,13 @@ header.white .container nav .header_right .icon_heart {
 .faq-section .faq-descr .accordion.active {
   margin-bottom: 15rem;
   padding-bottom: 11rem;
-  border-bottom: 0.5rem solid #BDBDBD;
+  border-bottom: 0.5rem solid #E0E0E0;
 }
 .faq-section .faq-descr .accordion.active::after {
   content: "";
   transition: transform 0.2s ease-in-out;
   transform: rotate(0);
-  background: url(/icons/minus.svg) 50% 50% no-repeat;
+  background: url("../icons/minus.svg") 50% 50% no-repeat;
 }
 
 .my-orders-section {
@@ -9552,7 +9544,7 @@ header.white .container nav .header_right .icon_heart {
   font-style: normal;
   font-weight: 100;
   font-size: 12rem;
-  color: #828282;
+  color: #333;
 }
 .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address .checkboxes,
 .delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address .checkboxes {
@@ -9561,6 +9553,10 @@ header.white .container nav .header_right .icon_heart {
   opacity: 1;
   min-width: auto;
   transform: none;
+}
+.delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address .checkboxes span,
+.delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address .checkboxes span {
+  color: #333;
 }
 .delivery-address-section .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save,
 .delivery-address-section .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .save {
@@ -10307,7 +10303,7 @@ footer .container .sub-to-news-email_block.hide {
   display: none;
 }
 footer .container .sub-to-news-email_block.sent .sub-to-news_email {
-  padding-top: 17rem;
+  padding-top: 14rem;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -10316,11 +10312,11 @@ footer .container .sub-to-news-email_block.sent .sub-to-news_email {
   text-align: start;
 }
 footer .container .sub-to-news-email_block.sent .sub-to-news_text {
-  padding-top: 19rem;
+  padding-top: 14rem;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
-  font-size: 16rem;
+  font-size: 14rem;
   color: #333;
 }
 footer .container .sub-to-news-email_block .sub-to-news-email_block_subtitle {
@@ -10470,11 +10466,9 @@ footer .footer_author {
   }
   .follow-inst .follow-inst_posts .follow-inst_post .follow-inst_post_img .follow-inst_post_descr .follow-inst_post_title {
     padding-top: 20rem;
-    font-size: 14rem;
   }
   .follow-inst .follow-inst_posts .follow-inst_post .follow-inst_post_img .follow-inst_post_descr .follow-inst_post_sutitle {
     padding-top: 20rem;
-    font-size: 14rem;
   }
 
   footer {
@@ -10482,12 +10476,6 @@ footer .footer_author {
   }
   footer .container {
     padding-bottom: 20rem;
-  }
-  footer .container .sub-to-news-email_block.sent .sub-to-news_email {
-    font-size: 14rem;
-  }
-  footer .container .sub-to-news-email_block.sent .sub-to-news_text {
-    font-size: 14rem;
   }
 }
 @media (max-width: 991px) {
@@ -10515,7 +10503,6 @@ footer .footer_author {
   .categories-section .container .category .btn-main {
     margin-top: 18rem;
     padding: 10rem 20rem;
-    font-size: 14rem;
   }
 
   .sub-to-news {
@@ -10526,9 +10513,6 @@ footer .footer_author {
   }
   .sub-to-news .container .sub-to-news_wrapper .sub-to-news_title h3 {
     font-size: 34rem;
-  }
-  .sub-to-news .container .sub-to-news_wrapper .sub-to-news_subtitle {
-    font-size: 14rem;
   }
   .sub-to-news .container .sub-to-news_wrapper .sub-to-news_form {
     padding-top: 10rem;
@@ -10582,19 +10566,14 @@ footer .footer_author {
     top: 0;
     width: 98%;
   }
-  .follow-inst .follow-inst_posts .follow-inst_post .follow-inst_post_img .follow-inst_post_descr .follow-inst_post_descr_icon {
-    font-size: 12rem;
-  }
   .follow-inst .follow-inst_posts .follow-inst_post .follow-inst_post_img .follow-inst_post_descr .follow-inst_post_descr_icon svg {
     width: 15rem;
   }
   .follow-inst .follow-inst_posts .follow-inst_post .follow-inst_post_img .follow-inst_post_descr .follow-inst_post_title {
     padding-top: 10rem;
-    font-size: 12rem;
   }
   .follow-inst .follow-inst_posts .follow-inst_post .follow-inst_post_img .follow-inst_post_descr .follow-inst_post_sutitle {
     padding-top: 10rem;
-    font-size: 12rem;
   }
 
   .product-category .filters-and-quantity-prod,
@@ -10622,9 +10601,6 @@ footer .footer_author {
   footer .container ul li:first-child {
     margin-top: 12rem;
   }
-  footer .container ul li a {
-    font-size: 12rem;
-  }
   footer .container .social-net_block .social-net_block_icons {
     padding-top: 10rem;
   }
@@ -10632,7 +10608,6 @@ footer .footer_author {
     width: 22rem;
   }
   footer .container .sub-to-news-email_block .sub-to-news-email_block_subtitle {
-    font-size: 12rem;
     margin-top: 12rem;
     font-weight: 300;
   }
@@ -10641,11 +10616,9 @@ footer .footer_author {
   }
   footer .container .sub-to-news-email_block .sub-to-news-email_block_form input {
     padding: 10rem;
-    font-size: 12rem;
   }
   footer .container .sub-to-news-email_block .sub-to-news-email_block_form button {
     padding: 0rem 10rem;
-    font-size: 12rem;
   }
 }
 @media (max-width: 768px) {
@@ -10678,13 +10651,9 @@ footer .footer_author {
     font-size: 40rem;
     line-height: 50rem;
   }
-  .promo .promo_wrapper .promo_subtitle {
-    font-size: 14rem;
-  }
   .promo .promo_wrapper .btn-main {
     margin-top: 30rem;
     padding: 12rem 16rem;
-    font-size: 14rem;
   }
 
   .categories-section {
@@ -10703,7 +10672,6 @@ footer .footer_author {
   .categories-section .container .category .btn-main {
     margin-top: 14rem;
     padding: 12rem 16rem;
-    font-size: 14rem;
   }
 
   .sub-to-news {
@@ -10979,7 +10947,7 @@ header .container nav .header_right .my-account svg {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 14rem;
     color: #333333;
   }
   .burger-menu .container .burger_block .burger_wrapper .languages select:focus-visible {

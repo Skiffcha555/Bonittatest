@@ -4,6 +4,10 @@
     font-weight: 100;
     font-size: 16rem;
     color: $black-color;
+
+    @media (max-width: 575px) {
+        font-size: 10rem;
+    }
 }
 
 .dropdown {
@@ -63,6 +67,11 @@
     color: $black-color;
     transition: 0.3s;
 
+    @media (max-width: 575px) {
+        font-size: 10rem;
+        min-width: 200rem;
+    }
+
     &:hover {
         font-weight: 300;
         background: #F2F2F2;
@@ -94,6 +103,11 @@ input[type="radio"] {
         font-weight: 100;
         font-size: 16rem;
         color: $black-color;
+
+        @media (max-width: 575px) {
+            font-size: 10rem;
+            padding: 12rem 10rem;
+        }
 
         &:before {
             content: '';
