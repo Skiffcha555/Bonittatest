@@ -27,6 +27,10 @@ h1, h2, h3, h4 {
     &.large-container {
         max-width: 95%;
     }
+
+    &.big-container {
+        max-width: calc(100% - 40rem);
+    }
     
     &.padding-left {
         max-width: 100%;

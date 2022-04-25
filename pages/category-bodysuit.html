@@ -825,7 +825,7 @@
 
     <main class="main">
         <section class="product-category bodysuit">
-            <div class="container">
+            <div class="container big-container">
                 <div class="bread-crumbs-and-mobile-filter">
                     <div class="bread-crumbs">
                         <a href="index.html">Home ></a>
@@ -844,8 +844,17 @@
 
                 <div class="filters-and-quantity-prod">
                     <div class="filters">
+                        <!-- onclick="dropDownSortBy()"
+                        onclick="dropDownSizes()"
+                        onclick="dropDownColors()"
+                        onclick="dropDownPrice()" -->
                         <div class="dropdown sort-by">
-                            <span onclick="dropDownSortBy()" class="dropbtn">Sort by</span>
+                            <div class="dropbtn">
+                                Sort by
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L4.06048 3.66669L7.12096 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <div id="DropdownSortBy" class="dropdown-content">
                                 <div class="filter-sort-by recomended filter-sort-by_active">
                                     <input id="radioRecomended" name="radioSortBy" type="radio" checked>
@@ -866,7 +875,13 @@
                             </div>
                         </div>
                         <div class="dropdown sizes">
-                            <span onclick="dropDownSizes()" class="dropbtn">Sizes</span>
+                            <div class="dropbtn">
+                                Sizes
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L4.06048 3.66669L7.12096 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
                             <div id="DropdownSizes" class="dropdown-content">
                                 <label class="filter-sizes" onclick="filterSizesActiveCheckBox(this, event)" >
                                     <input type="checkbox">
@@ -901,7 +916,13 @@
                             </div>
                         </div>
                         <div class="dropdown colors">
-                            <span onclick="dropDownColors()" class="dropbtn">Colors</span>
+                            <div class="dropbtn">
+                                Colors
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L4.06048 3.66669L7.12096 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
                             <div id="DropdownColors" class="dropdown-content">
                                 <label class="filter-colors" onclick="filterColorsActiveCheckBox(this, event)" >
                                     <span class="color-quantity">1</span>
@@ -931,7 +952,13 @@
                             </div>
                         </div>
                         <div class="dropdown price">
-                            <span onclick="dropDownPrice()" class="dropbtn">Price</span>
+                            <div class="dropbtn">
+                                Price
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L4.06048 3.66669L7.12096 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
                             <div id="DropdownPrice" class="dropdown-content">
                                 <div class="filter-price up-to-five-hundred filter-price_active">
                                     <input id="radioFiveHundred" name="radioPrice" type="radio" checked>
