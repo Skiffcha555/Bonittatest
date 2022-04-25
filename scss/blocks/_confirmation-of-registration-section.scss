@@ -116,6 +116,31 @@
                 color: #828282;
             }
         }
+
+        label {
+            opacity: 0;
+            height: auto;
+            padding: 0 5rem;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10rem;
+            color: $brown-color;
+            background: #fff;
+            transform: scale(1) translateY(-8rem) translateX(17rem);
+            transition: 0.3s;
+        }
+
+        >.form-control:focus,
+        >.form-control:not(:placeholder-shown),
+        >.form-select {
+            ~label {
+                opacity: 1;
+                background: #fff;
+                transform: scale(1) translateY(-8rem) translateX(17rem);
+                transition: 0.3s;
+            }
+        }
     }
     
     .btn-main {

@@ -6,7 +6,8 @@
         justify-content: flex-start;
 
         @media (max-width: 575px) {
-            padding-bottom: 30rem;
+            padding-top: 20rem;
+            padding-bottom: 0;
         }
 
         @media (max-width: 425px) {
@@ -34,6 +35,10 @@
         font-size: 36rem;
         color: $black-color;
         text-align: center;
+
+        @media (max-width: 575px) {
+            padding-bottom: 10rem;
+        }
 
         @media (max-width: 425px) {
             display: none;

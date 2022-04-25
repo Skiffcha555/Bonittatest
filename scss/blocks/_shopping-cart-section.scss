@@ -146,6 +146,12 @@
                     &:first-child {
                         border: none;
                     }
+
+                    &:last-child {
+                        .product-name {
+                            padding-bottom: 0;
+                        }
+                    }
                 }
 
                 .product-name {
@@ -226,6 +232,10 @@
                                 justify-content: center;
                                 align-items: center;
                                 cursor: pointer;
+
+                                span {
+                                    font-size: 14rem;
+                                }
                             }
 
                             .save-to-favorite {
@@ -335,10 +345,12 @@
 
                     .number-input button.minus:after {
                         content: '-';
+                        color: $black-color;
                     }
 
                     .number-input button.plus:after {
                         content: '+';
+                        color: $black-color;
                     }
                 }
             }
@@ -366,6 +378,7 @@
             .promo-code {
                 margin-top: 18rem;
                 display: flex;
+                max-height: 40px;
 
                 input {
                     width: 70%;
@@ -381,6 +394,7 @@
 
                 button {
                     width: 30%;
+                    font-size: 14rem;
                 }
             }
 

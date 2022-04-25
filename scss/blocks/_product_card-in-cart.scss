@@ -1,6 +1,6 @@
 .product_card-in-cart {
     padding: 28rem 0;
-    border-top: 1rem solid rgba($brown-color, 0.3);
+    border-top: 1rem solid #BDBDBD;
     display: flex;
     justify-content: space-between;
     gap: 17rem;
@@ -72,7 +72,7 @@
             color: $black-color;
 
             .product-quantity {
-                width: 19rem;
+                width: 30rem;
                 min-width: auto;
                 color: #333;
                 padding: 0;
@@ -101,10 +101,12 @@
 
             .number-input button.minus:after {
                 content: '-';
+                color: $black-color;
             }
 
             .number-input button.plus:after {
                 content: '+';
+                color: $black-color;
             }
         }
     }

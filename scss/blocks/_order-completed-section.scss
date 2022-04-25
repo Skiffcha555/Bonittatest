@@ -84,13 +84,22 @@
     }
 
     .order-summary {
-        padding-bottom: 23rem;
+        // padding-bottom: 23rem;
+        font-size: 14rem;
+
+        .products-price-field { 
+            padding-top: 0;
+        }
 
         .btn-main {
             width: 50%;
             margin: 0 auto;
-            margin-top: 22rem;
+            margin-top: 52rem;
             justify-content: center;
+
+            &:last-child {
+                margin-top: 22rem;
+            }
 
             @media (max-width: 1199px) {
                 width: 60%;

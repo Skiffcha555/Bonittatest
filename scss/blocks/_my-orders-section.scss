@@ -1,6 +1,6 @@
 .my-orders-section {
     padding-top: 71rem;
-    padding-bottom: 100rem;
+    padding-bottom: 88rem;
 
     &.mobile {
         display: none;
@@ -970,7 +970,7 @@
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: 100;
-                            font-size: 16rem;
+                            font-size: 14rem;
                             color: $black-color;
 
                             @media (max-width: 991px) {
@@ -1055,6 +1055,14 @@
                         .stars {
                             margin-left: 0;
                             justify-content: flex-end;
+
+                            svg {
+                                fill: $black-color;
+                                
+                                path {
+                                    fill: $black-color;
+                                }
+                            }
                         }
 
                         .hide {
@@ -1065,6 +1073,7 @@
 
                 .information-and-order-sum {
                     padding-top: 28rem;
+                    margin-bottom: -104rem;
                     display: flex;
                     justify-content: space-between;
 
@@ -1176,7 +1185,7 @@
 
     .order-summary {
         width: 20%;
-        transform: translateY(-70rem);
+        transform: translateY(-98rem);
         font-family: "Roboto";
         font-style: normal;
         font-weight: 100;

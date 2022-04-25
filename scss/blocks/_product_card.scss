@@ -40,6 +40,26 @@
             min-height: 350rem;
             max-height: 350rem;
             object-fit: cover;
+
+            @media (min-width: 1600px) {
+                min-height: 550rem;
+                max-height: 550rem;
+            }
+
+            @media (max-width: 1600px) {
+                min-height: 480rem;
+                max-height: 480rem;
+            }
+
+            @media (max-width: 1440px) {
+                min-height: 425rem;
+                max-height: 425rem;
+            }
+
+            @media (max-width: 1024px) {
+                min-height: 280rem;
+                max-height: 280rem;
+            }
         }
 
         .cart-icon {
