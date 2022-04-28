@@ -53,6 +53,7 @@
         padding-top: 85rem;
         padding-bottom: 62rem;
         display: flex;
+        justify-content: center;
         gap: 77rem;
 
         @media (max-width: 1199px) {
@@ -574,7 +575,7 @@
         }
 
         .ordered-items {
-            width: 40%;
+            width: 334rem;
 
             @media (max-width: 767px) {
                 width: 100%;
@@ -613,6 +614,7 @@
         .product-name {
             display: flex;
             justify-content: space-between;
+            gap: 17rem;
             width: 100%;
 
             .product-img {

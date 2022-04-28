@@ -3,30 +3,30 @@
     padding-bottom: 76rem;
 
     .order-completed-wrapper {
-        width: 30%;
+        width: 365px;
         margin: 0 auto;
         display: flex;
         justify-content: center;
         flex-direction: column;
 
-        @media (max-width: 1400px) {
-            width: 35%;
-        }
+        // @media (max-width: 1400px) {
+        //     width: 35%;
+        // }
 
-        @media (max-width: 1199px) {
-            width: 40%;
-        }
+        // @media (max-width: 1199px) {
+        //     width: 40%;
+        // }
 
-        @media (max-width: 991px) {
-            width: 45%;
-        }
+        // @media (max-width: 991px) {
+        //     width: 365px;
+        // }
 
-        @media (max-width: 768px) {
-            width: 60%;
-        }
+        // @media (max-width: 768px) {
+        //     width: 365px;
+        // }
 
-        @media (max-width: 575px) {
-            width: 90%;
+        @media (max-width: 375px) {
+            width: 355px;
         }
 
         .order-number {
@@ -95,19 +95,20 @@
             width: 50%;
             margin: 0 auto;
             margin-top: 52rem;
+            padding: 14rem 22rem;
             justify-content: center;
 
             &:last-child {
                 margin-top: 22rem;
             }
 
-            @media (max-width: 1199px) {
-                width: 60%;
-            }
+            // @media (max-width: 1199px) {
+            //     width: 60%;
+            // }
 
-            @media (max-width: 575px) {
-                width: 40%;
-            }
+            // @media (max-width: 575px) {
+            //     width: 40%;
+            // }
         }
     }
 }

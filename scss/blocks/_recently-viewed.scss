@@ -58,6 +58,12 @@
                 cursor: pointer;
                 text-decoration: none;
                 transition: 0.3s;
+
+                transform: translateX(35rem);
+
+                @media (max-width: 768px) {
+                    transform: none;
+                }
     
                 &:hover {
                     text-decoration: underline;

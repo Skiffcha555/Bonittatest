@@ -54,10 +54,8 @@ sizes.forEach(size => {
 });
 
 function openImg(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
+    var expandImg = imgs.closest('.review-descr').querySelector('.expanded-img')
     expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
 }
 

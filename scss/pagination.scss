@@ -3,9 +3,10 @@
     gap: 18rem;
     padding-bottom: 10rem;
 
-    a {
+    span, a {
         text-decoration: none;
         color: $black-color;
+        cursor: pointer;
 
         &:hover {
             text-decoration: underline;

@@ -173,6 +173,15 @@
                 &.valid-until-month-and-year {
                     padding-top: 0;
                     margin-top: 16rem;
+                    position: relative;
+
+                    svg {
+                        position: absolute;
+                        right: 12rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        pointer-events: none;
+                    }
                 }
 
                 .valid-until-year,
@@ -182,7 +191,7 @@
                         content: '';
                         background-color: #E0E0E0;
                         top: 50%;
-                        right: 15%;
+                        right: 29rem;
                         transform: translateY(-50%);
                         width: 1rem;
                         height: 21rem;

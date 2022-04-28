@@ -4,8 +4,9 @@ window.addEventListener('load', () => {
     const fullDate = document.querySelector('.datepicker-full');
 
     const datepicker = new Datepicker(elem, {
-        format: 'dd MM',
-        weekStart: 1
+        format: 'mm',
+        weekStart: 1,
+        pickLevel: 1
     }); 
 
     const datepickerYear = new Datepicker(elemYear, {

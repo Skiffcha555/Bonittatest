@@ -31,6 +31,58 @@ header {
                     }
                 }
 
+                .lang-select {
+                    position: relative;
+                    display: flex;
+                    overflow: hidden;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 10rem;
+                        height: 5rem;
+                        transform: translateY(-50%);
+                        top: 50%;
+                        right: 0;
+                        background: url(../icons/arrow-down.svg) 50% 50% no-repeat;
+                        background-size: cover;
+                        transition: .25s all ease;
+                        pointer-events: none;
+                    }
+
+                    select {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        -o-appearance: none;
+                        appearance: none;
+                        outline: none;
+                        border: 0;
+                        box-shadow: none;
+                        flex: 1;
+                        padding-right: 13rem;
+                        color: #fff;
+                        background-color: transparent;
+                        background-image: none;
+                        cursor: pointer;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::-moz-focus-inner {
+                            border: 0;
+                        }
+                    }
+
+                    select::-ms-expand {
+                        display: none;
+                    }
+
+                    select:-moz-focusring {
+                        color: transparent;
+                    }
+                }
+
                 .languages {
                     &.mobile {
                         display: block;
@@ -184,14 +236,15 @@ header {
                 .header_left {
                     select {
                         color: $black-color;
-    
+
                         option {
                             color: $black-color;
                         }
                     }
                 }
-    
+
                 .header_right {
+
                     .icon_cart,
                     .icon_heart {
                         color: $black-color;
