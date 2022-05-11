@@ -2,10 +2,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.size-guide-block')
     let sizeGuide = document.querySelectorAll('.size-guide')
     let close = document.querySelector('.close-icon-size-guide')
-        
-    // sizeGuide.addEventListener('click', () => {
-    //     menu.classList.toggle('size-guide-block_active');
-    // });
 
     sizeGuide.forEach($sizeGuide => {
         $sizeGuide.addEventListener('click', function () {

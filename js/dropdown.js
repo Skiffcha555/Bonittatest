@@ -62,6 +62,17 @@ window.addEventListener('load', () => {
 
 window.addEventListener('click', ()=> {
     document.querySelector('.dropdown-content-show').classList.remove('dropdown-content-show')
+    document.querySelector('.dropdown-active').classList.remove('dropdown-active')
+})
+
+window.addEventListener('load', () => {
+    let filterArrowDown = document.querySelectorAll('.filters .dropbtn')
+
+    filterArrowDown.forEach((elem)=>{
+        elem.addEventListener('click', function () {
+            elem.classList.toggle('dropdown-active');
+        });
+    })
 })
 
 function activateDropdown() {

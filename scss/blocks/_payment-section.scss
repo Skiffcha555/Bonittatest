@@ -140,7 +140,6 @@
             }
 
             .form-floating {
-
                 &.full-name {
                     display: flex;
                     gap: 20rem;
@@ -202,6 +201,17 @@
                         width: 1rem;
                         height: 21rem;
                         position: absolute;
+                    }
+
+                    svg {
+                        transition: transform .2s ease-in-out;
+                    }
+                
+                    &.arrowdown-active{
+                        svg {
+                            transition: transform .2s ease-in-out;
+                            transform: rotate(-180deg);
+                        }
                     }
                 }
 

@@ -16,4 +16,12 @@
             text-decoration: underline;
         }
     }
+
+    .active + a {
+        cursor: default;
+    }
+
+    .prev-page .disable {
+        cursor: default;
+    }
 }

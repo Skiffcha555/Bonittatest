@@ -103,6 +103,16 @@ function Phone(elem){
     elem.value += ' ';
 }
 
+function PhoneSecond(elem){
+    var m = elem.value.length+1;
+    
+    if (m > 15 || event.keyCode < 48 || event.keyCode > 57)
+    event.returnValue= false;
+    
+    else if (m == 5 || m == 9 || m == 12 || m == 13)
+    elem.value += ' ';
+}
+
 function YearNum(elem){
     var m = elem.value.length+1;
     

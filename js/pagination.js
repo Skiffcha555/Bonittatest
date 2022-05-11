@@ -2,6 +2,7 @@ function pageSelect($this) {
     $this.parentElement.querySelectorAll('span').forEach($el => {
         $el.classList.remove('active')
     });
+
     $this.classList.add('active')
 }
 
@@ -22,7 +23,14 @@ function decrimentPage($this) {
 
     pageActive--
     pageActive--
+
     if (pageActive < paginations.length) {
         paginations[pageActive].click()
     }
+}
+
+let elements = document.querySelector('.pagination span')[0];
+
+if (elements.classList.indexOf("active") !== -1) {
+    document.getElementsByClassName('prev-page').classList.add('disable')
 }

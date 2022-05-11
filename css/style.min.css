@@ -306,6 +306,13 @@ input[type=number] {
     display: none;
   }
 }
+.dropdown svg {
+  transition: transform 0.2s ease-in-out;
+}
+.dropdown .dropdown-active svg {
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(-180deg);
+}
 
 .dropdown-content {
   display: none;
@@ -586,6 +593,12 @@ input[type=radio] + .radio-label:empty:before {
 }
 .pagination span.active, .pagination a.active {
   text-decoration: underline;
+}
+.pagination .active + a {
+  cursor: default;
+}
+.pagination .prev-page .disable {
+  cursor: default;
 }
 
 .checkboxes {
@@ -5973,6 +5986,15 @@ header.white .container nav .header_right .icon_heart {
   height: 21rem;
   position: absolute;
 }
+.payment-section .card-info-and-order-summary .card-information .form-floating .valid-until-year svg,
+.payment-section .card-info-and-order-summary .card-information .form-floating .valid-until-month svg {
+  transition: transform 0.2s ease-in-out;
+}
+.payment-section .card-info-and-order-summary .card-information .form-floating .valid-until-year.arrowdown-active svg,
+.payment-section .card-info-and-order-summary .card-information .form-floating .valid-until-month.arrowdown-active svg {
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(-180deg);
+}
 .payment-section .card-info-and-order-summary .card-information .form-floating .valid-until-month .datepicker-header {
   display: none;
 }
@@ -8502,9 +8524,11 @@ header.white .container nav .header_right .icon_heart {
 @media (max-width: 575px) {
   .my-orders-section {
     display: none;
+    padding-bottom: 37rem;
   }
 }
-.my-orders-section .accordion {
+.my-orders-section .accordion,
+.my-orders-section .fake-accordion {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -8524,7 +8548,8 @@ header.white .container nav .header_right .icon_heart {
   border: none;
   border-bottom: 0.5rem solid #E0E0E0;
 }
-.my-orders-section .accordion:after {
+.my-orders-section .accordion:after,
+.my-orders-section .fake-accordion:after {
   content: "";
   background: url(../icons/plus.svg) 50% 50% no-repeat;
   background-size: cover;
@@ -8535,14 +8560,23 @@ header.white .container nav .header_right .icon_heart {
   margin-right: 0;
   transition: transform 0.2s ease-in-out;
 }
-.my-orders-section .accordion.active {
+.my-orders-section .accordion.active,
+.my-orders-section .fake-accordion.active {
   border-bottom: 1px solid #828282;
 }
-.my-orders-section .accordion.active::after {
+.my-orders-section .accordion.active::after,
+.my-orders-section .fake-accordion.active::after {
   content: "";
   transition: transform 0.2s ease-in-out;
   transform: rotate(0);
   background: url(../icons/minus.svg) 50% 50% no-repeat;
+}
+.my-orders-section .fake-accordion {
+  text-decoration: none;
+  margin-bottom: 30rem;
+}
+.my-orders-section .fake-accordion:last-child {
+  margin-bottom: 0;
 }
 .my-orders-section .accordion-content {
   font-family: Roboto;
@@ -8706,8 +8740,8 @@ header.white .container nav .header_right .icon_heart {
 }
 .my-orders-section .my-orders .my-order .my-order-body .product {
   width: 100%;
-  height: 150rem;
-  padding-top: 28rem;
+  height: 128rem;
+  padding-top: 14rem;
   display: flex;
   justify-content: space-between;
 }
@@ -8727,8 +8761,13 @@ header.white .container nav .header_right .icon_heart {
     width: 70%;
   }
 }
+@media (max-width: 375px) {
+  .my-orders-section .my-orders .my-order .my-order-body .product .product-name {
+    width: 80%;
+  }
+}
 .my-orders-section .my-orders .my-order .my-order-body .product .product-name .product-img {
-  width: 25%;
+  width: 80rem;
   max-width: 90rem;
   height: 100%;
 }
@@ -8829,7 +8868,6 @@ header.white .container nav .header_right .icon_heart {
 }
 .my-orders-section .my-orders .my-order .my-order-body .information-and-order-sum {
   padding-top: 28rem;
-  margin-bottom: -104rem;
   display: flex;
   justify-content: space-between;
 }
@@ -8942,6 +8980,11 @@ header.white .container nav .header_right .icon_heart {
     transform: none;
   }
 }
+@media (max-width: 425px) {
+  .my-orders-section .order-summary {
+    width: 45%;
+  }
+}
 .my-orders-section .order-summary .products-price-field {
   padding-top: 0;
 }
@@ -8960,6 +9003,11 @@ header.white .container nav .header_right .icon_heart {
   .delivery-address-section {
     padding-top: 45rem;
     padding-bottom: 65rem;
+  }
+}
+@media (max-width: 575px) {
+  .delivery-address-section {
+    display: none;
   }
 }
 .delivery-address-section .container {
@@ -9376,6 +9424,11 @@ header.white .container nav .header_right .icon_heart {
     padding-bottom: 65rem;
   }
 }
+@media (max-width: 575px) {
+  .personal-data-page-section {
+    display: none;
+  }
+}
 .personal-data-page-section .container {
   display: flex;
   justify-content: space-between;
@@ -9612,6 +9665,107 @@ header.white .container nav .header_right .icon_heart {
   align-items: center;
   border: 1rem solid #ced4da;
 }
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select::after,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select::after,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select::after,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select::after,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select::after,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select::after {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 5rem;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  background: url(../icons/arrow-down.svg) 50% 50% no-repeat;
+  background-size: cover;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding-right: 13rem;
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select:focus,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select:focus,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select:focus,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select:focus {
+  outline: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select::-moz-focus-inner {
+  border: 0;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select::-ms-expand {
+  display: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select:-moz-focusring {
+  color: transparent;
+}
 .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone select,
 .personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone select,
 .personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone select,
@@ -9673,6 +9827,42 @@ header.white .container nav .header_right .icon_heart {
 .personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone input:focus,
 .personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone input:focus {
   border: none;
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .phone input {
+  border: none;
+}
+@media (max-width: 991px) {
+  .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .phone input,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .phone input {
+    min-width: auto;
+  }
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .phone input:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .phone input:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .phone input:focus,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .phone input:focus,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .phone input:focus,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .phone input:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .phone input:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .phone input:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .phone input:focus {
+  border: 1rem solid #957D6D;
+  box-shadow: none;
 }
 .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .first-name,
 .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .last-name,

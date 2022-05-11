@@ -721,9 +721,11 @@
 
     @media (max-width: 575px) {
         display: none;
+        padding-bottom: 37rem;
     }
 
-    .accordion {
+    .accordion,
+    .fake-accordion {
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
@@ -768,6 +770,15 @@
         }
     }
     
+    .fake-accordion {
+        text-decoration: none;
+        margin-bottom: 30rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     .accordion-content {
         font-family: Roboto;
         font-style: normal;
@@ -934,8 +945,10 @@
                 
                 .product {
                     width: 100%;
-                    height: 150rem;
-                    padding-top: 28rem;
+                    // height: 150rem;
+                    // padding-top: 28rem;
+                    height: 128rem;
+                    padding-top: 14rem;
                     display: flex;
                     justify-content: space-between;
 
@@ -953,8 +966,13 @@
                             width: 70%;
                         }
 
+                        @media (max-width: 375px) {
+                            width: 80%;
+                        }
+
                         .product-img {
-                            width: 25%;
+                            // width: 25%;
+                            width: 80rem;
                             max-width: 90rem;
                             height: 100%;
             
@@ -1073,7 +1091,7 @@
 
                 .information-and-order-sum {
                     padding-top: 28rem;
-                    margin-bottom: -104rem;
+                    // margin-bottom: -104rem;
                     display: flex;
                     justify-content: space-between;
 
@@ -1201,6 +1219,10 @@
             padding-top: 15rem;
             width: 35%;
             transform: none;
+        }
+
+        @media (max-width: 425px) {
+            width: 45%;
         }
 
         .products-price-field {
