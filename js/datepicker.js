@@ -17,15 +17,29 @@ window.addEventListener('load', () => {
         pickLevel: 2
     }); 
 
-    monthArrowDown.addEventListener('click', function () {
-        monthArrowDown.classList.toggle('arrowdown-active');
-    });
+    // monthArrowDown.addEventListener('click', () => {
+    //     monthArrowDown.classList.toggle('arrowdown-active');
+    // });
 
-    yearArrowDown.addEventListener('click', function () {
-        yearArrowDown.classList.toggle('arrowdown-active');
-    });
+    // yearArrowDown.addEventListener('click', () => {
+    //     yearArrowDown.classList.toggle('arrowdown-active');
+    // });
 })
 
-// window.addEventListener('click', ()=> {
-//     document.querySelector('.arrowdown-active').classList.remove('arrowdown-active')
-// })
+const activateArrow = (event) => {
+    event.target.parentElement.classList.add('arrowdown-active')
+}
+
+const deActivateArrow = (event) => {
+    event.target.parentElement.classList.remove('arrowdown-active')
+}
+
+window.addEventListener('load', () => {
+    const $inputMonth = document.querySelector('.datepicker-here')
+    const $inputYear = document.querySelector('.datepicker-year')
+
+    $inputMonth.onfocus = event => activateArrow(event)
+    $inputMonth.onblur = event => deActivateArrow(event)
+    $inputYear.onfocus = event => activateArrow(event)
+    $inputYear.onblur = event => deActivateArrow(event)
+})

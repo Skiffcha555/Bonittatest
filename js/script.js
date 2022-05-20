@@ -103,15 +103,15 @@ function Phone(elem){
     elem.value += ' ';
 }
 
-function PhoneSecond(elem){
-    var m = elem.value.length+1;
+// function PhoneSecond(elem){
+//     var m = elem.value.length+1;
     
-    if (m > 15 || event.keyCode < 48 || event.keyCode > 57)
-    event.returnValue= false;
+//     if (m > 15 || event.keyCode < 48 || event.keyCode > 57)
+//     event.returnValue= false;
     
-    else if (m == 5 || m == 9 || m == 12 || m == 13)
-    elem.value += ' ';
-}
+//     else if (m == 5 || m == 9 || m == 12 || m == 13)
+//     elem.value += ' ';
+// }
 
 function YearNum(elem){
     var m = elem.value.length+1;
@@ -119,3 +119,18 @@ function YearNum(elem){
     if (m > 19 || event.keyCode < 48 || event.keyCode > 57)
     event.returnValue= false;
 }
+
+
+// let arrowdownHide = document.querySelectorAll('.arrowdown-active')
+
+// arrowdownHide.forEach($arrowdownHide => {
+//     window.addEventListener('click', () => {
+//         arrowdownHide.classList.remove('arrowdown-active')
+//     });
+// });
+
+// window.onclick = function (event) {
+//     if (event.target == arrowdownHide) {
+//         arrowdownHide.classList.remove('arrowdown-active')
+//     }
+// }

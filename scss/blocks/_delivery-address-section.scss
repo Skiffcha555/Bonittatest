@@ -7,13 +7,23 @@
         padding-bottom: 70rem;
     }
 
+    // @media (max-width: 768px) {
+    //     padding-top: 45rem;
+    //     padding-bottom: 65rem;
+    // }
+
+    // @media (max-width: 575px) {
+    //     display: none;
+    // }
+
     @media (max-width: 768px) {
-        padding-top: 45rem;
-        padding-bottom: 65rem;
+        display: none;
+        padding-bottom: 37rem;
     }
 
     @media (max-width: 575px) {
         display: none;
+        padding-bottom: 37rem;
     }
 
     .container {

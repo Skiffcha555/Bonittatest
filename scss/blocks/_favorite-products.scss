@@ -32,8 +32,38 @@
         padding-bottom: 130rem;
         gap: 36rem;
 
+        @media (max-width: 991px) {
+            padding-top: 30rem;
+            gap: 30rem;
+        }
+
+        @media (max-width: 767px) {
+            gap: 25rem;
+        }
+
         .product_card {
             width: calc(25% - 27rem);
+
+            @media (max-width: 991px) {
+                width: calc(33.3333% - 20rem);
+                min-width: auto;
+            }
+
+            @media (max-width: 767px) {
+                width: calc(50% - 12.5rem);
+            }
+
+            .product_img img {
+                @media (max-width: 767px) {
+                    min-height: 300rem;
+                    max-height: 300rem;
+                }
+
+                @media (max-width: 425px) {
+                    min-height: 250rem;
+                    max-height: 250rem;
+                }
+            }
         }
     }
 }
