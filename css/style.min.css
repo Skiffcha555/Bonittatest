@@ -136,7 +136,7 @@ h1, h2, h3, h4 {
   align-items: center;
   padding: 15rem 30rem;
   gap: 10rem;
-  border: 1rem solid #FFFFFF;
+  border: 1rem solid #FDFCFB;
   background: transparent;
   text-decoration: none;
   cursor: pointer;
@@ -144,12 +144,12 @@ h1, h2, h3, h4 {
   font-style: normal;
   font-weight: 300;
   font-size: 16rem;
-  color: #FFFFFF;
+  color: #FDFCFB;
   transition: 0.3s;
 }
 .btn-main:hover {
   transition: 0.3s;
-  background-color: #fff;
+  background-color: #FDFCFB;
   color: #957D6D;
 }
 .btn-main:hover .btn-arrow path {
@@ -159,20 +159,20 @@ h1, h2, h3, h4 {
 .btn-main.brown-btn {
   border: 1rem solid #957D6D;
   background-color: #957D6D;
-  color: #fff;
+  color: #FDFCFB;
 }
 .btn-main.brown-btn:hover {
-  background-color: #fff;
+  background-color: #FDFCFB;
   color: #957D6D;
 }
 .btn-main.black-btn {
   border: 1rem solid #333;
-  background-color: #fff;
+  background-color: #FDFCFB;
   color: #333;
 }
 .btn-main.black-btn:hover {
   border: 1rem solid #957D6D;
-  background-color: #fff;
+  background-color: #FDFCFB;
   color: #957D6D;
 }
 
@@ -275,7 +275,7 @@ input[type=number] {
   color: #333;
   transition: cubic-bezier(0, 0, 0, 0.99) 0.3s !important;
   padding: 0rem 16rem;
-  background-color: #fff;
+  background-color: #FDFCFB;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
@@ -315,16 +315,19 @@ input[type=number] {
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
   top: 30rem;
   background-color: #fff;
-  overflow: auto;
   z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
 }
 .dropdown-content.dropdown-content-show {
-  display: block;
-  overflow: initial;
+  opacity: 1;
+  visibility: visible;
+  max-height: calc(50vh + 110px);
 }
 
 .filter-sort-by {
@@ -1082,6 +1085,10 @@ header .container nav .header_left .lang-select::after {
   transition: 0.25s all ease;
   pointer-events: none;
 }
+header .container nav .header_left .lang-select.active::after {
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(-180deg);
+}
 header .container nav .header_left .lang-select select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1283,12 +1290,13 @@ header.white .container nav .header_right .icon_heart {
   width: 20%;
   height: 65%;
   background-color: #fff;
-  transform: translateX(-100vw);
-  transition: 0.8s;
-  z-index: 21;
+  transition: opacity 0.3s;
+  z-index: 0;
+  opacity: 0;
 }
 .burger-menu.burger-menu_active {
-  transform: translateX(0vw);
+  opacity: 1;
+  z-index: 21;
 }
 .burger-menu .container {
   width: 100%;
@@ -1475,6 +1483,7 @@ header.white .container nav .header_right .icon_heart {
 .shopping-cart-menu .container .shopping-cart-no-empty .shopping-cart-menu_wrapper .products_card-in-cart {
   height: 65%;
   overflow-y: auto;
+  overscroll-behavior-y: contain;
   padding: 0rem 24rem;
 }
 @media (max-height: 830rem) {
@@ -2167,7 +2176,7 @@ header.white .container nav .header_right .icon_heart {
   width: calc(33.3333333% - 46.66666rem);
   min-height: 326rem;
   position: relative;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .categories-section .container .category h2 {
   font-family: "Cormorant Garamond";
@@ -2184,6 +2193,9 @@ header.white .container nav .header_right .icon_heart {
 .categories-section .container .category .category_btn {
   display: none;
   z-index: 10;
+}
+.categories-section .container .category:hover {
+  transform: scale(1.08);
 }
 .categories-section .container .category:hover:after {
   opacity: 1;
@@ -2749,6 +2761,10 @@ header.white .container nav .header_right .icon_heart {
   width: calc(25% - 19rem);
   position: relative;
   cursor: pointer;
+  transition: 0.5s;
+}
+.follow-inst .follow-inst_posts .follow-inst_post:hover {
+  transform: scale(1.03);
 }
 .follow-inst .follow-inst_posts .follow-inst_post .follow-inst_post_img {
   position: relative;
@@ -3411,6 +3427,7 @@ header.white .container nav .header_right .icon_heart {
 .product-page-content .product-content .product-images-and-descr {
   display: flex;
   gap: 80rem;
+  height: 100%;
 }
 @media (max-width: 1199px) {
   .product-page-content .product-content .product-images-and-descr {
@@ -3546,7 +3563,7 @@ header.white .container nav .header_right .icon_heart {
 }
 .product-page-content .product-content .product-descr-and-name {
   width: 40%;
-  height: 50%;
+  height: 100%;
   position: sticky;
   top: 80rem;
 }
@@ -3896,22 +3913,6 @@ header.white .container nav .header_right .icon_heart {
     line-height: 16rem;
   }
 }
-@media (max-width: 575px) {
-  footer.padding-bootom {
-    padding-bottom: 185rem;
-  }
-}
-@media (max-width: 425px) {
-  footer.padding-bootom {
-    padding-bottom: 171rem;
-  }
-}
-@media (max-width: 375px) {
-  footer.padding-bootom {
-    padding-bottom: 164rem;
-  }
-}
-
 .modal-select-size {
   display: none;
   position: fixed;
@@ -5088,6 +5089,21 @@ header.white .container nav .header_right .icon_heart {
   padding-top: 29rem;
 }
 @media (max-width: 575px) {
+  .information-section {
+    padding-bottom: 185rem;
+  }
+}
+@media (max-width: 425px) {
+  .information-section {
+    padding-bottom: 171rem;
+  }
+}
+@media (max-width: 375px) {
+  .information-section {
+    padding-bottom: 164rem;
+  }
+}
+@media (max-width: 575px) {
   .information-section .bread-crumbs a:first-child {
     display: none;
   }
@@ -5831,6 +5847,21 @@ header.white .container nav .header_right .icon_heart {
 
 .payment-section {
   padding-top: 29rem;
+}
+@media (max-width: 575px) {
+  .payment-section {
+    padding-bottom: 185rem;
+  }
+}
+@media (max-width: 425px) {
+  .payment-section {
+    padding-bottom: 171rem;
+  }
+}
+@media (max-width: 375px) {
+  .payment-section {
+    padding-bottom: 164rem;
+  }
 }
 @media (max-width: 575px) {
   .payment-section .bread-crumbs a:first-child {
@@ -7403,10 +7434,7 @@ header.white .container nav .header_right .icon_heart {
 .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-main .delivery-address-body .full-address {
   padding-top: 2rem;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form.edit-delivery-address-form_active {
-  transform: translateX(0vw);
-}
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form {
   margin-top: 30rem;
   border: 1rem solid #E0E0E0;
@@ -7422,15 +7450,19 @@ header.white .container nav .header_right .icon_heart {
   transition: 0.4s;
   z-index: 21;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form.delivery-address-form_active,
-.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form.delivery-address-form_active {
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form.add-delivery-address-form_active,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form.add-delivery-address-form_active {
   transform: translateX(0vw);
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form.hide,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form.edit-delivery-address-form_active,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form.edit-delivery-address-form_active {
+  transform: translateX(0vw);
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form.hide,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form.hide {
   display: none;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-head,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-head,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-head {
   border-bottom: 1rem solid #E0E0E0;
   padding: 15rem 20rem 15rem 31rem;
@@ -7442,17 +7474,23 @@ header.white .container nav .header_right .icon_heart {
   font-size: 16rem;
   color: #333;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body {
   padding: 41rem 31rem 30rem 31rem;
 }
-@media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body,
+@media (max-width: 768px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body {
     padding: 20rem;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body {
+    padding: 20rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.full-name, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.full-name,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
@@ -7461,8 +7499,8 @@ header.white .container nav .header_right .icon_heart {
   gap: 20rem;
   width: 100%;
 }
-@media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+@media (max-width: 768px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.full-name, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.full-name,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
@@ -7471,36 +7509,54 @@ header.white .container nav .header_right .icon_heart {
     gap: 14rem;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.full-name input, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit input, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city input, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone input,
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.full-name, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.full-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+    flex-direction: column;
+    gap: 14rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.full-name input, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit input, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.post-and-city input, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone input,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.full-name input,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit input,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city input,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone input {
   min-width: auto;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
   padding-top: 0;
   margin-top: 16rem;
 }
-@media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+@media (max-width: 768px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
     margin-top: 14rem;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .first-name,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .last-name,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .address,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .post,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .country,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .phone,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .city-village,
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.post-and-city, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit, .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.post-and-city,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.address-and-apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country-and-phone {
+    margin-top: 14rem;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .post,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .country,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .city-village,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .first-name,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .last-name,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .address,
@@ -7511,15 +7567,15 @@ header.white .container nav .header_right .icon_heart {
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .city-village {
   width: 50%;
 }
-@media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .first-name,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .last-name,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .address,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .post,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .country,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .phone,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .city-village,
+@media (max-width: 768px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .post,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .country,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .city-village,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .first-name,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .last-name,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .address,
@@ -7531,11 +7587,31 @@ header.white .container nav .header_right .icon_heart {
     width: 100%;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country,
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .post,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .country,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .city-village,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .first-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .last-name,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .post,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .apartment-suit,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .country,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .phone,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .city-village {
+    width: 100%;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country {
   position: relative;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country::after,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country::after,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country::after {
   content: "";
   background-color: #E0E0E0;
@@ -7546,19 +7622,25 @@ header.white .container nav .header_right .icon_heart {
   height: 21rem;
   position: absolute;
 }
-@media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.country::after,
+@media (max-width: 768px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country::after,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country::after {
     right: 5%;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone,
+@media (max-width: 575px) {
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.country::after,
+.my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.country::after {
+    right: 5%;
+  }
+}
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.phone,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone {
   display: flex;
   align-items: center;
   border: 1rem solid #ced4da;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.phone select,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select {
   padding-left: 8rem;
   width: 20%;
@@ -7567,31 +7649,31 @@ header.white .container nav .header_right .icon_heart {
   border-right: 0.5rem solid #E0E0E0;
 }
 @media (max-width: 991px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select,
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.phone select,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select {
     width: 26%;
   }
 }
 @media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select,
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.phone select,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select {
     width: 10%;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone select:focus,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.phone select:focus,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone select:focus {
   border: none;
   border-right: 0.5rem solid #E0E0E0;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.phone input,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone input {
   border: none;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating.phone input:focus,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating.phone input:focus,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating.phone input:focus {
   border: none;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating input,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input {
   min-width: 100%;
   border-radius: 0;
@@ -7606,26 +7688,26 @@ header.white .container nav .header_right .icon_heart {
   color: #333;
 }
 @media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input,
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating input,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input {
     height: 48rem;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating input:focus,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input:focus {
   border: 1rem solid #957D6D;
   box-shadow: none;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input:focus::placeholder,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating input:focus::placeholder,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input:focus::placeholder {
   color: transparent;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating input::placeholder,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating input::placeholder,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating input::placeholder {
   font-weight: 100;
   color: #828282;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating select,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating select {
   position: relative;
   border-radius: 0;
@@ -7639,17 +7721,17 @@ header.white .container nav .header_right .icon_heart {
   color: #333;
 }
 @media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select,
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating select,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating select {
     height: 48rem;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating select:focus,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating select:focus,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating select:focus {
   border: 1rem solid #957D6D;
   box-shadow: none;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating label,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating label {
   opacity: 0;
   height: auto;
@@ -7663,16 +7745,16 @@ header.white .container nav .header_right .icon_heart {
   transform: scale(1) translateY(-8rem) translateX(17rem);
   transition: 0.3s;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating .checkboxes,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating .checkboxes,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating .checkboxes {
   padding: 0;
   opacity: 1;
   min-width: auto;
   transform: none;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-control:focus ~ label,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .form-floating > .form-select ~ label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating > .form-control:focus ~ label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .form-floating > .form-select ~ label,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating > .form-control:focus ~ label,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .form-floating > .form-select ~ label {
@@ -7681,7 +7763,7 @@ header.white .container nav .header_right .icon_heart {
   transform: scale(1) translateY(-8rem) translateX(17rem);
   transition: 0.3s;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .set-default-address,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address {
   margin-top: 23rem;
   font-family: "Roboto";
@@ -7691,12 +7773,12 @@ header.white .container nav .header_right .icon_heart {
   color: #828282;
 }
 @media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address,
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .set-default-address,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address {
     margin-top: 15rem;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .set-default-address .checkboxes,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .set-default-address .checkboxes,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .set-default-address .checkboxes {
   gap: 7rem;
   padding: 0;
@@ -7704,19 +7786,19 @@ header.white .container nav .header_right .icon_heart {
   min-width: auto;
   transform: none;
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .save,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .save {
   margin-top: 18rem;
   display: flex;
   justify-content: flex-end;
 }
 @media (max-width: 575px) {
-  .my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save,
+  .my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .save,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .save {
     margin-top: 35rem;
   }
 }
-.my-orders-section.mobile .delivery-addresses .delivery-address .delivery-address-form .delivery-address-form-body .save .btn-main,
+.my-orders-section.mobile .delivery-addresses .delivery-address .add-delivery-address-form .delivery-address-form-body .save .btn-main,
 .my-orders-section.mobile .delivery-addresses .delivery-address .edit-delivery-address-form .delivery-address-form-body .save .btn-main {
   margin-top: 0;
   padding: 12rem 63rem;
@@ -8661,7 +8743,7 @@ header.white .container nav .header_right .icon_heart {
   color: #333;
   transition: cubic-bezier(0, 0, 0, 0.99) 0.3s !important;
   padding: 0rem 16rem;
-  background-color: #fff;
+  background-color: #FDFCFB;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
@@ -9746,28 +9828,28 @@ header.white .container nav .header_right .icon_heart {
   align-items: center;
   border: 1rem solid #ced4da;
 }
-.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select,
-.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select,
-.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select,
-.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select,
-.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select,
-.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select {
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .phone-select,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .phone-select,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .phone-select,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .phone-select,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .phone-select,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .phone-select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .phone-select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .phone-select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .phone-select {
   position: relative;
   display: flex;
   overflow: hidden;
 }
-.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select::after,
-.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select::after,
-.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select::after,
-.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select::after,
-.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select::after,
-.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select::after,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select::after,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select::after,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select::after {
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .phone-select::after,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .phone-select::after,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .phone-select::after,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .phone-select::after,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .phone-select::after,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .phone-select::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .phone-select::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .phone-select::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .phone-select::after {
   content: "";
   position: absolute;
   width: 10rem;
@@ -9780,15 +9862,27 @@ header.white .container nav .header_right .icon_heart {
   transition: 0.25s all ease;
   pointer-events: none;
 }
-.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select,
-.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select,
-.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select,
-.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select,
-.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select,
-.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select {
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .phone-select.active::after,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .phone-select.active::after,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .phone-select.active::after,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .phone-select.active::after,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .phone-select.active::after,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .phone-select.active::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .phone-select.active::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .phone-select.active::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .phone-select.active::after {
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(-180deg);
+}
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .phone-select select,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .phone-select select,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .phone-select select,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .phone-select select,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .phone-select select,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .phone-select select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .phone-select select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .phone-select select,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .phone-select select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
@@ -9798,53 +9892,53 @@ header.white .container nav .header_right .icon_heart {
   box-shadow: none;
   flex: 1;
   padding-right: 13rem;
-  color: #fff;
+  color: #333;
   background-color: transparent;
   background-image: none;
   cursor: pointer;
 }
-.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select:focus,
-.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select:focus,
-.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select:focus,
-.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select:focus,
-.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select:focus,
-.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select:focus,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select:focus,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select:focus,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select:focus {
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .phone-select select:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .phone-select select:focus,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .phone-select select:focus,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .phone-select select:focus,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .phone-select select:focus,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .phone-select select:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .phone-select select:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .phone-select select:focus,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .phone-select select:focus {
   outline: none;
 }
-.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
-.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
-.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
-.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
-.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
-.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select::-moz-focus-inner,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select::-moz-focus-inner {
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .phone-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .phone-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .phone-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .phone-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .phone-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .phone-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .phone-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .phone-select select::-moz-focus-inner,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .phone-select select::-moz-focus-inner {
   border: 0;
 }
-.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select::-ms-expand,
-.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select::-ms-expand,
-.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select::-ms-expand,
-.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select::-ms-expand,
-.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select::-ms-expand,
-.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select::-ms-expand,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select::-ms-expand,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select::-ms-expand,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select::-ms-expand {
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .phone-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .phone-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .phone-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .phone-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .phone-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .phone-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .phone-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .phone-select select::-ms-expand,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .phone-select select::-ms-expand {
   display: none;
 }
-.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .lang-select select:-moz-focusring,
-.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .lang-select select:-moz-focusring,
-.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .lang-select select:-moz-focusring,
-.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .lang-select select:-moz-focusring,
-.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .lang-select select:-moz-focusring,
-.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .lang-select select:-moz-focusring,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .lang-select select:-moz-focusring,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .lang-select select:-moz-focusring,
-.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .lang-select select:-moz-focusring {
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone .phone-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating.phone .phone-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating.phone .phone-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating.phone .phone-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating.phone .phone-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating.phone .phone-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone .phone-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone .phone-select select:-moz-focusring,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone .phone-select select:-moz-focusring {
   color: transparent;
 }
 .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating.phone select,
@@ -9883,6 +9977,7 @@ header.white .container nav .header_right .icon_heart {
 .personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating.phone input,
 .personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating.phone input,
 .personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating.phone input {
+  position: relative;
   border: none;
 }
 @media (max-width: 991px) {
@@ -9920,6 +10015,29 @@ header.white .container nav .header_right .icon_heart {
 .personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .phone input {
   border: none;
 }
+.personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .phone input::after,
+.personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .phone input::after,
+.personal-data-page-section .personal-data-forms .personal-data-form .sub-to-news-form-body .form-floating .phone input::after,
+.personal-data-page-section .personal-data-forms .password-form .personal-data-form-body .form-floating .phone input::after,
+.personal-data-page-section .personal-data-forms .password-form .password-form-body .form-floating .phone input::after,
+.personal-data-page-section .personal-data-forms .password-form .sub-to-news-form-body .form-floating .phone input::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .personal-data-form-body .form-floating .phone input::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .phone input::after,
+.personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .phone input::after {
+  content: "|";
+  position: absolute;
+  width: 1rem;
+  height: 21rem;
+  transform: translateY(-50%);
+  background-color: #E0E0E0;
+  color: #000;
+  top: 50%;
+  left: 0;
+  background: url(../icons/arrow-down.svg) 50% 50% no-repeat;
+  background-size: cover;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
 @media (max-width: 991px) {
   .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .phone input,
 .personal-data-page-section .personal-data-forms .personal-data-form .password-form-body .form-floating .phone input,
@@ -9943,6 +10061,7 @@ header.white .container nav .header_right .icon_heart {
 .personal-data-page-section .personal-data-forms .sub-to-news-form .password-form-body .form-floating .phone input:focus,
 .personal-data-page-section .personal-data-forms .sub-to-news-form .sub-to-news-form-body .form-floating .phone input:focus {
   border: 1rem solid #957D6D;
+  border-left: none;
   box-shadow: none;
 }
 .personal-data-page-section .personal-data-forms .personal-data-form .personal-data-form-body .form-floating .first-name,
@@ -10471,6 +10590,28 @@ footer .footer_author {
   line-height: 14rem;
   text-align: center;
   color: #333;
+}
+
+@media (max-width: 575px) {
+  footer.padding-bottom {
+    padding-bottom: 185rem;
+  }
+}
+@media (max-width: 425px) {
+  footer.padding-bottom {
+    padding-bottom: 171rem;
+  }
+}
+@media (max-width: 375px) {
+  footer.padding-bottom {
+    padding-bottom: 164rem;
+  }
+}
+
+@media (max-width: 575px) {
+  footer.mobile-none {
+    display: none;
+  }
 }
 
 @media (min-width: 1599px) {

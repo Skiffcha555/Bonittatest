@@ -21,6 +21,11 @@
             width: calc(25% - 19rem);
             position: relative;
             cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.03);
+            }
 
             .follow-inst_post_img {
                 position: relative;

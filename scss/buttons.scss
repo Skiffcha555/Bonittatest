@@ -3,7 +3,7 @@
     align-items: center;
     padding: 15rem 30rem;
     gap: 10rem;
-    border: 1rem solid #FFFFFF;
+    border: 1rem solid #FDFCFB;
     background: transparent;
     text-decoration: none;
     cursor: pointer;
@@ -12,12 +12,12 @@
     font-style: normal;
     font-weight: 300;
     font-size: 16rem;
-    color: #FFFFFF;
+    color: #FDFCFB;
     transition: 0.3s;
 
     &:hover {
         transition: 0.3s;
-        background-color: #fff;
+        background-color: #FDFCFB;
         color: $brown-color;
 
         .btn-arrow {
@@ -31,22 +31,22 @@
     &.brown-btn {
         border: 1rem solid $brown-color;
         background-color: $brown-color;
-        color: #fff;
+        color: #FDFCFB;
 
         &:hover {
-            background-color: #fff;
+            background-color: #FDFCFB;
             color: $brown-color;
         }
     }
 
     &.black-btn {
         border: 1rem solid $black-color;
-        background-color: #fff;
+        background-color: #FDFCFB;
         color: $black-color;
 
         &:hover {
             border: 1rem solid $brown-color;
-            background-color: #fff;
+            background-color: #FDFCFB;
             color: $brown-color;
         }
     }

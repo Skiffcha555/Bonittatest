@@ -84,6 +84,7 @@
             display: flex;
             // padding-top: 60rem;
             gap: 80rem;
+            height: 100%;
 
             @media (max-width: 1199px) {
                 padding-top: 35rem;
@@ -220,7 +221,7 @@
 
         .product-descr-and-name {
             width: 40%;
-            height: 50%;
+            height: 100%;
             position: sticky;
             top: 80rem;
 
@@ -708,19 +709,5 @@
                 }
             }
         }
-    }
-}
-
-footer.padding-bootom {
-    @media (max-width: 575px) {
-        padding-bottom: 185rem;
-    }
-
-    @media (max-width: 425px) {
-        padding-bottom: 171rem;
-    }
-
-    @media (max-width: 375px) {
-        padding-bottom: 164rem;
     }
 }

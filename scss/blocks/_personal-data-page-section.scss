@@ -171,7 +171,7 @@
                         align-items: center;
                         border: 1rem solid #ced4da;
 
-                        .lang-select {
+                        .phone-select {
                             position: relative;
                             display: flex;
                             overflow: hidden;
@@ -189,6 +189,13 @@
                                 transition: .25s all ease;
                                 pointer-events: none;
                             }
+
+                            &.active{
+                                &::after {
+                                    transition: transform .2s ease-in-out;
+                                    transform: rotate(-180deg);
+                                }
+                            }
         
                             select {
                                 -webkit-appearance: none;
@@ -200,7 +207,7 @@
                                 box-shadow: none;
                                 flex: 1;
                                 padding-right: 13rem;
-                                color: #fff;
+                                color: $black-color;
                                 background-color: transparent;
                                 background-image: none;
                                 cursor: pointer;
@@ -256,6 +263,7 @@
                         }
     
                         input {
+                            position: relative;
                             border: none;
     
                             @media (max-width: 991px) {
@@ -271,6 +279,22 @@
                     .phone {
                         input {
                             border: none;
+
+                            &::after {
+                                content: '|';
+                                position: absolute;
+                                width: 1rem;
+                                height: 21rem;
+                                transform: translateY(-50%);
+                                background-color: #E0E0E0;
+                                color: #000;
+                                top: 50%;
+                                left: 0;
+                                background: url(../icons/arrow-down.svg) 50% 50% no-repeat;
+                                background-size: cover;
+                                transition: .25s all ease;
+                                pointer-events: none;
+                            }
     
                             @media (max-width: 991px) {
                                 min-width: auto;
@@ -278,6 +302,7 @@
     
                             &:focus {
                                 border: 1rem solid $brown-color;
+                                border-left: none;
                                 box-shadow: none;
                             }
                         }

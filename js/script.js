@@ -12,6 +12,31 @@ function checkHeader() {
 window.onscroll = checkHeader
 window.onload = checkHeader
 
+// let langSelect = document.querySelector('.lang-select')
+
+// langSelect.addEventListener('click', () => {
+//     langSelect.classList.toggle('active')
+// })
+
+const activateArrowlang = (event) => {
+    event.target.parentElement.classList.add('active')
+}
+
+const deActivateArrowlang = (event) => {
+    event.target.parentElement.classList.remove('active')
+}
+
+window.addEventListener('load', () => {
+    let $langSelect = document.querySelector('.lang-select')
+
+    $langSelect.addEventListener('click', () => {
+        $langSelect.classList.toggle('active')
+    })
+
+    // $langSelect.focus = event => activateArrowlang(event)
+    // $langSelect.onblur = event => deActivateArrowlang(event)
+})
+
 window.addEventListener('DOMContentLoaded', () => {
     const heartIconArray = document.querySelectorAll('.heart-icon_path');
     const heartIconInCartArray = document.querySelectorAll('.save-to-favorite');
@@ -119,7 +144,6 @@ function YearNum(elem){
     if (m > 19 || event.keyCode < 48 || event.keyCode > 57)
     event.returnValue= false;
 }
-
 
 // let arrowdownHide = document.querySelectorAll('.arrowdown-active')
 

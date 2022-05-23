@@ -9,7 +9,7 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = "10000px";
+      panel.style.maxHeight = "700px";
     }
   });
 }

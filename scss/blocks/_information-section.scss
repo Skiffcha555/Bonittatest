@@ -1,6 +1,18 @@
 .information-section {
     padding-top: 29rem;
 
+    @media (max-width: 575px) {
+        padding-bottom: 185rem;
+    }
+
+    @media (max-width: 425px) {
+        padding-bottom: 171rem;
+    }
+
+    @media (max-width: 375px) {
+        padding-bottom: 164rem;
+    }
+
     .bread-crumbs {
         @media (max-width: 575px) {
             a {

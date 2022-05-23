@@ -50,6 +50,13 @@ header {
                         pointer-events: none;
                     }
 
+                    &.active{
+                        &::after {
+                            transition: transform .2s ease-in-out;
+                            transform: rotate(-180deg);
+                        }
+                    }
+
                     select {
                         -webkit-appearance: none;
                         -moz-appearance: none;

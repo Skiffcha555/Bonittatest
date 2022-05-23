@@ -1731,7 +1731,7 @@
                             </form>
                         </div>
 
-                        <div class="delivery-address-form">
+                        <div class="delivery-address-form delivery-address-form_active">
                             <div class="delivery-address-form-head">
                                 Add new address
                             </div>
@@ -2612,7 +2612,7 @@
                                     </form>
                                 </div>
         
-                                <div class="delivery-address-form">
+                                <div class="add-delivery-address-form">
                                     <div class="delivery-address-form-head">
                                         Add new address
                                         <svg class="close-address-form" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3221,7 +3221,7 @@
         <span class="footer_author">RomarkCode 2022</span>
     </footer>
 
-    <script src="../js/bootstrap.min.js"></script>
+    <!-- <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/burger-menu.js"></script>
     <script src="../js/shopping-cart-menu.js"></script>
@@ -3231,7 +3231,88 @@
     <script src="../js/editAddress.js"></script>
     <script src="../js/scroll.js"></script>
     <script src="../js/validity.js"></script>
+    <script src="../js/script.js"></script> -->
+
+    <script>
+        const showEditFormAddress = document.querySelector('.edit-address')
+        let editFormAddress = document.querySelector('.edit-delivery-address-form')
+        let closeEditFormAddress = document.querySelector('.close-edit-address-form')
+
+        showEditFormAddress.addEventListener('click', () => {
+            editFormAddress.classList.add('edit-delivery-address-form_active');
+        });
+
+        closeEditFormAddress.onclick = () => editFormAddress.classList.remove('edit-delivery-address-form_active')
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../js/jquery.star-rating-svg.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/burger-menu.js"></script>
+    <script src="../js/shopping-cart-menu.js"></script>
+    <script src="../js/shopping-cart-wishlist-mobile.js"></script>
+    <script src="../js/search-bar.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/editAddress.js"></script>
+    <script src="../js/addNewAddress.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/validity.js"></script>
+    <script src="../js/modal.js"></script>
     <script src="../js/script.js"></script>
+
+    <script>
+        var modalFeedback = document.getElementById("modalFeedback");
+        var openFeedback = document.querySelectorAll(".feedback");
+        // var closeFeedback = document.getElementsByClassName("close-modal-feedback")[0];
+        let closeFeedback = document.querySelectorAll(".close-modal-feedback");
+        var closeSecond = document.getElementsByClassName("close-modal-second")[0];
+
+        // openFeedback.onclick = function () {
+        //     modalFeedback.style.display = "block";
+        // }
+
+        openFeedback.forEach($openFeedback => {
+            $openFeedback.addEventListener('click', function () {
+                modalFeedback.style.display = "block";
+            });
+        });
+
+        closeFeedback.forEach($closeFeedback => {
+            $closeFeedback.addEventListener('click', function () {
+                modalFeedback.style.display = "none";
+            });
+        });
+
+        // closeFeedback.onclick = function () {
+        //     modalFeedback.style.display = "none";
+        // }
+
+        // closeSecond.onclick = function () {
+        //     modalFeedback.style.display = "none";
+        // }
+
+        window.onclick = function (event) {
+            if (event.target == modalFeedback) {
+                modalFeedback.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        $(".my-rating-5").starRating({
+            starSize: 20,
+            strokeWidth: 13,
+            strokeColor: '#000000',
+            emptyColor: '#ffffff',
+            hoverColor: '#333333',
+            activeColor: '#333333',
+            initialRating: 1,
+            useGradient: false,
+            minRating: 1
+        });
+    </script>
 
 </body>
 

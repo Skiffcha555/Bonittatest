@@ -105,6 +105,7 @@
                 .products_card-in-cart {
                     height: 65%;
                     overflow-y: auto;
+                    overscroll-behavior-y: contain;
                     padding: 0rem 24rem;
 
                     @media (max-height: 830rem) {

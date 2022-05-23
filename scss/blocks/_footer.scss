@@ -173,3 +173,23 @@ footer {
         color: $black-color;
     }
 }
+
+footer.padding-bottom {
+    @media (max-width: 575px) {
+        padding-bottom: 185rem;
+    }
+
+    @media (max-width: 425px) {
+        padding-bottom: 171rem;
+    }
+
+    @media (max-width: 375px) {
+        padding-bottom: 164rem;
+    }
+}
+
+footer.mobile-none {
+    @media (max-width: 575px) {
+        display: none;
+    }
+}

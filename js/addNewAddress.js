@@ -1,10 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
     const showFormAddress = document.querySelector('.add-address-btn')
-    let formAddress = document.querySelector('.delivery-address-form')
+    let formAddress = document.querySelector('.add-delivery-address-form')
     let closeformAddress = document.querySelector('.close-address-form')
 
     showFormAddress.addEventListener('click', () => {
-        formAddress.classList.add('delivery-address-form_active');
+        formAddress.classList.add('add-delivery-address-form_active');
     });
 
     // formAddress.forEach($formAddress => {
@@ -13,5 +13,5 @@ window.addEventListener('DOMContentLoaded', () => {
     //     });
     // });
 
-    closeformAddress.onclick = () => formAddress.classList.remove('delivery-address-form_active')
+    closeformAddress.onclick = () => formAddress.classList.remove('add-delivery-address-form_active')
 })

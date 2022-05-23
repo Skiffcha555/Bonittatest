@@ -28,6 +28,11 @@ window.addEventListener('load', () => {
 
 const activateArrow = (event) => {
     event.target.parentElement.classList.add('arrowdown-active')
+
+    // if (event.target.parentElement.querySelector('.datepicker').classList.contains('active')) {
+    //     event.target.parentElement.querySelector('.datepicker').classList.remove('active')
+    // }
+    // event.target.parentElement.classList.toggle('arrowdown-active')
 }
 
 const deActivateArrow = (event) => {
@@ -38,8 +43,9 @@ window.addEventListener('load', () => {
     const $inputMonth = document.querySelector('.datepicker-here')
     const $inputYear = document.querySelector('.datepicker-year')
 
-    $inputMonth.onfocus = event => activateArrow(event)
+    $inputMonth.onclick = event => activateArrow(event)
     $inputMonth.onblur = event => deActivateArrow(event)
-    $inputYear.onfocus = event => activateArrow(event)
+
+    $inputYear.onclick = event => activateArrow(event)
     $inputYear.onblur = event => deActivateArrow(event)
 })

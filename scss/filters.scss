@@ -38,16 +38,21 @@
 }
 
 .dropdown-content {
-    display: none;
     position: absolute;
     top: 30rem;
     background-color: #fff;
-    overflow: auto;
+    // overflow: auto;
     z-index: 1;
 
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: all .3s ease-in-out;
+
     &.dropdown-content-show {
-        display: block;
-        overflow: initial;
+        opacity: 1;
+        visibility: visible;
+        max-height: calc(50vh + 110px);
     }
 }
 
