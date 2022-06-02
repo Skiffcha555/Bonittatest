@@ -43,7 +43,6 @@ h1, h2, h3, h4 {
 }
 
 .bread-crumbs {
-
     &.first {
         display: flex;
         justify-content: center;
@@ -113,9 +112,13 @@ h1, h2, h3, h4 {
         line-height: 16rem;
         color: $black-color;
 
-        @media (max-width: 425px) {
-            font-size: 14rem;
+        @media (max-width: 769px) {
+            font-size: 12rem;
         }
+
+        // @media (max-width: 425px) {
+        //     font-size: 14rem;
+        // }
 
         &:hover {
             text-decoration: underline;

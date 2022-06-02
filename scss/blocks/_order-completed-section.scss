@@ -2,6 +2,10 @@
     padding-top: 66rem;
     padding-bottom: 76rem;
 
+    @media (max-width: 769px) {
+        height: calc(100vh - 81rem);
+    }
+
     .order-completed-wrapper {
         width: 365px;
         margin: 0 auto;
@@ -21,7 +25,7 @@
         //     width: 365px;
         // }
 
-        // @media (max-width: 768px) {
+        // @media (max-width: 769px) {
         //     width: 365px;
         // }
 

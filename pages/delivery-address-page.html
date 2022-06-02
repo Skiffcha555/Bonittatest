@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonitta</title>
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="../css/bootstrap-rebote.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.min.css">
     <link rel="stylesheet" href="../css/style.min.css" rel="stylesheet" type="text/css">
@@ -819,7 +819,7 @@
                         stroke="#333333" stroke-width="1.3" stroke-linecap="round" />
                 </svg>
 
-                <input class="search_input" placeholder="What are you looking for?" type="text">
+                <input class="search_input" placeholder="Search..." type="text">
 
                 <svg class="close-icon2-mobile" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -844,7 +844,10 @@
                     <div class="delivery-address">
                         <div class="delivery-address-main">
                             <div class="delivery-address-head">
-                                <div class="default-address">Default address</div> 
+                                <div class="default-and-make-default-block">
+                                    <div class="default-address">Default address</div>
+                                    <div class="make-default-address hide">Make default address</div>
+                                </div>
                                 <div class="make-default-and-edit">
                                     <div class="make-default-address hide">Make default address</div>
                                     <div class="edit-address">
@@ -1289,7 +1292,10 @@
                     <div class="delivery-address">
                         <div class="delivery-address-main">
                             <div class="delivery-address-head">
-                                <div class="default-address hide">Default address</div>
+                                <div class="default-and-make-default-block">
+                                    <div class="default-address">Default address</div>
+                                    <div class="make-default-address hide">Make default address</div>
+                                </div>
                                 <div class="make-default-and-edit">
                                     <div class="make-default-address">Make default address</div>
                                     <div class="edit-address">
@@ -2165,7 +2171,10 @@
                             <div class="delivery-address">
                                 <div class="delivery-address-main">
                                     <div class="delivery-address-head">
-                                        <div class="default-address">Default address</div> 
+                                        <div class="default-and-make-default-block">
+                                            <div class="default-address">Default address</div>
+                                            <div class="make-default-address hide">Make default address</div>
+                                        </div>
                                         <div class="make-default-and-edit">
                                             <div class="make-default-address hide">Make default address</div>
                                             <div class="edit-address">
@@ -3032,9 +3041,12 @@
                             <div class="delivery-address">
                                 <div class="delivery-address-main">
                                     <div class="delivery-address-head">
-                                        <div class="default-address hide">Default address</div>
-                                        <div class="make-default-and-edit">
+                                        <div class="default-and-make-default-block">
+                                            <div class="default-address hide">Default address</div>
                                             <div class="make-default-address">Make default address</div>
+                                        </div>
+                                        <div class="make-default-and-edit">
+                                            <div class="make-default-address hide">Make default address</div>
                                             <div class="edit-address">
                                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M14.1136 3.46674L11.6677 1.0084C11.5061 0.847596 11.2874 0.757324 11.0594 0.757324C10.8314 0.757324 10.6127 0.847596 10.4511 1.0084L1.78023 9.66674L0.988561 13.0834C0.961251 13.2083 0.962188 13.3377 0.991301 13.4622C1.02042 13.5867 1.07697 13.7031 1.15684 13.8029C1.2367 13.9028 1.33786 13.9835 1.45293 14.0392C1.56799 14.095 1.69405 14.1243 1.82189 14.1251C1.88147 14.1311 1.94149 14.1311 2.00106 14.1251L5.45523 13.3334L14.1136 4.6834C14.2744 4.52178 14.3646 4.30306 14.3646 4.07507C14.3646 3.84708 14.2744 3.62836 14.1136 3.46674ZM5.03856 12.5834L1.80106 13.2626L2.53856 10.0876L9.02606 3.62507L11.5261 6.12507L5.03856 12.5834ZM12.0844 5.5209L9.58439 3.0209L11.0344 1.57924L13.4927 4.07924L12.0844 5.5209Z" fill="#333333"/>
@@ -3077,66 +3089,6 @@
                 </div>
                 <a class="log-off" href="#">Log off</a>
             </div>
-
-            <!-- <div id="modalFeedback" class="modal-feedback">
-                <div class="modal-content feedback">
-                    <div class="modal-title">
-                        <h4>Leave feedback</h4>
-                        <svg class="close-modal" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.1759 0L16.0006 0.82464L0.82464 15.9994L0 15.1754L15.1759 0Z"
-                                fill="#333333" />
-                            <path d="M0.82464 0L16.0006 15.1748L15.1759 16L0 0.825223L0.82464 0Z"
-                                fill="#333333" />
-                        </svg>
-                    </div>
-    
-                    <div class="modal-descr">
-                        <form  class="mustValidate">
-                            <div class="form-floating first-name">
-                                <input type="text" class="form-control" placeholder="First name">
-                                <div class="form-error">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M7 13C7.78808 13.001 8.56859 12.8463 9.29668 12.5447C10.0248 12.2431 10.6861 11.8006 11.2426 11.2426C11.8006 10.6861 12.2431 10.0248 12.5447 9.29668C12.8463 8.56859 13.001 7.78808 13 7C13.001 6.21192 12.8463 5.43142 12.5447 4.70333C12.2431 3.97524 11.8006 3.31393 11.2426 2.7574C10.6861 2.19941 10.0248 1.7569 9.29668 1.45531C8.56859 1.15372 7.78808 0.998984 7 1.00001C6.21192 0.999 5.43142 1.15374 4.70333 1.45533C3.97524 1.75693 3.31393 2.19943 2.7574 2.7574C2.19943 3.31393 1.75693 3.97524 1.45533 4.70333C1.15374 5.43142 0.999 6.21192 1.00001 7C0.998984 7.78808 1.15372 8.56859 1.45531 9.29668C1.7569 10.0248 2.19941 10.6861 2.7574 11.2426C3.31393 11.8006 3.97524 12.2431 4.70333 12.5447C5.43142 12.8463 6.21192 13.001 7 13V13Z"
-                                            stroke="#EB5757" stroke-width="0.8" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M7 10.8999C7.19891 10.8999 7.38968 10.8209 7.53033 10.6802C7.67098 10.5396 7.75 10.3488 7.75 10.1499C7.75 9.95099 7.67098 9.76022 7.53033 9.61957C7.38968 9.47892 7.19891 9.3999 7 9.3999C6.80109 9.3999 6.61032 9.47892 6.46967 9.61957C6.32902 9.76022 6.25 9.95099 6.25 10.1499C6.25 10.3488 6.32902 10.5396 6.46967 10.6802C6.61032 10.8209 6.80109 10.8999 7 10.8999V10.8999Z"
-                                            fill="#EB5757" />
-                                        <path d="M6.99902 3.3999V8.1999" stroke="#EB5757" stroke-width="0.8"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span>This field can not be empty</span>
-                                </div>
-                                <label for="floatingInput">First name</label>
-                            </div>
-                            <div class="form-group form-floating textarea">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Enter your review text"></textarea>
-                            </div>
-
-                            <div class="feedback-evaluation">
-                                <span>Your mark:</span>
-                                <div class="stars my-rating-5"></div>
-                            </div>
-
-                            <div class="form-group upload-photo">
-                                <label for="files">Select a file</label>
-                                <input id="files" style="visibility:hidden; display: none;" type="file">
-                            </div>
-
-                            <div class="upload-photo-text">
-                                Leave a photo review and get a 5% promo code for your next purchase to your email address (Be sure to confirm your email address in your personal account) 
-                            </div>
-
-                            <div class="save-and-close">
-                                <span class="close-modal-second">Close</span>
-                                <div class="btn-main black-btn">Save</div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div> -->
 
         </section>
     </main>

@@ -142,6 +142,14 @@
                             outline: 0;
                             box-shadow: none; 
                         }
+
+                        >.form-control:focus,
+                        >.form-control:not(:placeholder-shown),
+                        >.form-select {
+                            ~label {
+                                transform: scale(1) translateY(14rem) translateX(17rem);
+                            }
+                        }
                     }
                 }
 
@@ -247,9 +255,14 @@
 
                 font-family: 'Roboto';
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 100;
                 font-size: 12rem;
                 color: $black-color;
+
+                .upload-photo-title {
+                    padding-bottom: 10rem;
+                    font-weight: 300;
+                }
 
                 label {
                     padding: 5rem 19rem;
@@ -306,7 +319,7 @@
     border: none;
     border-radius: 0;
 
-    &.feedback {
+    &.feedback-modal {
         width: 550rem;
         border-radius: 5rem;
     }
@@ -336,6 +349,16 @@
     .modal-descr {
         padding: 32rem;
         padding-top: 36rem;
+
+        .modal-descr-title {
+            padding-left: 12rem;
+            padding-bottom: 11rem;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            color: #333333;
+        }
 
         .notify-product {
             display: flex;

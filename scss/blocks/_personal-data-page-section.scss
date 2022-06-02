@@ -7,7 +7,7 @@
         padding-bottom: 70rem;
     }
 
-    // @media (max-width: 768px) {
+    // @media (max-width: 769px) {
     //     padding-top: 45rem;
     //     padding-bottom: 65rem;
     // }
@@ -16,7 +16,7 @@
     //     display: none;
     // }
 
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         display: none;
         padding-bottom: 37rem;
     }
@@ -30,7 +30,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             flex-direction: column;
             gap: 45rem;
         }
@@ -45,7 +45,7 @@
             width: 20%;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             width: 50%;
         }
 
@@ -91,7 +91,7 @@
             color: $black-color;
             text-decoration: none;
 
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 margin-top: 30rem;
             }
 
@@ -108,11 +108,17 @@
             width: 75%;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             width: 100%;
         }
 
-        .personal-data-form,
+        .personal-data-form {
+            margin-top: 0;
+        }
+    }
+}
+
+.personal-data-form,
         .password-form,
         .sub-to-news-form {
             margin-top: 30rem;
@@ -193,7 +199,7 @@
                             &.active{
                                 &::after {
                                     transition: transform .2s ease-in-out;
-                                    transform: rotate(-180deg);
+                                    transform: rotate(-180deg) translateY(75%);
                                 }
                             }
         
@@ -247,7 +253,7 @@
                             //     width: 15%;
                             // }
     
-                            // @media (max-width: 767px) {
+                            // @media (max-width: 769px) {
                             //     padding-right: 0;
                             //     width: 10%;
                             // }
@@ -304,6 +310,8 @@
                                 border: 1rem solid $brown-color;
                                 border-left: none;
                                 box-shadow: none;
+
+
                             }
                         }
                     }
@@ -466,8 +474,19 @@
             }
         }
 
-        .personal-data-form {
-            margin-top: 0;
-        }
+input:focus + .phone-select {
+    height: 100%;
+    border: 1rem solid #957D6D;
+    border-right: none;
+    box-shadow: none;
+}
+
+.phone {
+    input {
+        order: 1;
+    }
+
+    .phone-select {
+        order: 0;
     }
 }

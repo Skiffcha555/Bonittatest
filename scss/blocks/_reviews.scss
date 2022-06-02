@@ -12,14 +12,14 @@
     .container {
         max-width: 80%;
 
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
             max-width: 720px;
         }
 
         .reviews-wrapper {
             width: 59%;
 
-            @media (max-width: 768px) {
+            @media (max-width: 769px) {
                 width: 100%;
             }
 
@@ -31,7 +31,7 @@
                 font-size: 36rem;
                 color: $black-color;
 
-                @media (max-width: 768px) {
+                @media (max-width: 769px) {
                     font-size: 28rem;
                 }
             }

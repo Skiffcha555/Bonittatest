@@ -415,6 +415,10 @@
                             color: #fff;
                             font-size: 16rem;
 
+                            &:hover {
+                                color: $brown-color;
+                            }
+
                             @media (max-width: 425px) {
                                 // font-size: 14rem;
                             }

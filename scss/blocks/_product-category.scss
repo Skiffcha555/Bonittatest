@@ -11,11 +11,15 @@
 
         .bread-crumbs {
             a {
-                font-size: 16rem;
+                font-size: 14rem;
 
-                @media (max-width: 575px) {
+                @media (max-width: 769px) {
                     font-size: 12rem;
                 }
+
+                // @media (max-width: 575px) {
+                //     font-size: 12rem;
+                // }
             }
         }
 
@@ -34,12 +38,19 @@
                 }
             }
 
-            @media (max-width: 575px) {
+            @media (max-width: 769px) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 6rem;
             }
+
+            // @media (max-width: 575px) {
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     gap: 6rem;
+            // }
         }
     }
 
@@ -97,9 +108,13 @@
         gap: 23rem;
         padding-top: 26rem;
 
-        @media (max-width: 575px) {
+        @media (max-width: 769px) {
             display: none;
         }
+
+        // @media (max-width: 575px) {
+        //     display: none;
+        // }
 
         .selected-filters_title {
             display: flex;

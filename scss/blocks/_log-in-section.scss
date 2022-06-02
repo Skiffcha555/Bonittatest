@@ -2,6 +2,11 @@
     padding-top: 50rem;
     padding-bottom: 200rem;
 
+    @media (max-width: 769px) {
+        height: calc(100vh - 81rem);
+        padding-bottom: 0;
+    }
+
     .log-in-wrapper {
         width: 25%;
         margin: 0 auto;
@@ -21,8 +26,8 @@
             width: 45%;
         }
 
-        @media (max-width: 768px) {
-            width: 50%;
+        @media (max-width: 769px) {
+            width: 90%;
         }
 
         @media (max-width: 575px) {
@@ -139,7 +144,7 @@
         width: 100%;
         justify-content: center;
 
-        @media (max-width: 575px) {
+        @media (max-width: 769px) {
             border: 1rem solid $brown-color;
             background-color: $brown-color;
             color: #fff;
@@ -149,6 +154,17 @@
                 color: $brown-color;
             }
         }
+
+        // @media (max-width: 575px) {
+        //     border: 1rem solid $brown-color;
+        //     background-color: $brown-color;
+        //     color: #fff;
+    
+        //     &:hover {
+        //         background-color: #fff;
+        //         color: $brown-color;
+        //     }
+        // }
     }
 }
 

@@ -20,9 +20,13 @@
     &.sizes,
     &.colors,
     &.price {
-        @media (max-width: 575px) {
+        @media (max-width: 769px) {
             display: none;
         }
+
+        // @media (max-width: 575px) {
+        //     display: none;
+        // }
     }
 
     svg {
